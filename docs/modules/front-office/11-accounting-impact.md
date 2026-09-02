@@ -87,17 +87,17 @@
 3. **Night Balance** — تسوية الفواتير المعلقة؛ **Excess/Short = 0** إلزامياً (توازن الكاشير).
 4. **Open New Date** — تجميد نهائي لليوم المحاسبي.
 
-**UNK-006 (تحديث الحالة):** تفاصيل قيود Night Audit المحاسبية (أطراف القيد D/C وحسابات الوساطة) — **[NOT DOCUMENTED]** في وثائق FOM المقروءة؛ متوقع توثيقها في FAS-TRN. تبقى Unknown مفتوحة → `docs/analysis/unknowns.md`.
+**UNK-006 (محسوم — الجلسة 3):** آلية الترحيل المحاسبي للـ Night Audit موثقة الآن من FAS-SET §6 + FAS-TRN §G: بعد Day End + **Open New Date** في FO تُنفَّذ عملية **Post FO to Finance** (Sales Journal): تُعرض القيود مجمعة بحسب Account Heads مع Revenue Code + Audit Code + D/C Account Heads + D/C Sub Ledger + المبالغ؛ **يجب أن يساوي إجمالي المدين إجمالي الدائن (الفرق غير الموزع = صفر)**؛ أي فرق يُرحَّل آلياً إلى حساب معرف مسبقاً موسوم بنوع الإيراد **"No Transaction"** (Suspense) مؤقتاً — ووجوده يعني خللاً في تعريف روابط FO/POS to Finance يُصحح ثم يُعاد الترحيل. → موثق كاملاً في `docs/modules/financial-accounting/11-accounting-impact.md`.
 
 ---
 
-## 6. أسئلة محاسبية معلقة (تُحل في Phase 6)
+## 6. أسئلة محاسبية معلقة (حُسم أغلبها بقراءة FAS — الجلسة 3)
 
 | # | السؤال | الحالة |
 |---|---|---|
-| QA-1 | أطراف القيود (Debit/Credit) لكل حدث أعلاه | `[NOT DOCUMENTED]` — يُستخرج من FAS-TRN/FAS-SET |
-| QA-2 | توقيت الترحيل (فوري vs نهاية يوم vs Night Audit) لكل نوع | جزئي: Room Rate→Night Audit موثق (CAS ص22)؛ البقية `[NOT DOCUMENTED]` |
-| QA-3 | حسابات الوساطة (Suspense/Clearing) | `[NOT DOCUMENTED]` |
-| QA-4 | معالجة Tips في القيود | `[NOT DOCUMENTED]` |
-| QA-5 | معالجة Complimentary (تسقاط مقابل مصروف ترويج؟) | `[NOT DOCUMENTED]` |
-| QA-6 | تسوية الفائض/العجز في Night Balance (آلية) | موثق المبدأ (Excess/Short=0) دون تفاصيل القيد |
+| QA-1 | أطراف القيود (Debit/Credit) لكل حدث | ✅ **محسوم جزئياً:** قواعد Book Types الموثقة (Receipts/Payments/Sales/Purchase/Journal/Exchange/Notes) + أنماط روابط FO (لكل Revenue Code: Debit+Credit؛ Control→SubLedger؛ **التسويات: Debit فقط**؛ GLB: B/F دائن + C/F مدين) + POS (Debit=خصومات، Credit=مبيعات) — FAS-SET §3/§6/§7 + FAS-TRN §G |
+| QA-2 | توقيت الترحيل (فوري vs نهاية يوم vs Night Audit) | ✅ **محسوم:** FO→Finance بعد Day End وOpen New Date؛ Effective Date = عادة اليوم السابق لتاريخ النظام؛ الاستهلاك INI 283 (شهري=1/يومي=2) — FAS-SET §6 + FAS-TRN §G/§J |
+| QA-3 | حسابات الوساطة (Suspense/Clearing) | ✅ **محسوم:** نوع "No Transaction" يتطلب حساب Suspense إلزامياً + PDC Receivable/Payable accounts + Round Off (Local/Foreign منفصلان) — FAS-SET §6 + FAS-TRN §F |
+| QA-4 | معالجة Tips في القيود | `[NOT DOCUMENTED]` — تبقى مفتوحة (تُبحث في POS/AR لاحقاً) |
+| QA-5 | معالجة Complimentary (إسقاط مقابل مصروف ترويج؟) | `[NOT DOCUMENTED]` — جزئياً: ARR Forecast يتيح "Include Complimentary/House Guest" (تقارير فقط، لا قيد) — FOM-LUK §21 |
+| QA-6 | تسوية الفائض/العجز في Night Balance (آلية) | ✅ **محسوم المبدأ المحاسبي:** الإجماليان متساويان (الفرق = 0) وإلا يُرحَّل الفرق مؤقتاً لحساب No Transaction Suspense — مطابق لنمط Post FO to Finance الموثق (FAS-TRN §G)؛ التوازن التشغيلي للكاشير (Excess/Short=0) موثق في DEP |
