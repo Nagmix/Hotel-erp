@@ -306,9 +306,53 @@ Settlements → Bill# (F1 من قائمة الفواتير المعلقة) → �
 
 ---
 
-## سير العمل المعلَّق (يستكمل بعد قراءة العمق المتبقية)
+## WF-FO-15: تدفق Housekeeping (FOM-HSK — موثق كاملاً، الجلسة 3)
+
+> FOM-HSK = 18 وظيفة: Room Block · Clear Rooms · HK Room Status · HK Credits · Employee Schedule · Room Cleaning Assignments · Laundry Item/Rate Master · Laundry Holiday Table · Laundry Entry · Laundry Bill Printing · Settle Laundry Bill · Hold Laundry · Lost and Found · HK Inventory Master/Issue/Return · User Defined Print (LAU).
+
+**15.1 حجب الغرفة (Room Block):**
+1. عرض الشبكة (غرف × تاريخ) بحالاتها؛ التاريخ ≥ اليوم (FOM-HSK §1 ص5).
+2. **OOO:** Right-click على Dirty/Vacant → Out of Order → From (يومياً آلياً) + To + Description + **Reason من dropdown** + **Department المُبلَّغ** → Confirm → **تمييز بني**.
+3. **OOS:** Right-click → Out of Service → From آلي + To + Description → Confirm → **تمييز بنفسجي**.
+4. التحرير: Right-click على حالة OOO/OOS → نافذة قائمة الغرف المحجوبة → **uncheck + Confirm** للإفراج.
+5. تمديد الحالة: **Click & Drag** من حافة الخلية؛ نقلها: **Drag & Drop** إلى تواريخ أخرى → Save.
+
+**15.2 حالة الغرف المنزلية (HK Room Status):** تحديد الحالة من dropdown لكل غرفة + pax (بالغ/طفل/رضيع — **فقط عند Occupied**) + Instruction (تعليمات خاصة) → Save. يغذي **Room Verification Report** (pax/أمتعة متروكة/غرف منظفة) (FOM-HSK §3 ص13-15).
+
+**15.3 الغسيل (Laundry):** Item Master + Rate Master + Holiday Table (أسعار بديلة أيام العطل) → **Laundry Entry** (Room/ضيف → البنود والكميات) → **Bill Printing** (Guest → Room# → Select Yes → Print → Confirm؛ **الطباعة تستدعي التسوية آلياً**) → **Settle Laundry Bill** (Bill# F1؛ إن كانت مسواة: رسالة → Ok لإعادة التسوية/Cancel) بأنماط Guest/Cash/Company/Credit Card/Staff/Complimentary/Void-BOH → **Hold Laundry** لمتابعة المعلق (tagged/untagged مع مصرّح) (FOM-HSK §7-13 ص26-43).
+
+**15.4 المفقودات (Lost & Found):** Add → Module/Outlet + تفاصيل (القيمة/الموقع/التاريخ/الضيف) + **مَن وجدها** (اسم/تاريخ/وقت/موقع) → حفظ → عند الإعادة: Date + **Whom** + **Authorized By** → Confirm → قائمة Return (FOM-HSK §14 ص43-48).
+
+**15.5 الجدولة والتنظيف:** Employee Schedule (نوبة ≤ **7 أيام**، CREATE/MODIFY) + Occupancy Forecast (A.R.R مع Complimentary/House Guest/Provisional) + Room Cleaning Assignments (فرز بالحالة، Summary بالطابق/الموظف، تعيين موظفين → أزرق) + HK Credits (Stayover/Checkout/Vacant لكل نوع غرفة) (FOM-HSK §4-6 ص15-24).
+
+## WF-FO-16: تدفق Guest History والولاء (FOM-GST — موثق كاملاً، الجلسة 3)
+
+> FOM-GST = 17 وظيفة: Guest Master · Guest Comments Entry · Repeat/Birthday/Anniversary Lists · Guest History List · Guest Revenue List · Guest Visit/Comment Reports · Mailing Letters/Labels · Merge History · Purge Guest History · Setup Loyalty Cards/Master · Loyalty Ledger · Redemption Entry.
+
+**16.1 Guest Master (10 تبويبات):** Guest Code **آلي** → Name/Address/City/State/Country/Zip/Phone/Email + Designation/Nationality/Guest Status/Classification + Gender + Special Instruction + عدد الليالي + **Black Listed Y/N** → Contact (Company Code F1 → تعبئة آلية + Secretary + بيانات الشركة) → Passport (رقم/صدار/جهة/انتهاء) → Personal (DOB/Anniversary/Occupation/Frequent Flyer/Loyalty/CC + **الزوجة والأبناء بتفاصيلهم**) → Privilege Card (Card Type من FO Setup + Number) → Visit Details (Reg#/Room/Arrival/Departure/Amount/Last Rate/Company/Visa + **Feed Back**: تقييم Room/Cleanliness/Food/Service + Revenue breakup بالـ Rev. Code) → Likes&Dislikes → Comments → Complaints (Department + Nature + Date/Time) → Photo → Preferences (من Guest Preferences الموحدة) → Save (FOM-GST §1 ص2-17).
+
+**16.2 دورة الولاء:** Setup Loyalty Cards (Card Type 3 أرقام + وصف) → Setup Loyalty Master (Card# ≤15 حرفاً + Join ≤ تاريخ الخادم + Expiry + Guest + Display Text + **خصومات لكل منفذ** بنسبة/قيمة وبحسب menu types وcovers → Active) → Loyalty Ledger (Card# → Points Accrued/Redeemed/Balance/Amount) → Redemption Entry (A/C Date + Card → نقاط/مبلغ/Rate/Value + **Reason + Authorized By**) (FOM-GST §14-17 ص50-57).
+
+**16.3 صيانة السجل:** Merge History (Guest Name ≥ **3 أحرف** إلزامي + Company اختياري + Load → checkbox للضيوف → تحديد **Main واحد (M)** → Merge) · Purge Guest History (Continue → Guest Query Engine → **حذف نهائي**) · Mailing Letters/Labels (مراسلات تسويقية) (FOM-GST §12-13 ص48-50).
+
+## WF-FO-17: خدمات الكونسيرج (FOM-CRG — موثق كاملاً، الجلسة 3)
+
+> **تصحيح موثق (الجلسة 3):** CRG = **Concierge** (وليس Charge Groups كما ظُنّ سابقاً — [CORRECTION]). 5 وظائف: Left Luggage · Parcels & Deliveries · Ticket Request · Valet Parking · Guest Baggage Tickets.
+
+| الخدمة | التدفق الموثق | المصدر |
+|---|---|---|
+| **Left Luggage** | نوع الضيف (Inhouse/Checked Out) → Room# (F1 → اسم الضيف آلياً) → No of Bags (≤ 99) + Expected Pickup + Description → Save → عند الاستلام: Right-click → Picked up → Luggage collected (تاريخ/وقت آليان) → **تمييز peach** | FOM-CRG §1 ص2-6 |
+| **Parcels & Deliveries** | Room# → Package description + Arrived From + Date/Time + Sender → Save → عند التسليم: Right-click → Delivered (تاريخ/وقت) → **peach** | FOM-CRG §2 ص6-9 |
+| **Ticket Request** | Room# → نوع الطلب من قائمة → Charges Applicable (Yes→Amount مفعّل / No→**معطّل**) → Date/Time + Description → Save → عند التأكيد: Confirmed → Purchase/Confirmed + Remarks + Date/Time → **peach** | FOM-CRG §3 ص9-12 |
+| **Valet Parking** | Room# → رقم تسجيل المركبة + نوع + ماركة + وصف (لون) + Date/Time → Save → عند الاستلام: Picked Up (تاريخ/وقت) → **peach** | FOM-CRG §4 ص12-15 |
+| **Guest Baggage Tickets** | Show All (كل المقيمين: room/reg#/name/arrival) → Double-click الضيف → No of Baggage + بنود (اسم/عدد) → Save؛ F5 حذف؛ **F2 = passive** (لا يظهر) → Print Voucher | FOM-CRG §5 ص15-19 |
+
+**قاعدة القسائم الموثقة:** قالب Voucher يجب أن يكون معرفاً مسبقاً في **User Defined Reports تحت System Setup** — وإلا رسالة **"Category does not exist"** (FOM-CRG ص6 + ص19).
+
+---
+
+## سير العمل المعلَّق (محدود الآن)
 
 - WF-FO-14: دورة Night Audit التفصيلية → مكتملة في FOM-DEP (الجلسة 1) وتُدمج هنا في `docs/workflows/` عند إنشائها.
-- WF-FO-15: تدفق Housekeeping (FOM-HSK) — `[PENDING DEEP READ]`
-- WF-FO-16: تدفق Guest History الكامل (FOM-GST) — `[PENDING DEEP READ]`
-- WF-FO-17: دورة Charge Groups/Rate Master (FOM-CRG + FOM-SET §7-8) — `[PENDING DEEP READ]`
+- ~~WF-FO-15/16/17~~ → **مكتملة أعلاه بالقراءة العميقة (الجلسة 3).**
+- قراءة FOM-REP (~4,507 سطر) → مؤجلة لمرحلة التقارير (Phase 7).

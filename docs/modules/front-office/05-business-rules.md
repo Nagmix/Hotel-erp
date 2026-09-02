@@ -125,5 +125,74 @@
 
 - **Color Coding الموثق:** حجز waitlist=peach، frequent check-in=green، checked-in=purple (REG ص15)؛ تخصيص غرفة=أزرق (RES ص11)؛ Masked guest=أحمر (REG ص80)؛ الغرفة المحظورة تظهر بلون مختلف (RES ص17).
 - **قيم Yes/No:** سلوكيات كثيرة مفاتيح تبديل (Print Voucher، Assign Rooms، Deposits، Send SMS، Post History، Scanty Baggage، Card Use Amount، Additional tariffs، Room Count، Print in Voucher، Require Reminder...).
-- **INI Switches المتأثرة بوحدة FO الموثقة حتى الآن:** 64 (Clear Room# بعد التسوية)؛ Voucher# تلقائي/يدوي في Foreex. — `[PENDING]` جرد كامل من FOM-SET/SYS-SSP.
-- **FO Module Attribute 16:** "Posting to be stopped once the bill is printed" يفعّل Release Stop Posting. — `[PENDING]` جرد بقية الـ Attributes من FOM-SET.
+- **INI Switches المتأثرة بوحدة FO الموثقة:** 64 (Clear Room# بعد التسوية)؛ Voucher# تلقائي/يدوي في Foreex؛ **INI 58 = 0 لتفعيل Reservation Mode (FOM-SET ص1544)**. — جرد INI الكامل في SYS-SSP [مرحلة لاحقة].
+- **FO Module Attribute 16:** "Posting to be stopped once the bill is printed" يفعّل Release Stop Posting. — بقية الـ Attributes في SYS-SSP [مرحلة لاحقة].
+
+## BR-FO-11: قواعد هندسة التعرفة (Rate Architecture) — الجلسة 3
+
+| القاعدة | المصدر |
+|---|---|
+| **مجموع نسب Package Elements = 100% حصراً** عبر كل عناصر الحزمة | FOM-SET §3 ص13 |
+| **هياكل ضريبية منفصلة إلزامية** لكل من: Tariff، Extra Bed، Plan | FOM-SET §6 ص21 Note |
+| ضريبة On Tax تتطلب رقم الضريبة المرجعية (تسلسل ضمن الهيكل) | FOM-SET §6 ص21 |
+| ضريبة Pax مع Consolidate تتطلب Revenue Code + Rate Selection (Rack/Charged/High/Low) | FOM-SET §6 ص21 |
+| **نسخية تعرفة زمنية:** زيادة To date فقط إذا > تاريخ المحاسبة؛ التخفيض حتى تاريخ المحاسبة ثم إغلاق وإعادة إنشاء من الغد | FOM-SET §7 ص29-30 Note |
+| Rate grid: أسعار مختلفة **لكل يوم من أيام الأسبوع** × نوع الغرفة × الإشغال (S/D/T/Q) + Extra Adult/Child + هيكل ضريبة لكل خلية | FOM-SET §7 ص28 |
+| Package Amount يُفكّك إلزامياً عبر أعمدة Tariff/Plan/Services | FOM-SET §7 ص24-26 |
+
+## BR-FO-12: قواعد تسوية المنافذ والفوترة
+
+| القاعدة | المصدر |
+|---|---|
+| **النقد إلزامي لكل منفذ:** "bill settlement by cash is a mandatory mode of settlement and not optional for any of the outlets" | FOM-SET §26 ص70 |
+| الكاشير لا يقبل إلا أنماط التسوية المعرفة للمنفذ المحدد | FOM-SET §26 ص70 |
+| Billing Instruction Type: Direct أو Company فقط — وبدون Revenue Codes يفترض فاتورة واحدة | FOM-SET §25 ص68 |
+
+## BR-FO-13: قواعد التغيير الهيكلي والتنقية
+
+| القاعدة | المصدر |
+|---|---|
+| تغيير نوع غرفة: **Vacant فقط** (لا Occupied/Blocked/Dirty) + خروج مستخدمي FO + Create Hotel Chart بعده | FOM-SET §8 ص33 Note |
+| **Group code آلي إذا عدد حجوزات الغرفة ≥ Group Count** (Room Type) | FOM-SET §1 ص8 |
+| Purge Reservations: 60-365 يوماً | FOM-SET §64 ص140-141 |
+| Purge FO Transactions: ≥60 (Audit Tariff أو FO Transactions) | FOM-SET §65 |
+| Purge Guest Ledger: ≥120 **وبعد معالجة كل تقارير GL/Room History** | FOM-SET §66 ص142 |
+| **مصفوفة التعديل:** لكل Master حقول تعديل محددة نصاً (48 قاعدة Note) — ما عداها نسخة جديدة بتاريخ مستقبلي | FOM-SET Notes (§1-§67) |
+
+## BR-FO-14: قواعد خدمات الكونسيرج والغسيل والمفقودات
+
+| القاعدة | المصدر |
+|---|---|
+| سجلات الكونسيرج (أمتعة/طرود/تذاكر/سيارات): التسليم/الاستلام = إبراز **peach** | FOM-CRG ص2-15 |
+| طبع قسيمة الكونسيرج يتطلب قالباً معرفاً في **User Defined Reports (SYS)** — وإلا خطأ "Category does not exist" | FOM-CRG ص6/ص19 |
+| Ticket Request: بدون رسوم (No) → حقل Amount **معطّل** | FOM-CRG ص9-10 |
+| Baggage: F5 حذف، F2 تفعيل passive (الاسم السلبي لا يظهر) | FOM-CRG ص16-18 |
+| Laundry: **الطباعة تستدعي التسوية آلياً**؛ إعادة تسوية فاتورة مسواة تتطلب تأكيداً (Ok/Cancel) | FOM-HSK §11-12 ص30-37 |
+| Split Bill للغسيل **للإشغالات المتعددة**؛ Discount بالنسبة أو المبلغ + سبب؛ Tax Exemption بقيمة وسبب | FOM-HSK §11 ص33-35 |
+| Settle Laundry بأنماط: Guest/Cash/Company/CC/Staff/**Complimentary**/**Void-BOH** (بملاحظة "void the bill or nullify the bill") | FOM-HSK §12 ص36-41 |
+| Hold Laundry: نطاق التاريخ **داخل الشهر نفسه** + وضع tagged يتطلب **مصرّحاً** وملاحظات | FOM-HSK §13 ص42-43 |
+| Lost & Found: تسجيل القيمة والموقع + من وجدها + من استلمها **+ المصرّح** بالعودة | FOM-HSK §14 ص43-48 |
+
+## BR-FO-15: قواعد سجل الضيوف والولاء
+
+| القاعدة | المصدر |
+|---|---|
+| Guest Code **تلقائي** لكل ضيف؛ تحديث السجل **في كل زيارة** | FOM-GST §1 ص3 |
+| Guest Master: تبويبات (Contact/Passport/Personal/Privilege Card/Visit Details/Likes&Dislikes/Comments/Complaints/Photo/Preferences) + **Black Listed Yes/No** | FOM-GST §1 ص3-17 |
+| Merge History: ضيف رئيس **واحد حصراً** (M) — البقية تدمج فيه؛ البحث يلزم ≥ 3 أحرف | FOM-GST §12 ص48-50 |
+| Purge Guest History: **نهائي غير قابل للاسترجاع** عبر Guest Query Engine | FOM-GST §13 ص50 |
+| Loyalty Master: Card# (15 حرفاً)، Join Date ≤ تاريخ الخادم، Expiry، خصومات **لكل منفذ** (بنسبة/قيمة، وبحسب covers) | FOM-GST §15 ص51-55 |
+| Redemption Entry: نقاط مكتسبة/مستبدلة + **سبب + مصرّح** | FOM-GST §17 ص57 |
+| Revenue Forecast: نطاق **15 يوماً** يبدأ من تاريخ ≥ المحاسبة + خيار تضمين Complimentary/House Guest في ARR | FOM-LUK §21 ص48 |
+
+## BR-FO-16: قواعد إدارة الغرف والجدولة المنزلية
+
+| القاعدة | المصدر |
+|---|---|
+| OOO يتطلب **سبباً من قائمة + قسماً يُبلَّغ**؛ OOS وصفاً فقط؛ From يتعبأ آلياً باليوم؛ التحرير عبر نافذة الإفراج (uncheck + Confirm) | FOM-HSK §1 ص2-10 |
+| **Click&Drag = تمديد الحالة أياماً إضافية؛ Drag&Drop = نقلها لتواريخ أخرى** | FOM-HSK §1 ص3 |
+| عرض الحجز بحالة الغرفة يتطلب تاريخاً ≥ اليوم | FOM-HSK §1 ص5 |
+| HK Room Status: تفاصيل pax (بالغ/طفل/رضيع) **متاحة فقط عند Occupied** + تعليمات خاصة لكل غرفة | FOM-HSK §3 ص13-14 |
+| HK Credits: نقاط (Stayover/Checkout/Vacant) **محددة لكل نوع غرفة** | FOM-HSK §4 ص15-16 |
+| Employee Schedule: نوبات **بحد أقصى 7 أيام** من تاريخ الجدولة (≥ تاريخ المحاسبة) | FOM-HSK §5 ص17-22 |
+| Room Cleaning Assignments: فرز بحالة (Vacant/Occupied Dirty/Clean + Include OOO) + Summary بالطابق/الموظف + تعيين الموظفين (أزرق) | FOM-HSK §6 ص23-24 |

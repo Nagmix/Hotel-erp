@@ -23,4 +23,13 @@
 | I15 | Tag Agent Commission | AR | FO ↔ AR | وسم الفواتير المسددة (تختفي من قائمة الدفع) | FOM-CAS §19 |
 | I16 | Hurdle Rate / Daywise Over Booking | Revenue Management (داخلي) | FO | تعرفة يومية + سقف overbooking | FOM-REG §14/§22 |
 
-> `[PENDING]` تكاملات FOM-SET (بنية التكوين) وFOM-REP (تقارير للوحدات) تُوثق بعد القراءة العميقة. راجع `docs/analysis/00-discovery/document-map.md` §1-6 للروابط المحاسبية الست.
+> تكاملات بنية التكوين من القراءة العميقة (الجلسة 3): راجع `docs/analysis/00-discovery/document-map.md` §1-6 للروابط المحاسبية الست.
+
+| ID | التكامل | الطرف الآخر | الاتجاه | الدلالة | المصدر |
+|---|---|---|---|---|---|
+| I17 | **Outlet Settlements بمنافذ POS** | POS | SET → POS | أنماط التسوية المسموحة لكل منفذ تُعرّف في FO Setup وتقيد كاشير المنفذ — والنقد إلزامي للجميع | FOM-SET §26 |
+| I18 | **Guest Exemptions عبر FOM/POS** | POS | SET → FO+POS | إعفاءات الضيف (تصنيف/إيراد/نسبة) مشتركة بين الوحدتين | FOM-SET §28 |
+| I19 | **Loyalty عبر FO/POS** | POS | SET → FO+POS | Loyalty Eligible Revenue: منافذ محددة أو إجمالي فاتورة FO | FOM-SET §45 |
+| I20 | **قوالب القسائم (Concierge/Baggage)** | SYS (User Defined Reports) | SYS → FO | قوالب الطباعة تُعرّف مسبقاً — وإلا خطأ "Category does not exist" | FOM-CRG ص6/19 |
+| I21 | **Voucher Printing للـ Revenue Codes** | طباعة/Prgm IDs | SET → Output | Prgm. ID + Port لكل Debit/Credit | FOM-SET §24 |
+| I22 | **Laundry/بند الغسيل ضمن دورة التسوية الفندقية** | (داخلي) | HSK → CAS | طباعة فاتورة الغسيل تستدعي التسوية آلياً بمنافذ FO | FOM-HSK §11-12 |

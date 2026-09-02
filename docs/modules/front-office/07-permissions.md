@@ -24,4 +24,18 @@
 2. **Audit Trail للحجز:** تغييرات Amend تُسجل بالمستخدم والوقت عبر 5 أبعاد (RES §Audit).
 3. **التنبيه دون منع:** بعض الحالات تنبه فقط (Alert للغرفة المعلمة صيانة).
 
-`[PENDING]` مصفوفة الصلاحيات الرسمية (من SYS-SSP: أدوار × وظائف) تُبنى في Phase 8 — `docs/security/`.
+## مصفوفة FO User Authorization الموثقة (الجلسة 3)
+
+> من FOM-SET §35 (ص84-85): نافذة تربط **عمليات مميزة × مستخدمين** — "الوصول يُمنح أساساً للمشرفين أو الضباط ذوي السلطة الأعلى":
+
+| العملية المميزة | السلوك | المصدر |
+|---|---|---|
+| **Over Booking — Accept** | قبول الحجز الزائد (فوق Over Booking % في Room Type) | FOM-SET §35 |
+| **Hurdle Rate — fix** | تحديد الحد الأدنى للتعرفة (Revenue Management) | FOM-SET §35 |
+| **Hotel Chart — update** | تحديث مخطط الفندق | FOM-SET §35 |
+| **Folio Re-Open** | إعادة فتح فوليو الضيف | FOM-SET §35 |
+| **Market Segment — edit** | تعديل قطاع السوق (لحجز قائم) | FOM-SET §35 |
+
+المنح/السحب: Select العملية (أعلى الشاشة) → تحديد المستخدمين → أزرار منح/سحب جماعي → Save. — تُبنى عليها مصفوفة الأدوار في Phase 8 (`docs/security/`).
+
+`[PENDING]` مصفوفة الصلاحيات الرسمية الشاملة (من SYS-SSP: أدوار × وظائف) + Transaction Type Rights (FAS) + AR User Access — Phase 8 — `docs/security/`.

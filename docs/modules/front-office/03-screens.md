@@ -92,6 +92,18 @@
 | SC-FO-063 | Tag Agent Commission | FOM-CAS | §19 | P2 | ⬜ pending |
 | SC-FO-064 | Pax Transfer | FOM-CAS | §20 | P2 | ⬜ pending |
 
-**إجمالي:** 64 شاشة مسجلة من الوثائق المقروءة. (+ شاشات DEP الموثقة في الجلسة 1 تُدمج عند بناء المواصفات — راجع `00-overview.md` §2.4.)
+**إجمالي:** 64 شاشة مسجلة من وثائق RES/REG/CAS.
 
-> شاشات FOM-SET / FOM-LUK / FOM-REP / FOM-GST / FOM-HSK / FOM-CRG / FOM-SMS: `[PENDING DEEP READ]` — تُضاف عند القراءة.
+## ملحق الجلسة 3 — Quality Gate: شاشات الوثائق المقروءة حديثاً (129 شاشة إضافية)
+
+| النطاق | الشاشات | العدد | المصدر |
+|---|---|---|---|
+| **FOM-SET (67)** | كل أقسام الإعداد §1-§67 (بما فيها شاشات التقسيم الفرعية: Rate Grid، Service Rate، Package Breakup، Connecting/Opposite/Change Room Type، Purge، MIS Occupancy Entry) | 67 | FOM-SET فهرس + متن |
+| **FOM-LUK (22)** | Rev. Management Tool (+Criteria/Summary/GroupBy) · Guest Search (+Room History/Agent Record) · InHouse Statistics · Expected Arrivals (+Guest History Link/Message/Reg Card/Summary) · Waitlist · Provisional No Show · Hotel Position (+Detailed/Yearly) · Room Status (+Room Browser) · Vacant Rooms · Room Blocks · Inhouse Rates · Quick Balances · Rate Query · Exchange Rates · Todays Check Outs · Check Out Status · View Billing Broadcast · Agent Chart · Delivery Pending · Browse Lost Articles (+Return) · Revenue Forecast · Room History | 22 | FOM-LUK ص2-51 |
+| **FOM-CRG (5)** | Left Luggage (+Picked up +Voucher) · Parcels & Deliveries (+Delivered) · Ticket Request (+Confirmed) · Valet Parking (+Picked Up) · Guest Baggage Tickets | 5 | FOM-CRG ص2-19 |
+| **FOM-HSK (18)** | Room Block (+OOS/OOO windows +Release) · Clear Rooms · HK Room Status (+Details/Instruction) · HK Credits (+Define by Room Type) · Employee Schedule (+Occupancy Forecast) · Room Cleaning Assignments (+Summary) · Laundry Item/Rate Master · Laundry Holiday Table · Laundry Entry · Laundry Bill Printing (+Split/Split Qty/Discount/Tax/View) · Settle Laundry (7 أنماط) · Hold Laundry · Lost and Found (+View/Return) · HK Inventory Master · HK Issue Entry · HK Issue Return · UDP-LAU | 18 | FOM-HSK فهرس |
+| **FOM-GST (17)** | Guest Master (+10 تبويبات فرعية + Feed Back + Revenue breakup + Children Info + Privilege Card) · Guest Comments Entry · Repeat Guest List · Guest History List · Birthday List · Anniversary List · Guest Revenue List · Guest Visit Report · Guest Comment Report · Mailing Letters · Mailing Labels · Merge History · Purge Guest History · Setup Loyalty Cards · Setup Loyalty Master (+Discount Info) · Loyalty Ledger · Redemption Entry | 17 | FOM-GST فهرس |
+
+**الإجمالي المحدّث:** 64 + 129 = **193 شاشة/نافذة موثقة** لوحدة Front Office (دون FOM-REP وFOM-SMS وFOM-DEP).
+
+> FOM-REP (تقارير) وFOM-SMS وFOM-DEP: تُدمج في `docs/screens/specifications/` عند Phase 4.
