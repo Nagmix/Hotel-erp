@@ -27,8 +27,8 @@
 | text-extracted | **65 / 65 (100%)** ✅ |
 | toc-analyzed | **65 / 65 (100%)** ✅ |
 | field-extracted (جداول الحقول آلياً) | **13 ملف إعدادات — 2,099 حقلاً** ✅ |
-| read (قراءة عميقة) | **22/65** — FO 9 + FAS 4 + ACR 5 + POS 4 (SET/GST/LUK + TouchScreen) (نهاية الجلسة 4) |
-| analyzed | **22 ملفاً** (FO 19 + FAS 18 + ACR 19 + POS 19 ملف وثائق → 4 وحدات modules) |
+| read (قراءة عميقة) | **23/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + **SYS 1 (SSP كامل 110 ص)** (نهاية الجلسة 5) |
+| analyzed | **23 ملفاً** (FO 19 + FAS 18 + ACR 19 + POS 19 + **SYS 19 ملف وثائق → 5 وحدات modules**) |
 | cross-referenced | 0 / 65 |
 | verified | 0 / 65 |
 
@@ -83,7 +83,7 @@
 | 39 | Membership | FN6i-NT-MEM-MTR.pdf | 18 | ✓ | ✓ | ✓ | – | – | – | – |
 | 40 | Membership | FN6i-NT-MEM-SET.pdf | 16 | ✓ | ✓ | ✓ | – | – | – | – |
 | 41 | Membership | FN6i-NT-MEM-MMN.pdf | 13 | ✓ | ✓ | ✓ | – | – | – | – |
-| 42 | System Setup | FN6i-NT-SYS-SSP.pdf | 110 | ✓ | ✓ | ✓ | – | – | – | – |
+| 42 | System Setup | FN6i-NT-SYS-SSP.pdf | 110 | ✓ | ✓ | ✓ | **✓ كامل (3 فصول + 19 قسماً + §19 Group Nationality غير المفهرسة)** | **✓ → modules/system-setup/** | – | – |
 | 43 | Sales & Marketing | FN6i-NT-SLM-PRF.pdf | 42 | ✓ | ✓ | ✓ | – | – | – | – |
 | 44 | Sales & Marketing | FN6i-NT-SLM-SLT.pdf | 29 | ✓ | ✓ | ✓ | – | – | – | – |
 | 45 | Sales & Marketing | FN6i-NT-SLM-REP.pdf | 22 | ✓ | ✓ | ✓ | – | – | – | – |

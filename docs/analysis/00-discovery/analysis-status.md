@@ -24,8 +24,8 @@
 |---|---|---|---|
 | **Phase 0** | Discovery — فهرسة وجرد وخريطة | ✅ **مكتملة** | الوثائق الخمس في `docs/analysis/00-discovery/` + `extracted-text/` + `inventory.json` |
 | **Phase 1** | Domain Model | ✅ **الإصدار التأسيسي مكتمل** (يُوسَّع في كل مرحلة) | `docs/domain/` (8 وثائق) — انظر أدناه |
-| Phase 2 | Module Inventory التفصيلي | ◐ **بدأت — FO محللة + FAS محللة** | `docs/modules/front-office/` + `docs/modules/financial-accounting/` |
-| Phase 3 | Detailed Module Analysis | ◐ **الوحدتان 2/17: FO (19 ملفاً) + Financial Management (18 ملفاً)** | نفس المسارات |
+| Phase 2 | Module Inventory التفصيلي | ◐ **بدأت — FO + FAS + ACR + POS + SYS محللة** | `docs/modules/{front-office, financial-accounting, accounts-receivable, point-of-sale, system-setup}` |
+| Phase 3 | Detailed Module Analysis | ◐ **5/17: FO (19) + FAS (18) + ACR (19) + POS (19) + SYS (19) = 94 ملف وثائق** | نفس المسارات |
 | Phase 4 | Screens & UX | ⬜ لم تبدأ | `docs/screens/specifications/*` |
 | Phase 5 | Workflows | ⬜ لم تبدأ | `docs/workflows/*` |
 | Phase 6 | Accounting | ⬜ لم تبدأ | `docs/accounting/*` |
@@ -215,13 +215,47 @@
 
 ---
 
+### الجلسة 5 — 2026-09-02 (فجراً)
+
+**ما تم:**
+
+1. **الوحدة 5/17 — System Setup (SYS) كاملة (19 ملفاً):**
+   - قراءة عميقة كاملة: **SYS-SSP (110 ص — 3 فصول: User Setup + Supervisor + General Setup بـ 19 قسماً فعلياً)** — الأداة الآلية لجداول الحقول التقطت صفر جداول لهذا الملف (بنية مخالفة) فجرى توثيق الحقول يدوياً من المتن.
+   - إنشاء `docs/modules/system-setup/` (00-18): **66 شكل/شاشة** (42 تشغيلية) · WF-SYS-01..12 · BR-SYS-01..15 · V-SYS-01..22 · I-SYS-01..18 · E-SYS-01..24 · 32 كياناً · 12 قراراً معماريياً (F-SYS-1..12) · 8 مجموعات معايير قبول + Smoke Test.
+2. **حسم ثلاث مجهولات حرجة:**
+   - **UNK-004 (multi-property) Resolved:** النموذج الأصلي سجل متعدد الخصائص لكن تشغيلاً أحادياً بلا آلية تبديل موثقة → **القرار F-SYS-11: Property = Company في Frappe**.
+   - **UNK-013 (نموذج الصلاحيات) Resolved:** **النموذج الرباعي الطبقات** — Supervisor (تجاوز) + SYS المظلة (Group/User × Module/Sub/Item × Add/Modify/Delete) + قيود التقارير (Spool/Export/Format) + صلاحيات الوحدات الخاصة (AR/FAS/POS/FO) — راجع `modules/system-setup/07-permissions.md`.
+   - **UNK-022 (مرجعية المفاتيح) Resolved:** وثيقة «Module Attributes & INI Settings» **مؤكدة خارج الحزمة** (إحالتان ص33/ص37) → GAP-SYS-D01 + استراتيجية الجدول التراكمي للإحالات (15+ مفتاحاً مجمعاً حتى الآن).
+3. تسجيل مجهولات جديدة: **UNK-023** (سلوك انتهاء كلمة المرور) + **UNK-024** (Gift Shop في Reason Codes بلا أدلة مستقلة) + **UNK-025** (Group Nationality §19 الهامشية) + **UNK-026** (لا حذف موثق للمستخدمين).
+4. تحديث: source-coverage (23/65) + هذا الملف + فهرس docs/README.md (5/17).
+
+**اكتشافات جوهرية موثقة (SYS):**
+- **سلسلة التفويض الثلاثية:** مزود الخدمة → مسؤول النظام (Supervisor) → مستخدمون — "total access to all menu items" للمشرف بلا استثناء.
+- **كلمة المرور تولَّد آلياً بمجرد اختيار Designation** + عرضها **مكشوفة** في عمود User Management بعد Reset — فجوة أمنية أصلية تُصلح لا تُستنسخ (قرار F-SYS-6).
+- **محرك الضرائب الثلاثي:** Code (×4 وحدات) → Slab (تراكمي 26.25 مقابل غير تراكمي 18.75 — مثال الدليل الرقمي) → Structure (Percentage/Amount/Slab × On Value/Discounted/**On Tax متسلسلة**) — لا نظير قياسي في ERPNext → محرك مخصص (F-SYS-7).
+- **العملة أغنى من ERPNext:** Travellers Cheque كنوع + Standard Rate + **Division/Multiplication** + Million/Lakh + نص قبل/بعد الكسر + Decimal 0-3.
+- **Round-off بأمثلة رقمية كاملة** (tie-break للأعلى عند التساوي في Nearer: 1000.50/0.50→1001.00).
+- **قاعدة Modify-Locked:** 12+ كياناً بلا تعديل جوهري بعد الإنشاء (الحالة فقط غالباً) + استثناءات ثلاثة موثقة.
+- **Applicable From > اليوم** في كل المرجعيات — إصدارية مستقبلية عامة.
+- **§19 Group Nationality غير مدرجة في TOC** — اكتشاف توثيقي.
+- **Extract DB Tables:** نسخ .INS إلى C:\PMSDATA + History بلاحقة MMYY + GUI<customer code>.dat.
+- **تخصيص الداشبورد الأصلي:** ≤3 برامج قوائم + 3-5 رسوم + Guest Info + Statistics لكل مستخدم — يسري بعد إعادة الدخول.
+- **Change Caption = آلية توطين أصلية** (عرض الاسموين معاً + تطبيق على التقارير) — تُستبدل بـ i18n كامل (F-SYS-3).
+
+**نقطة الاستئناف القادمة (الجلسة 6):**
+1. **الوحدة التالية: Materials Management (MGT)** — MGT-SET (68 ص) + MGT-LUK (38 ص) ثم MGT-OPR — يحسم جزءاً من UNK-011 (Auto Indent) ويكمل حلقة التوريد (المشتريات→المخزون→الاستهلاك→FAS).
+2. بعده **BNQ (الولائم)** ثم **HRP (الرواتب)** بترتيب module-inventory §5.
+3. التقارير (REP) للوحدات الخمس المؤجلة للمرحلة 7.
+
+---
+
 ## مؤشرات الجودة الحالية
 
 | المؤشر | القيمة | الهدف |
 |---|---|---|
 | ملفات مفهرسة | 65/65 | 65/65 ✅ |
 | نصوص مستخرجة | 65/65 | 65/65 ✅ |
-| ملفات قرأت قراءة عميقة | **22/65** (FOM عدا REP/SMS + FAS عدا REP + ACR كامل + POS 4 ملفات) | 65/65 |
-| وحدات محللة وظيفياً | **4/17** (FO 19 + FAS 18 + ACR 19 + POS 19 = 75 ملف وثائق) | 17 |
+| ملفات قرأت قراءة عميقة | **23/65** (FOM عدا REP/SMS + FAS عدا REP + ACR كامل + POS 4 + **SYS-SSP كامل**) | 65/65 |
+| وحدات محللة وظيفياً | **5/17** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 = 94 ملف وثائق) | 17 |
 | Knowledge Graph (علاقات موثقة) | 6 روابط ترحيل + 16 تكامل FO (I1-I16) | يوسَّع في Phase 3/6 |
 | Unknowns مسجلة | انظر `docs/analysis/unknowns.md` | صفر حرج قبل التنفيذ |

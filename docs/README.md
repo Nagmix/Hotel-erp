@@ -27,7 +27,7 @@
 - [أدوار المستخدمين الفندقيين](domain/hotel-roles.md)
 - **[القاموس الموحد للمصطلحات (عربي/EN)](domain/terminology.md)** ⭐
 
-### الوحدات (Modules) — Phase 2/3 (4/17 محللة)
+### الوحدات (Modules) — Phase 2/3 (5/17 محللة)
 
 **1. Front Office (مكتملة — 19 ملفاً):** [`modules/front-office/`](modules/front-office/) — ابدأ بـ [`00-overview.md`](modules/front-office/00-overview.md) · ⭐ النواة المحاسبية: [`11-accounting-impact.md`](modules/front-office/11-accounting-impact.md) · الجرد: [`03-screens.md`](modules/front-office/03-screens.md) (193 شاشة) · القواعد: [`05-business-rules.md`](modules/front-office/05-business-rules.md) (BR-FO-01..16)
 
@@ -37,7 +37,9 @@
 
 **4. Point of Sale (مكتملة — 19 ملفاً):** [`modules/point-of-sale/`](modules/point-of-sale/) — ابدأ بـ [`00-overview.md`](modules/point-of-sale/00-overview.md) · ⭐ **العمليات اليومية:** [`04-workflows.md`](modules/point-of-sale/04-workflows.md) (WF-POS-01..16: Shift/KOT/Check/Split/Settlement/Close) + [`11-accounting-impact.md`](modules/point-of-sale/11-accounting-impact.md) (التسويات الست + Guest→AR/FO) · الحالات: [`13-exceptions.md`](modules/point-of-sale/13-exceptions.md) (E-POS-01..30) · UX: [`15-ux-analysis.md`](modules/point-of-sale/15-ux-analysis.md) (دليل Touch Screen — أساس الواجهة الجديدة)
 
-**التالي بالترتيب:** `system-setup` (SYS-SSP — يحسم UNK-004/013/022) ← `materials-management/` ← `banquets/` ← ... (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
+**5. System Setup (مكتملة — 19 ملفاً):** [`modules/system-setup/`](modules/system-setup/) — ابدأ بـ [`00-overview.md`](modules/system-setup/00-overview.md) · ⭐ **نموذج الصلاحيات الرباعي (يحسم UNK-013):** [`07-permissions.md`](modules/system-setup/07-permissions.md) · ⭐ **المرجعيات المشتركة + محرك الضرائب الثلاثي:** [`01-master-data.md`](modules/system-setup/01-master-data.md) (Code→Slab→Structure بأمثلة رقمية) · القرارات: [`16-erpnext-mapping.md`](modules/system-setup/16-erpnext-mapping.md) (F-SYS-1..12 — **Property=Company يحسم UNK-004**) · الفجوات: [`17-gap-analysis.md`](modules/system-setup/17-gap-analysis.md) (GAP-SYS-D01: وثيقة INI خارج الحزمة — يحسم UNK-022)
+
+**التالي بالترتيب:** `materials-management/` (MGT — يحسم جزء UNK-011 Auto Indent) ← `banquets/` ← `hr-payroll/` ← ... (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
 
 ### العمليات (Workflows) — Phase 5
 `workflows/module-workflows/` + `workflows/end-to-end/`
