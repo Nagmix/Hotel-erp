@@ -27,7 +27,7 @@
 - [أدوار المستخدمين الفندقيين](domain/hotel-roles.md)
 - **[القاموس الموحد للمصطلحات (عربي/EN)](domain/terminology.md)** ⭐
 
-### الوحدات (Modules) — Phase 2/3 (6/17 محللة)
+### الوحدات (Modules) — Phase 2/3 (7/17 محللة)
 
 **1. Front Office (مكتملة — 19 ملفاً):** [`modules/front-office/`](modules/front-office/) — ابدأ بـ [`00-overview.md`](modules/front-office/00-overview.md) · ⭐ النواة المحاسبية: [`11-accounting-impact.md`](modules/front-office/11-accounting-impact.md) · الجرد: [`03-screens.md`](modules/front-office/03-screens.md) (193 شاشة) · القواعد: [`05-business-rules.md`](modules/front-office/05-business-rules.md) (BR-FO-01..16)
 
@@ -41,7 +41,9 @@
 
 **6. Materials Management (مكتملة — 19 ملفاً):** [`modules/materials-management/`](modules/materials-management/) — ابدأ بـ [`00-overview.md`](modules/materials-management/00-overview.md) · ⭐ **دورة التوريد الكاملة + الإقفال الشهري:** [`04-workflows.md`](modules/materials-management/04-workflows.md) (WF-MG-01..19: PR→PO→GR→Issue→Physical→Variance→Ledger) · ⭐ **القواعد الدستورية:** [`05-business-rules.md`](modules/materials-management/05-business-rules.md) (BR-MG-01..18: هرمية المخازن + WA/FIFO لكل مخزن + قواعد التواريخ العشر) · التقييم المحاسبي: [`11-accounting-impact.md`](modules/materials-management/11-accounting-impact.md) (MM→FAS + Bill#→Payment Match) · القرارات: [`16-erpnext-mapping.md`](modules/materials-management/16-erpnext-mapping.md) (F-MG-1..12 — ⭐ **محرك التقييم لكل مخزن F-MG-1 + FEFO F-MG-2** — أعلى قابلية إسقاط قياسي: Material Request/Purchase Receipt/Stock Reconciliation/Repack)
 
-**التالي بالترتيب:** `banquets/` (BNQ — يحسم UNK-011 كاملاً + UNK-025) ← `hr-payroll/` (HRP) ← ... (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
+**7. Banquets (مكتملة — 19 ملفاً):** [`modules/banquets/`](modules/banquets/) — ابدأ بـ [`00-overview.md`](modules/banquets/00-overview.md) · ⭐ **حسم UNK-011 كاملاً — سلسلة Auto Indent:** [`12-integrations.md`](modules/banquets/12-integrations.md) §2.2 (Requirement→Pre Costing→Auto Indent→MGT) + [`04-workflows.md`](modules/banquets/04-workflows.md) (WF-BQ-08..10) · ⭐ **الوحدة الهجينة FO×POS (قرار F-BQ-1):** [`16-erpnext-mapping.md`](modules/banquets/16-erpnext-mapping.md) (BNQ فوق محرك POS) · دورة الحجز والودائع: [`05-business-rules.md`](modules/banquets/05-business-rules.md) (BR-BQ-01..16 — Across-Dates + قفل الودائع + ليست مبيعات) · لوحة العمليات: [`09-lookups.md`](modules/banquets/09-lookups.md) (Availability Chart — أعلى مكون ترجمة Frontend)
+
+**التالي بالترتيب:** `hr-payroll/` (HRP — يحسم UNK-010 + يوثق رابط Payroll→Finance) ← `care/` ← `membership/` ← ... (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
 
 ### العمليات (Workflows) — Phase 5
 `workflows/module-workflows/` + `workflows/end-to-end/`

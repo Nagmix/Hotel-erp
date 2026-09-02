@@ -24,8 +24,8 @@
 |---|---|---|---|
 | **Phase 0** | Discovery — فهرسة وجرد وخريطة | ✅ **مكتملة** | الوثائق الخمس في `docs/analysis/00-discovery/` + `extracted-text/` + `inventory.json` |
 | **Phase 1** | Domain Model | ✅ **الإصدار التأسيسي مكتمل** (يُوسَّع في كل مرحلة) | `docs/domain/` (8 وثائق) — انظر أدناه |
-| Phase 2 | Module Inventory التفصيلي | ◐ **بدأت — FO + FAS + ACR + POS + SYS + MGT محللة** | `docs/modules/{front-office, financial-accounting, accounts-receivable, point-of-sale, system-setup, materials-management}` |
-| Phase 3 | Detailed Module Analysis | ◐ **6/17: FO (19) + FAS (18) + ACR (19) + POS (19) + SYS (19) + MGT (19) = 113 ملف وثائق** | نفس المسارات |
+| Phase 2 | Module Inventory التفصيلي | ◐ **بدأت — FO + FAS + ACR + POS + SYS + MGT + BNQ محللة** | `docs/modules/{front-office, financial-accounting, accounts-receivable, point-of-sale, system-setup, materials-management, banquets}` |
+| Phase 3 | Detailed Module Analysis | ◐ **7/17: FO (19) + FAS (18) + ACR (19) + POS (19) + SYS (19) + MGT (19) + BNQ (19) = 132 ملف وثائق** | نفس المسارات |
 | Phase 4 | Screens & UX | ⬜ لم تبدأ | `docs/screens/specifications/*` |
 | Phase 5 | Workflows | ⬜ لم تبدأ | `docs/workflows/*` |
 | Phase 6 | Accounting | ⬜ لم تبدأ | `docs/accounting/*` |
@@ -277,13 +277,41 @@
 
 ---
 
+### الجلسة 7 — 2026-09-02 — وحدة Banquets (BNQ) كاملة
+
+**ما تم:**
+
+1. **الوحدة 7/17 — Banquets كاملة (19 ملفاً):**
+   - قراءة عميقة كاملة للملفات الخمسة: **BNQ-SET (98 ص/20 قسماً) + BNQ-BOK (41 ص/Bookings) + BNQ-CFG (38 ص/12 قسماً) + BNQ-BIL (66 ص/13 قسماً) + BNQ-LUK (12 ص/استعلامان) = 255 ص كاملة**.
+   - إنشاء `docs/modules/banquets/` (00-18): **88 شاشة** · WF-BQ-01..16 · BR-BQ-01..16 · V-BQ-01..30 · I-BQ-01..14 · E-BQ-01..14 · 46 كياناً · 18 حدثاً آلياً (A-BQ) · 33 حالة حدية · Seed Mapping (قرارات F-BQ-1..8) · 11 فجوة مصدر + 12 ERPNext · 10 مجموعات معايير قبول (42 معياراً) + Smoke Test 26 خطوة.
+2. تحديث: unknowns (**UNK-011 RESOLVED كاملاً** + UNK-025 بالسلب + جديد UNK-032..034) + source-coverage (31/65) + هذا الملف + فهرس docs/README.md (7/17).
+
+**اكتشافات جوهرية موثقة (BNQ):**
+- **UNK-011 RESOLVED كاملاً — سلسلة Auto Indent بالنص:** Requirement Entry → **Pre Costing Chef Eng** ("ingredient details... from the recipe... or inventory items linked manually") → **Auto Indent** (Work Sheet# → Res/Party تلقائي + Department/CC + "recipe details populate based on the department selected") → MGT indent — قرار F-BQ-6 (WS→Material Request hook).
+- **BNQ = FO×POS هجينة (قرار F-BQ-1):** تحجز بعقل FO (Market/Source/PayMode من FO defaults + Guest من الغرفة) وتفوتر بمحرك POS (Shift/Outlet/Session + 11 نمط تسوية + POS MA 3/8/16/21/26/29 + POS User Access حرفياً) — **بناء فوق محرك POS الموحد لا وحدة مستقلة**.
+- **Function Room بـ 6 تبويبات** (Details بمقاسات وMinimum Revenue وSecurity + Seating بسعة لكل نمط مع صور + Pictures/Layout/Location) + **Sub Venues حصرية**.
+- **نمطا الحجز:** **Across-Dates** (احتكار مستمر — "no other bookings can be taken until the function date is over") أو فترة زمنية؛ **Inquiry بلا قاعة**؛ نسخ Inquiry ممنوع.
+- **قفل الودائع:** إلغاء ذي وديعة ممنوع ("make the paid outs first") + Refund/Retention مجمّد بعد Save + Running Balance.
+- **Void ممنوع في BNQ** + **Complimentary/NC = ليست مبيعات** (قاعدة إيراد صريحة) + CC/Company/Staff → AR + Company → outstanding + **Blacklist message بالاسم والسبب**.
+- **Availability Chart = أغنى لوحة عمليات موثقة** (قسمان + ألوان حالات مخصصة + دمج 4 حالات افتراضي (INI 408=1 يفصّل) + FP أزرق/بنفسجي + Management أحمر/Maintenance أخضر + تخصيص أعمدة (بإعادة تحميل — عيب يُصلح)).
+- **F11/F12 في Requirement Entry** (إعادة تسمية صنف/جعله مجانياً) + Finalize ناعم + 9 معايير نسخ.
+- مفاتيح جديدة: INI 346/408/409 — التراكمي **28+**.
+- **فجوة REP الكلية:** لا ملف تقارير للولائم في الحزمة (GAP-BQ-D01) — Program IDs فقط (FP-NBIDSFP + BEO/Confirmation/Cancellation كأنواع).
+
+**نقطة الاستئناف القادمة (الجلسة 8):**
+1. **الوحدة التالية: HRP (الرواتب — 4 ملفات/253 ص: REP 133 + PNT 47 + SET 42 + RQP 31)** — يحسم UNK-010 (Care↔HRP Personnel Master) ويوثق ترحيل Payroll→Finance (الرابط السادس من الستة!).
+2. بعده **Care** (3 ملفات/187 ص — تكمل UNK-010) أو **MEM** حسب الطاقة.
+3. التقارير (REP) للوحدات محللة مؤجلة للمرحلة 7 (HRP-REP استثناء محتمل لأنه 133 ص من أصل 253).
+
+---
+
 ## مؤشرات الجودة الحالية
 
 | المؤشر | القيمة | الهدف |
 |---|---|---|
 | ملفات مفهرسة | 65/65 | 65/65 ✅ |
 | نصوص مستخرجة | 65/65 | 65/65 ✅ |
-| ملفات قرأت قراءة عميقة | **26/65** (FOM عدا REP/SMS + FAS عدا REP + ACR كامل + POS 4 + SYS-SSP + **MGT 3 عدا REP**) | 65/65 |
-| وحدات محللة وظيفياً | **6/17** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 = 113 ملف وثائق) | 17 |
+| ملفات قرأت قراءة عميقة | **31/65** (FO 9 + FAS 4 + ACR 5 + POS 4 + SYS-SSP + MGT 3 + **BNQ 5 كاملة**) | 65/65 |
+| وحدات محللة وظيفياً | **7/17** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 = 132 ملف وثائق) | 17 |
 | Knowledge Graph (علاقات موثقة) | 6 روابط ترحيل + 16 تكامل FO (I1-I16) | يوسَّع في Phase 3/6 |
 | Unknowns مسجلة | انظر `docs/analysis/unknowns.md` | صفر حرج قبل التنفيذ |

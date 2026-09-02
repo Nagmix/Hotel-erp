@@ -5,6 +5,13 @@
 
 ---
 
+## تحديثات الجلسة 7 — Banquets (BNQ كاملة — الملفات الخمسة)
+
+- **UNK-011 RESOLVED كاملاً** (Auto-Indent: **BNQ-BIL §13 يوثّق Auto Indent بالنص**: "raise an indent in Banquet Outlet and the Recipe" — Work Sheet# + Department/Cost Center → "recipe details will populate based on the department selected" → MGT indent؛ والقناتان المGT (DPR + Re-Order) كانتا موثقتين بالجلسة 6 — **السلسلة مكتملة الطرفين**).
+- **UNK-025 Partially Resolved بالسلب:** BNQ كاملة قُرئت ولم تُذكر Group Nationality — احتمال ارتباطها بالولائم يضعف؛ يبقى فحص FOM-GST/SLM.
+- جديد من قراءة BNQ: **UNK-032** (توقيت BNQ→FAS — مدمج عملياً مع UNK-027) + **UNK-033** (صياغة Resettlement الملتبسة) + **UNK-034** (قائمة عمليات KOT-28/Settlement-15 غير المعددة).
+- مفاتيح جديدة: **INI 346/408/409** + تشارك POS MA 3/8/16/21/26/29 — الجدول التراكمي **28+ مفتاحاً**.
+
 ## تحديثات الجلسة 6 — Materials Management (MGT-SET/DNT/LUK قُرئت كاملة)
 
 - **UNK-011 Partially Resolved** (Auto-Indent: قناة **DPR** موثقة داخل MGT — "If the item has 'Nil' balance... DPR Qty... will be reflected during the Receipt entry" + Re-Order Process الآلي؛ **يبقى اتجاه BNQ/FNB→MGT غير موثق** — يفحص عند قراءة BNQ/FNB).
@@ -50,7 +57,7 @@
 | UNK-008 | ما حدود الضرائب (Tax Structures) وأنواعها (VAT/Municipality/Service Charge)? | الفنادق في المنطقة عليها ضرائب متعددة مركبة | **FOM-SET §6 + FAS-SET §6 (نوع Taxes)** | **Partially Resolved** | — | البنية موثقة كاملة: Calculation (Percentage/Amount/Slab) + On Tax/Consolidate/Pax + Rate Selection (Rack/Charged/High/Low) + فصل إلزامي (Tariff/ExtraBed/Plan)؛ الأنواع المذكورة نصاً: Service Charges, Luxury Tax, Sales Tax (FAS-SET) — أسماء ضرائب المنطقة العربية `[NOT DOCUMENTED]` (تخصيص زبون) |
 | UNK-009 | هل الحجوزات تدعم Group Blocks/Allocation حقيقية (PMS allotments)؟ | يحسم تصميم Reservation model | فهرس FOM-SET (Group Business Sources) — غير حاسم | Unknown | عالٍ | قراءة FOM-RES |
 | UNK-010 | ما علاقة Care بـ HRP في بيانات الموظفين (Personnel Master واحد أم مستقل)؟ | يمنع ازدواجية Employee entity | فهارس Care-SET (Adding Employee) وHRP-SET | Unknown | متوسط | قراءة الاثنين |
-| UNK-011 | آلية "Auto Indent" من BNQ/FNB إلى MGT — هل تولد Purchase Requisition تلقائياً من متطلبات الوليمة؟ | تكامل تشغيلي جوهري | **MGT-DNT قُرئ كاملاً (§6 DPR + §8 Re-Order)** | **Partially Resolved** | عالٍ | **قناتان موثقتان داخل MGT:** (1) **DPR**: عند إصدار ضد Indent برصيد Nil → "enter the requisition in the DPR Qty field... will be reflected during the Receipt entry" (DNT ص40)؛ (2) **Re-Order Process** الآلي عند ≤ Reorder Level → PR للقسم. **يبقى اتجاه BNQ/FNB→MGT [NOT DOCUMENTED]** — يفحص عند قراءة BNQ-BIL/FNB-COP |
+| UNK-011 | آلية "Auto Indent" من BNQ/FNB إلى MGT — هل تولد Purchase Requisition تلقائياً من متطلبات الوليمة؟ | تكامل تشغيلي جوهري | **MGT-DNT كامل + BNQ-BIL كامل (§§12-13)** | **RESOLVED** ⭐ | عالٍ | **السلسلة الكاملة موثقة الطرفين:** (1) MGT-داخلية: DPR (Nil balance → DPR Qty → Receipt) + Re-Order (≤ Reorder Level → PR)؛ (2) **BNQ→MGT:** Requirement Entry → Pre Costing Chef Eng ("ingredient details... from the recipe... or inventory items linked manually"؛ Open Item → tagging) → **Auto Indent** (Work Sheet# → Res/Party تلقائي + Department/CC + "recipe details populate based on the department selected") → MGT indent — قرار F-BQ-6 (hook WS→Material Request) — راجع `banquets/12-integrations.md` §2.2 |
 | UNK-012 | هل يدعم POS الدفع المقسّم (split payments) وMixed payment على طاولة واحدة؟ | سلوك كاشير POS | **TS Manual ص28-36 (قرئ)** | **Resolved** | — | **نعم بوضوح:** Split Checks **3 طرق** (Equal/Covers · Item-wise · **Quantity-wise كسري 0.5**) + Link Tables (دمج طاولات بفاتورة واحدة) + Table Suffix؛ والتسويات 6 أنماط (Cash/CC/Cheque/Coupon/Guest/Void) **متسلسلة على الفاتورة** بقاعدة **Balance=0 إلزامية** قبل الحفظ (= mixed payments) + **Resettlement** بوضع آخر — راجع `point-of-sale/04-workflows.md` WF-POS-09/10 |
 | UNK-013 | أين تُخزَّن الصلاحيات: لكل شاشة؟ لكل عملية؟ لكل Transaction Type؟ | تصميم permission model | **SYS-SSP Ch1 قُرئ كاملاً + ACR-SET §4 + FAS-SET + POS-SET** | **Resolved** | — | **النموذج الرباعي الطبقات موثق:** (1) SYS المظلة: Supervisor=تجاوز كامل · Group/User × Main/Sub Module × بند قائمة × **Add/Modify/Delete** (لعناصر Settings/Transaction/Master المؤهلة فقط) · قيود التقارير Spool/Export/Format · تخصيص الداشبورد؛ (2) صلاحيات خاصة لكل وحدة: AR (أنواع قيود) · FAS (Transaction Types) · POS (3D كاشير×عمل×وضع + حجب منافذ) · FO (تفويض مزدوج). SYS يمنح الوصول للقائمة والوحدة تحكم بدقة العمليات داخلها — راجع `modules/system-setup/07-permissions.md` + قرارات F-SYS-8/9 |
 | UNK-014 | هل توجد عمليات نهاية الشهر/السنة (Month/Year End Closing) موثقة في FAS؟ | دورة مالية كاملة | **FAS-SET §18 + FAS-TRN §8** | **Resolved** | — | شهرياً: Audited (يقفل شهر القيد)؛ سنوياً: **Open Financial Year** (أرصدة إقفال→افتتاحية + صافي P&L→Retained Earnings بنسب) + **Rollback Fin. Year** للعكس |
@@ -92,3 +99,11 @@
 | UNK-029 | هل Gate Receipt/Gate Entry# في Receipt Other Details ترتبط بوحدة Gate Passes المستقلة في الحزمة؟ | تكامل استلام-بوابة | MGT-DNT §6 (الحقول) + فهرس Gate_Passes غير المقروء | Unknown | متوسط | قراءة وثيقة Gate Passes (جلسة قادمة) |
 | UNK-030 | هل مبيعات Shop Outlet (POS) تخفض مخزون MGT مباشرة (Item-Level) أم عبر مقاصة FNB؟ | نموذج تكامل البيع التجزيء | MGT-SET §5 (الربط موثق 1:1) + POS-* (لا ذكر) | Unknown | متوسط | قراءة FNB-COP أو POS-REP — [INFERENCE] الربط الهيكلي موجود بلا مسار مخزوني موثق |
 | UNK-031 | ما دلالة حالة «Blank Space» في PO Status by Vendor؟ | دقة تفسير حالات PO | MGT-LUK §6 ص13 | Unknown | منخفض | [INFERENCE] على الأرجح PO بلا أي استلام/حركة — يُطابق Pending عند التنفيذ |
+
+## المجهولات المكتشفة في الجلسة 7 (من BNQ)
+
+| ID | السؤال | لماذا يهم | المصادر المفحوصة | الحالة | الأثر | المسار |
+|---|---|---|---|---|---|---|
+| UNK-032 | توقيت ترحيل BNQ→FAS | (مدمج مع UNK-027 — MM/BNQ نفس السؤال) | BNQ كامل + FAS-SET | Unknown | عالٍ | Phase 6 |
+| UNK-033 | صياغة Resettlement: "and the guest has already checked out" — شرط سماح أم جزء من المنع؟ | سلوك إعادة التسوية | BIL §4 ص31 | Unknown | متوسط | [UNCERTAIN] — قرار تنفيذي (المنطق: منع ترحيل الغرف المغادرة) |
+| UNK-034 | قائمة عمليات KOT الـ 28 وSettlement الـ 15 في BNQ User Access | دقة الصلاحيات | SET §20 (العد فقط) | Unknown | منخفض | استكمال من POS User Access المقروء (نفس البرنامج) |

@@ -27,8 +27,8 @@
 | text-extracted | **65 / 65 (100%)** ✅ |
 | toc-analyzed | **65 / 65 (100%)** ✅ |
 | field-extracted (جداول الحقول آلياً) | **13 ملف إعدادات — 2,099 حقلاً** ✅ |
-| read (قراءة عميقة) | **26/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + SYS 1 + **MGT 3 (SET+DNT+LUK = 181 ص)** (نهاية الجلسة 6) |
-| analyzed | **26 ملفاً** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + **MGT 19 ملف وثائق → 6 وحدات modules = 113 ملف وثائق**) |
+| read (قراءة عميقة) | **31/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + **BNQ 5 (كاملة)** (نهاية الجلسة 7) |
+| analyzed | **31 ملفاً** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + **BNQ 19 = 132 ملف وثائق → 7 وحدات modules**) |
 | cross-referenced | 0 / 65 |
 | verified | 0 / 65 |
 
@@ -61,11 +61,11 @@
 | 17 | Materials Management | FN6i-NT-MGT-DNT.pdf | 75 | ✓ | ✓ | ✓ | **✓ كامل (15 وظيفة Daily Entries — الإصدار/المرتجعات/الجرد/الإقفال الشهري)** | **✓ → modules/materials-management/** | – | – |
 | 18 | Materials Management | FN6i-NT-MGT-SET.pdf | 68 | ✓ | ✓ | ✓ | **✓ كامل (28 قسماً — المخازن/الأصناف/Master المورد بـ 7 عائلات)** | **✓ → modules/materials-management/** | – | – |
 | 19 | Materials Management | FN6i-NT-MGT-LUK.pdf | 38 | ✓ | ✓ | ✓ | **✓ كامل (20 استعلاماً + Drill-down ثلاثي)** | **✓ → modules/materials-management/ (09)** | – | – |
-| 20 | Banquets | FN6i-NT-BNQ-SET.pdf | 98 | ✓ | ✓ | ✓ | – | – | – | – |
-| 21 | Banquets | FN6i-NT-BNQ-BIL.pdf | 66 | ✓ | ✓ | ✓ | – | – | – | – |
-| 22 | Banquets | FN6i-NT-BNQ-BOK.pdf | 41 | ✓ | ✓ | ✓ | – | – | – | – |
-| 23 | Banquets | FN6i-NT-BNQ-CFG.pdf | 38 | ✓ | ✓ | ✓ | – | – | – | – |
-| 24 | Banquets | FN6i-NT-BNQ-LUK.pdf | 12 | ✓ | ✓ | ✓ | – | – | – | – |
+| 20 | Banquets | FN6i-NT-BNQ-SET.pdf | 98 | ✓ | ✓ | ✓ | **✓ كامل (20 قسماً — القاعات/المعدات/الأسعار التعاقدية/التقويم الحاجب)** | **✓ → modules/banquets/** | – | – |
+| 21 | Banquets | FN6i-NT-BNQ-BIL.pdf | 66 | ✓ | ✓ | ✓ | **✓ كامل (13 قسماً — التسويات الـ 11 + الودائع + Requirement + Auto Indent!)** | **✓ → modules/banquets/** | – | – |
+| 22 | Banquets | FN6i-NT-BNQ-BOK.pdf | 41 | ✓ | ✓ | ✓ | **✓ كامل (Bookings: Make بـ 7 أقسام + Across-Dates + Cancel/No-Show + Block)** | **✓ → modules/banquets/** | – | – |
+| 23 | Banquets | FN6i-NT-BNQ-CFG.pdf | 38 | ✓ | ✓ | ✓ | **✓ كامل (12 قسماً — Function Room 6 تبويبات + Menu Cards + Sub Venues)** | **✓ → modules/banquets/** | – | – |
+| 24 | Banquets | FN6i-NT-BNQ-LUK.pdf | 12 | ✓ | ✓ | ✓ | **✓ كامل (استعلامان — Availability Chart بألوان الحالة + INI 408)** | **✓ → modules/banquets/ (09)** | – | – |
 | 25 | HR & Payroll | FN6i-NT-HRP-REP.pdf | 133 | ✓ | ✓ | ✓ | – | – | – | – |
 | 26 | HR & Payroll | FN6i-NT-HRP-PNT.pdf | 47 | ✓ | ✓ | ✓ | – | – | – | – |
 | 27 | HR & Payroll | FN6i-NT-HRP-SET.pdf | 42 | ✓ | ✓ | ✓ | – | – | – | – |
