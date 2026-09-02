@@ -27,8 +27,13 @@
 - [أدوار المستخدمين الفندقيين](domain/hotel-roles.md)
 - **[القاموس الموحد للمصطلحات (عربي/EN)](domain/terminology.md)** ⭐
 
-### الوحدات (Modules) — Phase 2/3 (فارغة — تُملأ بالترتيب: FOM أولاً)
-`modules/front-office/` ← `financial-management/` ← `point-of-sale/` ← `accounts-receivable/` ← ...
+### الوحدات (Modules) — Phase 2/3 (2/17 محللة)
+
+**1. Front Office (مكتملة — 19 ملفاً):** [`modules/front-office/`](modules/front-office/) — ابدأ بـ [`00-overview.md`](modules/front-office/00-overview.md) · ⭐ النواة المحاسبية: [`11-accounting-impact.md`](modules/front-office/11-accounting-impact.md) · الجرد: [`03-screens.md`](modules/front-office/03-screens.md) (193 شاشة) · القواعد: [`05-business-rules.md`](modules/front-office/05-business-rules.md) (BR-FO-01..16)
+
+**2. Financial Management (مكتملة — 18 ملفاً):** [`modules/financial-accounting/`](modules/financial-accounting/) — ابدأ بـ [`00-overview.md`](modules/financial-accounting/00-overview.md) · ⭐ **النواة المعمارية للترحيل:** [`11-accounting-impact.md`](modules/financial-accounting/11-accounting-impact.md) (الروابط الست + قواعد Book Types + أمثلة بالأرقام) · القواعد: [`02-configuration.md`](modules/financial-accounting/02-configuration.md) · السير: [`04-workflows.md`](modules/financial-accounting/04-workflows.md) (WF-FA-01..16)
+
+**التالي بالترتيب:** `accounts-receivable/` ← `point-of-sale/` ← ... (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
 
 ### العمليات (Workflows) — Phase 5
 `workflows/module-workflows/` + `workflows/end-to-end/`

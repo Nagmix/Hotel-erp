@@ -27,8 +27,8 @@
 | text-extracted | **65 / 65 (100%)** ✅ |
 | toc-analyzed | **65 / 65 (100%)** ✅ |
 | field-extracted (جداول الحقول آلياً) | **13 ملف إعدادات — 2,099 حقلاً** ✅ |
-| read (قراءة عميقة) | **5 ملفات FO كاملة (DEP + RES + REG + CAS كامل + SET جزئي) — نهاية الجلسة 2** |
-| analyzed | **4 ملفات (FOM-RES/REG/CAS/DEP → docs/modules/front-office/ 19 ملفاً)** |
+| read (قراءة عميقة) | **13/65** — FO: DEP/RES/REG/CAS/SET/LUK/CRG/HSK/GST + FAS: SET/TRN/MST/LUK (نهاية الجلسة 3) |
+| analyzed | **13 ملفاً → 8 وحدات فرعية** (FO 19 ملفاً + FAS 18 ملفاً → وحدتا modules) |
 | cross-referenced | 0 / 65 |
 | verified | 0 / 65 |
 
@@ -42,16 +42,16 @@
 
 | # | الوحدة | الملف | الصفحات | indexed | text | toc | deep-read | analyzed | x-ref | verified |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Front Office | FN6i-NT-FOM-SET.pdf | 145 | ✓ | ✓ | ✓ | ◐ 59 جدول حقول آلياً + ص1-15 | – | – | – |
-| 2 | Front Office | FN6i-NT-FOM-REP.pdf | 120 | ✓ | ✓ | ✓ | – | – | – | – |
+| 1 | Front Office | FN6i-NT-FOM-SET.pdf | 145 | ✓ | ✓ | ✓ | **✓ كامل (67 قسماً + مصفوفة التعديل 48 Note)** | **✓ → modules/front-office/** | – | – |
+| 2 | Front Office | FN6i-NT-FOM-REP.pdf | 120 | ✓ | ✓ | ✓ | – (مؤجل Phase 7) | – | – | – |
 | 3 | Front Office | FN6i-NT-FOM-REG.pdf | 105 | ✓ | ✓ | ✓ | **✓ كامل (28 وظيفة، ص1-105)** | **✓ → modules/front-office/** | – | – |
 | 4 | Front Office | FN6i-NT-FOM-CAS.pdf | 95 | ✓ | ✓ | ✓ | **✓ كامل (20 وظيفة، ص1-95)** | **✓ → modules/front-office/** | – | – |
-| 5 | Front Office | FN6i-NT-FOM-LUK.pdf | 51 | ✓ | ✓ | ✓ | – | – | – | – |
-| 6 | Front Office | FN6i-NT-FOM-GST.pdf | 57 | ✓ | ✓ | ✓ | – | – | – | – |
-| 7 | Front Office | FN6i-NT-FOM-HSK.pdf | 59 | ✓ | ✓ | ✓ | – | – | – | – |
+| 5 | Front Office | FN6i-NT-FOM-LUK.pdf | 51 | ✓ | ✓ | ✓ | **✓ كامل (22 وظيفة)** | **✓ → modules/front-office/ (09)** | – | – |
+| 6 | Front Office | FN6i-NT-FOM-GST.pdf | 57 | ✓ | ✓ | ✓ | **✓ كامل (17 وظيفة + الولاء)** | **✓ → modules/front-office/ (04/05)** | – | – |
+| 7 | Front Office | FN6i-NT-FOM-HSK.pdf | 59 | ✓ | ✓ | ✓ | **✓ كامل (18 وظيفة + دورة الغسيل)** | **✓ → modules/front-office/ (04/05)** | – | – |
 | 8 | Front Office | FN6i-NT-FOM-RES.pdf | 68 | ✓ | ✓ | ✓ | **✓ كامل (7 وظائف رئيسية، ص1-68)** | **✓ → modules/front-office/** | – | – |
 | 9 | Front Office | FN6i-NT-FOM-SMS.pdf | 14 | ✓ | ✓ | ✓ | – | – | – | – |
-| 10 | Front Office | FN6i-NT-FOM-CRG.pdf | 19 | ✓ | ✓ | ✓ | – | – | – | – |
+| 10 | Front Office | FN6i-NT-FOM-CRG.pdf | 19 | ✓ | ✓ | ✓ | **✓ كامل (Concierge — 5 وظائف)** | **✓ → modules/front-office/ (04)** | – | – |
 | 11 | Front Office | FN6i-NT-FOM-DEP.pdf | 14 | ✓ | ✓ | ✓ | **✓ كامل** | **✓ → modules/front-office/** | – | – |
 | 12 | Point of Sale | FN6i-NT-POS-SET.pdf | 122 | ✓ | ✓ | ✓ | – | – | – | – |
 | 13 | Point of Sale | FN6i-NT-POS-REP.pdf | 158 | ✓ | ✓ | ✓ | – | – | – | – |
@@ -70,11 +70,11 @@
 | 26 | HR & Payroll | FN6i-NT-HRP-PNT.pdf | 47 | ✓ | ✓ | ✓ | – | – | – | – |
 | 27 | HR & Payroll | FN6i-NT-HRP-SET.pdf | 42 | ✓ | ✓ | ✓ | – | – | – | – |
 | 28 | HR & Payroll | FN6i-NT-HRP-RQP.pdf | 31 | ✓ | ✓ | ✓ | – | – | – | – |
-| 29 | Financial Management | FN6i-NT-FAS-REP.pdf | 64 | ✓ | ✓ | ✓ | – | – | – | – |
-| 30 | Financial Management | FN6i-NT-FAS-SET.pdf | 48 | ✓ | ✓ | ✓ | – | – | – | – |
-| 31 | Financial Management | FN6i-NT-FAS-TRN.pdf | 45 | ✓ | ✓ | ✓ | – | – | – | – |
-| 32 | Financial Management | FN6i-NT-FAS-MST.pdf | 33 | ✓ | ✓ | ✓ | – | – | – | – |
-| 33 | Financial Management | FN6i-NT-FAS-LUK.pdf | 28 | ✓ | ✓ | ✓ | – | – | – | – |
+| 29 | Financial Management | FN6i-NT-FAS-REP.pdf | 64 | ✓ | ✓ | ✓ | – (مؤجل Phase 7) | – | – | – |
+| 30 | Financial Management | FN6i-NT-FAS-SET.pdf | 48 | ✓ | ✓ | ✓ | **✓ كامل (27 قسماً — الروابط الست)** | **✓ → modules/financial-accounting/** | – | – |
+| 31 | Financial Management | FN6i-NT-FAS-TRN.pdf | 45 | ✓ | ✓ | ✓ | **✓ كامل (9 أقسام + FO/POS/PJV posting)** | **✓ → modules/financial-accounting/** | – | – |
+| 32 | Financial Management | FN6i-NT-FAS-MST.pdf | 33 | ✓ | ✓ | ✓ | **✓ كامل (COA + Vendor + ChequeBook)** | **✓ → modules/financial-accounting/** | – | – |
+| 33 | Financial Management | FN6i-NT-FAS-LUK.pdf | 28 | ✓ | ✓ | ✓ | **✓ كامل (9 استعلامات)** | **✓ → modules/financial-accounting/** | – | – |
 | 34 | Care | FORTUNE CARE v6 - OPERATIONS.pdf | 80 | ✓ | ✓ | ✓ | – | – | – | – |
 | 35 | Care | FORTUNE CARE v6 - REPORTS & LOOKUPS - VER 10 AUGUST.pdf | 73 | ✓ | ✓ | ✓ | – | – | – | – |
 | 36 | Care | FORTUNE CARE v6 - SETUP - VER 10 AUGUST.pdf | 34 | ✓ | ✓ | ✓ | – | – | – | – |

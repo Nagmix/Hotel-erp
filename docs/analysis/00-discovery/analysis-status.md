@@ -24,8 +24,8 @@
 |---|---|---|---|
 | **Phase 0** | Discovery — فهرسة وجرد وخريطة | ✅ **مكتملة** | الوثائق الخمس في `docs/analysis/00-discovery/` + `extracted-text/` + `inventory.json` |
 | **Phase 1** | Domain Model | ✅ **الإصدار التأسيسي مكتمل** (يُوسَّع في كل مرحلة) | `docs/domain/` (8 وثائق) — انظر أدناه |
-| Phase 2 | Module Inventory التفصيلي | ◐ **بدأت — Front Office محللة** | `docs/modules/front-office/00-overview.md` + هيكل 19 ملفاً كاملاً |
-| Phase 3 | Detailed Module Analysis | ◐ **الوحدة 1/17 (Front Office) — 19 ملفاً بمحتوى موثق** | `docs/modules/front-office/` (00→18) |
+| Phase 2 | Module Inventory التفصيلي | ◐ **بدأت — FO محللة + FAS محللة** | `docs/modules/front-office/` + `docs/modules/financial-accounting/` |
+| Phase 3 | Detailed Module Analysis | ◐ **الوحدتان 2/17: FO (19 ملفاً) + Financial Management (18 ملفاً)** | نفس المسارات |
 | Phase 4 | Screens & UX | ⬜ لم تبدأ | `docs/screens/specifications/*` |
 | Phase 5 | Workflows | ⬜ لم تبدأ | `docs/workflows/*` |
 | Phase 6 | Accounting | ⬜ لم تبدأ | `docs/accounting/*` |
@@ -127,13 +127,47 @@
 
 ---
 
+### الجلسة 3 — 2026-09-02 (مساء)
+
+**ما تم:**
+
+1. **Quality Gate لـ FO — اكتمل:**
+   - قراءة FOM-SET كاملة (67 قسماً، 145 ص): هندسة التعرفة §1-§8 (كاملة الحقول والقواعد) + Core Masters + قوائم + Behavior Config + مصممون + Data Ops + **مصفوفة التعديل (48 قاعدة Note لكل Master)**.
+   - قراءة FOM-LUK كاملة (22 وظيفة Lookups).
+   - قراءة FOM-CRG كاملة — **تصحيح: CRG = Concierge** (5 وظائف: Left Luggage/Parcels/Ticket/Valet/Baggage) وليس Charge Groups.
+   - قراءة FOM-HSK كاملة (18 وظيفة: OOO/OOS بالسحب والإفلات، دورة الغسيل كاملة ب7 أنماط تسوية، المفقودات، الجدولة ≤7 أيام).
+   - قراءة FOM-GST كاملة (17 وظيفة: Guest Master بـ 10 تبويبات، الولاء 4 مراحل، Merge/Purge).
+   - تحديث وثائق FO: 01 (كتالوج 67 + مصفوفة) + 02 + 03 (**193 شاشة**) + 04 (WF-FO-15/16/17 موثقة) + 05 (BR-FO-11..16) + 07 (مصفوفة التفويض الخمسية) + 09 (22 بحثاً) + 12 (I17-I22) + 13 (E29-E42).
+2. **الوحدة 2/17 — Financial Management (FAS) كاملة (18 ملفاً):**
+   - قراءة عميقة كاملة: FAS-SET (27 قسماً — الروابط الست بنصوصها) + FAS-TRN (9 أقسام + 15 خياراً فرعياً) + FAS-MST (COA/Vendor/SL/ChequeBook) + FAS-LUK (9 استعلامات).
+   - إنشاء `docs/modules/financial-accounting/` (00-18): 65 شاشة · WF-FA-01..16 · BR-FA-01..09 · V-FA-01..24 · I-FA-01..13 · E-FA-01..28 · 30 كياناً · Seed Mapping ERPNext (A-F) · فجوات ومعايير قبول.
+   - تحديث FO `11-accounting-impact.md`: **حسم QA-1/QA-2/QA-3/QA-6 + UNK-006**.
+3. تحديث unknowns (UNK-005/006/014/015 Resolved + 002/008 Partially + جديد 016/017) + source-coverage (13/65 read) + هذا الملف.
+
+**اكتشافات جوهرية موثقة في هذه الجلسة:**
+- **الروابط الست كاملة:** 13 Revenue Type في رابط FO (بما فيها Settlements=Debit فقط، GLB: B/F دائن/C/F مدين، No Transaction=Suspense إلزامي) + POS (منفذ × مجموعة قائمة: مبيعات Credit/خصومات Debit) + MM (أصل للشراء/مصروف للاستهلاك) + Payroll (ED Codes إلزامي) + Membership + AR (فوري مع تعديل F5).
+- **قواعد التحقق التسعة للـ Book Types** (Receipts يبدأ Bank/Cash... Exchange/Contra كله Bank/Cash) — الأساس التشريعي للقيود.
+- **نمط الفروق غير الموزعة:** فرق ≠ 0 → Yes → حساب No Transaction مؤقتاً → إصلاح الروابط → **إعادة ترحيل**.
+- **Post FO to Finance:** الزنار بعد Day End + Open New Date؛ Effective = عادة الأمس؛ البنود تُعرض بـ Account/Revenue/Audit Code + D/C + SL.
+- **أمثلة قيود ضريبة الشراء بالأرقام** (طريقتا البائع/المشتري بـ INV Switches 1+4 + Vendor Tax Split).
+- **Open Financial Year + Rollback** (أرصدة→افتتاحية + صافي P&L→Retained Earnings بنسب) + قفل Audited الشهري.
+- **FO:** النقد إلزامي لكل المنافذ؛ مصفوفة تعديل كل Master نصاً؛ تعرفة أيام الأسبوع؛ تغيير نوع غرفة للشاغرة فقط + Create Hotel Chart؛ Purge 60/60/120 يوم؛ **INI موثقة جديدة: 58 (Reservation Mode) + 283 (استهلاك) + 504 (شيكات)** + FAS Switch 4 + INV 1/3/4 + Module Attr 9.
+- **ترميز ألوان حالة الغرف** (VC/VD/RS/OD/OC/OO/OS) — أساس تصميم مخطط الغرف في الواجهة الجديدة.
+
+**نقطة الاستئناف القادمة (الجلسة 4):**
+1. **الوحدة التالية: Accounts Receivable (AR)** — القراءة العميقة (RPL 33 + OPR 21 + SET 19 + BIL 8 + CRT 8 = 89 ص) ثم هيكل وحدة كامل — تكملة الحلقة المالية (FO→AR→FAS) وتوثيق AR User Access وAging.
+2. بعدها **POS** (SET 122 + GST 56 + LUK 14 = أولوية تشغيلية) — يحسم UNK-001 (Guest Master الموحد؟) وUNK-012 (الدفع المقسّم).
+3. مراجعة `docs/README.md` لتحديث فهرس الوحدات بوحدة FAS.
+
+---
+
 ## مؤشرات الجودة الحالية
 
 | المؤشر | القيمة | الهدف |
 |---|---|---|
 | ملفات مفهرسة | 65/65 | 65/65 ✅ |
 | نصوص مستخرجة | 65/65 | 65/65 ✅ |
-| ملفات قرأت قراءة عميقة | **5/65** (FOM: DEP+RES+REG+CAS كاملة + SET جزئي) | 65/65 |
-| وحدات محللة وظيفياً | **1/17** (Front Office — 19 ملفاً) | 17 |
+| ملفات قرأت قراءة عميقة | **13/65** (FOM كامل عدا REP/SMS + FAS كامل عدا REP) | 65/65 |
+| وحدات محللة وظيفياً | **2/17** (Front Office — 19 ملفاً + Financial Management — 18 ملفاً) | 17 |
 | Knowledge Graph (علاقات موثقة) | 6 روابط ترحيل + 16 تكامل FO (I1-I16) | يوسَّع في Phase 3/6 |
 | Unknowns مسجلة | انظر `docs/analysis/unknowns.md` | صفر حرج قبل التنفيذ |
