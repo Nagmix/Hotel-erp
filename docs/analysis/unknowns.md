@@ -1,0 +1,26 @@
+# سجل المجهولات (Unknowns Register)
+
+> كل معلومة لم نستطع إثباتها من الوثائق تُسجل هنا. لا تُترك مجهولات حرجة قبل مرحلة التنفيذ.
+> الحالات: `Unknown` / `Partially Resolved` / `Resolved` / `Converted to Decision`
+
+---
+
+## المجهولات المكتشفة في Phase 0
+
+| ID | السؤال | لماذا يهم | المصادر المفحوصة | الحالة | الأثر | المسار |
+|---|---|---|---|---|---|---|
+| UNK-001 | هل Guest Master في FOM وPOS قاعدة بيانات واحدة أم نسختان متزامنتان؟ | يحدد تصميم Guest entity المركزي في النظام المستهدف | فهارس FOM-GST وPOS-GST (نفس العناوين تقريباً) | Unknown | عالٍ | قراءة عميقة للملفين في Phase 2/3 |
+| UNK-002 | ما آلية "Rev. Management Tool" في FOM-LUK؟ هل هي Revenue Management حقيقية (تسعير ديناميكي) أم تقرير فقط؟ | يحدد إن كانت وحدة RM ضمن نطاق المشروع | فهرس FOM-LUK فقط | Unknown | متوسط | قراءة FOM-LUK |
+| UNK-003 | هل يوجد تكامل GDS/OTA/Channel Manager موثق؟ | نطاق التكاملات الخارجية | الفهارس — لا أثر واضح | Unknown | عالٍ | فحص FOM-RES وSLM نصاً |
+| UNK-004 | كيف تُدار متعددية الفنادق/الخصائص (multi-property)؟ | قرار معماري جوهري (Frappe Sites مقابل Company/Property DocTypes) | SYS-SSP فهرس (يذكر DBs) | Unknown | عالٍ | قراءة SYS-SSP |
+| UNK-005 | ما بنية دليل الحسابات (Main Heads/Sub Heads — كم مستوى، هل هو شجري حر أم قوالب)؟ | أساس Mapping مع ERPNext COA | فهرس FAS-SET/MST | Unknown | عالٍ جداً | قراءة FAS-SET + FAS-MST |
+| UNK-006 | ما تفاصيل Night Audit خطوة بخطوة (أي الحسابات تُقفل، أي القيود تُنشأ)؟ | جوهر الترحيل اليومي في الفنادق | فهرس FOM-DEP (5 عمليات فقط) | Unknown | عالٍ جداً | قراءة FOM-DEP كاملاً (14 ص) + FOM-CAS |
+| UNK-007 | العملات المتعددة: أين تُعرَّف أسعار الصرف وكيف تُرحَّل الفروقات؟ | متطلب Middle-East محتمل (SAR/YER/USD) | فهارس POS-SET (Link Outlet Currencies) | Unknown | عالٍ | قراءة FAS-SET + POS-SET |
+| UNK-008 | ما حدود الضرائب (Tax Structures) وأنواعها (VAT/Municipality/Service Charge)? | الفنادق في المنطقة عليها ضرائب متعددة مركبة | فهرس FOM-SET (Room Tax Structures) | Unknown | عالٍ جداً | قراءة FOM-SET صفحات الضرائب |
+| UNK-009 | هل الحجوزات تدعم Group Blocks/Allocation حقيقية (PMS allotments)؟ | يحسم تصميم Reservation model | فهرس FOM-SET (Group Business Sources) — غير حاسم | Unknown | عالٍ | قراءة FOM-RES |
+| UNK-010 | ما علاقة Care بـ HRP في بيانات الموظفين (Personnel Master واحد أم مستقل)؟ | يمنع ازدواجية Employee entity | فهارس Care-SET (Adding Employee) وHRP-SET | Unknown | متوسط | قراءة الاثنين |
+| UNK-011 | آلية "Auto Indent" من BNQ/FNB إلى MGT — هل تولد Purchase Requisition تلقائياً من متطلبات الوليمة؟ | تكامل تشغيلي جوهري | فهارس BNQ-BIL وFNB-COP | Unknown | عالٍ | قراءة العمليات |
+| UNK-012 | هل يدعم POS الدفع المقسّم (split payments) وMixed payment على طاولة واحدة؟ | سلوك كاشير POS | فهرس POS-LUK (Settlement Summary) — غير حاسم | Unknown | متوسط | قراءة POS-SET/GST |
+| UNK-013 | أين تُخزَّن الصلاحيات: لكل شاشة؟ لكل عملية؟ لكل Transaction Type؟ | تصميم permission model | فهارس SYS-SSP + FAS-SET (Transaction Type Rights) + ACR-SET (AR User Access) | Unknown | عالٍ | قراءة SYS-SSP كاملاً |
+| UNK-014 | هل توجد عمليات نهاية الشهر/السنة (Month/Year End Closing) موثقة في FAS؟ | دورة مالية كاملة | فهرس FAS-TRN (Open Financial Year) | Unknown | عالٍ | قراءة FAS-TRN |
+| UNK-015 | هل يدعم النظام Packages حقيقية (حزمة إقامة+وجبات+خدمات بسعر واحد)? | نموذج Package/Meal Plan | فهرس FOM-SET (Package Elements, Meal Plans, Plan Rate Master) | Partially | عالٍ | قراءة FOM-SET |
