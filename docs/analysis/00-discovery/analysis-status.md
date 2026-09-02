@@ -187,13 +187,41 @@
 
 ---
 
+### الجلسة 4 (تابع) — وحدة Point of Sale (POS) كاملة
+
+**ما تم (بالاستمرار في الجلسة نفسها بعد AR):**
+
+1. **الوحدة 4/17 — Point of Sale كاملة (19 ملفاً):**
+   - قراءة عميقة: **POS-SET (42 قسماً/122 ص) + POS-GST (12 وظيفة/56 ص) + POS-LUK (7 استعلامات/14 ص) + Touch Screen Manual (34 ص — عمليات POS الفعلية!)**.
+   - إنشاء `docs/modules/point-of-sale/` (00-18): 95 شاشة · WF-POS-01..16 · BR-POS-01..16 · V-POS-01..34 · I-POS-01..16 · E-POS-01..30 · 30 كياناً · 18 حدثاً مالياً · Seed Mapping (قرارات F-POS-1..5) · 11 فجوة مصدر + 12 ERPNext · 10 مجموعات معايير قبول + Smoke Test.
+2. تحديث: unknowns (**UNK-001/007 Partially + UNK-012 Resolved** + جديد UNK-021/022) + source-coverage (22/65) + فهرس README (4/17).
+
+**اكتشافات جوهرية موثقة (POS):**
+- **العمليات الفعلية في دليل Touch Screen المنفصل** (وليس POS-* )!: Shift/Outlet/Session ثلاثية الفتح (كاشير فردي/منفذ جماعي) + إغلاق يحجبه المعلقات.
+- **فصل KOT→Check→Settlement الثلاثي** + **Print Bill = تسوية نقدية تلقائية** + **Provisional (رقم صفر)** + **Reprint قبل التسوية يُبطِل الرقم ويرقِّم من جديد**.
+- **Split 3 طرق** (Equal/Item/**Quantity كسري 0.5**) + Link Tables + Table Suffix — عائلة تجميع/تقسيم كاملة (يحسم UNK-012).
+- **6 أنماط تسوية فاعلة حصراً** (Cash/CC/Cheque/Coupon/Guest/Void) + **Balance=0 إلزام** + Resettlement + Tips (CC/شيك/Guest فقط).
+- **Guest Settlement = بوابة الائتمان الموحدة:** Room#→FO Folio؛ و**AR/Company/BoH بنفس المسار** → قيود AR تلقائية.
+- **POS Guest Master مستقل مقيَّد بالمنفذ** + تشارك انتقائي مع FO (Preferences/Card Types) — قاعدتا ضيوف موثقتان (UNK-001 Partially).
+- **Menu Master بنمطين** (Module Attribute 29: مشترك/لكل منفذ) + نقل أصناف بشرط تطابق العملات + Quick Update فوري/من الغد + Batch Rate.
+- **مصمم طباعة مرئي كامل** (Projects + Toolbox + F4/F3 + Body إلزامي + 6 rows=1 inch + Make Active).
+- **صلاحيات ثلاثية الأبعاد** (كاشير × KOT/Billing/Settlement × Regular/Touch/PDA) + Restrict Outlet Access (blocklist).
+- فجوات مصدر: **§42 Taxcode Mapping فارغة** + §10 Server Outlet Mapping صورتان فقط + مرجعية وثائق SYS خارج الحزمة.
+
+**نقطة الاستئناف القادمة (الجلسة 5):**
+1. **الوحدة التالية (بالأولوية المالية): Materials Management** — MGT-SET (68 ص) + MGT-LUK (38 ص) أولاً (يحسم جزءاً من UNK-011 Auto Indent من BNQ/FNB) — أو **SYS-SSP (110 ص)** مباشرة لحسم UNK-004 (multi-property) + UNK-013/022 (المفاتيح والصلاحيات) — **المفضل: SYS-SSP أولاً** لأنه يحسم 3 مجهولات حرجة دفعة واحدة ويعلق القواعد المفقودة للوحدات الأربع المحللة.
+2. بعده MGT ثم BNQ ثم HRP (بترتيب module-inventory §5).
+3. POS-REP + FOM-REP + FAS-REP مؤجلة للمرحلة 7.
+
+---
+
 ## مؤشرات الجودة الحالية
 
 | المؤشر | القيمة | الهدف |
 |---|---|---|
 | ملفات مفهرسة | 65/65 | 65/65 ✅ |
 | نصوص مستخرجة | 65/65 | 65/65 ✅ |
-| ملفات قرأت قراءة عميقة | **18/65** (FOM كامل عدا REP/SMS + FAS كامل عدا REP + ACR كامل) | 65/65 |
-| وحدات محللة وظيفياً | **3/17** (Front Office — 19 · Financial Management — 18 · Accounts Receivable — 19) | 17 |
+| ملفات قرأت قراءة عميقة | **22/65** (FOM عدا REP/SMS + FAS عدا REP + ACR كامل + POS 4 ملفات) | 65/65 |
+| وحدات محللة وظيفياً | **4/17** (FO 19 + FAS 18 + ACR 19 + POS 19 = 75 ملف وثائق) | 17 |
 | Knowledge Graph (علاقات موثقة) | 6 روابط ترحيل + 16 تكامل FO (I1-I16) | يوسَّع في Phase 3/6 |
 | Unknowns مسجلة | انظر `docs/analysis/unknowns.md` | صفر حرج قبل التنفيذ |

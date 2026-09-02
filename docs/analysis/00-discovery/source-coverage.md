@@ -27,8 +27,8 @@
 | text-extracted | **65 / 65 (100%)** ✅ |
 | toc-analyzed | **65 / 65 (100%)** ✅ |
 | field-extracted (جداول الحقول آلياً) | **13 ملف إعدادات — 2,099 حقلاً** ✅ |
-| read (قراءة عميقة) | **18/65** — FO: DEP/RES/REG/CAS/SET/LUK/CRG/HSK/GST + FAS: SET/TRN/MST/LUK + ACR: SET/OPR/RPL/BIL/CRT (نهاية الجلسة 4) |
-| analyzed | **18 ملفاً** (FO 19 ملفاً + FAS 18 ملفاً + ACR 19 ملفاً → 3 وحدات modules) |
+| read (قراءة عميقة) | **22/65** — FO 9 + FAS 4 + ACR 5 + POS 4 (SET/GST/LUK + TouchScreen) (نهاية الجلسة 4) |
+| analyzed | **22 ملفاً** (FO 19 + FAS 18 + ACR 19 + POS 19 ملف وثائق → 4 وحدات modules) |
 | cross-referenced | 0 / 65 |
 | verified | 0 / 65 |
 
@@ -53,10 +53,10 @@
 | 9 | Front Office | FN6i-NT-FOM-SMS.pdf | 14 | ✓ | ✓ | ✓ | – | – | – | – |
 | 10 | Front Office | FN6i-NT-FOM-CRG.pdf | 19 | ✓ | ✓ | ✓ | **✓ كامل (Concierge — 5 وظائف)** | **✓ → modules/front-office/ (04)** | – | – |
 | 11 | Front Office | FN6i-NT-FOM-DEP.pdf | 14 | ✓ | ✓ | ✓ | **✓ كامل** | **✓ → modules/front-office/** | – | – |
-| 12 | Point of Sale | FN6i-NT-POS-SET.pdf | 122 | ✓ | ✓ | ✓ | – | – | – | – |
+| 12 | Point of Sale | FN6i-NT-POS-SET.pdf | 122 | ✓ | ✓ | ✓ | **✓ كامل (42 قسماً + فجوة §42 Taxcode Mapping فارغة)** | **✓ → modules/point-of-sale/** | – | – |
 | 13 | Point of Sale | FN6i-NT-POS-REP.pdf | 158 | ✓ | ✓ | ✓ | – | – | – | – |
-| 14 | Point of Sale | FN6i-NT-POS-GST.pdf | 56 | ✓ | ✓ | ✓ | – | – | – | – |
-| 15 | Point of Sale | FN6i-NT-POS-LUK.pdf | 14 | ✓ | ✓ | ✓ | – | – | – | – |
+| 14 | Point of Sale | FN6i-NT-POS-GST.pdf | 56 | ✓ | ✓ | ✓ | **✓ كامل (12 وظيفة Guest History + الولاء)** | **✓ → modules/point-of-sale/** | – | – |
+| 15 | Point of Sale | FN6i-NT-POS-LUK.pdf | 14 | ✓ | ✓ | ✓ | **✓ كامل (7 استعلامات + صيغة Average Per Check)** | **✓ → modules/point-of-sale/** | – | – |
 | 16 | Materials Management | FN6i-NT-MGT-REP.pdf | 112 | ✓ | ✓ | ✓ | – | – | – | – |
 | 17 | Materials Management | FN6i-NT-MGT-DNT.pdf | 75 | ✓ | ✓ | ✓ | – | – | – | – |
 | 18 | Materials Management | FN6i-NT-MGT-SET.pdf | 68 | ✓ | ✓ | ✓ | – | – | – | – |
@@ -104,7 +104,7 @@
 | 60 | F&B Costing | FN6i-NT-FNB-COP.pdf | 19 | ✓ | ✓ | ✓ | – | – | – | – |
 | 61 | F&B Costing | FN6i-NT-FNB-LUK.pdf | 15 | ✓ | ✓ | ✓ | – | – | – | – |
 | 62 | F&B Costing | FN6i-NT-FNB-SET.pdf | 14 | ✓ | ✓ | ✓ | – | – | – | – |
-| 63 | (root) | Touch_Screen_Manual.pdf | 46 | ✓ | ✓ | ✓ | – | – | – | – |
+| 63 | (root) | Touch_Screen_Manual.pdf | 46 | ✓ | ✓ | ✓ | **✓ كامل (عمليات POS الفعلية: Shift/Outlet/KOT/Check/Split/Settlement/NC/Close)** | **✓ → modules/point-of-sale/** | – | – |
 | 64 | Fixed Assets | FN6i-NT-FAS-FXD.pdf | 25 | ✓ | ✓ | ✓ | – | – | – | – |
 | 65 | Gate Passes | FN6i-NT-FAS-GTP.pdf | 13 | ✓ | ✓ | ✓ | – | – | – | – |
 
