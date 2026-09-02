@@ -5,6 +5,11 @@
 
 ---
 
+## تحديثات الجلسة 4 (مختصرة)
+
+- **UNK-013 Partially Resolved** — AR User Access موثق كاملاً (مستخدم × 4 أنواع قيود، افتراضي No) + FAS Transaction Type Rights سابقاً؛ يبقى SYS-SSP للفحص.
+- جديد: **UNK-018** (سلوك Black List التشغيلي) و **UNK-019** (تفاعل SOA-AR مع Audited-FAS) من قراءة ACR.
+
 ## تحديثات الجلسة 3 (مختصرة)
 
 - **UNK-005 Resolved · UNK-006 Resolved · UNK-014 Resolved · UNK-015 Resolved · UNK-002 Partially Resolved** (تفاصيل في الجدول).
@@ -26,7 +31,7 @@
 | UNK-010 | ما علاقة Care بـ HRP في بيانات الموظفين (Personnel Master واحد أم مستقل)؟ | يمنع ازدواجية Employee entity | فهارس Care-SET (Adding Employee) وHRP-SET | Unknown | متوسط | قراءة الاثنين |
 | UNK-011 | آلية "Auto Indent" من BNQ/FNB إلى MGT — هل تولد Purchase Requisition تلقائياً من متطلبات الوليمة؟ | تكامل تشغيلي جوهري | فهارس BNQ-BIL وFNB-COP | Unknown | عالٍ | قراءة العمليات |
 | UNK-012 | هل يدعم POS الدفع المقسّم (split payments) وMixed payment على طاولة واحدة؟ | سلوك كاشير POS | فهرس POS-LUK (Settlement Summary) — غير حاسم | Unknown | متوسط | قراءة POS-SET/GST |
-| UNK-013 | أين تُخزَّن الصلاحيات: لكل شاشة؟ لكل عملية؟ لكل Transaction Type؟ | تصميم permission model | فهارس SYS-SSP + FAS-SET (Transaction Type Rights) + ACR-SET (AR User Access) | Unknown | عالٍ | قراءة SYS-SSP كاملاً |
+| UNK-013 | أين تُخزَّن الصلاحيات: لكل شاشة؟ لكل عملية؟ لكل Transaction Type؟ | تصميم permission model | فهارس SYS-SSP + FAS-SET (Transaction Type Rights) + **ACR-SET §4 (AR User Access — قرئ كاملاً)** | **Partially Resolved** | عالٍ | نموذجان موثقان الآن: **AR** = مستخدم × أنواع القيود الأربعة (Debit/Credit/Adjustment/Post — افتراضي No)؛ **FAS** = Transaction Type Rights؛ يبقى فحص SYS-SSP (المظلة) + صلاحيات العمليات الخطرة غير الموثقة (Rollback SOA / Cancel Invoice — GAP-AR-D04) |
 | UNK-014 | هل توجد عمليات نهاية الشهر/السنة (Month/Year End Closing) موثقة في FAS؟ | دورة مالية كاملة | **FAS-SET §18 + FAS-TRN §8** | **Resolved** | — | شهرياً: Audited (يقفل شهر القيد)؛ سنوياً: **Open Financial Year** (أرصدة إقفال→افتتاحية + صافي P&L→Retained Earnings بنسب) + **Rollback Fin. Year** للعكس |
 | UNK-015 | هل يدعم النظام Packages حقيقية (حزمة إقامة+وجبات+خدمات بسعر واحد)? | نموذج Package/Meal Plan | **FOM-SET §3/§7 قرئتا كاملاً** | **Resolved** | — | نعم: Package Amount يُفكّك إلزامياً عبر أعمدة Tariff/Plan/Services؛ Package Elements (مجموع 100%) يربط الإيراد بالضرائب؛ Occupancy S/D/T/Q + Extra Bed Pax + Days/Nights |
 
@@ -36,3 +41,11 @@
 |---|---|---|---|---|---|---|
 | UNK-016 | ما آلية "re-process" العكسية في Post FO to Finance — هل يُعكس القيد السابق آلياً أم يُنشأ قيد جديد معاكس؟ | تحديد سلوك الترحيل اليومي عند إصلاح الروابط | FAS-SET §6 + FAS-TRN §G | Unknown | متوسط | [INFERENCE] الأرجح معالجة قيد جديدة/إعادة توليد؛ يُحسم عند تنفيذ القرار المعماري GE-FA-01/القرار 1 في `financial-accounting/17-gap-analysis.md` |
 | UNK-017 | تفاصيل Audit Code المرافق للبنود في شاشة Post FO | ربط ترحيل GL بمصدر التدقيق | FAS-TRN §G (مذكور بلا بنية) | Unknown | منخفض | FAS-REP أو AR |
+
+## المجهولات المكتشفة في الجلسة 4 (من ACR)
+
+| ID | السؤال | لماذا يهم | المصادر المفحوصة | الحالة | الأثر | المسار |
+|---|---|---|---|---|---|---|
+| UNK-018 | ما السلوك التشغيلي لـ Black List؟ هل يمنع التسوية الائتمانية تلقائياً أم وصم عرضي فقط؟ | سلوك تحكم ائتماني حاسم | ACR-SET §5 ص12 (الوصم فقط موثق) | Unknown | متوسط | `[INFERENCE]` الأرجح المنع؛ يُحسم عند التنفيذ (GAP-AR-D03) |
+| UNK-019 | ما ترتيب/تفاعل الإقفال: SOA (AR) مقابل Audited (FAS) لنفس الشهر؟ | دورة إقفال مالية موحدة | ACR-OPR §7 + FAS-SET §18 | Unknown | عالٍ | قرار معماري (E-AR-17) — يُطرح في Phase 6/13 |
+| UNK-020 | هل قيود Opening Balance تُرحَّل إلى GL؟ (لا ذكر لشاشة FA في ACR-SET §2) | سلامة أرصدة التأسيس | ACR-SET §2 | Unknown | متوسط | فحص سلوكي عند التنفيذ (QA-AR-3) |

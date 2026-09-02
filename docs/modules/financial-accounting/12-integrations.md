@@ -12,7 +12,7 @@
 | I-FA-04 | **MM → Finance (استهلاك)** | MM → FAS | Issues → Consumption Posting (شهري/يومي INI 283) | FAS-TRN §J |
 | I-FA-05 | **Payroll → FAS** | HR → FAS | ED Codes → حسابات GL (+CC/Dept ثنائي) — إلزامي لترحيل journal | FAS-SET §9 |
 | I-FA-06 | **Membership → FAS** | MEM → FAS | Revenue Headings → D/C؛ Post Membership to Finance | FAS-SET §10 + FAS-TRN §K |
-| I-FA-07 | **AR → Finance** | AR → FAS | قيود AR تُرحّل فورياً بالحسابات المرتبطة (تعديل F5 ممكن)؛ أنواع Client×Cash/Bank/Others | FAS-SET §11 |
+| I-FA-07 | **AR → Finance** | AR → FAS | قيود AR تُرحّل فورياً بالحسابات المرتبطة (تعديل F5 ممكن)؛ أنواع Client×Cash/Bank/Others — **مكتمل الآن: راجع `../accounts-receivable/11-accounting-impact.md` (الترحيل التفاعلي عند الحفظ + INI #56=0 شرط التمكين + حسابات Sundry Debtors/Cash/Bank/Commission)** | FAS-SET §11 + ACR-OPR §1 ص10 |
 | I-FA-08 | **SYS (Property/CC/Dept/Tax)** | SYS → FAS | Property Codes، Cost Centers، Departments، Tax Codes — مرجع أساسي | FAS-SET عدة أقسام |
 | I-FA-09 | **SYS Module Attributes** | SYS → FAS | FAS Switch 4 (FOM to FAS Posting)؛ SYS 1/2 (ترتيب الطباعة)؛ INV 1/4/3؛ Module Attr 9 (TDS) | FAS-SET §11/§21 + FAS-TRN §H/§I + FAS-MST |
 | I-FA-10 | **FO ↔ FAS (بالاتجاهين مفاهيمياً)** | ثنائي | Guest Ledger B/F (Credit) وC/F (Debit) — دفتر الضيوف ينعكس في GL | FAS-SET §6 |

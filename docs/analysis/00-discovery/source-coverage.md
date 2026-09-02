@@ -27,8 +27,8 @@
 | text-extracted | **65 / 65 (100%)** ✅ |
 | toc-analyzed | **65 / 65 (100%)** ✅ |
 | field-extracted (جداول الحقول آلياً) | **13 ملف إعدادات — 2,099 حقلاً** ✅ |
-| read (قراءة عميقة) | **13/65** — FO: DEP/RES/REG/CAS/SET/LUK/CRG/HSK/GST + FAS: SET/TRN/MST/LUK (نهاية الجلسة 3) |
-| analyzed | **13 ملفاً → 8 وحدات فرعية** (FO 19 ملفاً + FAS 18 ملفاً → وحدتا modules) |
+| read (قراءة عميقة) | **18/65** — FO: DEP/RES/REG/CAS/SET/LUK/CRG/HSK/GST + FAS: SET/TRN/MST/LUK + ACR: SET/OPR/RPL/BIL/CRT (نهاية الجلسة 4) |
+| analyzed | **18 ملفاً** (FO 19 ملفاً + FAS 18 ملفاً + ACR 19 ملفاً → 3 وحدات modules) |
 | cross-referenced | 0 / 65 |
 | verified | 0 / 65 |
 
@@ -88,11 +88,11 @@
 | 44 | Sales & Marketing | FN6i-NT-SLM-SLT.pdf | 29 | ✓ | ✓ | ✓ | – | – | – | – |
 | 45 | Sales & Marketing | FN6i-NT-SLM-REP.pdf | 22 | ✓ | ✓ | ✓ | – | – | – | – |
 | 46 | Sales & Marketing | FN6i-NT-SLM-LUK.pdf | 10 | ✓ | ✓ | ✓ | – | – | – | – |
-| 47 | Accounts Receivales | FN6i-NT-ACR-RPL.pdf | 33 | ✓ | ✓ | ✓ | – | – | – | – |
-| 48 | Accounts Receivales | FN6i-NT-ACR-OPR.pdf | 21 | ✓ | ✓ | ✓ | – | – | – | – |
-| 49 | Accounts Receivales | FN6i-NT-ACR-SET.pdf | 19 | ✓ | ✓ | ✓ | – | – | – | – |
-| 50 | Accounts Receivales | FN6i-NT-ACR-BIL.pdf | 8 | ✓ | ✓ | ✓ | – | – | – | – |
-| 51 | Accounts Receivales | FN6i-NT-ACR-CRT.pdf | 8 | ✓ | ✓ | ✓ | – | – | – | – |
+| 47 | Accounts Receivales | FN6i-NT-ACR-RPL.pdf | 33 | ✓ | ✓ | ✓ | **✓ كامل (23 وظيفة + فجوة «12123 PENDING» موثقة)** | **✓ → modules/accounts-receivable/** | – | – |
+| 48 | Accounts Receivales | FN6i-NT-ACR-OPR.pdf | 21 | ✓ | ✓ | ✓ | **✓ كامل (8 أقسام — SOA/Rollback/Match/Untagging)** | **✓ → modules/accounts-receivable/** | – | – |
+| 49 | Accounts Receivales | FN6i-NT-ACR-SET.pdf | 19 | ✓ | ✓ | ✓ | **✓ كامل (8 أقسام — Company Profile المشترك)** | **✓ → modules/accounts-receivable/** | – | – |
+| 50 | Accounts Receivales | FN6i-NT-ACR-BIL.pdf | 8 | ✓ | ✓ | ✓ | **✓ كامل (4 أقسام الفوترة)** | **✓ → modules/accounts-receivable/** | – | – |
+| 51 | Accounts Receivales | FN6i-NT-ACR-CRT.pdf | 8 | ✓ | ✓ | ✓ | **✓ كامل (Debtors Follow-Up + تنقيب 4 مستويات)** | **✓ → modules/accounts-receivable/** | – | – |
 | 52 | Telephones | FN6i-NT-TEL-SET.pdf | 32 | ✓ | ✓ | ✓ | – | – | – | – |
 | 53 | Telephones | FN6i-NT-TEL-LUK.pdf | 21 | ✓ | ✓ | ✓ | – | – | – | – |
 | 54 | Telephones | FN6i-NT-TEL-REP.pdf | 20 | ✓ | ✓ | ✓ | – | – | – | – |
