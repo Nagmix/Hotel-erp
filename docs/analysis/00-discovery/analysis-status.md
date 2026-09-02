@@ -24,8 +24,8 @@
 |---|---|---|---|
 | **Phase 0** | Discovery — فهرسة وجرد وخريطة | ✅ **مكتملة** | الوثائق الخمس في `docs/analysis/00-discovery/` + `extracted-text/` + `inventory.json` |
 | **Phase 1** | Domain Model | ✅ **الإصدار التأسيسي مكتمل** (يُوسَّع في كل مرحلة) | `docs/domain/` (8 وثائق) — انظر أدناه |
-| Phase 2 | Module Inventory التفصيلي | ⬜ لم تبدأ | — |
-| Phase 3 | Detailed Module Analysis | ⬜ لم تبدأ | `docs/modules/<module>/00-18` |
+| Phase 2 | Module Inventory التفصيلي | ◐ **بدأت — Front Office محللة** | `docs/modules/front-office/00-overview.md` + هيكل 19 ملفاً كاملاً |
+| Phase 3 | Detailed Module Analysis | ◐ **الوحدة 1/17 (Front Office) — 19 ملفاً بمحتوى موثق** | `docs/modules/front-office/` (00→18) |
 | Phase 4 | Screens & UX | ⬜ لم تبدأ | `docs/screens/specifications/*` |
 | Phase 5 | Workflows | ⬜ لم تبدأ | `docs/workflows/*` |
 | Phase 6 | Accounting | ⬜ لم تبدأ | `docs/accounting/*` |
@@ -83,13 +83,57 @@
 
 ---
 
+### الجلسة 2 — 2026-09-02 (بعد الظهر)
+
+**ما تم:**
+
+1. **إنشاء مستودع GitHub** `Nagmix/Hotel-erp` (فرع main) وربطه بمستودع Git محلي مستقل في `/home/z/my-project/hotel-erp/`.
+2. **تنظيف حقوق النشر:** استبعاد أدلة FortuneNext الأصلية (PDF + النصوص المستخرجة + الجداول الخام) من المستودع عبر `.gitignore` — المرفوع هو وثائق التحليل والأدوات فقط. تاريخ Git نظيف (بلا أي محتوى محمي).
+3. **دفع أولي (4 commits):** scaffold + PHASE 0 + PHASE 1 + فهرس docs.
+4. **إكمال القراءة العميقة للوثائق التشغيلية الأربع:**
+   - FOM-REG كاملاً (105 صفحة، 28 وظيفة): أنماط Check-in الأربعة، Guest Management، Guest Services، Group operations، Extension/SMS، Hotel Chart، Billing Broadcast.
+   - FOM-RES كاملاً (68 صفحة): دورة الحجز الكاملة (Add/Amend/Cancel/Inquire/Assign/Copy/Re-Instate) + Room Type Booking + Room Rack Console + Retentions + Close Inventory.
+   - FOM-CAS كاملاً (95 صفحة، 20 وظيفة): Posting بأنواعه التسعة، Deposits بثلاث بوابات، Paid Outs، Allowances، Splits/Transfers/Links، Settlements بالأنماط التسعة + Re-Instate + Refund + Foreex + Encashment + Agent Commission + Pax Transfer.
+5. **PHASE 2/3 — Front Office (19 ملفاً):** إنشاء `docs/modules/front-office/` كاملاً:
+   - 00-overview (حدود الوحدة + جرد الوظائف الـ 60+ بمصادرها + التفاعلات + المفاهيم الجوهرية)
+   - 01-master-data, 02-configuration (المفاتيح الموثقة: INI 64, Attribute 16, Post History)
+   - 03-screens (كتالوج 64 شاشة بأولويات P0-P2)
+   - 04-workflows (13 سير عمل موثقاً خطوة بخطوة WF-FO-01..13)
+   - 05-business-rules (10 مجموعات BR-FO-01..10) + 06-validations (V-FO-01..05 + مصفوفة الرسائل)
+   - 10-transactions (سلسلة المستندات + حالات الحجز/الفوليو) + 11-accounting-impact (16 حدثاً مالياً + بنية التسويات + 6 أسئلة معلقة)
+   - 12-integrations (16 تكاملاً موثقاً I1-I16) + 13-exceptions (28 حالة حدية E1-E28)
+   - 14-data-model (23 كياناً + العلاقات + 6 قيود تصميم) + 15-ux-analysis
+   - 16-erpnext-mapping (Seed Mapping بتصنيف A-F) + 17-gap-analysis (14 فجوة توثيق + 6 فجوات ERPNext) + 18-acceptance-criteria (8 مجموعات معايير)
+6. تحديث source-coverage.md (4 ملفات read + analyzed).
+
+**اكتشافات جوهرية موثقة في هذه الجلسة:**
+- **Room Rate posting يسجل شحنة واحدة** — التنفيذ المتكرر يخزن الأخير فقط؛ للتعدد Additional Room Rate (4 أنواع: Rate/Plan/Extra Bed/Retention).
+- **Day Charge = 1 أو 0.5** فقط (نصف اليوم موثق نصاً).
+- **Fixed Charge Posting يمنع تكرار (revenue, guest, day)** — قيد تفرد مركب.
+- **Bill Allowance محصور زمنياً بمدى Arrival↔Departure**.
+- **التسوية يجب أن تتطابق (tally)** وإلا رفضت — + 9 أنماط + Multi + جزئية + إبقاء الإشغال + Resettlement.
+- **Credit Card Authorization تلقائي من portal لكنه غير إلزامي**.
+- **كل تغييرات الحجز تُسجل في Audit بخمسة أبعاد** (Reservation/Change Room/Room Rate/Amend Stay/Occupancy) + مستخدم + وقت.
+- **OOO يتطلب سبباً من قائمة + قسماً** وOOS وصفاً فقط؛ From/To غير قابلين للتحرير في كليهما.
+- **Close Room Inventory يمنع الحجز لكن يسمح لـ walk-ins** — تفصيل تشغيلي مهم.
+- **Re-Instate (Cancel/No-Show) يولد رقماً جديداً دوماً** — الأرقام المسلسلة لا تُعاد أبداً.
+- **Folio Re-Instate متاح قبل Night Audit فقط، والغرفة الرئيسية قبل المرتبطة**.
+- **6 روابط تفويض موثقة** عبر العمليات الحساسة (نمط "منفذ + مصرِّح" مزدوج).
+
+**نقطة الاستئناف القادمة (الجلسة 3):**
+1. **Quality Gate لوحدة FO الحالية** — التحقق من مطابقة 04-workflows و05-business-rules للأدلة ثم استكمال نقاط [PENDING]: قراءة FOM-SET عميقاً (خصوصاً §7 Room Rate Master و§8 Room Master + جرد Attributes/INI كاملاً) + FOM-LUK + FOM-CRG.
+2. **الوحدة التالية في التسلسل: FAS (Financial Management)** — بدء هيكل 19 ملفاً + قراءة FAS-SET (الروابط الست) وFAS-TRN (حسم QA-1..6 وUNK-006).
+3. ترقية unknowns.md: حسم ما يمكن من UNK-001..015 وتحديث الحالة.
+
+---
+
 ## مؤشرات الجودة الحالية
 
 | المؤشر | القيمة | الهدف |
 |---|---|---|
 | ملفات مفهرسة | 65/65 | 65/65 ✅ |
 | نصوص مستخرجة | 65/65 | 65/65 ✅ |
-| ملفات قرأت قراءة عميقة | 0 → قيد التقدم (Phase 1) | 65/65 |
-| وحدات محللة وظيفياً | 0 | 17 |
-| Knowledge Graph (علاقات موثقة) | 6 روابط ترحيل محاسبية مكتشفة | يوسَّع في Phase 3/6 |
+| ملفات قرأت قراءة عميقة | **5/65** (FOM: DEP+RES+REG+CAS كاملة + SET جزئي) | 65/65 |
+| وحدات محللة وظيفياً | **1/17** (Front Office — 19 ملفاً) | 17 |
+| Knowledge Graph (علاقات موثقة) | 6 روابط ترحيل + 16 تكامل FO (I1-I16) | يوسَّع في Phase 3/6 |
 | Unknowns مسجلة | انظر `docs/analysis/unknowns.md` | صفر حرج قبل التنفيذ |

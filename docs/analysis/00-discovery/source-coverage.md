@@ -27,8 +27,8 @@
 | text-extracted | **65 / 65 (100%)** ✅ |
 | toc-analyzed | **65 / 65 (100%)** ✅ |
 | field-extracted (جداول الحقول آلياً) | **13 ملف إعدادات — 2,099 حقلاً** ✅ |
-| read (قراءة عميقة) | **5 ملفات FO (1 كامل + 4 جزئي) — الجلسة 1** |
-| analyzed | 0 / 65 (يبدأ في Phase 2/3) |
+| read (قراءة عميقة) | **5 ملفات FO كاملة (DEP + RES + REG + CAS كامل + SET جزئي) — نهاية الجلسة 2** |
+| analyzed | **4 ملفات (FOM-RES/REG/CAS/DEP → docs/modules/front-office/ 19 ملفاً)** |
 | cross-referenced | 0 / 65 |
 | verified | 0 / 65 |
 
@@ -44,15 +44,15 @@
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | Front Office | FN6i-NT-FOM-SET.pdf | 145 | ✓ | ✓ | ✓ | ◐ 59 جدول حقول آلياً + ص1-15 | – | – | – |
 | 2 | Front Office | FN6i-NT-FOM-REP.pdf | 120 | ✓ | ✓ | ✓ | – | – | – | – |
-| 3 | Front Office | FN6i-NT-FOM-REG.pdf | 105 | ✓ | ✓ | ✓ | ◐ الهيكل + Express Check-In (~15%) | – | – | – |
-| 4 | Front Office | FN6i-NT-FOM-CAS.pdf | 95 | ✓ | ✓ | ✓ | ◐ Posting + Checkout + Settlements (~35%) | – | – | – |
+| 3 | Front Office | FN6i-NT-FOM-REG.pdf | 105 | ✓ | ✓ | ✓ | **✓ كامل (28 وظيفة، ص1-105)** | **✓ → modules/front-office/** | – | – |
+| 4 | Front Office | FN6i-NT-FOM-CAS.pdf | 95 | ✓ | ✓ | ✓ | **✓ كامل (20 وظيفة، ص1-95)** | **✓ → modules/front-office/** | – | – |
 | 5 | Front Office | FN6i-NT-FOM-LUK.pdf | 51 | ✓ | ✓ | ✓ | – | – | – | – |
 | 6 | Front Office | FN6i-NT-FOM-GST.pdf | 57 | ✓ | ✓ | ✓ | – | – | – | – |
 | 7 | Front Office | FN6i-NT-FOM-HSK.pdf | 59 | ✓ | ✓ | ✓ | – | – | – | – |
-| 8 | Front Office | FN6i-NT-FOM-RES.pdf | 68 | ✓ | ✓ | ✓ | ◐ ص1-27 مسار الحجز (~40%) | – | – | – |
+| 8 | Front Office | FN6i-NT-FOM-RES.pdf | 68 | ✓ | ✓ | ✓ | **✓ كامل (7 وظائف رئيسية، ص1-68)** | **✓ → modules/front-office/** | – | – |
 | 9 | Front Office | FN6i-NT-FOM-SMS.pdf | 14 | ✓ | ✓ | ✓ | – | – | – | – |
 | 10 | Front Office | FN6i-NT-FOM-CRG.pdf | 19 | ✓ | ✓ | ✓ | – | – | – | – |
-| 11 | Front Office | FN6i-NT-FOM-DEP.pdf | 14 | ✓ | ✓ | ✓ | **✓ كامل** | – | – | – |
+| 11 | Front Office | FN6i-NT-FOM-DEP.pdf | 14 | ✓ | ✓ | ✓ | **✓ كامل** | **✓ → modules/front-office/** | – | – |
 | 12 | Point of Sale | FN6i-NT-POS-SET.pdf | 122 | ✓ | ✓ | ✓ | – | – | – | – |
 | 13 | Point of Sale | FN6i-NT-POS-REP.pdf | 158 | ✓ | ✓ | ✓ | – | – | – | – |
 | 14 | Point of Sale | FN6i-NT-POS-GST.pdf | 56 | ✓ | ✓ | ✓ | – | – | – | – |
