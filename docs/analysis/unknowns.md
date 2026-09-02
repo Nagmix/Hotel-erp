@@ -5,6 +5,13 @@
 
 ---
 
+## تحديثات الجلسة 6 — Materials Management (MGT-SET/DNT/LUK قُرئت كاملة)
+
+- **UNK-011 Partially Resolved** (Auto-Indent: قناة **DPR** موثقة داخل MGT — "If the item has 'Nil' balance... DPR Qty... will be reflected during the Receipt entry" + Re-Order Process الآلي؛ **يبقى اتجاه BNQ/FNB→MGT غير موثق** — يفحص عند قراءة BNQ/FNB).
+- **UNK-024 Partially Resolved** (دليل Gift Shop يقوى: MGT يوثق **Shop Outlet** كنوع مخزن مربوط بمنفذ بيع "Outlet Code and Store code should be same" + Barcode INI 245 — يرجّح أن Gift Shop = مخزن+منفذ POS لا وحدة مستقلة؛ يبقى [UNCERTAIN] حتى POS-REP/BNQ).
+- جديد من قراءة MGT: **UNK-027** (توقيت ترحيل MM→FAS: فوري/دفعة/شهري) + **UNK-028** (مالك كيان Company Types: FO أم SYS؟) + **UNK-029** (ارتباط Gate Entry# في Receipt بوحدة Gate Passes) + **UNK-030** (هل ترتبط مبيعات Shop Outlet بمخزون MGT مباشرة؟) + **UNK-031** (دلالة حالة "Blank Space" في PO by Vendor).
+- الجدول التراكمي لمفاتيح الإعداد يوسَّع إلى **25+ مفتاحاً** (إضافة INI 39/131/245/355 + INV 3/5(=8?)/6/7/13/14/298 — مع GAP-MG-D01 تعارض ترقيم SPO).
+
 ## تحديثات الجلسة 5 — System Setup (SYS-SSP قُرئ كاملاً)
 
 - **UNK-004 Resolved** (multi-property: نموذج بيانات متعدد الخصائص + Property=Company قرار F-SYS-11).
@@ -43,7 +50,7 @@
 | UNK-008 | ما حدود الضرائب (Tax Structures) وأنواعها (VAT/Municipality/Service Charge)? | الفنادق في المنطقة عليها ضرائب متعددة مركبة | **FOM-SET §6 + FAS-SET §6 (نوع Taxes)** | **Partially Resolved** | — | البنية موثقة كاملة: Calculation (Percentage/Amount/Slab) + On Tax/Consolidate/Pax + Rate Selection (Rack/Charged/High/Low) + فصل إلزامي (Tariff/ExtraBed/Plan)؛ الأنواع المذكورة نصاً: Service Charges, Luxury Tax, Sales Tax (FAS-SET) — أسماء ضرائب المنطقة العربية `[NOT DOCUMENTED]` (تخصيص زبون) |
 | UNK-009 | هل الحجوزات تدعم Group Blocks/Allocation حقيقية (PMS allotments)؟ | يحسم تصميم Reservation model | فهرس FOM-SET (Group Business Sources) — غير حاسم | Unknown | عالٍ | قراءة FOM-RES |
 | UNK-010 | ما علاقة Care بـ HRP في بيانات الموظفين (Personnel Master واحد أم مستقل)؟ | يمنع ازدواجية Employee entity | فهارس Care-SET (Adding Employee) وHRP-SET | Unknown | متوسط | قراءة الاثنين |
-| UNK-011 | آلية "Auto Indent" من BNQ/FNB إلى MGT — هل تولد Purchase Requisition تلقائياً من متطلبات الوليمة؟ | تكامل تشغيلي جوهري | فهارس BNQ-BIL وFNB-COP | Unknown | عالٍ | قراءة العمليات |
+| UNK-011 | آلية "Auto Indent" من BNQ/FNB إلى MGT — هل تولد Purchase Requisition تلقائياً من متطلبات الوليمة؟ | تكامل تشغيلي جوهري | **MGT-DNT قُرئ كاملاً (§6 DPR + §8 Re-Order)** | **Partially Resolved** | عالٍ | **قناتان موثقتان داخل MGT:** (1) **DPR**: عند إصدار ضد Indent برصيد Nil → "enter the requisition in the DPR Qty field... will be reflected during the Receipt entry" (DNT ص40)؛ (2) **Re-Order Process** الآلي عند ≤ Reorder Level → PR للقسم. **يبقى اتجاه BNQ/FNB→MGT [NOT DOCUMENTED]** — يفحص عند قراءة BNQ-BIL/FNB-COP |
 | UNK-012 | هل يدعم POS الدفع المقسّم (split payments) وMixed payment على طاولة واحدة؟ | سلوك كاشير POS | **TS Manual ص28-36 (قرئ)** | **Resolved** | — | **نعم بوضوح:** Split Checks **3 طرق** (Equal/Covers · Item-wise · **Quantity-wise كسري 0.5**) + Link Tables (دمج طاولات بفاتورة واحدة) + Table Suffix؛ والتسويات 6 أنماط (Cash/CC/Cheque/Coupon/Guest/Void) **متسلسلة على الفاتورة** بقاعدة **Balance=0 إلزامية** قبل الحفظ (= mixed payments) + **Resettlement** بوضع آخر — راجع `point-of-sale/04-workflows.md` WF-POS-09/10 |
 | UNK-013 | أين تُخزَّن الصلاحيات: لكل شاشة؟ لكل عملية؟ لكل Transaction Type؟ | تصميم permission model | **SYS-SSP Ch1 قُرئ كاملاً + ACR-SET §4 + FAS-SET + POS-SET** | **Resolved** | — | **النموذج الرباعي الطبقات موثق:** (1) SYS المظلة: Supervisor=تجاوز كامل · Group/User × Main/Sub Module × بند قائمة × **Add/Modify/Delete** (لعناصر Settings/Transaction/Master المؤهلة فقط) · قيود التقارير Spool/Export/Format · تخصيص الداشبورد؛ (2) صلاحيات خاصة لكل وحدة: AR (أنواع قيود) · FAS (Transaction Types) · POS (3D كاشير×عمل×وضع + حجب منافذ) · FO (تفويض مزدوج). SYS يمنح الوصول للقائمة والوحدة تحكم بدقة العمليات داخلها — راجع `modules/system-setup/07-permissions.md` + قرارات F-SYS-8/9 |
 | UNK-014 | هل توجد عمليات نهاية الشهر/السنة (Month/Year End Closing) موثقة في FAS؟ | دورة مالية كاملة | **FAS-SET §18 + FAS-TRN §8** | **Resolved** | — | شهرياً: Audited (يقفل شهر القيد)؛ سنوياً: **Open Financial Year** (أرصدة إقفال→افتتاحية + صافي P&L→Retained Earnings بنسب) + **Rollback Fin. Year** للعكس |
@@ -75,3 +82,13 @@
 | UNK-024 | ما «Gift Shop» المذكورة كوحدة هدف في Reason Codes (9 وحدات)؟ وحدة مستقلة بلا أدلة أم منافذ POS؟ | نطاق الوحدات في البنية المستهدفة | SYS-SSP Ch3 §6 ص61 | Unknown | منخفض | قراءة BNQ/MEM أو إسقاطها كمنافذ POS — [UNCERTAIN] |
 | UNK-025 | ما وظيفة «Group Nationality» (§19 — غير مدرجة في TOC، صفحة ونصف هامشية)؟ | قد تكون جنسيات جماعية للولائم/المجموعات | SYS-SSP Ch3 §19 ص108-109 | Unknown | منخفض | [UNCERTAIN] — فحص تقاطعها عند قراءة BNQ/FOM-GST |
 | UNK-026 | هل يُحذف المستخدم مادياً أم تعطيله فقط (لا حذف موثق في SYS-SSP)؟ | خصوصية البيانات + نموذج المستخدم | SYS-SSP Ch1/Ch2 كامل | Unknown | منخفض | [INFERENCE] تعطيل فقط — يُقرر في تصميم User lifecycle |
+
+## المجهولات المكتشفة في الجلسة 6 (من MGT)
+
+| ID | السؤال | لماذا يهم | المصادر المفحوصة | الحالة | الأثر | المسار |
+|---|---|---|---|---|---|---|
+| UNK-027 | ما توقيت ترحيل MM→FAS (فوري عند كل معاملة / دفعة يومية / مع الإقفال الشهري Ledger)؟ | جوهر دورة القيود الشرائية | MGT كامل (رابط الترحيل موثق دون توقيت — GAP-MG-D04) + FAS-TRN | Unknown | **عالٍ** | يُحسم في Phase 6 (أنماط FO/POS دفعات مقابل AR فوري تسمح بالاحتمالين) |
+| UNK-028 | من يملك تعريف Company Types: FO (نص MGT ص22) أم SYS؟ (بنية Vendor Code TTT+XXXX كلها تعتمد عليه) | توحيد كيان الترميز مع AR | MGT-SET §9 + (SYS-SSP لا يذكره) + FO | Unknown | عالٍ | Phase 11 مع AR mapping — مرشح: Supplier Group مشترك (F-MG-11) |
+| UNK-029 | هل Gate Receipt/Gate Entry# في Receipt Other Details ترتبط بوحدة Gate Passes المستقلة في الحزمة؟ | تكامل استلام-بوابة | MGT-DNT §6 (الحقول) + فهرس Gate_Passes غير المقروء | Unknown | متوسط | قراءة وثيقة Gate Passes (جلسة قادمة) |
+| UNK-030 | هل مبيعات Shop Outlet (POS) تخفض مخزون MGT مباشرة (Item-Level) أم عبر مقاصة FNB؟ | نموذج تكامل البيع التجزيء | MGT-SET §5 (الربط موثق 1:1) + POS-* (لا ذكر) | Unknown | متوسط | قراءة FNB-COP أو POS-REP — [INFERENCE] الربط الهيكلي موجود بلا مسار مخزوني موثق |
+| UNK-031 | ما دلالة حالة «Blank Space» في PO Status by Vendor؟ | دقة تفسير حالات PO | MGT-LUK §6 ص13 | Unknown | منخفض | [INFERENCE] على الأرجح PO بلا أي استلام/حركة — يُطابق Pending عند التنفيذ |

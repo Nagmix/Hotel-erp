@@ -24,8 +24,8 @@
 |---|---|---|---|
 | **Phase 0** | Discovery — فهرسة وجرد وخريطة | ✅ **مكتملة** | الوثائق الخمس في `docs/analysis/00-discovery/` + `extracted-text/` + `inventory.json` |
 | **Phase 1** | Domain Model | ✅ **الإصدار التأسيسي مكتمل** (يُوسَّع في كل مرحلة) | `docs/domain/` (8 وثائق) — انظر أدناه |
-| Phase 2 | Module Inventory التفصيلي | ◐ **بدأت — FO + FAS + ACR + POS + SYS محللة** | `docs/modules/{front-office, financial-accounting, accounts-receivable, point-of-sale, system-setup}` |
-| Phase 3 | Detailed Module Analysis | ◐ **5/17: FO (19) + FAS (18) + ACR (19) + POS (19) + SYS (19) = 94 ملف وثائق** | نفس المسارات |
+| Phase 2 | Module Inventory التفصيلي | ◐ **بدأت — FO + FAS + ACR + POS + SYS + MGT محللة** | `docs/modules/{front-office, financial-accounting, accounts-receivable, point-of-sale, system-setup, materials-management}` |
+| Phase 3 | Detailed Module Analysis | ◐ **6/17: FO (19) + FAS (18) + ACR (19) + POS (19) + SYS (19) + MGT (19) = 113 ملف وثائق** | نفس المسارات |
 | Phase 4 | Screens & UX | ⬜ لم تبدأ | `docs/screens/specifications/*` |
 | Phase 5 | Workflows | ⬜ لم تبدأ | `docs/workflows/*` |
 | Phase 6 | Accounting | ⬜ لم تبدأ | `docs/accounting/*` |
@@ -249,13 +249,41 @@
 
 ---
 
+### الجلسة 6 — 2026-09-02 — وحدة Materials Management (MGT) كاملة
+
+**ما تم:**
+
+1. **الوحدة 6/17 — Materials Management كاملة (19 ملفاً):**
+   - قراءة عميقة كاملة: **MGT-SET (68 ص/28 قسماً) + MGT-DNT (75 ص/15 وظيفة Daily Entries — الملف اسمه DNT وليس OPR!) + MGT-LUK (38 ص/20 استعلاماً)** = 181 ص. (MGT-REP 112 ص مؤجل للمرحلة 7).
+   - إنشاء `docs/modules/materials-management/` (00-18): **107 شاشة** · WF-MG-01..19 · BR-MG-01..18 · V-MG-01..42 · I-MG-01..15 · E-MG-01..14 · 64 كياناً · 11 حدثاً آلياً (A-MG) · 36 حالة حدية · Seed Mapping (قرارات F-MG-1..12) · 12 فجوة مصدر + 14 ERPNext · 10 مجموعات معايير قبول (48 معياراً) + Smoke Test 28 خطوة.
+2. تحديث: unknowns (**UNK-011 Partially (DPR + Re-Order) + UNK-024 Partially (Shop Outlet)** + جديد **UNK-027..031**) + source-coverage (26/65) + هذا الملف + فهرس docs/README.md (6/17).
+
+**اكتشافات جوهرية موثقة (MGT):**
+- **FIFO الأصلي = FEFO وظيفياً:** "prioritized to disperse based on their expiry dates" + توزيع الإصدار تصاعدياً بالتاريخ — قرار تنفيذي F-MG-2.
+- **التقييم خاصية مخزن لا صنف** (WA/FIFO لكل Store) — تعارض مباشر مع ERPNext العام — قرار F-MG-1 (محرك تقييم مخصص).
+- **حلقة DPR التلقائية:** Indent → رصيد صفر → DPR Qty → ينعكس في Receipt آلياً — أقرب دليل موثق على Auto-Indent (UNK-011 جزئياً).
+- **التجميد الشهري المتدرج:** Physical Stock → Variance Updation (تنبيه مراجعة التقرير!) → Process Store Ledger (تجميد ما عدا الحالي) + Cancel — عائلة التجميد الثالثة (FO يومي/FAS سنوي/MGT شهري).
+- **Vendor Code = TTT+XXXX من Company Types (FO!)** — نفس عائلة ترميز AR — قرار توحيد F-MG-11 (Supplier Group مشترك).
+- **كثافة مفاتيح قياسية:** 12 مفتاح MGT جديد (INI 39/131/245/355 + INV 3/5(=8؟)/6/7/13/14/298) → الجدول التراكمي 25+؛ **مفتاح متدرج القيمة (INI 355: 0/1/2/3)** يطوّر تصميم Feature Toggle (F-SYS-1).
+- **Vendor Master أغنى من Supplier بمرتين:** 7 عائلات تفاصيل + تقويم 9 أيام دفع + 5 شرائح خصم + فائدة تأخير + Stop Purchase/Payment (منطق معكوس!) — F-MG-2.
+- **Shop Outlet:** مخزن = منفذ (نفس الكود) + صنف لمنفذ واحد — دليل Gift Shop (UNK-024 جزئياً).
+- **شاشة Transactions الذكية:** عدادات حية (معلقات/متوقع 7 أيام/منتهيات/تحت الحد/تحويلات) — أول KPI Dashboard جاهز الترجمة.
+- **مفاجآت إسقاط إيجابية ERPNext:** Material Request = PR/Indent · Purchase Receipt (+bill_no!) = GR · Stock Reconciliation = Physical Stock · Repack = Conversion · Item-Supplier last rate آلي · Item Reorder per warehouse — أعلى قابلية إسقاط قياسي في المشروع.
+
+**نقطة الاستئناف القادمة (الجلسة 7):**
+1. **الوحدة التالية: BNQ (الولائم — 5 ملفات/255 ص: SET 98 + BIL 66 + BOK 41 + CFG 38 + LUK 12)** — بترتيب module-inventory §5 — يحسم UNK-011 (Auto Indent من BNQ) وUNK-025 (Group Nationality إن كانت للولائم).
+2. بعده **HRP (الرواتب — 4 ملفات/253 ص)**.
+3. (اختياري بالطاقة) وثيقة **Gate Passes** قصيرة لحسم UNK-029.
+
+---
+
 ## مؤشرات الجودة الحالية
 
 | المؤشر | القيمة | الهدف |
 |---|---|---|
 | ملفات مفهرسة | 65/65 | 65/65 ✅ |
 | نصوص مستخرجة | 65/65 | 65/65 ✅ |
-| ملفات قرأت قراءة عميقة | **23/65** (FOM عدا REP/SMS + FAS عدا REP + ACR كامل + POS 4 + **SYS-SSP كامل**) | 65/65 |
-| وحدات محللة وظيفياً | **5/17** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 = 94 ملف وثائق) | 17 |
+| ملفات قرأت قراءة عميقة | **26/65** (FOM عدا REP/SMS + FAS عدا REP + ACR كامل + POS 4 + SYS-SSP + **MGT 3 عدا REP**) | 65/65 |
+| وحدات محللة وظيفياً | **6/17** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 = 113 ملف وثائق) | 17 |
 | Knowledge Graph (علاقات موثقة) | 6 روابط ترحيل + 16 تكامل FO (I1-I16) | يوسَّع في Phase 3/6 |
 | Unknowns مسجلة | انظر `docs/analysis/unknowns.md` | صفر حرج قبل التنفيذ |

@@ -27,8 +27,8 @@
 | text-extracted | **65 / 65 (100%)** ✅ |
 | toc-analyzed | **65 / 65 (100%)** ✅ |
 | field-extracted (جداول الحقول آلياً) | **13 ملف إعدادات — 2,099 حقلاً** ✅ |
-| read (قراءة عميقة) | **23/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + **SYS 1 (SSP كامل 110 ص)** (نهاية الجلسة 5) |
-| analyzed | **23 ملفاً** (FO 19 + FAS 18 + ACR 19 + POS 19 + **SYS 19 ملف وثائق → 5 وحدات modules**) |
+| read (قراءة عميقة) | **26/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + SYS 1 + **MGT 3 (SET+DNT+LUK = 181 ص)** (نهاية الجلسة 6) |
+| analyzed | **26 ملفاً** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + **MGT 19 ملف وثائق → 6 وحدات modules = 113 ملف وثائق**) |
 | cross-referenced | 0 / 65 |
 | verified | 0 / 65 |
 
@@ -57,10 +57,10 @@
 | 13 | Point of Sale | FN6i-NT-POS-REP.pdf | 158 | ✓ | ✓ | ✓ | – | – | – | – |
 | 14 | Point of Sale | FN6i-NT-POS-GST.pdf | 56 | ✓ | ✓ | ✓ | **✓ كامل (12 وظيفة Guest History + الولاء)** | **✓ → modules/point-of-sale/** | – | – |
 | 15 | Point of Sale | FN6i-NT-POS-LUK.pdf | 14 | ✓ | ✓ | ✓ | **✓ كامل (7 استعلامات + صيغة Average Per Check)** | **✓ → modules/point-of-sale/** | – | – |
-| 16 | Materials Management | FN6i-NT-MGT-REP.pdf | 112 | ✓ | ✓ | ✓ | – | – | – | – |
-| 17 | Materials Management | FN6i-NT-MGT-DNT.pdf | 75 | ✓ | ✓ | ✓ | – | – | – | – |
-| 18 | Materials Management | FN6i-NT-MGT-SET.pdf | 68 | ✓ | ✓ | ✓ | – | – | – | – |
-| 19 | Materials Management | FN6i-NT-MGT-LUK.pdf | 38 | ✓ | ✓ | ✓ | – | – | – | – |
+| 16 | Materials Management | FN6i-NT-MGT-REP.pdf | 112 | ✓ | ✓ | ✓ | – (مؤجل Phase 7) | – | – | – |
+| 17 | Materials Management | FN6i-NT-MGT-DNT.pdf | 75 | ✓ | ✓ | ✓ | **✓ كامل (15 وظيفة Daily Entries — الإصدار/المرتجعات/الجرد/الإقفال الشهري)** | **✓ → modules/materials-management/** | – | – |
+| 18 | Materials Management | FN6i-NT-MGT-SET.pdf | 68 | ✓ | ✓ | ✓ | **✓ كامل (28 قسماً — المخازن/الأصناف/Master المورد بـ 7 عائلات)** | **✓ → modules/materials-management/** | – | – |
+| 19 | Materials Management | FN6i-NT-MGT-LUK.pdf | 38 | ✓ | ✓ | ✓ | **✓ كامل (20 استعلاماً + Drill-down ثلاثي)** | **✓ → modules/materials-management/ (09)** | – | – |
 | 20 | Banquets | FN6i-NT-BNQ-SET.pdf | 98 | ✓ | ✓ | ✓ | – | – | – | – |
 | 21 | Banquets | FN6i-NT-BNQ-BIL.pdf | 66 | ✓ | ✓ | ✓ | – | – | – | – |
 | 22 | Banquets | FN6i-NT-BNQ-BOK.pdf | 41 | ✓ | ✓ | ✓ | – | – | – | – |

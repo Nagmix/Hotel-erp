@@ -27,7 +27,7 @@
 - [أدوار المستخدمين الفندقيين](domain/hotel-roles.md)
 - **[القاموس الموحد للمصطلحات (عربي/EN)](domain/terminology.md)** ⭐
 
-### الوحدات (Modules) — Phase 2/3 (5/17 محللة)
+### الوحدات (Modules) — Phase 2/3 (6/17 محللة)
 
 **1. Front Office (مكتملة — 19 ملفاً):** [`modules/front-office/`](modules/front-office/) — ابدأ بـ [`00-overview.md`](modules/front-office/00-overview.md) · ⭐ النواة المحاسبية: [`11-accounting-impact.md`](modules/front-office/11-accounting-impact.md) · الجرد: [`03-screens.md`](modules/front-office/03-screens.md) (193 شاشة) · القواعد: [`05-business-rules.md`](modules/front-office/05-business-rules.md) (BR-FO-01..16)
 
@@ -39,7 +39,9 @@
 
 **5. System Setup (مكتملة — 19 ملفاً):** [`modules/system-setup/`](modules/system-setup/) — ابدأ بـ [`00-overview.md`](modules/system-setup/00-overview.md) · ⭐ **نموذج الصلاحيات الرباعي (يحسم UNK-013):** [`07-permissions.md`](modules/system-setup/07-permissions.md) · ⭐ **المرجعيات المشتركة + محرك الضرائب الثلاثي:** [`01-master-data.md`](modules/system-setup/01-master-data.md) (Code→Slab→Structure بأمثلة رقمية) · القرارات: [`16-erpnext-mapping.md`](modules/system-setup/16-erpnext-mapping.md) (F-SYS-1..12 — **Property=Company يحسم UNK-004**) · الفجوات: [`17-gap-analysis.md`](modules/system-setup/17-gap-analysis.md) (GAP-SYS-D01: وثيقة INI خارج الحزمة — يحسم UNK-022)
 
-**التالي بالترتيب:** `materials-management/` (MGT — يحسم جزء UNK-011 Auto Indent) ← `banquets/` ← `hr-payroll/` ← ... (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
+**6. Materials Management (مكتملة — 19 ملفاً):** [`modules/materials-management/`](modules/materials-management/) — ابدأ بـ [`00-overview.md`](modules/materials-management/00-overview.md) · ⭐ **دورة التوريد الكاملة + الإقفال الشهري:** [`04-workflows.md`](modules/materials-management/04-workflows.md) (WF-MG-01..19: PR→PO→GR→Issue→Physical→Variance→Ledger) · ⭐ **القواعد الدستورية:** [`05-business-rules.md`](modules/materials-management/05-business-rules.md) (BR-MG-01..18: هرمية المخازن + WA/FIFO لكل مخزن + قواعد التواريخ العشر) · التقييم المحاسبي: [`11-accounting-impact.md`](modules/materials-management/11-accounting-impact.md) (MM→FAS + Bill#→Payment Match) · القرارات: [`16-erpnext-mapping.md`](modules/materials-management/16-erpnext-mapping.md) (F-MG-1..12 — ⭐ **محرك التقييم لكل مخزن F-MG-1 + FEFO F-MG-2** — أعلى قابلية إسقاط قياسي: Material Request/Purchase Receipt/Stock Reconciliation/Repack)
+
+**التالي بالترتيب:** `banquets/` (BNQ — يحسم UNK-011 كاملاً + UNK-025) ← `hr-payroll/` (HRP) ← ... (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
 
 ### العمليات (Workflows) — Phase 5
 `workflows/module-workflows/` + `workflows/end-to-end/`
