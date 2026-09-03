@@ -502,3 +502,38 @@
 1. **الوحدة التالية: FNB (تكاليف الطعام والشراب — 4 ملفات/76 ص: SET 14 + COP 19 + LUK 15 + REP 28)** — `extracted-text/Food_&_Beverage_Costing/` — ثم FXD (25) + GTP (13) لإغلاق الـ17.
 2. التقارير المؤجلة (REP) للوحدات محللة تبقى للمرحلة 7.
 3. بعد الـ17: المراجعة الشاملة + cross-referencing + Knowledge Graph النهائي (Phase 8+).
+
+---
+
+### الجلسة 14 — 2026-09-04 — وحدة Food & Beverage Costing (FNB) كاملة
+
+**ما تم:**
+
+1. **الوحدة 14/17 — F&B Costing كاملة (19 ملفاً):**
+   - قراءة عميقة كاملة للملفات الأربعة: **FNB-SET (14 ص/4 أقسام) + FNB-COP (19 ص/9 وظائف) + FNB-LUK (15 ص/7 استعلامات) + FNB-REP (28 ص/13 تقريراً) = 76 ص كاملة**.
+   - إنشاء `docs/modules/food-beverage-costing/` (00-18): ~25 شاشة · WF-FB-01..13 · BR-FB-01..26 · V-FB-01..15 · I-FB-01..13 · صفر قيود GL (OLAP فوق OLTP) · Data Model (17 كياناً/~100 حقل) · UX (مولد التقارير النمطي + Green=دعوة كتابة) · Mapping (F-FB-1..12 — **Recipe=BOM حرفياً! ~6 أصول/~4-5 أسابيع**) · GAP-FB-D01..D07 + P01..P05 · 10 مجموعات قبول (48 معياراً) + Smoke Test 26 خطوة.
+2. تحديث: unknowns (جديد **UNK-063..067**) + **أول تناقض مسجل C-FB-01 (أقواس Standard/Actual المعكوسة — contradictions.md بعد 13 جلسة فارغة!)** + source-coverage (**58/65 — 14 وحدة/265 ملف وثائق**) + هذا الملف + فهرس docs/README.md (14/17).
+
+**اكتشافات جوهرية موثقة (FNB):**
+
+- **Recipe = BOM حرفياً**: Store Items من Inventory Master + **Sub Recipe = نصف مصنّع مشترك متغير الكمية** + Process Type (None/Add New ≈ Routing) + **Yield% auto** + COST % = Cost per Portion / PRICE × 100 (المعادلة المسطرة الوحيدة) + تحذير تسعير خاسر "Warning!! Item Price is less than the Cost price" (غير حاجب!) + **POS Item→Recipe واحد فقط وRecipe→POS متعدد** — أنقى سقوط وحدة على أصول ERPNext: **BOM + Stock Reconciliation + Material Request + Budget**.
+- **بوابة التفعيل الأحادية**: "Once the Start Date is entered, **updating the same will not be allowed**" + شرط جاهزية POS+MGT نصاً + Singleton — أول كيان مفروض مرة واحدة بالضبط (بلا مسار تصحيح — GAP-FB-P01).
+- **الحاجب اللحظي العكسي (SWITCH 511)**: "if this switch is set to 0... Current stock balance will be checked **KOT punch. Items cannot be sold, if the quantity is greater than the current stock**" — **وحدة تحليلية تتحكم في سلوك بيع POS لحظياً** (والاسم autodeduction**liq**sale يوحي بالخمر والنص عام — UNK-063 الأخطر).
+- **ثنائية ETL (INI#368 ONLINEFBCOSTING)**: Batch يدوي (Date Range+Process) مقابل Online لحظي — "If INI is activated **no need to do manual extraction**" — أول Batch/Online موثق كاملاً؛ **انكسار عائلة "بلا INI" الخمسة** (التراكمي 33+).
+- **Auto Indent الجسر الصاعد الخالد**: "link **POS menu items with their ingredients**... created indent can be used in **inventory**. Once generated, **it will not be allowed to modify or delete**" — انفجار BOM باتجاه MGT بوثيقة تولد خالدة (GAP-FB-P03 → Material Request Draft-Submit).
+- **دورة الجرد اليومي/السنوي**: Kitchen Stock (Physical=المتاح/Adjustment=المستهلك!) → **Stock Balance Transfer**: "variances between computer stock and physical stock... physical stock... would become the **opening balance for the next day**" + "**One financial Year to next financial year**" — أداة واحدة ببعدين زمنيين (Reconciliation بامتياز).
+- **تحويل القيمة بلا أصناف**: "you have to enter the **Value** under the Value column" — نقل رقم بين مراكز/مطابخ بلا أثر صنفي (نمط تحليلي صرف).
+- **اللون دعوة كتابة**: **Green = رصيد صفري قابل للإدخال** (الافتتاحي) وPink = مستخرج/متاح — اللون الثالث في المشروع وهنا فعل لا تصنيف.
+- **XOR المنهجي**: "Issue Based then you **cannot select the Restaurant**... Recipe Based then you **cannot select the option Kitchen**" + رسالة حدود التنقيب "No Drill Down Available for this Category" — نظافة تحليلية نادرة.
+- **الميزانيات العادلة**: انتشار جلسة الشهر **لسنة مالية كاملة** (مارس 2007→كل 2007 "uniformity") + Per Day/Per Month + **Difference** + إشارة تباين معكوسة الحدس (فعلي>ميزانية = **سالب**).
+- **أول تناقض داخلي مسجل (C-FB-01)**: أقواس LUK/REP للStandard/Actual معكوسة عن متن REP الحاسم ("Standard consumption is based on **recipe** details. Actual... based on **consumption** at cost centers") — المتن يُعتمد (نظرية F&B القياسية).
+- **صفر قيود GL بأنقاء كامل**: 76 صفحة أرقام مالية (مبيعات/تكاليف/ميزانيات/تباينات) **بلا قيد واحد ولا Revenue Code واحد** (TEL وحّدت كل مكالمة بكود!) — "Sales and Cost **MIS** Reports" نصاً — FNB = طبقة OLAP فوق OLTP.
+- **لا موظف واحد في 76 صفحة**: عائلة UNK-038 لا تتوسع — أول وحدة تشغيلية بلا مخزن موظفين محلي أصلاً (استثناء صافٍ).
+- **غائبون عائليون بنيويون**: لا إصدارية زمنية (أول ماستر بلا Applicable From!) · لا ترقيم آلي · لا Authorizer · لا شرِكة هروب (الاستبدال البنيوي: **Missing Recipe List**) — أكبر عجز عائلي في وحدة واحدة.
+- **سادسة بلا صلاحيات** (CARE/MEM/SLM/TEL/MNT/FNB) مع أخطر بنودها: Audit Date/Start Date/SWITCH 511/Auto Indent أفعال قفل وتوليد خالدة بلا ضابط.
+
+**نقطة الاستئناف القادمة (الجلسة 15):**
+
+1. **الوحدة التالية: FXD+GTP (الأصول الثابتة + تصاريح الخروج — آخر ملفين: FN6i-NT-FAS-FXD.pdf 25 ص + FN6i-NT-FAS-GTP.pdf 13 ص = 38 ص)** — `extracted-text/Fixed_Assets/` و`extracted-text/Gate_Passes/` — **إغلاق الـ17/17**.
+2. التقارير المؤجلة (REP) للوحدات محللة تبقى للمرحلة 7.
+3. بعد الـ17: المراجعة الشاملة + cross-referencing + Knowledge Graph النهائي (Phase 8+).

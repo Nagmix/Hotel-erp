@@ -27,8 +27,8 @@
 | text-extracted | **65 / 65 (100%)** ✅ |
 | toc-analyzed | **65 / 65 (100%)** ✅ |
 | field-extracted (جداول الحقول آلياً) | **13 ملف إعدادات — 2,099 حقلاً** ✅ |
-| read (قراءة عميقة) | **54/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + BNQ 5 + HRP 4 + Care 3 + MEM 5 + SLM 4 + TEL 4 + **MNT 3 (كاملة)** (نهاية الجلسة 13) |
-| analyzed | **13 وحدة / 246 ملف وثائق** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 + Care 19 + MEM 19 + SLM 19 + TEL 19 + **MNT 19**) |
+| read (قراءة عميقة) | **58/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + BNQ 5 + HRP 4 + Care 3 + MEM 5 + SLM 4 + TEL 4 + MNT 3 + **FNB 4 (كاملة)** (نهاية الجلسة 14) |
+| analyzed | **14 وحدة / 265 ملف وثائق** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 + Care 19 + MEM 19 + SLM 19 + TEL 19 + MNT 19 + **FNB 19**) |
 | cross-referenced | 0 / 65 |
 | verified | 0 / 65 |
 
@@ -100,10 +100,10 @@
 | 56 | Maintenance | FN6i-NT-MNT-RPL.pdf | 29 | ✓ | ✓ | ✓ | **✓ كامل (15 تقريراً/استعلاماً — Complaint Status Q معدِّل + Print Engine + Parameter Listing إلى Excel)** | **✓ → modules/maintenance/** | – | – |
 | 57 | Maintenance | FN6i-NT-MNT-OPR.pdf | 28 | ✓ | ✓ | ✓ | **✓ كامل (8 وظائف — Register/Action Taken بثلاث مسارات + 999999999999 + Job Order Generation بالألوان + PM بـLag)** | **✓ → modules/maintenance/** | – | – |
 | 58 | Maintenance | FN6i-NT-MNT-SET.pdf | 24 | ✓ | ✓ | ✓ | **✓ كامل (12 قسماً — 7 ماسترات نمطية + موظفو هندسة خامس مخزن + أولويات ملونة + جسرا MGT + UDPF)** | **✓ → modules/maintenance/** | – | – |
-| 59 | F&B Costing | FN6i-NT-FNB-REP.pdf | 28 | ✓ | ✓ | ✓ | – | – | – | – |
-| 60 | F&B Costing | FN6i-NT-FNB-COP.pdf | 19 | ✓ | ✓ | ✓ | – | – | – | – |
-| 61 | F&B Costing | FN6i-NT-FNB-LUK.pdf | 15 | ✓ | ✓ | ✓ | – | – | – | – |
-| 62 | F&B Costing | FN6i-NT-FNB-SET.pdf | 14 | ✓ | ✓ | ✓ | – | – | – | – |
+| 59 | F&B Costing | FN6i-NT-FNB-REP.pdf | 28 | ✓ | ✓ | ✓ | **✓ كامل (13 تقريراً — Sales Analysis بميزانية±تباين يوم/شهر/سنة + Cost Report بـForecast/YTD + Standard vs Actual 80/132 عموداً + Buffet بطابعة)** | **✓ → modules/food-beverage-costing/** | – | – |
+| 60 | F&B Costing | FN6i-NT-FNB-COP.pdf | 19 | ✓ | ✓ | ✓ | **✓ كامل (9 وظائف — استخراج ETL ثنائي Batch/Online + جرد يومي Pink/Green + تحويلات ثلاثية (قيمة بلا أصناف!) + ترحيل يومي/سنوي + Auto Indent خالد إلى MGT + INI#368/#511)** | **✓ → modules/food-beverage-costing/** | – | – |
+| 61 | F&B Costing | FN6i-NT-FNB-LUK.pdf | 15 | ✓ | ✓ | ✓ | **✓ كامل (7 استعلامات — Profitability بـXOR منهجي وLink Help وNo-Drill-Down معلنة + NC Query ثلاثي المحاور + Consolidate للمكونات)** | **✓ → modules/food-beverage-costing/** | – | – |
+| 62 | F&B Costing | FN6i-NT-FNB-SET.pdf | 14 | ✓ | ✓ | ✓ | **✓ كامل (4 أقسام — Costing Start Date أحادي الاتجاه + Costing Link ثلاثي بـSales Tag + ميزانيات انتشار جلسة السنة + Recipe/Sub Recipe بـ6 تابات)** | **✓ → modules/food-beverage-costing/** | – | – |
 | 63 | (root) | Touch_Screen_Manual.pdf | 46 | ✓ | ✓ | ✓ | **✓ كامل (عمليات POS الفعلية: Shift/Outlet/KOT/Check/Split/Settlement/NC/Close)** | **✓ → modules/point-of-sale/** | – | – |
 | 64 | Fixed Assets | FN6i-NT-FAS-FXD.pdf | 25 | ✓ | ✓ | ✓ | – | – | – | – |
 | 65 | Gate Passes | FN6i-NT-FAS-GTP.pdf | 13 | ✓ | ✓ | ✓ | – | – | – | – |

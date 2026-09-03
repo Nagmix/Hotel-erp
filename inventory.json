@@ -13,164 +13,171 @@
     "sample": " |  | ===== PAGE 1 ===== |  |   |   | How to Login into IDS:  |   | 1. Open Shortcut to TCHT400 on Desktop  |   |   |   | 2. Select Proper Database in DB User: PMS for Original Transactions,   | Dummy/Test/Training for Training  |   |   | Double Click  | on this Icon  | Click on this  | button to change  | Database  |   | pdfMachine  | A pdf writer that produces quality PDF files with ease!  | Produce quality PDF files in seconds and preserve the integrity of your original documents. Compatible across  | nearly all Windows platforms, if you can print from a windows application you can use pdfMachine.   | Get yours now!  |  |  | ===== PAGE 2 ===== |  |   |   | 3. After selecting proper Database Click on OK Button.  |   |   | 4. Press on Userid and Password to Enter corresponding UserIDs and Passwords using online  | Keyboard.  |   | After selecting proper Database  | Click on OK Button  | Click here to  | activate Online  | Keyboard  |   | pdfMachine  | A pdf writer that produces quality PDF files with ease!  | Produce quality PDF files in seconds and preserve the integrity of your original documents. Compatible across  | nearly all Windows platforms, if you can print from a windows application you can use pdfMachine.   | Get yours now!  |  |  | ===== PAGE 3 ===== |  |   |   | 5. Type in UserID and Password using Online Keyboard. And then Press OK button.  |   |   | 6.Now Application is opened for operations.  |   |   | pdfMachine  | A pdf writer that produces quality PDF file"
   },
   {
-    "file": "FN6i-NT-BNQ-BIL.pdf",
-    "path": "6i Manuals/Banquets/FN6i-NT-BNQ-BIL.pdf",
-    "module": "Banquets",
-    "size_kb": 5225,
-    "pages": 66,
+    "file": "FN6i-NT-HRP-PNT.pdf",
+    "path": "6i Manuals/HR & Payroll/FN6i-NT-HRP-PNT.pdf",
+    "module": "HR & Payroll",
+    "size_kb": 3707,
+    "pages": 47,
     "pdf_title": "",
     "has_extractable_text": true,
-    "images": 134,
+    "images": 119,
     "toc_count": 2,
     "toc_titles": [
       "Topics",
-      "FN6i-NT-BNQ-BIL"
+      "FN6i-NT-HRP-PNT"
     ],
-    "sample": " |  | ===== PAGE 1 ===== |  | BANQUETS | - BILLING  - | Table of Contents |   | 1._Open_Shift | 2._Open_Outlets | 3._Banquet_Bill | 4.___Banquet_Settlement | 5.__Close_Shift_: | 6._Close_Outlet | 7._Reprint_Invoice_Bill | 8._Pending_Invoice___Bill | 9._Deposit | 10.___Refund___Retention_Charges | 11._Requirement_Entry | 12.__Pre_Costing_Chef_Eng | 13.___Auto_Indent |   | BILLING |   | Billing is a sub-module under Banquets Module. Billing is used in Banquets to Make the Requirement Entry, Deposit Entry, refund retention  | charges entry, Print & settle the Bills. Etc. |   |  |  | ===== PAGE 2 ===== |  |   | 1. Open Shift |   | A shift is a particular period in a day when you can carry out operations. The Cashier operating at the outlet must open a | shift before starting any transaction. The Supervisor provides rights to the user to open a shift, using the System Setup | module. |   | Note :  The same person cannot operate 2 shifts at a time. To open a shift, User should be provided access to this option | using Setup User Access under System Setup. |   | Double–click Open Shift under Billing to view the following screen: |   |   | 1. Select the Restaurant/Outlet to operate from the pre-defined dropdown list. |  |  | ===== PAGE 3 ===== |  |   | 2. Select the shift that is applicable. |   | 3. The date and time will be displayed. So, it is considered that the user starts his duties from that time. | 4. Click   | .  The shift is selected for operations. |   | 5. Click   | to vi"
+    "sample": " |  | ===== PAGE 1 ===== |  |   | HR & PAYROLL | - PAYROLL  ENTRIES  - |   | TABLE OF CONTENTS |   | PAYROLL ENTRIES | 1.        Personnel  Master | 2.        Direct  Employee  Entry | 3.        Change Employee  Info | 4.        Rate Master Definition | 5.        Attendance  Entry | 6.        Post Default  Attendance | 7.        Attendance  Post Interface | 8.        Payroll  Transaction | 9.        Supplementary  Entries | 10.     Payroll Processing | 11.     Closing/Canceling  Process | 12.     Change  Employee  Status | 13.     Leave Master | 14.     Leave Transaction | 15.     Leave Posting to Payroll |  |  | ===== PAGE 2 ===== |  | 16.     Bonus Extraction  from Pay | 17.     Bonus Master / Supplementary  Entry | 18.     Bonus Processing | 19.     Closing  Bonus | 20.     Loan Master | 21.     Loan Return Entry | 22.     AR to Payroll  Transfer | 23.     Number Deduction  Updation | 24._Full_And_Final_Settlement |   |   | PAYROLL ENTRIES | Payroll Entries is a sub-module under HR & Payroll Module. Payroll Entries is used by Users to create Personnel Master, direct  | employee entry, change employee info, create rate master definition, attendance entries, leave master, payroll processing etc. |   |  |  | ===== PAGE 3 ===== |  |   |   | 1.     Personnel  Master |   | This option enables you to assign the employee number to a candidate who has been recruited and update information about the  | candidate to the employee master database.  This option considers only those deta"
   },
   {
-    "file": "FN6i-NT-BNQ-BOK.pdf",
-    "path": "6i Manuals/Banquets/FN6i-NT-BNQ-BOK.pdf",
-    "module": "Banquets",
-    "size_kb": 3589,
-    "pages": 41,
+    "file": "FN6i-NT-HRP-REP.pdf",
+    "path": "6i Manuals/HR & Payroll/FN6i-NT-HRP-REP.pdf",
+    "module": "HR & Payroll",
+    "size_kb": 9179,
+    "pages": 133,
     "pdf_title": "",
     "has_extractable_text": true,
-    "images": 89,
+    "images": 264,
     "toc_count": 2,
     "toc_titles": [
       "Topics",
-      "FN6i-NT-BNQ-BOK"
+      "FN6i-NT-HRP-REP"
     ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   |   | BANQUETS |   | - BOOKING  - |   | TABLE OF CONTENTS | BOOKINGS | 1.     Scan and Search Engine | Make | Amend Booking | Cancel Booking | Browse  Booking | Copy Booking | 2.     No Show Cancellation | 3.     Block / Release  Rooms |   | BOOKINGS | “Bookings”is a sub-module under Banquets Module. It has sub menu options which are explained in detail in this document. |   | In Banquets “Bookings” is used for booking a function room, amending a function room, cancelling and “Block\\Release” of the  | function room(s). |   |  |  | ===== PAGE 2 ===== |  |   |   | 1.     Scan and Search Engine |   | This option is to search for bookings using the search criteria. You can also make, amend, cancel, browse and copy bookings of function  | halls. | Double–click Scan and Search Engine under Bookings to view the following screen: |   |  |  | ===== PAGE 3 ===== |  |   |  Search |   | The Search option is used to retrieve bookings that are equal to current date or future date bookings. You can search for a booking after  | selecting the property and entering any of the selection criteria like Guest Name, Reference Name, Res#, Contact name, Company Name,  | Userid, Function date/Reservation date. |   |  |  | ===== PAGE 4 ===== |  |   | 1.      Select the Property. (You can select the property if there are more than one properties defined, else the default property name will  | be displayed). | 2.      Enter the search criteria in any of the search fields."
+    "sample": " |  | ===== PAGE 1 ===== |  |   |   | HR & PAYROLL | - REPORTS  - |   | TABLE OF CONTENTS | REPORTS | 1.        Employee  Information | 1.1.        Employee  Lookup | 1.2.        Employee  Personal  Info. | 1.3.        Designation  and Salary  List | 1.4.        Birthday/Anniversary  (EMP) | 1.5.        Signature  List | 1.6.        Service  / Retirement  / DOJ | 1.7.        Passport  / Visa /Work  Permit | 1.8.        Blood  Grp/Staff/Place  Lst | 1.9.        Prob/Conf/Increment | 2.        Payroll  Reports | 2.1.        Salary Abstract | 2.2.        Salary Abstract  Details | 2.3.        Dept.  Payroll  Summary | 2.4.        Pay Roll Summary | 2.5.        Statements | 2.6.        Earnings  Reconciliation | 2.7.        Consolidate  Salary |  |  | ===== PAGE 2 ===== |  | 2.8.        E/D Statement | 2.9.        E/D Statement  – Month Range | 2.10.     Earning Deduction  Summary | 3.        Disbursement  Statement | 4.        Group Abstract – Dept/ Cost | 5.        Supplementary  Check List | 6.        Attendance | 6.1.        Attendance  Check List | 6.2.        Attendance  Month Range | 6.3.        Attendance  Code List | 6.4.        Attendance  Detailed  List | 6.5.        Attendance  Worksheet | 7.        Transaction  Check List | 8.        Transaction  Worksheet | 9.        Leave Transaction  List | 10.     Leave Ledger  Report | 11.     Payslip Printing | 12.     Statutory Reports | 12.1.     Statutory  Report | 12.2.     EPF/ESI/PT  Summary | 12.3.     Gratuity  Report |"
   },
   {
-    "file": "FN6i-NT-BNQ-CFG.pdf",
-    "path": "6i Manuals/Banquets/FN6i-NT-BNQ-CFG.pdf",
-    "module": "Banquets",
-    "size_kb": 3287,
-    "pages": 38,
+    "file": "FN6i-NT-HRP-RQP.pdf",
+    "path": "6i Manuals/HR & Payroll/FN6i-NT-HRP-RQP.pdf",
+    "module": "HR & Payroll",
+    "size_kb": 2205,
+    "pages": 31,
     "pdf_title": "",
     "has_extractable_text": true,
-    "images": 78,
+    "images": 69,
     "toc_count": 2,
     "toc_titles": [
       "Topics",
-      "FN6i-NT-BNQ-CFG"
+      "FN6i-NT-HRP-RQP"
     ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   |   | BANQUETS |   | - CONFIGURE  - |   | TABLE OF CONTENTS | CONFIGURE | 1.     Associated  Room | 2.     Function  Room Features | 3.     Function  Room Setup  Style | 4.     Cancellation  Policy | 5.     Function  Room | 6.     Event Type Definition | 7.     Item Classification  and Description | 8.     Menu Master | 9.     Setup Menu Card | 10.       Tag Sub Venues | 11.       Banquet  Staff | 12.       Service  Managers |   | CONFIGURE | Configure is a sub-module under Banquets Module. Configure is used in  Banquets to create Associated rooms, Function  | room features, Seating styles, Cancellation policy, Function rooms, Event types, Item classifications and Setup Menu and  |  |  | ===== PAGE 2 ===== |  | Package Menu Card. |   |   |   | 1.     Associated  Room |   | This option is to create associated rooms that can be linked to the main function rooms and the same can be blocked when  | the main function room is blocked or released. The Associated rooms that are defined in this menu option will be displayed  | in the Function Room menu option. |   | Double–click Associated Room under Configure to view the following screen: |   |  |  | ===== PAGE 3 ===== |  |   | Note: Fields with blue color background are mandatory. |   | 1.       Select the Property for which you want to add an associated room for the function room booked. (If there is only one  | property defined, that property name will appear by default). | 2.       Select the Appli"
+    "sample": " |  | ===== PAGE 1 ===== |  | HR & PAYROLL | - REQUIREMENT  PROCESS- |   | TABLE  OF CONTENTS |   |   | 1_Job_Requirements | 2_Application_Details | 3_Application_Status | 4_HOD_Status | 5_Interview_Date | 6_Interview_Status | 7_Offer_Letter | 8_Offer_Letter_Status |   |   | REQUIREMENT PROCESS | Requirement Process - Requirement Process is a sub-module under HR & Payroll Module. It has sub menu items which  | are explained in detail in this document. |   | Requirement Process is used by Users to process job requirements, applications, HOD status, Interviews and Offer Letters. |   |  |  | ===== PAGE 2 ===== |  |   |   | 1.     Job Requirements |   | This option enables you to define the job requirements and the description, for a particular department. The requisition  | description, the status of the job i.e., if it is closed or opened or in pending status is selected here. |   | The HOD (Head of department) of each department sends a request to the human resource department, whenever they  | need a resource to be hired. The request would include the details of number of the people required, Job description,  | Property code, the date on which the request was made, if the requirement is permanent, temporary or contract position,  | and a description of skills that the candidates must possess. |   | Double-click Job Requirements under Requirement Process to view the following screen: |   |  |  | ===== PAGE 3 ===== |  |   | 1.       Click  | . | 2.       In the Job Code field "
   },
   {
-    "file": "FN6i-NT-BNQ-LUK.pdf",
-    "path": "6i Manuals/Banquets/FN6i-NT-BNQ-LUK.pdf",
-    "module": "Banquets",
-    "size_kb": 1256,
-    "pages": 12,
+    "file": "FN6i-NT-HRP-SET.pdf",
+    "path": "6i Manuals/HR & Payroll/FN6i-NT-HRP-SET.pdf",
+    "module": "HR & Payroll",
+    "size_kb": 4070,
+    "pages": 42,
     "pdf_title": "",
     "has_extractable_text": true,
-    "images": 20,
+    "images": 135,
     "toc_count": 2,
     "toc_titles": [
       "Topics",
-      "FN6i-NT-BNQ-LUK"
+      "FN6i-NT-HRP-SET"
     ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | BANQUETS | - LOOKUPS  - |   | TABLE OF CONTENTS | LOOKUPS | 1.         Function  Room Availability | 2.         Availability  Chart |   |   | LOOKUPS | Lookups is a sub-module under Banquets Module.  It has sub menu options which are explained in detail in this document. |   | Lookups is used in Banquets to get instant access to information relating to the function room availability, transaction details like payments and  | deposits, booking details, etc. |   |  |  | ===== PAGE 2 ===== |  |   |   | 1.     Function Room Availability |   | This option is to view the availability of the Function rooms for a given date range of maximum three days.  The color legends show the different  | booking statuses.  The user can view the start and end time until when the function room is booked. |   | You can also view if any function rooms are blocked for management or maintenance purposes.  Such blocked rooms will be highlighted with an  | asterisk (*). | ·         If a function room is blocked for management purposes, then it will be highlighted in Red color. | ·         If it is blocked for maintenance purposes then it will be highlighted in Green color.   | ·         The Hourly based status of the function rooms for the specified date also appears below the function room status details. | ·         |  - indicates Room is restricted for booking for that time range. Rest of the hours is available for booking. | ·         Maximum date range can be viewed"
+    "sample": " |  | ===== PAGE 1 ===== |  |   | HR & PAYROLL |   | - SETUP - |    | TABLE  OF CONTENTS |   | SETUP | 1.      Bank Definition | 2.      Branch  Code  Definition | 3.      Language Definition | 4.      Grade  Definition | 5.      ED Code Definition | 6.      Attendance  Code Definition .. | 7.      Property  Attendance  Definition | 8.      Category  Code Definition | 9.      Define Starting  Period | 10.       ED Calculation  Definition .. | 11.       HOD Definition | 12.       Statutory  Deduction  Defn. | 13.       Define  Salary Template | 14.       Bonus  Period Definition | 15.       Leave  Group  Parameter | 16.       Leave  Details Parameter | 17.       Costing  Group Definition | 18.       Denomination  Definition | 19.       Staff Budget Definition | 20.       User Defined Report Definition | 21.       User Defined Print Forms |   | Identifying  Standards | The following are some of the standards that are commonly displayed in all the screens: |   | Click | To | Enter new information. | Change/update existing information. | Remove or erase the existing information. This button  | works only conditionally. | View/browse existing information. |  |  | ===== PAGE 2 ===== |  | View the preceding details. This is enabled only after you  | click Browse. | View the subsequent details. This is enabled only after  | you click Browse. | Save new or modified information. | Access other menu options namely Command Window,  | Internode Communication, Calculator, Calendar,  | Scra"
   },
   {
-    "file": "FN6i-NT-BNQ-SET.pdf",
-    "path": "6i Manuals/Banquets/FN6i-NT-BNQ-SET.pdf",
-    "module": "Banquets",
-    "size_kb": 7024,
-    "pages": 98,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 229,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-BNQ-SET"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   |   |   |   |   | BANQUETS |   | - SETUP - |   |   | TABLE  OF CONTENTS | SETUP | 1.         Link Outlet - Sessions | 2.         Link Outlet-Order  Types | 3.         Link Outlet Currencies | 4.         Country-State-City  Master | Country Master | State Master | City Master | 5.         Property Information | 6.         Banquet  Block Reasons | 7.         Floor | 8.         Item Type | 9.         Banquet  Menu Groups | 10.       Setup Event Calendar |  |  | ===== PAGE 2 ===== |  | 11.       Reservation  Status | 12.       Equipment  Master | Category  Master | Sub-Category  Master | Equipment  Master | 13.       Supplier Master | 14.       Event  Question  Definition | 15.       Event  Template  Definition | 16.       Print Forms | 17.       User Defined Print Forms | 18.       Corporate  Rate Master | 19.       Corporate  Rate Tagging | 20._BNQ_User_Access |   |   | Identifying  Standards | The following are some of the standards that are commonly displayed in all the screens: | Click | To | Enter new information. | Change/update existing information. | Remove or erase the existing information. This button  | works only conditionally. | View/browse existing information. | View the preceding details. This is enabled only after you  | click Browse. | View the subsequent details. This is enabled only after  | you click Browse. | Save new or modified information. |  |  | ===== PAGE 3 ===== |  | Access other menu options namely Command Window,  | "
-  },
-  {
-    "file": "FN6i-NT-FAS-LUK.pdf",
-    "path": "6i Manuals/Financial Management/FN6i-NT-FAS-LUK.pdf",
-    "module": "Financial Management",
-    "size_kb": 1721,
+    "file": "FN6i-NT-MNT-OPR.pdf",
+    "path": "6i Manuals/Maintenance/FN6i-NT-MNT-OPR.pdf",
+    "module": "Maintenance",
+    "size_kb": 2190,
     "pages": 28,
     "pdf_title": "",
     "has_extractable_text": true,
-    "images": 56,
+    "images": 71,
     "toc_count": 2,
     "toc_titles": [
       "Topics",
-      "FN6i-NT-FAS-LUK"
+      "FN6i-NT-MNT-OPR"
     ],
-    "sample": " |  | ===== PAGE 1 ===== |  | FINANCIAL  MANAGEMENT |   | -LOOKUPS- |   | TABLE OF CONTENTS |   | LOOKUPS | 1.         Ledger  Balance | 2.         Day Book  (Q) | 3.         Trial Balance | 4.         Profit and Loss | 5.         Balance Sheet | 6.         Payable  Outstanding | 7.         Chart of Accounts  List | 8.         Cash Flow Query | 9.      Transaction  Search |    |   | LOOKUPS |   | Lookups is a sub-module under Financial Management Module. It has sub menu items which are explained in detail in this  | document. |  |  | ===== PAGE 2 ===== |  | Lookups is used by Financial Management to get instant access to information relating to Ledger Balances, Day Books, Trial  | Balance, P & L Accounts, Balance Sheet, Chart of Accounts, Cash flow, Ratio Analysis and Transaction Search. |   | 1.     Ledger Balance | The Ledger Balance option is used to query the Account Balances and transaction details for any selected Account. The balances can  | also be queried based on cost center and department only for income and expenses account. | However, for assets & liabilities account codes, no department & cost center identification is required. If account codes have sub  | ledgers, the same can be selected using the SL Code field & relevant details can be populated on screen. | Double–click Ledger Balance under Lookups to view the following screen: | 1.       Press F3 to view the list of financial years and select the Financial Year for which you want to view the ledger balances"
+    "sample": " |  | ===== PAGE 1 ===== |  |   |   | MAINTENANCE  MANAGEMENT |   | - OPERATIONS  - |   |   |    | TABLE OF CONTENTS | OPERATIONS | 1.        Register  Complaints | 2.        Action Taken | 3.        Assign Shifts | 4.        Equipment  Master | 5.        PM Schedule  Master | 6.        PM Schedule  Entry | 7.        Job Order Generation | 8.        Equipment  Reading Entry |    |   | OPERATIONS | Operations is used by Maintenance Management to register complaints, actions taken to resolve complaints, assign shifts  | to employees, create equipment master, PM Schedule Master, PM Schedule Entry, Equipment Reading Entry and generate  | Job Orders. |   |  |  | ===== PAGE 2 ===== |  |   | 1.     Register  Complaints |   | Register Complaints is used to register the complaints that are raised at the property.  The information recorded here is  | used to generate job orders.  Complaints can be raised by any Department and from any location or for any room in the  | property. | Double–click Register Complaints under Operations to view the following screen: |   |  |  | ===== PAGE 3 ===== |  |   | 1.       Click  | . | The complaint number is auto generated. | 2.       In the Ref. No field, enter the number that will be used to refer to the complaint registered. A maximum of 10  | alphanumeric characters can be entered in this field. | 3.       Select the Room # or the Location Code for which the complaint has to be registered. | 4.       Press F1 to select the room number/location co"
   },
   {
-    "file": "FN6i-NT-FAS-MST.pdf",
-    "path": "6i Manuals/Financial Management/FN6i-NT-FAS-MST.pdf",
-    "module": "Financial Management",
-    "size_kb": 2326,
-    "pages": 33,
+    "file": "FN6i-NT-MNT-RPL.pdf",
+    "path": "6i Manuals/Maintenance/FN6i-NT-MNT-RPL.pdf",
+    "module": "Maintenance",
+    "size_kb": 2328,
+    "pages": 29,
     "pdf_title": "",
     "has_extractable_text": true,
-    "images": 60,
+    "images": 84,
     "toc_count": 2,
     "toc_titles": [
       "Topics",
-      "FN6i-NT-FAS-MST"
+      "FN6i-NT-MNT-RPL"
     ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   |   | FINANCIAL  MANAGEMENT | -    MASTERS  - |   | TABLE  OF CONTENTS | MASTERS | 1.         Financial  Account  Master | 2.         Statistics  Master | 3.         Statistics  Budget  Master | 4.___Cheque_Book_Master |   | MASTERS | Masters is used by Financial Management to create Financial Account Master, Statistics Master and Statistics Budget  | Master. |  |  | ===== PAGE 2 ===== |  |   | 1.     Financial  Account  Master | This is a master of all accounts in the Property. In this option you can view all the main heads, sub heads, and the  | account heads under each sub heads. You also have the option to add or modify the Main/Sub/Account heads. | Double–click Financial Account Master under Masters to view the following screen: |  |  | ===== PAGE 3 ===== |  | On the main screen under the Property name you can click on the +sign to view the sub options under each account  | head. |  |  | ===== PAGE 4 ===== |  | When you click on any of the options, the details of the account appear on the right side of the screen as shown below: |  |  | ===== PAGE 5 ===== |  | Under the details section, you can double-click on the Main Head or Sub Head name. | The following screen appears where you can directly create new main/sub heads. | You also have the option to create new Chart of Accounts or modify existing chart of accounts. Double-click on any of  | the account heads to view the Chart of Accounts screen and add new / modify existing Chart of Accou"
+    "sample": " |  | ===== PAGE 1 ===== |  |   | MAINTENANCE  MANAGEMENT |   | - REPORTS  & LOOKUPS- |   |    | TABLE OF CONTENTS |   | REPORTS & LOOKUPS | 1.       Complaints  List | 2.       Duty Chart | 3.       Complaint  Status (Q) | 4.       Equipment  Wise Complaints | 5.       Location Wise Complaints | 6.       Action  Taken  Report | 7.       Employee  Wise Action Taken | 8.       Equipment  Details List | 9.       P M Schedule  List | 10.         Resolution  Time Report | 11.         Job Order Report | 12.         Spares and Cost Report | 13.         Job / Complaint  Print Engine | 14.         Equipment  Readings List | 15.         Parameter  Listing |  |  | ===== PAGE 2 ===== |  |    |   | REPORTS & LOOKUPS | Reports – Reports & Lookups is a sub-module under Maintenance Management Module. It has sub menu items which are explained in detail in this  | document. |   | Reports & Lookups under Maintenance Management Module is used by Users to generate various reports relating to complaints, duty charts, equipment  | details, spares and cost repairs, resolution time report, job order report, etc. |   |   |   | 1.     Complaints List | Complaints List report is used to process a list of complaints registered during a specified date range. |   | Double-click Complaints List under Reports & Lookups to view the following screen: |   |  |  | ===== PAGE 3 ===== |  |   | 1.       Enter the date range in the date fields. | 2.       Select the option by which you want to view the complaints l"
   },
   {
-    "file": "FN6i-NT-FAS-REP.pdf",
-    "path": "6i Manuals/Financial Management/FN6i-NT-FAS-REP.pdf",
-    "module": "Financial Management",
-    "size_kb": 4304,
-    "pages": 64,
+    "file": "FN6i-NT-MNT-SET.pdf",
+    "path": "6i Manuals/Maintenance/FN6i-NT-MNT-SET.pdf",
+    "module": "Maintenance",
+    "size_kb": 1620,
+    "pages": 24,
     "pdf_title": "",
     "has_extractable_text": true,
-    "images": 96,
+    "images": 80,
     "toc_count": 2,
     "toc_titles": [
       "Topics",
-      "FN6i-NT-FAS-REP"
+      "FN6i-NT-MNT-SET"
     ],
-    "sample": " |  | ===== PAGE 1 ===== |  | FINANCIAL  MANAGEMENT | - REPORTS  - |   | TABLE OF CONTENTS |   | REPORTS | 1.      Chart of Accounts  List | 2.      Transaction  Checklist | 3.      Ledger  Opening  Balance | 4.      Day Book | Day Book | Day Book (Format  2) | Cash/Bank  Book | 5.      Ledger  Balance | Ledger Balance | Ledger Balance Format  2 | 6.      General  Ledger | 7.      Profit and Loss | Profit and Loss Statement | PL Report by CC/Department |  |  | ===== PAGE 2 ===== |  | 8.      Balance  Sheet Statement | 9.      Trial Balance | Trial Balance | Trial Balance  Format 2 | Trial Balance  (3.3) | Trial Balance | 10.   Creditors  Outstanding | 11.   Purchase  Tax Register | 12.   Purchase  Register | 13.   Expense  Register | 14.   Balance  Confirmation | 15.   Debit Note Print | 16.   Contract  Debit Note List | 17.   Detail Register | 18.   Pending Receipts  for PJV | 19.   Unlinked  Account Codes | 20.   Linked  Account  Codes | 21.   Auto Posted Check List | 22.   FA Budget  List | 23.   Bank Reconciliation | 24.   Advice  / Cheque  Print | 25.   Voucher Print | TDS_Details_Report |  |  | ===== PAGE 3 ===== |  | Invoice  / Payment  Check | Advance Paid Report | 26.   Print Form 16A | 27.   Print Form 26 J | 28.   Print Form 27 | 29.   Print Form 26A | 30.   Print Form 26C | 31.   Print Form 26K | 32.   PDC Check List | 33.   Audit Trial Report | 34.   User Reports | Bank Payment Report | IDS Crystal Report  Designer | Advice / Cheque iDesigner |   | REPORTS | Repo"
+    "sample": " |  | ===== PAGE 1 ===== |  | MAINTENANCE   | MANAGEMENT | - SETUP - |    | TABLE  OF CONTENTS |   | SETUP | 1.          Define Locations | 2.          Define Equipment  Category . | 3.          Define Cost Category | 4.          Define Shifts | 5.          Define Service  Types | 6.          Define Service  Rhythms | 7.          Define Skills | 8.          Define Employees | 9.          Define Complaint  Priorities | 10.       Identify  Engg Store  (s) | 11.       Identify  Engg Cost Center. | 12.       User Defined Print Forms |   | Identifying  Standards |  |  | ===== PAGE 2 ===== |  | The following are some of the standards that are commonly displayed in all the screens: | Click | To | Enter new information. | Change/update existing information. | Remove or erase the existing information. This button  | works only conditionally. | View/browse existing information. | View the preceding details. This is enabled only after you  | click Browse. | View the subsequent details. This is enabled only after  | you click Browse. | Save new or modified information. | Access other menu options namely Command Window,  | Internode Communication, Calculator, Calendar,  | Scratch Pad, and Yellow Pages. | Exit from the screen. |   |  SETUP |   | The Setup menu item of the Maintenance Management module explains the various settings that are necessary for the  | Maintenance Management module to work efficiently and in connection with other modules. | On the main screen, click Maintenance Man"
   },
   {
-    "file": "FN6i-NT-FAS-SET.pdf",
-    "path": "6i Manuals/Financial Management/FN6i-NT-FAS-SET.pdf",
-    "module": "Financial Management",
-    "size_kb": 2627,
-    "pages": 48,
-    "pdf_title": "",
+    "file": "FORTUNE CARE v6 - OPERATIONS.pdf",
+    "path": "6i Manuals/Care/FORTUNE CARE v6 - OPERATIONS.pdf",
+    "module": "Care",
+    "size_kb": 3030,
+    "pages": 80,
+    "pdf_title": "FORTUNE CARE - OPERATIONS",
     "has_extractable_text": true,
-    "images": 103,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-FAS-SET"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | FINANCIAL  MANAGEMENT |   | - SETUP - |   | TABLE  OF CONTENTS |   | SETUP | 1.          Main Heads | 2.          Sub Heads | 3.          Transaction  Types | 4.          Transaction  Voucher  Link | 5.          Transaction  Type Rights | 6.          FO to Finance  Link | 7.          POS to Finance  Link | 8.          MM to Finance  Link | 9.          Payroll to FAS Link | 10.       Membership  to FAS Link | 11.       Link AR to Finance | 12.       TDS Nature of Payment | 13.       TDS Tax Link | 14.       TDS Defaults |  |  | ===== PAGE 2 ===== |  | 15.       Print Forms | 16.       User Defined Print Forms | 17.       Create User Reports | 18.       Financial  Period | 19.       Budget Types | 20.       Pre Defined Narration | 21.       Trial Balance  Print Order. | 22.       Link CC to Department | 23.       Link Exmpt Tax to Finance. | 24.       Vendor  Tax Split | 25.       Retained  Earning Account | 26.       Specify  Aging | 27.       Print Form Designer |   | Identifying  Standards | The following are some of the standards that are commonly displayed in all the screens: |   | Click | To | Enter new information. | Change/update existing information. | Remove or erase the existing information. This button  | works conditionally. | View/browse existing information. | View the preceding details. This is enabled only after you  | click Browse. | View the subsequent details. This is enabled only after  | you click Browse. | Save new or mod"
+    "images": 186,
+    "toc_count": 0,
+    "toc_titles": [],
+    "sample": " |  | ===== PAGE 1 ===== |  |   |   |   |   |   | FORTUNE CARE v6  | - OPERATIONS -  |   |   |  |  | ===== PAGE 2 ===== |  |   |   | TABLE OF CONTENTS  | OPERATIONS .................................................................................................................... 4  | 1.  | MONTHLY ROSTER ....................................................................................................... 5  | DEFINING STAFF ROSTER .................................................................................................... 6  | DEFINING SHIFTS ..................................................................................................................... 7  | DEFINING WEEKLY OFFS .................................................................................................... 10  | DEFINING FLOORS ................................................................................................................. 11  | 2.  | STAFF LOG-IN AND LOG-OUT ..................................................................................... 19  | STAFF LOGIN ............................................................................................................................ 19  | STAFF LOGOUT ........................................................................................................................ 27  | 3.  | MANUAL ENTRY PROGRAM ........................................................................................ 29  | COLOR LEGENDS .........."
   },
   {
-    "file": "FN6i-NT-FAS-TRN.pdf",
-    "path": "6i Manuals/Financial Management/FN6i-NT-FAS-TRN.pdf",
-    "module": "Financial Management",
-    "size_kb": 3558,
-    "pages": 45,
+    "file": "FORTUNE CARE v6 - REPORTS & LOOKUPS - VER 10 AUGUST.pdf",
+    "path": "6i Manuals/Care/FORTUNE CARE v6 - REPORTS & LOOKUPS - VER 10 AUGUST.pdf",
+    "module": "Care",
+    "size_kb": 2708,
+    "pages": 73,
+    "pdf_title": "FORTUNE NEXT ENTERPRISE - 2.0",
+    "has_extractable_text": true,
+    "images": 153,
+    "toc_count": 0,
+    "toc_titles": [],
+    "sample": " |  | ===== PAGE 1 ===== |  |   |   |   |   |   |   | FORTUNE CARE v6  | -REPORTS & LOOKUPS-  |   |   |   |  |  | ===== PAGE 2 ===== |  |                                                             Fortune Care v6 –User Manual  |   |   | TABLE OF CONTENTS  | REPORTS & LOOKUPS ...................................................................................................... 4  | 1.  | CALL ATTENDED LIST...................................................................................................... 5  | 2.  | TASK BY RUNNER/TECHNICIAN ................................................................................... 12  | 3.  | RESPONSE TIME ANALYSIS ............................................................................................ 14  | 4.  | WORK START STATISTICS ............................................................................................. 17  | 5.  | STAFF PRODUCTIVITY ................................................................................................... 19  | 6.  | TASKS STATISTICS ......................................................................................................... 21  | 7.  | TASKS STATISTICS BY DEPART .................................................................................... 30  | 8.  | TOP TASKS STATISTICS REPORT .................................................................................. 36  | 9.  | REPEATED ISSUES LIST ................................................................."
+  },
+  {
+    "file": "FORTUNE CARE v6 - SETUP - VER 10 AUGUST.pdf",
+    "path": "6i Manuals/Care/FORTUNE CARE v6 - SETUP - VER 10 AUGUST.pdf",
+    "module": "Care",
+    "size_kb": 1212,
+    "pages": 34,
+    "pdf_title": "FORTUNE CARE - SETUP",
+    "has_extractable_text": true,
+    "images": 68,
+    "toc_count": 0,
+    "toc_titles": [],
+    "sample": " |  | ===== PAGE 1 ===== |  |   |   |   |   |   | FORTUNE CARE v6  | - SETUP -   |   |   |   |  |  | ===== PAGE 2 ===== |  |   |   | TABLE OF CONTENTS  | SETUP ................................................................................................................................ 4  | 1.  | USER CREATION ............................................................................................................... 5  | 2.  | DEFINE RIGHTS ................................................................................................................ 7  | 3.  | ORGANIZATIONAL STRUCTURE ..................................................................................... 10  | ADDING DEPARTMENT ................................................................................................................ 11  | ADDING DESIGNATION ................................................................................................................ 13  | CREATING AND ADDING EMPLOYEE ......................................................................................... 16  | CREATING REPORTING HIERARCHY .......................................................................................... 18  | MODIFYING THE REPORTING HIERARCHY ............................................................................... 18  | DELETING AN EMPLOYEE ............................................................................................................ 20  | RETRIEVING THE DELETED EMP"
+  },
+  {
+    "file": "FN6i-NT-FAS-GTP.pdf",
+    "path": "6i Manuals/Gate Passes/FN6i-NT-FAS-GTP.pdf",
+    "module": "Gate Passes",
+    "size_kb": 926,
+    "pages": 13,
     "pdf_title": "",
     "has_extractable_text": true,
-    "images": 85,
+    "images": 34,
     "toc_count": 2,
     "toc_titles": [
       "Topics",
-      "FN6i-NT-FAS-TRN"
+      "FN6i-NT-FAS-GTP"
     ],
-    "sample": " |  | ===== PAGE 1 ===== |  | FINANCIAL  MANAGEMENT | -    TRANSACTIONS  - |   |   | Table Of Contents |   |   | 1_FA_Transactions |   | 2_Statistics_Transaction |   | 3_Bank_Reconciliation |   | 4_Budget |   | 5_Interactive_Payment |   | 6_TDS_Tagging |   | 7_Cancel_Cheque |   | 8_Open_Financial_Year |   | 9_Voucher_Authorization |   |   |   | Identifying  Standards |   | The following are some of the standards that are commonly displayed in all the screens: |   | Click | To | Enter new information. | Change/update existing information. | Remove or erase the existing information. This button  | works conditionally. | View/browse existing information. |  |  | ===== PAGE 2 ===== |  | View the preceding details. This is enabled only after you  | click Browse. | View the subsequent details. This is enabled only after  | you click Browse. | Save new or modified information. | Access other menu options namely Command Window,  | Internode  | Communication,  | Calculator,  | Calendar,  | Scratch Pad, and Yellow Pages. | Exit from the screen. |   |   | TRANSACTIONS |   | Transactions is used by Financial Management to create FA Transactions, Bank Reconciliation entries, budget, TDS  | tagging, cancel cheques, etc. |   |   |   | 1.     FA Transactions |   | The Transactions option is primarily used for recording day-to-day financial transactions in multi currency for reflection in  | the General Ledger. |   |  |  | ===== PAGE 3 ===== |  | FA Transactions will cover the below-mentioned"
+    "sample": " |  | ===== PAGE 1 ===== |  |   | FINANCIAL  MANAGEMENT | -    GATE PASS- |   | TABLE  OF CONTENTS |   | GATE_PASS |   |   | 1_Issue_Gate_Pass |   | 2_Receive_Gate_Pass |   | 3_Gate_Pass_Query |   | 4_Gate_Pass_Register |   | 5_Pending_Gate_Passes |   | 6_Gate_Pass_Print |   | 7_Gate_Pass_Report |   |   | GATE PASS |   |   | Gate Pass is used by Financial Management to issue or receive gate pass, create the gate pass register, view pending  | gate passes and view and print gate pass details. |   |  |  | ===== PAGE 2 ===== |  |   | 1.     Issue Gate Pass |   | A gate pass is a NOTE issued authenticating the details of goods taken out of the premises for reasons like servicing,  | material transfers etc. |   | Double-click Asset Issue Gate Pass under Gate Pass to view the following screen: |   |   | 1.       Click  | . |  |  | ===== PAGE 3 ===== |  | 2.       In the Gate pass Ref# field enter a reference number for the goods to which a gate pass has to be issued. | 3.       In the Gate Pass Date field enter date when the Gate Pass is issued. | 4.       From the Cost Center dropdown list select the cost center to which the selected goods belong. | 5.       In the Authorized By field enter the name of the person who has authorized the issue of the gate pass. | 6.       In the Vendor Code field select the vendor code. | 7.       In the Vendor Name enter the vendor’s name. | 8.       In the Responsibility field enter the name of the person who has issued the gate pass. | 9.       I"
   },
   {
     "file": "FN6i-NT-FAS-FXD.pdf",
@@ -189,138 +196,6 @@
     "sample": " |  | ===== PAGE 1 ===== |  |   | FINANCIAL  MANAGEMENT |   | - FIXED ASSETS  - | TABLE  OF CONTENTS |   | FIXED ASSETS | 1.        Fixed Asset Start Date | 2.        Asset Main Groups | 3.        Asset Sub Group | 4.        Asset Locations | 5.        Asset Components | 6.        Fixed Asset Master | 7.        Depreciation  Method | 8.        Fixed Asset Component  Entry | 9.        Fixed Assets Transaction | 10.      Calculate  Depreciation | 11.      FI Depr Posting  to FA | 12.      Depreciation  Details (Q) | 13.      Depreciation  History (Q) | 14.      Disposal  History Query | 15.      Depreciation  Details (R) | 16.      Fixed Asset List |  |  | ===== PAGE 2 ===== |  | 17.      Asset Transaction  List | 18.      Asset Ledger | 19.      Asset Sales Register |   | FIXED ASSETS |   | Fixed Assets is a sub-module under Financial Management Module. It has sub menu items which are explained in  | detail in this document. |   | The Fixed Asset Register gives you the facility to record all your fixed assets and depreciate them according to the  | method you choose. |   | Asset details integrate directly with Ledger Accounting, so when depreciation is posted for an asset, the relevant profit  | & loss and balance sheet accounts are updated. |   | This diagram shows the steps in the life of an asset. |   |   | The user can report on the current value of your assets at any time during the life of the asset and then, once it has  | reached the end of its life, dispose it.  Often"
   },
   {
-    "file": "FN6i-NT-TEL-CAC.pdf",
-    "path": "6i Manuals/Telephones/FN6i-NT-TEL-CAC.pdf",
-    "module": "Telephones",
-    "size_kb": 724,
-    "pages": 10,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 18,
-    "toc_count": 0,
-    "toc_titles": [],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | 1  |    |    |    |    | TELEPHONE  | MANAGEMENT  |    | - CALL ACCOUNTING -  |    |    |    |   |   | TABLE OF CONTENTS  | CALL ACCOUNTING  | 1.        Activate-Deactivate Extension  | 2.        View-Update Telephone Error  | 3.        Call Transfer  | 4.        Extension Password Setup  |   |   |    |  |  | ===== PAGE 2 ===== |  | TEL CAC  | 2  | CALL ACCOUNTING  |    |    | Call Accounting - Call Accounting is a sub-module under Telephone Management Module.   It has sub  | menu items which are explained in detail in this document.  |    | Call Accounting under Telephone Management Module is used by Users to activate or deactivate an  | extension, view telephone errors and repost them to the respective room folios, transfer calls (from one  | extension to another), setup extension passwords and record and save standard SMSs to be sent to the guests  | on various occasions like checkins, anniversaries etc.  |    |   |   |   |     | 1.     Activate-Deactivate Extension  |    | This option is used to activate or deactivate a telephone extension. If a particular telephone line is not in use  | by a room or an extension and if it is still Active (working) you can use this option to Deactivate (stop  | working) it.  |    | Double-click Activate-Deactivate Extension under Call Accounting to view the following screen:  |    |  |  | ===== PAGE 3 ===== |  | FN-NT-TEL-CAC  | 3  |   |    | 1.       Select one of the two options to select the telephone "
-  },
-  {
-    "file": "FN6i-NT-TEL-LUK.pdf",
-    "path": "6i Manuals/Telephones/FN6i-NT-TEL-LUK.pdf",
-    "module": "Telephones",
-    "size_kb": 1498,
-    "pages": 21,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 49,
-    "toc_count": 0,
-    "toc_titles": [],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | 1  |    |    |    |    | TELEPHONE MANAGEMENT  |    | - LOOKUPS -  |    |    |    |   |   | TABLE OF CONTENTS  | LOOKUPS  | 1.         View Unbilled Calls  | 2.         Room Calls Query  | 3.         Dial Code Search  | 4.         Guest Information  | 5.         Guest Search  | 6.         InHouse Statistics  | 7.         Create Address Book  | 8.         Print Yellow Pages  | 9.         View Transfers/Extensions  |  |  | ===== PAGE 2 ===== |  | TEL LUK  | 2  |     |    | LOOKUPS  |    |    | Lookups is a sub-module under Telephone Management Module. It has sub menu items which are  | explained in detail in this document.  |    | Lookups is used by Telephone Management to get instant access to information relating to Calls, Call Rates,  | Call Rate Slabs, dial Codes, Pulse Rates, Telephone Extensions, Yellow Pages, Guest information etc.  |    |   |   |   |     | 1.     View Unbilled Calls  |    | This option is to view the list of all calls that are not billed due to various reasons. (Example: Calls made from  | extensions that are not defined or calls made from a room that the application identifies as unoccupied etc).  |    | The user can view details like the room number, extension number, duration of the call, telephone number,  | place etc.  With this information the user can get the list of bills that have to be billed and added to the  | respective Guest folio.  |  |  | ===== PAGE 3 ===== |  | FN-NT-TEL-LUK  | 3  |    | Double–click Vi"
-  },
-  {
-    "file": "FN6i-NT-TEL-REP.pdf",
-    "path": "6i Manuals/Telephones/FN6i-NT-TEL-REP.pdf",
-    "module": "Telephones",
-    "size_kb": 1271,
-    "pages": 20,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 54,
-    "toc_count": 0,
-    "toc_titles": [],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | 1  |    |    |    |    | TELEPHONE  | MANAGEMENT  |    | - REPORTS -  |    |    |    |   |   | TABLE OF CONTENTS  | REPORTS  | 1.        List All Calls  | 2.        Print Telephone Bill  | 3.        Call Summary by Department  | 4.        Transferred Call List  | 5.        Extension Wise All Calls  | 6.        Telephone Master List  | 7.        Unbilled Call List  |  |  | ===== PAGE 2 ===== |  | TEL REP  | 2  | 8.        Guest List  |   |   | REPORTS  |    |    | Reports - Reports is a sub-module under Telephone Management Module.  It has sub menu items which  | are explained in detail in this document.  |    | Reports under Telephone Management Module is used by Users to generate various reports relating to  | calls, extension numbers, telephone bills, unbilled calls, guest information etc.  |    |   |    |    |     | 1.     List All Calls  |    | This report gives a list of all calls made from the Property.   The user can give the date range, time range,  | select the call types, choose to view the call charges by the Property or the Service Providers and view calls  | made only from rooms or extensions.  The user can select the order in which they want to view the report like  | the extension number wise, date and time wise or trunk line date and time wise.  |    | Double-click List All Calls under Reports to view the following screen:  |    |  |  | ===== PAGE 3 ===== |  | FN-NT-TEL-REP  | 3  |   |    | 1.       Enter the date range in the"
-  },
-  {
-    "file": "FN6i-NT-TEL-SET.pdf",
-    "path": "6i Manuals/Telephones/FN6i-NT-TEL-SET.pdf",
-    "module": "Telephones",
-    "size_kb": 1373,
-    "pages": 32,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 96,
-    "toc_count": 0,
-    "toc_titles": [],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | 1  |    |    |    |    |    | TELEPHONE MANAGEMENT  |    | - SETUP -  |   |   | TABLE OF CONTENTS  |    | SETUP  | 1.          Telephone Extensions  | 2.          Link Extensions  | 3.          Holiday Table  | 4.          Telephone Revenue Posting.  | 5.          Telephone Link Setup  | 6.          Time - Rate Slabs  | 7.          Country Codes  | 8.          Area Codes  | 9.          Door Lock User Interface  | 10.       Call Identifier  |  |  | ===== PAGE 2 ===== |  | TEL SETUP  | 2  |   |    | Identifying Standards  | The following are some of the standards that are commonly displayed in all the screens:  | Click  | To  |   | Enter new information.  |   | Change/update existing information.  |   | Remove or erase the existing information. This button  | works only conditionally.  |   | View/browse existing information.  |   | View the preceding details. This is enabled only after  | you click Browse.  |   | View the subsequent details. This is enabled only after  | you click Browse.  |   | Save new or modified information.  |   | Access other menu options namely Command Window,  | Inter Node Communication, Calculator, Calendar,  | Scratch Pad, and Yellow Pages.  |   | Exit from the screen.  |    |    | Standards  | Description  | Status  | This is applicable to most Settings, Master and  | Transactions menu options.  | By default, the status is set to Active.  |  If the status is Active, the corresponding  | user/application will be activ"
-  },
-  {
-    "file": "FN6i-NT-MEM-MMN.pdf",
-    "path": "6i Manuals/Membership/FN6i-NT-MEM-MMN.pdf",
-    "module": "Membership",
-    "size_kb": 1156,
-    "pages": 13,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 28,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-MEM-MMN"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | MEMBERSHIP |   | - MEMBER MAINTENANCE - |   |   | TABLE  OF CONTENTS |   | Member_Maintenance | 1._Membership_Address_Change | 2._Renewal_Entry | 3._Members_Blacklist_Revoke | 4._Members_Termination | 5._Members_Resignation | 6._Members_Deceased | 7._Category_Transfer |   |   | Member Maintenance |   | The Member Maintenance sub module of the Membership module enables the user to manage certain operations related  | to the Member accounts such as Member Address Change, Blacklist/Revoke, Terminate, Resignation, etc. that are necessary  | for the Membership module to work efficiently and in connection with other modules. | On the main screen, click Membership  |  and select Member Maintenance; the user can view the following screen. |   |  |  | ===== PAGE 2 ===== |  |   | 1.     Membership  Address  Change |   | In this option, the user can change the address of the Members on request.   The user can change the Residential, Work  | Place and Abroad address as required and tag any one address as the mailing address of the Member. |   | Click Membership Address Change under Member Maintenance to view the following screen. |   |  |  | ===== PAGE 3 ===== |  |   | 1.    Enter the member number or press F1 to select from the list. The Category, Name of the Member and address details are  | displayed as shown in the above screen. | 2.    Make appropriate changes in the relevant fields. | 3.      Select the Address Type from the list to change the appr"
-  },
-  {
-    "file": "FN6i-NT-MEM-MPF.pdf",
-    "path": "6i Manuals/Membership/FN6i-NT-MEM-MPF.pdf",
-    "module": "Membership",
-    "size_kb": 2145,
-    "pages": 30,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 87,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-MEM-MPF"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | MEMBERSHIP |   | - MEMBER PROFILES- |   |   | TABLE  OF CONTENTS |   | 1._Corporate_Applications | 2._Membership_Application | 3._Application_Screening | 4._Assign_Interview_Dates | 5._Interview_Details | 6._Transfer_Corporate_Application | 7._Transfer_Membership_Application | 8._Corporate_Master | 9._Membership_Master | 10._Affiliated_Club_Master |   |   | Member Profiles |   | The Member Profiles sub module of the Membership module explains the various operations from including a new  | Member to the Member termination and that are necessary for the Membership module to work efficiently and in  | connection with other modules. | On the main screen, click Membership  |  and select Member Profiles; you can view the following screen. |   |  |  | ===== PAGE 2 ===== |  |   | 1.     Corporate  Applications | In this option, the user can enter the details related to the Companies. Corporate companies are usually one of the biggest  | customers for a Club; therefore, a club is bound to receive many applications from the corporate for membership to the club  | facilities. | Click Corporate Applications under Member Profiles to view the following screen. |   |  |  | ===== PAGE 3 ===== |  | To add a new Corporate  Application | 1.    Select the Member Category from the list and then click on  | . | 2.       Click |  to enter the Organization details in the tabs, General, Address and References. By default, the General  | tab is displayed. |   | Column"
-  },
-  {
-    "file": "FN6i-NT-MEM-MTR.pdf",
-    "path": "6i Manuals/Membership/FN6i-NT-MEM-MTR.pdf",
-    "module": "Membership",
-    "size_kb": 1324,
-    "pages": 18,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 50,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-MEM-MTR"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | MEMBERSHIP |   | - MEMBER TRANSACTIONS - |   |   | TABLE  OF CONTENTS |   | Member_Transactions | 1.      Membership  Receipt  Entry | 2.        Revenue/Facility  Entry | 3.        Guest Visit Entry | 4.        Service  Bill Entry | 5.        Register  Complaints | 6.        Attend Complaints | 7.        Event Definition | 8.        Process Subscription | 9.        Process Facility  Charges | 10.     Post Subscription  to AR | 11.     Membership  Tax Posting | 12.     Cover Charges Posting | 13.     Posting  Late Charges |   | Member  Transactions |   |  |  | ===== PAGE 2 ===== |  | The Member Transactions sub module of the Membership module explains the various transactions made by member at  | the Property and entering the receipt, revenue, service bill details etc that are necessary for the Membership module to  | work efficiently and in connection with other modules. | On the main screen, click Membership  |  and select Member Transactions; you can view the following screen. |   |   | 1.     Membership Receipt Entry |   | In this option, the user can issue receipt to the guest for payment received when the guest uses the facilities in the hotel. |   | Click Membership Receipt Entry under Member Transactions to view the following screen. |   |  |  | ===== PAGE 3 ===== |  |   | ‚To add a Receipt  Entry | 1.       Click | . | Column/ Fields | Description | Membership/Corporate/Application/ | Member | Select the appropriate option for which  "
-  },
-  {
-    "file": "FN6i-NT-MEM-RPL.pdf",
-    "path": "6i Manuals/Membership/FN6i-NT-MEM-RPL.pdf",
-    "module": "Membership",
-    "size_kb": 3355,
-    "pages": 56,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 153,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-MEM-RPL"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | MEMBERSHIP | - REPORTS  & LOOKUPS- |   |   | TABLE  OF CONTENTS |   | REPORTS AND LOOKUPS | 1.       Corporate  Members  List | 2.       Pending  Applications | 3.       Screening  Details  Report | 4.       Birthday/Anniversary  (MEM) | 5.       Mailing  Labels  (MEM) | 6.       Visit Details | 7._Member_Visit_Details | 8._Member_Expiry_List | 9._Age_Report | 10._Complaint_Register | 11._Membership_Details | 12._Renewal_Report | 13._Status_Report | 14._Reprint_Non_Member_Receipt | 15._Membership_Released |  |  | ===== PAGE 2 ===== |  | 16._Blacklisted_Members | 17._Subscription_Cancellation | 18._Membership_Summary_List | 19._Corporate_Information | 20._Member_Information | 21._Pending_Complaints | 22._Birthday_List__Member_ | 23._Membership_Summary | 24._Settlement_Summary__MEM_ | 25._Bill_Details | 26._Members_List__Charges_ | 27._Transaction_Check_List_-_MEM | 28._Receipt_Register__MEM_ | 29._Credit_Card_Register__MEM_ | 30._Closing_Balance | 31._Due_Report | 32._Charges | 33._Control_Report | 34._Closing_Balance_Details | 35._Membership_Control_Report | 36._Members_Register | 37._Settlement_Query | 38._Spending_Pattern |   |   | REPORTS AND LOOKUPS |   | Reports & Lookups - Reports & Lookups is a sub-module under Membership Module. It has sub menu items which are  | explained in detail in this document. |   | Reports & Lookups under Membership Module is used by users to generate various reports relating to corporate  |  |  | ===== PAGE 3"
-  },
-  {
-    "file": "FN6i-NT-MEM-SET.pdf",
-    "path": "6i Manuals/Membership/FN6i-NT-MEM-SET.pdf",
-    "module": "Membership",
-    "size_kb": 1300,
-    "pages": 16,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 53,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-MEM-SET"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   |   | MEMBERSHIP |   | - SETUP - |   | TABLE OF CONTENTS |   | Setup | 1.        Member  Categories | 2.        Screening  Details | 3.        Service  Rate Master | 4.        Membership  Revenue  Codes | 5.        Membership  Structure | 6.        Complaints  Categories | 7.        System  Attributes | 8.        Facility Fixed Rates | 9.        Membership  Facility  Codes | 10._Cover_Charges | 11._Late_Charge_Fee_Definition | 12._Member_User_Defined_Field |   | Identifying  Standards | The following are some of the standards that are commonly displayed in all the screens: |  |  | ===== PAGE 2 ===== |  | Click | To | Enter new information. | Change/update existing information. | Remove or erase the existing information. This button works  | conditionally. | View/browse existing information. | View the preceding details. This is enabled only after you  | click Browse. | View the subsequent details. This is enabled only after you  | click Browse. | Save new or modified information. | Access other menu options namely Command Window,  | Internode Communication, Calculator, Calendar, Scratch  | Pad, and Yellow Pages. | Exit from the screen. |   | Setup |   | The Setup menu item of the Membership module explains the various settings that are necessary for the Membership  | module to work efficiently and in connection with other modules. | On the main screen, click Membership  |  and select Setup; you can view the following screen. |   |  |  | ===== P"
-  },
-  {
     "file": "FN6i-NT-SYS-SSP.pdf",
     "path": "6i Manuals/System Setup/FN6i-NT-SYS-SSP.pdf",
     "module": "System Setup",
@@ -335,70 +210,6 @@
       "FN6i-NT-SYS-SSP"
     ],
     "sample": " |  | ===== PAGE 1 ===== |  |   |   | - SYSTEM SETUP - |   |   |   |   |   |   | TABLE  OF CONTENTS |   | About  this Guide | Purpose  of this Guide | Typographical  Conventions | How to get in Touch | Documentation  Support | Product Services | Introduction | Identifying  Standards | Chapter  1  User Setup | User Setup | 1.     Creating  a User | 2.     Setting up User Access | 3.     Setting up User Menu Access | 4.  Restricting  Report Options | 5._Listing_Users |  |  | ===== PAGE 2 ===== |  | 6._Listing_User_Access | Chapter  2  Supervisor | Supervisor | 1.     Changing  Caption | 2.     Setting up Front Office (FO) Defaults | 3.     Module Attributes | 4.     Extract Database  Tables | 5.     Creating INI Files | 6.__User_Management | Chapter  3  General Setup | General  Setup | 1.     Property  Codes | 2.     Departments | 3.     Cost Centers | 4.     Designations | 5.     Units of Measurement | 6.     Reason Code | 7.     Currencies | 8.     Exchange  Entry | 9.     Tax Code | 10.   Tax Slab | 11.   Tax Structures | 12.   Guest Comments |  |  | ===== PAGE 3 ===== |  | 13.   Program ID for Print Forms | 14.   Setup Credit Cards | 15.   Print Bill Message | 16.   Religions | 17.   Occupations | 18.   Parameter  List |   |   | Figures | Figure 1: User Setup.. 14 | Figure 2: Create User. 15 | Figure 3: Setup User Access. 20 | Figure 4: User Operational Rights. 21 | Figure 5: Setup User Menu Access. 23 | Figure 6: Fortune Next Enterprise Main Screen with Menu Programs. 25 |"
-  },
-  {
-    "file": "FN6i-NT-FNB-COP.pdf",
-    "path": "6i Manuals/Food & Beverage Costing/FN6i-NT-FNB-COP.pdf",
-    "module": "Food & Beverage Costing",
-    "size_kb": 1672,
-    "pages": 19,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 51,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-FNB-COP"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   |   | FOOD & BEVERAGE  COSTING |   | - COSTING  OPERATIONS  - |   |   | TABLE OF CONTENTS | COSTING  OPERATIONS | 1.         Costing Extraction | 2.         Kitchen  Stock | 3.         Kitchen  Opening Stock | 4.         Manual Sales Entry | 5.         Manual Consumption  Entry | 6.         Inter Kitchen  Transfers | 7.         Open/ Modifiers  Items | 8.         Stock Balance Transfer | 9.         Auto Indent Creation |    | Identifying  Standards | The following are some of the standards that are commonly displayed in all the screens: |   | Click | To | Enter new information. | Change/update existing information. |  |  | ===== PAGE 2 ===== |  | Remove or erase the existing information. This button  | works only conditionally. | View/browse existing information. | View the preceding details. This is enabled only after you  | click Browse. | View the subsequent details. This is enabled only after  | you click Browse. | Save new or modified information. | Access other menu options namely Command Window,  | Internode Communication, Calculator, Calendar,  | Scratch Pad, and Yellow Pages. | Exit from the screen. |   |   | COSTING OPERATIONS |   | Costing Operations is used by F & B Costing to create Kitchen stock, sales entries, consumption entries, inter kitchen transfers, link open or  | modifier items, stock balance transfers etc. |   |  |  | ===== PAGE 3 ===== |  |   | 1.     Costing Extraction |   | Costing Extraction will extract the data fro"
-  },
-  {
-    "file": "FN6i-NT-FNB-LUK.pdf",
-    "path": "6i Manuals/Food & Beverage Costing/FN6i-NT-FNB-LUK.pdf",
-    "module": "Food & Beverage Costing",
-    "size_kb": 1331,
-    "pages": 15,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 31,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-FNB-LUK"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  | FOOD & BEVERAGE  COSTING | -LOOKUPS- |   |   | TABLE  OF CONTENTS | LOOKUPS | 1.         Item Recipe Details | 2.         Recipe  Details | 3.         Non – Chargeable  Query | 4.         Recipe  – Ingredient  Details | 5.         Stock Query | 6.         Standard  Vs. Actual (Q) | 7.         Profitability  Analysis |    |   | LOOKUPS |   | Lookups is a sub-module under Food & Beverage Costing Module. It has sub menu items which are explained in detail in this  | document. |   | Lookups is used by Food & Beverage Costing to get instant access to information relating to Item Recipe details, NC Query, Stock  | Query, Profitability Analysis, etc. |   |  |  | ===== PAGE 2 ===== |  |   |   | 1.     Item Recipe Details |   | This option is used to view Item wise sales details in terms of quantity & value along with the cost details only for items to which recipes  | have been specified.  The details are reflected after the Sales/ Cost Extraction is processed. |   | Double–click Item Recipe Details under Lookups to view the following screen: |   |  |  | ===== PAGE 3 ===== |  |   | 1.       Select an Outlet from the given Outlet list. | 2.       Select the Cost Type. | 3.       Enter the date range in the FROM date and TO date fields. | 4.       Enter the item range in the FROM item and TO item fields to get the Item Recipe Details report. | 5.       Click  | . The following screen appears: |   |   | 6.       Press F3 to view Recipe details. Double-click"
-  },
-  {
-    "file": "FN6i-NT-FNB-REP.pdf",
-    "path": "6i Manuals/Food & Beverage Costing/FN6i-NT-FNB-REP.pdf",
-    "module": "Food & Beverage Costing",
-    "size_kb": 1770,
-    "pages": 28,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 68,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-FNB-REP"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  | FOOD & BEVERAGE  COSTING | - REPORTS  - |   | TABLE  OF CONTENTS |   | REPORTS | 1.       Recipe Checklist | 2.       Kitchen Stock Checklist | 3.       Sales Analysis | 4.       Kitchen Stock Statement | 5.       Stock Sheet | 6.       Missing Recipe List | 7.       Physical  Stock Variance | 8.       Inter Transfer Checklist | 9.       Cost  Report | 10.    Standard  vs. Actual  (R) | 11.     Open Item/Modifier  (R) | 12.      Print Buffet Information | 13.__Manual_Sales_Cons_Report.   |   | REPORTS |   | Reports - Reports is a sub-module under F&B Costing Module. It has sub menu items which are explained in detail in this  | document. |   | Reports under F&B Costing Module is used by Users to generate various reports relating to recipe checklist, kitchen stock  | checklist, sales analysis, missing recipe checklist, cost report, etc. |   |  |  | ===== PAGE 2 ===== |  |   | 1.     Recipe Checklist |   | This report is used to generate a specified range of all recipes and sub recipes list that are entered using menu items with  | similar names and also based on the restaurants (POS Outlets). |   | Double-click Recipe Checklist under Reports to view the following screen: |   |  |  | ===== PAGE 3 ===== |  |   | 1.       Select one of the two options for which you want to generate the report -  Recipe or Sub Recipe. | 2.       Select the Restaurant from the dropdown list. | 3.      Enter the range of Recipe # in the FROM and TO fields to generate th"
-  },
-  {
-    "file": "FN6i-NT-FNB-SET.pdf",
-    "path": "6i Manuals/Food & Beverage Costing/FN6i-NT-FNB-SET.pdf",
-    "module": "Food & Beverage Costing",
-    "size_kb": 1107,
-    "pages": 14,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 45,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-FNB-SET"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   |   | FOOD & BEVERAGE  COSTING |   | - SETUP - |   | TABLE  OF CONTENTS |   | SETUP | 1.          Costing Start Date | 2.          Costing Link | 3.          Sales/Cost  Budgets | 4.          Recipe/Sub  Recipe Master |   | Identifying  Standards | The following are some of the standards that are commonly displayed in all the screens: |   | Click | To | Enter new information. | Change/update existing information. | Remove or erase the existing information. This button  | works only conditionally. | View/browse existing information. | View the preceding details. This is enabled only after you  | click Browse. |  |  | ===== PAGE 2 ===== |  | View the subsequent details. This is enabled only after  | you click Browse. | Save new or modified information. | Access other menu options namely Command Window,  | Internode Communication, Calculator, Calendar,  | Scratch Pad, and Yellow Pages. | Exit from the screen. |   |   | SETUP |   | The Setup menu item of the F&B Costing module explains the various settings that are necessary for the F&B Costing  | module to work efficiently and in connection with other modules. |   | On the main screen, click F&B Costing  |  and select Setup; you can view the following screen. |   |   |   |  |  | ===== PAGE 3 ===== |  | 1.     Costing Start Date |   | The Costing Start Date is a mandatory parameter, which is used to enter the date for activating the food and beverage- | costing module. |   | Based on the date speci"
   },
   {
     "file": "FN6i-NT-POS-GST.pdf",
@@ -451,317 +262,6 @@
     "toc_count": 0,
     "toc_titles": [],
     "sample": " |  | ===== PAGE 1 ===== |  |   | 1  | POINT OF SALE  |    | - SETUP -  |    |    |    |    |    |    | TABLE OF CONTENTS  | Chapter 1  Setup  | 1.        Setup Outlets.  | 2.        Outlet Sessions  | 3.        Outlet Order Type  | 4.        Link Outlet Sessions  | 5.        Link Outlet Order Types  | 6.        Link Outlet Currencies  | 7.        Departments for NC  | 8.        Menu Groups  | 9.        Servers  | 10.__Server_Outlet_Mapping  | 11.     Menu Levels  | 12.     Restaurant Table Master  |  |  | ===== PAGE 2 ===== |  | POS SET  | 2  | 13.     Item Hot Keys.  | 14.     Touch Screen Groups  | 15.     Kitchens  | 16.     Sales Report Definition  | 17.     Outlet Settlements  | 18.     POS Report Options  | 19.     Open Items Definition  | 20.     POS User Access  | 21.     Setup Area  | 22.     Restrict Outlet Access  | 23.     User Defined Print Forms  | 24.     Parameter List  | 25.     Menu Master  | 26.     Point of Sale Rate Master  | 27.     Modifier Master  | 28.     Touch Screen Modifiers  | 29.     Quick Menu Update  | 30.     Batch Rate Change  | 31.     Issue KOT Book  | 32.     Happy Hours Definition  | 33.     Sales Promotion Master  | 34.     Central KOT Definition  | 35.     Bill Printer Selection  |  |  | ===== PAGE 3 ===== |  | FN-NT-POS-SET  | 3  | 36.     DSR (Daily Sales Report) Session Group  | 37.     Purge KOT Books  | 38.     Guest Survey Template  | 39.     Design Table Layout  | 40.__Update_NC_Change.  | 41.  Member Discount Defn.  | 42.__Tax"
-  },
-  {
-    "file": "FN6i-NT-ACR-BIL.pdf",
-    "path": "6i Manuals/Accounts Receivales/FN6i-NT-ACR-BIL.pdf",
-    "module": "Accounts Receivales",
-    "size_kb": 512,
-    "pages": 8,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 28,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-ACR-BIL"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | ACCOUNTS RECEIVABLES | - BILLINGS - |   | TABLE  OF CONTENTS | BILLINGS | 1.        Monthly Invoice Statement | 2.        Print Invoice/Reminder | 3.        Print Receipt | 4.        Balance Confirmation  AR |   | BILLINGS | This menu consists of various functions with which you can view the statements, invoices, receipts etc that are generated  | for the transactions and balances in the Accounts Receivables module of the Property. |   | On the main screen, click Accounts Receivables and select Billings, you can view the following screen: |   |  |  | ===== PAGE 2 ===== |  |   |   | 1.     Monthly Invoice  Statement | In th | is option, you can generate a customized monthly invoice statement for all company masters including travel agent, credit  | card companies, tour operators etc, on pre-printed or plain stationery as on a given date. To print an invoice statement it is  | mandatory to define the print program ID in the ‘Pgm ID for Print Forms’ option under System Setup module without which  | the statement will not be printed. |   | Click Monthly Invoice Statement under Billings to view the following screen. |   |   | 1.       Enter the range of companies in the From and To Company fields. Press F1 key to view a list of all companies defined  | in the Company Master. | 2.       Enter the month and year in the As on MMYY field up to which the Invoice statement has to be printed. | 3.       Enter any remarks or greetings in the Spl. Instruct"
-  },
-  {
-    "file": "FN6i-NT-ACR-CRT.pdf",
-    "path": "6i Manuals/Accounts Receivales/FN6i-NT-ACR-CRT.pdf",
-    "module": "Accounts Receivales",
-    "size_kb": 431,
-    "pages": 8,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 28,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-ACR-CRT"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | ACCOUNTS RECEIVABLES | - CREDIT TRACE - |   | TABLE  OF CONTENTS | Credit  Trace | 1.        Debtors Follow-Up |   | Credit Trace |   | This menu consists of functions that are involved in the follow-up process of credit transactions. | On the main screen, click Accounts Receivables  |  and select Credit Trace, you can view the following screen: |   |   | 1.     Debtors  Follow-Up |   | In this option, you can record the follow-ups made with the debtors against outstanding amount of the folios for a specified  | projection period. You can also view the Company details and the transactions made by company. |   | Click Debtors Follow-Up under Operations to view the following screen. |  |  | ===== PAGE 2 ===== |  |   |   | 1.       Enter the Company Name and click  |  to display information related to the entered company.  | Alternatively, you can click  |  without entering the company name to display all the company names. | 2.       Click  |  at Show Advanced Search to customize your search options. You can prioritize your search based on the  | options available as shown in the below screen. |   |   | 3.       Enter the desired option and click  |  to view the transactions made by the company as shown in the  | below screen. By default, the Transactions screen is displayed. |   |  |  | ===== PAGE 3 ===== |  |   | 4.       Click  |  to print the transactions displayed in the above screen. |   | You can enter the follow-up details in the Follow"
-  },
-  {
-    "file": "FN6i-NT-ACR-OPR.pdf",
-    "path": "6i Manuals/Accounts Receivales/FN6i-NT-ACR-OPR.pdf",
-    "module": "Accounts Receivales",
-    "size_kb": 1419,
-    "pages": 21,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 66,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-ACR-OPR"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | ACCOUNTS RECEIVABLES | - OPERATIONS - |   | TABLE  OF CONTENTS | OPERATIONS | 1.        Transaction  Entry (AR) | 2.        Match Bills - Receipts | 3.        Travel Agent  Commissions | 4.        Credit Card Consolidation | 5.        Outstanding  Update | 6.___Receipts_Untagging | 7._____Statement_of_Accounts | 8._____Rollback_Statement_of_A_C |   | OPERATIONS | This menu consists of various functions that are involved in the daily operations of the Accounts Receivables module of  | the Property. | On the main screen, click Accounts Receivables  |  and select Operations, you can view the following screen: |  |  | ===== PAGE 2 ===== |  |   |   | 1.     Transaction  Entry (AR) | In this option, you can manually record account wise details of debit bills, payment receipts and adjustment transactions  | and posting of above transactions can be done to Financial Management module depending on its interlinking options.  | You can also view and partially amend debit transactions that are auto posted (bills settled on credit) from the Front Desk,  | Point of Sale, Banquets & Conferencing & Membership modules. |   | Click Transaction Entry (AR) under Operations to view the following screen. |   |   | Column/  | Fields | Description | Company | Enter or select the company code for which you want to record the  |  |  | ===== PAGE 3 ===== |  | transactions. | Doc # | This field displays the auto generated transaction reference number,  | which can be re"
-  },
-  {
-    "file": "FN6i-NT-ACR-RPL.pdf",
-    "path": "6i Manuals/Accounts Receivales/FN6i-NT-ACR-RPL.pdf",
-    "module": "Accounts Receivales",
-    "size_kb": 1735,
-    "pages": 33,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 92,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-ACR-RPL"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | ACCOUNTS RECEIVABLES | - REPORTS & LOOKUPS - |   | TABLE  OF CONTENTS |  Reports & Lookups | 1.       Opening  Balance  List (ACR) | 2.       Transaction  List | 3.       Balance by A/C Type | 4.       Ledger  Balance | 5.       Folio  Outstanding | 6.       Aging Summary | 7.       A/C Balance Detail | 8.       Credit Card Register | 9.       SOA Print | 10.     Payment  Follow-up  Report | 11.     Transaction  Audit | 12.     Commission  Report | 13.     12123 | 14.     Receipt Register  (ACR) | 15.     Cheque Deposit Statement | 16.     Monthly  Summary  Report | 17.     A/C Balance Query | 18.     Outstanding  Snapshots | 19.     Receipts  Display | 20.     Browse Transactions |  |  | ===== PAGE 2 ===== |  | 21.     Debtor  Outstanding  Report. | 22.     Daily Receipt Register  by Invoice | 23.     IDS Report Designer |   |  Reports & Lookups |   | Reports & Lookupsis a sub-module under Accounts Receivables Module. It has sub menu items, which are explained in  | detail in this document. | On the main screen, click Accounts Receivables  |  and select Reports & Lookups; you can view the following  | screen. |   |   |   | 1.     Opening Balance List (ACR) | In this report, you can view the list of Credit and Debit Opening Balance of each Company such as Companies, Credit Card,  | Travel Agent, etc… as entered in the AR Opening Balance option. |   | Double-click Opening Balance List (ACR) to view the following screen. |   |  |  | ===== PAGE "
-  },
-  {
-    "file": "FN6i-NT-ACR-SET.pdf",
-    "path": "6i Manuals/Accounts Receivales/FN6i-NT-ACR-SET.pdf",
-    "module": "Accounts Receivales",
-    "size_kb": 1109,
-    "pages": 19,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 85,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-ACR-SET"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   |   | ACCOUNTS RECEIVABLE | - SETUP - |   | TABLE  OF CONTENTS |   | SETUP | 1.        AR Start Date. | 2.        AR Opening Balance | 3.        Specify  Aging. | 4.        AR User Access | 5.        Company  Profile | 6.        User Defined Print Forms | 7.        Purge ACR Audit  Table | 8.        Print Form Designer |   | Identifying  Standards |   | The following are some of the standards that are commonly displayed in all the screens: |   | Click | To | Enter new information. | Change/update existing information. | Remove or erase the existing information. This button  | works conditionally. | View/browse existing information. | View the preceding details. This is enabled only after you  | click Browse. | View the subsequent details. This is enabled only after  | you click Browse. |  |  | ===== PAGE 2 ===== |  | Save new or modified information. | Access other menu options namely Command Window,  | Internode  | Communication,  | Calculator,  | Calendar,  | Scratch Pad, and Yellow Pages. | Exit from the screen. |   |   | SETUP |   | The Setup menu item of the Accounts Receivables module explains the various settings that are necessary for the  | Accounts Receivables module to work efficiently and in connection with other modules. | On the main screen, click Accounts Receivables  |  and select Setup; you can view the following screen. |   |   | 1.     AR Start Date |   | In this option, you can set the date from which the Accounts Receivable"
-  },
-  {
-    "file": "FORTUNE CARE v6 - OPERATIONS.pdf",
-    "path": "6i Manuals/Care/FORTUNE CARE v6 - OPERATIONS.pdf",
-    "module": "Care",
-    "size_kb": 3030,
-    "pages": 80,
-    "pdf_title": "FORTUNE CARE - OPERATIONS",
-    "has_extractable_text": true,
-    "images": 186,
-    "toc_count": 0,
-    "toc_titles": [],
-    "sample": " |  | ===== PAGE 1 ===== |  |   |   |   |   |   | FORTUNE CARE v6  | - OPERATIONS -  |   |   |  |  | ===== PAGE 2 ===== |  |   |   | TABLE OF CONTENTS  | OPERATIONS .................................................................................................................... 4  | 1.  | MONTHLY ROSTER ....................................................................................................... 5  | DEFINING STAFF ROSTER .................................................................................................... 6  | DEFINING SHIFTS ..................................................................................................................... 7  | DEFINING WEEKLY OFFS .................................................................................................... 10  | DEFINING FLOORS ................................................................................................................. 11  | 2.  | STAFF LOG-IN AND LOG-OUT ..................................................................................... 19  | STAFF LOGIN ............................................................................................................................ 19  | STAFF LOGOUT ........................................................................................................................ 27  | 3.  | MANUAL ENTRY PROGRAM ........................................................................................ 29  | COLOR LEGENDS .........."
-  },
-  {
-    "file": "FORTUNE CARE v6 - REPORTS & LOOKUPS - VER 10 AUGUST.pdf",
-    "path": "6i Manuals/Care/FORTUNE CARE v6 - REPORTS & LOOKUPS - VER 10 AUGUST.pdf",
-    "module": "Care",
-    "size_kb": 2708,
-    "pages": 73,
-    "pdf_title": "FORTUNE NEXT ENTERPRISE - 2.0",
-    "has_extractable_text": true,
-    "images": 153,
-    "toc_count": 0,
-    "toc_titles": [],
-    "sample": " |  | ===== PAGE 1 ===== |  |   |   |   |   |   |   | FORTUNE CARE v6  | -REPORTS & LOOKUPS-  |   |   |   |  |  | ===== PAGE 2 ===== |  |                                                             Fortune Care v6 –User Manual  |   |   | TABLE OF CONTENTS  | REPORTS & LOOKUPS ...................................................................................................... 4  | 1.  | CALL ATTENDED LIST...................................................................................................... 5  | 2.  | TASK BY RUNNER/TECHNICIAN ................................................................................... 12  | 3.  | RESPONSE TIME ANALYSIS ............................................................................................ 14  | 4.  | WORK START STATISTICS ............................................................................................. 17  | 5.  | STAFF PRODUCTIVITY ................................................................................................... 19  | 6.  | TASKS STATISTICS ......................................................................................................... 21  | 7.  | TASKS STATISTICS BY DEPART .................................................................................... 30  | 8.  | TOP TASKS STATISTICS REPORT .................................................................................. 36  | 9.  | REPEATED ISSUES LIST ................................................................."
-  },
-  {
-    "file": "FORTUNE CARE v6 - SETUP - VER 10 AUGUST.pdf",
-    "path": "6i Manuals/Care/FORTUNE CARE v6 - SETUP - VER 10 AUGUST.pdf",
-    "module": "Care",
-    "size_kb": 1212,
-    "pages": 34,
-    "pdf_title": "FORTUNE CARE - SETUP",
-    "has_extractable_text": true,
-    "images": 68,
-    "toc_count": 0,
-    "toc_titles": [],
-    "sample": " |  | ===== PAGE 1 ===== |  |   |   |   |   |   | FORTUNE CARE v6  | - SETUP -   |   |   |   |  |  | ===== PAGE 2 ===== |  |   |   | TABLE OF CONTENTS  | SETUP ................................................................................................................................ 4  | 1.  | USER CREATION ............................................................................................................... 5  | 2.  | DEFINE RIGHTS ................................................................................................................ 7  | 3.  | ORGANIZATIONAL STRUCTURE ..................................................................................... 10  | ADDING DEPARTMENT ................................................................................................................ 11  | ADDING DESIGNATION ................................................................................................................ 13  | CREATING AND ADDING EMPLOYEE ......................................................................................... 16  | CREATING REPORTING HIERARCHY .......................................................................................... 18  | MODIFYING THE REPORTING HIERARCHY ............................................................................... 18  | DELETING AN EMPLOYEE ............................................................................................................ 20  | RETRIEVING THE DELETED EMP"
-  },
-  {
-    "file": "FN6i-NT-SLM-LUK.pdf",
-    "path": "6i Manuals/Sales & Marketing/FN6i-NT-SLM-LUK.pdf",
-    "module": "Sales & Marketing",
-    "size_kb": 607,
-    "pages": 10,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 29,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-SLM-LUK"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  | SALES & MARKETING | - LOOKUPS - |   |   | Table  of Contents |  Lookups | 1.      Browse  Company | 2.      View Rate Structures | 3.      Company  Rates - Datewise | 4.      Browse  Hotel Profile | 5.      Company  Package  Rates | 6.      Company  Rates (Query) |   |   |  Lookups |   | Lookups is a sub-module under Sales & Marketing Module. It has sub menu items, which are explained in detail in  | this document. | On the main screen, click Sales & Marketing  |  and select Lookups; you can view the following screen. |  |  | ===== PAGE 2 ===== |  |   |   | 1.     Browse  Company | In this lookup, the user can browse company contact details based on selective criteria. The Companies listed can vary  | depending upon the search criteria such as Watch List, Holding Company, Sales Executive etc… | Double-click Browse Company to view the following screen. | 1.       Select the criteria based on which you want to list the Company contact details. Some of the options have sub- | selection criteria based on which you can narrow down your selection. |  |  | ===== PAGE 3 ===== |  | For Example: Consider you want to display the Company contact details for a range of Credit Limits. You can enter the  | range of Credit Limit and a list of Companies is displayed whose credit limit lies between the range specified. | Double-click on Credit Limit to view the following screen. |   |   | Enter the range of Credit Limit and click | . | 2.       Click to display th"
-  },
-  {
-    "file": "FN6i-NT-SLM-PRF.pdf",
-    "path": "6i Manuals/Sales & Marketing/FN6i-NT-SLM-PRF.pdf",
-    "module": "Sales & Marketing",
-    "size_kb": 1852,
-    "pages": 42,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 154,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-SLM-PRF"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  | SALES & MARKETING | - PROFILES - |   | TABLE  OF CONTENTS | Chapter 1  Profiles | 1.     Sales Office | 2.     Sales Executives | 3.     Collection  Executives | 4.     Bookers Master | 5.     Revenue  Discount  Master | 6.     Hotel Amenities | 7.     Company  Profile | 8.     Update Company  Profile | 9.     Link Rates to Company | 10.   Retention  Policy | 11.   Cancellation  Policy | 12.   Agent Allocation | 13.   Agent Forecast | 14.   Agent Release Dates | 15.   Sales Call Types | 16.   Map Users/Sales  Exec |  |  | ===== PAGE 2 ===== |  | 17.   Hotel Profile |   Profiles | The Profiles menu of the Sales & Marketing module explains the various profile settings that are necessary for the  | Sales & Marketing module to work efficiently and in connection with other modules. | On the main screen, click Sales & Marketing  |  and select Profiles; you can view the following screen. |   |   |   | 1.     Sales Office | In this option, you can define the various sales offices of the property located at different places. These sales offices  | operate on behalf of the property in various operations. | Click Sales Office under Profiles to view the following screen. |  |  | ===== PAGE 3 ===== |  | For more information, refer Sales Office under Front Office Setup. |   |   | 2.     Sales Executives | In this option, you can define the sales executives for the property who works in the Sales & Marketing department of  | the Property. Each Sales Executive d"
-  },
-  {
-    "file": "FN6i-NT-SLM-REP.pdf",
-    "path": "6i Manuals/Sales & Marketing/FN6i-NT-SLM-REP.pdf",
-    "module": "Sales & Marketing",
-    "size_kb": 1259,
-    "pages": 22,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 57,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-SLM-REP"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  | SALES & MARKETING | - REPORTS - |   | Table  of Contents |  Reports | 1.     Business  Lost Report | 2.     Market Share  Analysis | 3.     Sales Call Report | 4.     Follow-up/Schedule  Report | 5.     Birthday/Anniversary  List | 6.     Watch List Companies | 7.     Sales Performance  (Budget) | 8.     Allocation  List | 9.     Forecast  List | 10.   Company  List | 11.   Company  Labels | 12.   Company  Letters | 13.   E-Mail  ID List | 14.   Company  Productivity | 15.   Company  Contribution  Date wise | 16.   Company  Contribution |  |  | ===== PAGE 2 ===== |  | 17.   Company  Sales | 18.   Company  Prod. Variance  Report | 19.   Sales Performance  Report |  Reports |   | Reports is a sub-module under Sales & Marketing Module. It has sub menu items, which are explained in detail in this  | document. | On the main screen, click Sales & Marketing  |  and select Reports; you can view the following screen. |   |   | 1.     Business Lost Report | In this report, you can view the list of all lost businesses from Potential and Registered Companies. The Business lost  | report displays details of companies, whose business the Hotel has lost to another Hotel. The report can be processed  | for a specified date range. Details can be viewed Sales Executive Wise, or Reason Wise. The information reflected here is  | recorded using the Business Lost Entry option. | Double-click Business Lost Report to view the following screen. |  |  | ===== PAGE 3 ====="
-  },
-  {
-    "file": "FN6i-NT-SLM-SLT.pdf",
-    "path": "6i Manuals/Sales & Marketing/FN6i-NT-SLM-SLT.pdf",
-    "module": "Sales & Marketing",
-    "size_kb": 1414,
-    "pages": 29,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 100,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-SLM-SLT"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  | SALES & MARKETING | - SALES TRACKING - |   |   | TABLE  OF CONTENTS |  Sales Tracking | 1.     Daily Occupancy  Entry | 2.     F & B Promotion  Entry | 3.     Company  Budgets | 4.     Prospect  Entry | 5.     Sales Manager  Tool | 6.     Daily Sales Call | 7.     Entertainment/Gift  Entry | 8.     Business  Loss Entry | 9.     Executive  Planner | 10.   Transfer  Prospects |   Sales Tracking |   | The Sales Tracking menu of the Sales & Marketing module explains the various entries made to track the Sales  | operation in the Property. | On the main screen, click Sales & Marketing  |  and select Sales Tracking; you can view the following screen. |   |  |  | ===== PAGE 2 ===== |  |   | 1.     Daily Occupancy  Entry | In this option, the user can record the backdated room occupancy information for all Properties (same or different  | Groups) before IDS PMS went on live with the Property. this helps in generating MIS reports for entire Financial Year. | Click Daily Occupancy Entry under Sales Tracking to view the following screen. | To enter Daily Occupancy details |  |  | ===== PAGE 3 ===== |  | 1.       Click  | . | 2.       Enter the date for which you want to record the information. | 3.       Enter the Property name for which you want to enter the room occupancy statistics. Double-click  |  or press F1  | to view and select existing Properties. | 4.       Enter the total number of rooms available in the Property. | 5.       Enter the percentage"
-  },
-  {
-    "file": "FN6i-NT-MGT-DNT.pdf",
-    "path": "6i Manuals/Materials Management/FN6i-NT-MGT-DNT.pdf",
-    "module": "Materials Management",
-    "size_kb": 6190,
-    "pages": 75,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 188,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-MGT-DNT"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | MATERIALS MANAGEMENT | - DAILY ENTRIES - |   | TABLE  OF CONTENTS | Daily_Entries | 1.        Purchase  Requisition | 2.        Indent Entries | 3.        Purchase  Order | 4.        Standing  Purchase  Order | 5.        Service Work Order | 6.        Transactions | 7.        Quotation  Analysis | 8.        Re-Order  Process | 9.        Inter Store  Requisition | 10.     Inter Store Transfer | 11.     Sub Store Transfer | 12.     Cost Center Transaction | 13.     Physical  Stock  Entry | 14.     Stock  Variance Updation | 15.     Process  Store Ledger |  |  | ===== PAGE 2 ===== |  |   | Daily Entries | The Daily Entries menu item of the Materials Management module explains the various functions that are necessary for the operations of  | Materials Management module to work efficiently and in connection with other modules. | On the main screen, click Materials Management  |  and select Daily Entries; you can view the following screen. |   |   | 1.     Purchase Requisition |   | In this option, the user can enter Items required by various Departments (Cost Centers). The requisitions are forwarded to the Purchase  | Department for purchase of Items as per requirements mentioned in the requisition.  The requisitions recorded here are used for placing orders  | with Vendors during the entry of Purchase Orders. |   | Click Purchase Requisition under Daily Entries to view the following screen. |   |  |  | ===== PAGE 3 ===== |  |   | All the requisit"
-  },
-  {
-    "file": "FN6i-NT-MGT-LUK.pdf",
-    "path": "6i Manuals/Materials Management/FN6i-NT-MGT-LUK.pdf",
-    "module": "Materials Management",
-    "size_kb": 3403,
-    "pages": 38,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 90,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-MGT-LUK"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | MATERIALS MANAGEMENT | - LOOKUPS - |   | TABLE OF CONTENTS | Lookups | 1.       Requisition  Status | 2.       Indent  Status | 3.       Indent  Status  by Item | 4.       Authorization  Details | 5.       PO Status | 6.       PO Status by Vendor | 7.       Cancelled & Closed  PO | 8.       Pending  PO | 9.       SPO Status | 10.    SWO (Service  Work Order) Status | 11.    Receipt/Issue  by Group | 12.    Store Balance  by Date | 13.    Item Stock  Status | 14.    Item Stock  Balance | 15.    Item Balance  by Date | 16.    Consumption  Detail | 17.    Group Cons Month  Range | 18.    Item Stock  by CC | 19.    Vendor Selection | 20.    Spending Pattern |  |  | ===== PAGE 2 ===== |  |   | Lookups |   | Lookups is a sub-module under Materials Management Module. It has sub menu items, which are explained in detail in this  | document. | On the main screen, click Materials Management  |  and select Lookups; you can view the following screen. |   |   |   | 1.     Requisition  Status |   | In this lookup, the user can generate a report to view the status of Purchase Requisitions. You can view the month and date range  | wise and also item wise and Purchase Requisition wise. |   | Double-click Requisition Status to view the following screen. |   |  |  | ===== PAGE 3 ===== |  |   | 1.       Select an option Date range/Month range. | 2.       Enter the date range or month range respectively. | 3.       Select an option Item wise/Requisition wise. | 4"
-  },
-  {
-    "file": "FN6i-NT-MGT-REP.pdf",
-    "path": "6i Manuals/Materials Management/FN6i-NT-MGT-REP.pdf",
-    "module": "Materials Management",
-    "size_kb": 6962,
-    "pages": 112,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 268,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-MGT-REP"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   |   | MATERIALS MANAGEMENT |   | - REPORTS - |   | TABLE  OF CONTENTS | Chapter 1 Reports | 1.     Inventory  Item List | 2.     Requisition  Status | 3.     PO Status Report | 4.     Transaction  & Receipt | 4.1      Transaction  Checklist | 4.2      Receipt  Register | 4.3      Capital  Goods  Receipt | 4.4      Receipt/Issue  by Group | 4.5      Receipt/Issue  Consolidate | 4.6      Consolidate  Receipt  Value | 4.7      Supplier Receipt  Register | 4.8      Opening  Balance  List | 5.     Consumption | 5.1      Cost Center Consumption | 5.2      Cost Center Consumption  Summary | 5.3      Group  Consumption  Month Range | 5.4      Group  Consumption  Month Range – R2 |  |  | ===== PAGE 2 ===== |  | 6._Item___Vendor_List | 6_1_Inventory_Item_List | 6_2_Item_List_by_Vendor | 6_3_Vendor_List | 6_4_Contract_List | 6.     Closing Stock by Type | 7.     One Line Store Balance | 8.     Store Balance  by Date | 9.     Item Details | 9.1      Item Stock Details | 9.2      Item Stock Levels | 9.3      Ledger  by Item | 9.4      Item Expiry List | 10.  Supplier  Bill | 11.  Always  Better  Control (ABC) Analysis | 12.  Fast, Slow and Non Moving  (FSN) Analysis | 13.  Slow Moving  Items | 14.  Non Moving  Items | 15.  Print | 15.1    Print Purchase  Requisition | 15.2    Print Indent | 15.3    Print Purchase  Order | 15.4    Print Standing  Purchase  Order (PO) | 15.5    Print Service  Work Order | 15.6    Print Goods  Receipt  (GRN) | 15.7    Print Tr"
-  },
-  {
-    "file": "FN6i-NT-MGT-SET.pdf",
-    "path": "6i Manuals/Materials Management/FN6i-NT-MGT-SET.pdf",
-    "module": "Materials Management",
-    "size_kb": 4985,
-    "pages": 68,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 163,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-MGT-SET"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   |   | MATERIALS MANAGEMENT | - SETUP - |   | TABLE OF CONTENTS | Chapter  1 Setup | 1.        Stores Creation | 2.        Item Group Creation | 3.        Item Locations | 4.        Stores Start  Date | 5.        Inventory  Master | 6.        Opening  Balance | 7.        Vendor Rating. | 8.        Terms of Payment | 9.        Vendor Master. | 10.     Item  Master by Vendor | 11.     Vendor  Contract  Info | 12.     Indent  Templates | 13.     Sub Cost Centre | 14.     Variance Cost Centers | 15.     Link Cost Centers  to Dept | 16.     Tax Exemptions | 17.     Item  Taxes | 18.     Define FSN (Fast, Slow & Non Moving) |  |  | ===== PAGE 2 ===== |  | 19.     Define Component | 20.     Item  Conversion  Split | 21.     Item  Conversions  Add | 22.     Budget Entry. | 23.     Foot Notes | 24.     Access Rights. | 25.     Email Access  Rights | 26.     Indent  Purging | 27.     Purge PO/SPO .. | 28.     User  Defined  Print Forms |   | Identifying  Standards | The following are some of the standards that are commonly displayed in all the screens: | Click | To | Enter new information. | Change/update existing information. | Remove or erase the existing information. This button works  | conditionally. | View/browse existing information. | View the preceding details. This is enabled only after you click  | Browse. | View the subsequent details. This is enabled only after you  | click Browse. | Save new or modified information. | Access other menu optio"
-  },
-  {
-    "file": "FN6i-NT-MNT-OPR.pdf",
-    "path": "6i Manuals/Maintenance/FN6i-NT-MNT-OPR.pdf",
-    "module": "Maintenance",
-    "size_kb": 2190,
-    "pages": 28,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 71,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-MNT-OPR"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   |   | MAINTENANCE  MANAGEMENT |   | - OPERATIONS  - |   |   |    | TABLE OF CONTENTS | OPERATIONS | 1.        Register  Complaints | 2.        Action Taken | 3.        Assign Shifts | 4.        Equipment  Master | 5.        PM Schedule  Master | 6.        PM Schedule  Entry | 7.        Job Order Generation | 8.        Equipment  Reading Entry |    |   | OPERATIONS | Operations is used by Maintenance Management to register complaints, actions taken to resolve complaints, assign shifts  | to employees, create equipment master, PM Schedule Master, PM Schedule Entry, Equipment Reading Entry and generate  | Job Orders. |   |  |  | ===== PAGE 2 ===== |  |   | 1.     Register  Complaints |   | Register Complaints is used to register the complaints that are raised at the property.  The information recorded here is  | used to generate job orders.  Complaints can be raised by any Department and from any location or for any room in the  | property. | Double–click Register Complaints under Operations to view the following screen: |   |  |  | ===== PAGE 3 ===== |  |   | 1.       Click  | . | The complaint number is auto generated. | 2.       In the Ref. No field, enter the number that will be used to refer to the complaint registered. A maximum of 10  | alphanumeric characters can be entered in this field. | 3.       Select the Room # or the Location Code for which the complaint has to be registered. | 4.       Press F1 to select the room number/location co"
-  },
-  {
-    "file": "FN6i-NT-MNT-RPL.pdf",
-    "path": "6i Manuals/Maintenance/FN6i-NT-MNT-RPL.pdf",
-    "module": "Maintenance",
-    "size_kb": 2328,
-    "pages": 29,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 84,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-MNT-RPL"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | MAINTENANCE  MANAGEMENT |   | - REPORTS  & LOOKUPS- |   |    | TABLE OF CONTENTS |   | REPORTS & LOOKUPS | 1.       Complaints  List | 2.       Duty Chart | 3.       Complaint  Status (Q) | 4.       Equipment  Wise Complaints | 5.       Location Wise Complaints | 6.       Action  Taken  Report | 7.       Employee  Wise Action Taken | 8.       Equipment  Details List | 9.       P M Schedule  List | 10.         Resolution  Time Report | 11.         Job Order Report | 12.         Spares and Cost Report | 13.         Job / Complaint  Print Engine | 14.         Equipment  Readings List | 15.         Parameter  Listing |  |  | ===== PAGE 2 ===== |  |    |   | REPORTS & LOOKUPS | Reports – Reports & Lookups is a sub-module under Maintenance Management Module. It has sub menu items which are explained in detail in this  | document. |   | Reports & Lookups under Maintenance Management Module is used by Users to generate various reports relating to complaints, duty charts, equipment  | details, spares and cost repairs, resolution time report, job order report, etc. |   |   |   | 1.     Complaints List | Complaints List report is used to process a list of complaints registered during a specified date range. |   | Double-click Complaints List under Reports & Lookups to view the following screen: |   |  |  | ===== PAGE 3 ===== |  |   | 1.       Enter the date range in the date fields. | 2.       Select the option by which you want to view the complaints l"
-  },
-  {
-    "file": "FN6i-NT-MNT-SET.pdf",
-    "path": "6i Manuals/Maintenance/FN6i-NT-MNT-SET.pdf",
-    "module": "Maintenance",
-    "size_kb": 1620,
-    "pages": 24,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 80,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-MNT-SET"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  | MAINTENANCE   | MANAGEMENT | - SETUP - |    | TABLE  OF CONTENTS |   | SETUP | 1.          Define Locations | 2.          Define Equipment  Category . | 3.          Define Cost Category | 4.          Define Shifts | 5.          Define Service  Types | 6.          Define Service  Rhythms | 7.          Define Skills | 8.          Define Employees | 9.          Define Complaint  Priorities | 10.       Identify  Engg Store  (s) | 11.       Identify  Engg Cost Center. | 12.       User Defined Print Forms |   | Identifying  Standards |  |  | ===== PAGE 2 ===== |  | The following are some of the standards that are commonly displayed in all the screens: | Click | To | Enter new information. | Change/update existing information. | Remove or erase the existing information. This button  | works only conditionally. | View/browse existing information. | View the preceding details. This is enabled only after you  | click Browse. | View the subsequent details. This is enabled only after  | you click Browse. | Save new or modified information. | Access other menu options namely Command Window,  | Internode Communication, Calculator, Calendar,  | Scratch Pad, and Yellow Pages. | Exit from the screen. |   |  SETUP |   | The Setup menu item of the Maintenance Management module explains the various settings that are necessary for the  | Maintenance Management module to work efficiently and in connection with other modules. | On the main screen, click Maintenance Man"
-  },
-  {
-    "file": "FN6i-NT-FAS-GTP.pdf",
-    "path": "6i Manuals/Gate Passes/FN6i-NT-FAS-GTP.pdf",
-    "module": "Gate Passes",
-    "size_kb": 926,
-    "pages": 13,
-    "pdf_title": "",
-    "has_extractable_text": true,
-    "images": 34,
-    "toc_count": 2,
-    "toc_titles": [
-      "Topics",
-      "FN6i-NT-FAS-GTP"
-    ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | FINANCIAL  MANAGEMENT | -    GATE PASS- |   | TABLE  OF CONTENTS |   | GATE_PASS |   |   | 1_Issue_Gate_Pass |   | 2_Receive_Gate_Pass |   | 3_Gate_Pass_Query |   | 4_Gate_Pass_Register |   | 5_Pending_Gate_Passes |   | 6_Gate_Pass_Print |   | 7_Gate_Pass_Report |   |   | GATE PASS |   |   | Gate Pass is used by Financial Management to issue or receive gate pass, create the gate pass register, view pending  | gate passes and view and print gate pass details. |   |  |  | ===== PAGE 2 ===== |  |   | 1.     Issue Gate Pass |   | A gate pass is a NOTE issued authenticating the details of goods taken out of the premises for reasons like servicing,  | material transfers etc. |   | Double-click Asset Issue Gate Pass under Gate Pass to view the following screen: |   |   | 1.       Click  | . |  |  | ===== PAGE 3 ===== |  | 2.       In the Gate pass Ref# field enter a reference number for the goods to which a gate pass has to be issued. | 3.       In the Gate Pass Date field enter date when the Gate Pass is issued. | 4.       From the Cost Center dropdown list select the cost center to which the selected goods belong. | 5.       In the Authorized By field enter the name of the person who has authorized the issue of the gate pass. | 6.       In the Vendor Code field select the vendor code. | 7.       In the Vendor Name enter the vendor’s name. | 8.       In the Responsibility field enter the name of the person who has issued the gate pass. | 9.       I"
   },
   {
     "file": "FN6i-NT-FOM-CAS.pdf",
@@ -940,67 +440,567 @@
     "sample": " |  | ===== PAGE 1 ===== |  | FRONT  OFFICE |   | - SMS SETUP - |   | TABLE OF CONTENTS |   | SMS Setup | 1.     Mobile Master | 2.     SMS Service  Definition | 3.     Department  Checkout  Alert |   |   | SMS Setup |   | The SMS Setup Sub Module of the Front Office module explains the various settings that are necessary to send SMS to  | the guest and the authorized Supervisor of the Property. | On the main screen, click Front Office  |  and select SMS Setup, you can view the following screen. |   |  |  | ===== PAGE 2 ===== |  |   |   | 1.     Mobile Master |   | In this option, you can define the Manager/Supervisor/Staff of the hotel and indicate their Name and mobile numbers  | to which SMS is to be sent from the Front Office when required. |   | Click Mobile Master under SMS Setup to view the following screen. |   |   | To add  Mobile  details |   | Add the name of the person and indicate his/her mobile number to which SMS is to be sent by Fortune Next Enterprise  | 2.0 for events such as Guest Complaints, Check-ins, In-house Guest Birthday/ Anniversary, High Bills, Room Transfer,  | Checkout and Hotel Statistics. |   | Fields | Description | Code`` | Type the code of the person to whom you  | want to send SMS messages. This field  | accepts a maximum of four alphanumeric  | characters. | Name | Type the name of the person. This field  | accepts a maximum of 30 alphanumeric  | characters. | Mobile No. | Type the unique mobile number of the  | person to whom you will be s"
   },
   {
-    "file": "FN6i-NT-HRP-PNT.pdf",
-    "path": "6i Manuals/HR & Payroll/FN6i-NT-HRP-PNT.pdf",
-    "module": "HR & Payroll",
-    "size_kb": 3707,
-    "pages": 47,
+    "file": "FN6i-NT-TEL-CAC.pdf",
+    "path": "6i Manuals/Telephones/FN6i-NT-TEL-CAC.pdf",
+    "module": "Telephones",
+    "size_kb": 724,
+    "pages": 10,
     "pdf_title": "",
     "has_extractable_text": true,
-    "images": 119,
+    "images": 18,
+    "toc_count": 0,
+    "toc_titles": [],
+    "sample": " |  | ===== PAGE 1 ===== |  |   | 1  |    |    |    |    | TELEPHONE  | MANAGEMENT  |    | - CALL ACCOUNTING -  |    |    |    |   |   | TABLE OF CONTENTS  | CALL ACCOUNTING  | 1.        Activate-Deactivate Extension  | 2.        View-Update Telephone Error  | 3.        Call Transfer  | 4.        Extension Password Setup  |   |   |    |  |  | ===== PAGE 2 ===== |  | TEL CAC  | 2  | CALL ACCOUNTING  |    |    | Call Accounting - Call Accounting is a sub-module under Telephone Management Module.   It has sub  | menu items which are explained in detail in this document.  |    | Call Accounting under Telephone Management Module is used by Users to activate or deactivate an  | extension, view telephone errors and repost them to the respective room folios, transfer calls (from one  | extension to another), setup extension passwords and record and save standard SMSs to be sent to the guests  | on various occasions like checkins, anniversaries etc.  |    |   |   |   |     | 1.     Activate-Deactivate Extension  |    | This option is used to activate or deactivate a telephone extension. If a particular telephone line is not in use  | by a room or an extension and if it is still Active (working) you can use this option to Deactivate (stop  | working) it.  |    | Double-click Activate-Deactivate Extension under Call Accounting to view the following screen:  |    |  |  | ===== PAGE 3 ===== |  | FN-NT-TEL-CAC  | 3  |   |    | 1.       Select one of the two options to select the telephone "
+  },
+  {
+    "file": "FN6i-NT-TEL-LUK.pdf",
+    "path": "6i Manuals/Telephones/FN6i-NT-TEL-LUK.pdf",
+    "module": "Telephones",
+    "size_kb": 1498,
+    "pages": 21,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 49,
+    "toc_count": 0,
+    "toc_titles": [],
+    "sample": " |  | ===== PAGE 1 ===== |  |   | 1  |    |    |    |    | TELEPHONE MANAGEMENT  |    | - LOOKUPS -  |    |    |    |   |   | TABLE OF CONTENTS  | LOOKUPS  | 1.         View Unbilled Calls  | 2.         Room Calls Query  | 3.         Dial Code Search  | 4.         Guest Information  | 5.         Guest Search  | 6.         InHouse Statistics  | 7.         Create Address Book  | 8.         Print Yellow Pages  | 9.         View Transfers/Extensions  |  |  | ===== PAGE 2 ===== |  | TEL LUK  | 2  |     |    | LOOKUPS  |    |    | Lookups is a sub-module under Telephone Management Module. It has sub menu items which are  | explained in detail in this document.  |    | Lookups is used by Telephone Management to get instant access to information relating to Calls, Call Rates,  | Call Rate Slabs, dial Codes, Pulse Rates, Telephone Extensions, Yellow Pages, Guest information etc.  |    |   |   |   |     | 1.     View Unbilled Calls  |    | This option is to view the list of all calls that are not billed due to various reasons. (Example: Calls made from  | extensions that are not defined or calls made from a room that the application identifies as unoccupied etc).  |    | The user can view details like the room number, extension number, duration of the call, telephone number,  | place etc.  With this information the user can get the list of bills that have to be billed and added to the  | respective Guest folio.  |  |  | ===== PAGE 3 ===== |  | FN-NT-TEL-LUK  | 3  |    | Double–click Vi"
+  },
+  {
+    "file": "FN6i-NT-TEL-REP.pdf",
+    "path": "6i Manuals/Telephones/FN6i-NT-TEL-REP.pdf",
+    "module": "Telephones",
+    "size_kb": 1271,
+    "pages": 20,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 54,
+    "toc_count": 0,
+    "toc_titles": [],
+    "sample": " |  | ===== PAGE 1 ===== |  |   | 1  |    |    |    |    | TELEPHONE  | MANAGEMENT  |    | - REPORTS -  |    |    |    |   |   | TABLE OF CONTENTS  | REPORTS  | 1.        List All Calls  | 2.        Print Telephone Bill  | 3.        Call Summary by Department  | 4.        Transferred Call List  | 5.        Extension Wise All Calls  | 6.        Telephone Master List  | 7.        Unbilled Call List  |  |  | ===== PAGE 2 ===== |  | TEL REP  | 2  | 8.        Guest List  |   |   | REPORTS  |    |    | Reports - Reports is a sub-module under Telephone Management Module.  It has sub menu items which  | are explained in detail in this document.  |    | Reports under Telephone Management Module is used by Users to generate various reports relating to  | calls, extension numbers, telephone bills, unbilled calls, guest information etc.  |    |   |    |    |     | 1.     List All Calls  |    | This report gives a list of all calls made from the Property.   The user can give the date range, time range,  | select the call types, choose to view the call charges by the Property or the Service Providers and view calls  | made only from rooms or extensions.  The user can select the order in which they want to view the report like  | the extension number wise, date and time wise or trunk line date and time wise.  |    | Double-click List All Calls under Reports to view the following screen:  |    |  |  | ===== PAGE 3 ===== |  | FN-NT-TEL-REP  | 3  |   |    | 1.       Enter the date range in the"
+  },
+  {
+    "file": "FN6i-NT-TEL-SET.pdf",
+    "path": "6i Manuals/Telephones/FN6i-NT-TEL-SET.pdf",
+    "module": "Telephones",
+    "size_kb": 1373,
+    "pages": 32,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 96,
+    "toc_count": 0,
+    "toc_titles": [],
+    "sample": " |  | ===== PAGE 1 ===== |  |   | 1  |    |    |    |    |    | TELEPHONE MANAGEMENT  |    | - SETUP -  |   |   | TABLE OF CONTENTS  |    | SETUP  | 1.          Telephone Extensions  | 2.          Link Extensions  | 3.          Holiday Table  | 4.          Telephone Revenue Posting.  | 5.          Telephone Link Setup  | 6.          Time - Rate Slabs  | 7.          Country Codes  | 8.          Area Codes  | 9.          Door Lock User Interface  | 10.       Call Identifier  |  |  | ===== PAGE 2 ===== |  | TEL SETUP  | 2  |   |    | Identifying Standards  | The following are some of the standards that are commonly displayed in all the screens:  | Click  | To  |   | Enter new information.  |   | Change/update existing information.  |   | Remove or erase the existing information. This button  | works only conditionally.  |   | View/browse existing information.  |   | View the preceding details. This is enabled only after  | you click Browse.  |   | View the subsequent details. This is enabled only after  | you click Browse.  |   | Save new or modified information.  |   | Access other menu options namely Command Window,  | Inter Node Communication, Calculator, Calendar,  | Scratch Pad, and Yellow Pages.  |   | Exit from the screen.  |    |    | Standards  | Description  | Status  | This is applicable to most Settings, Master and  | Transactions menu options.  | By default, the status is set to Active.  |  If the status is Active, the corresponding  | user/application will be activ"
+  },
+  {
+    "file": "FN6i-NT-ACR-BIL.pdf",
+    "path": "6i Manuals/Accounts Receivales/FN6i-NT-ACR-BIL.pdf",
+    "module": "Accounts Receivales",
+    "size_kb": 512,
+    "pages": 8,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 28,
     "toc_count": 2,
     "toc_titles": [
       "Topics",
-      "FN6i-NT-HRP-PNT"
+      "FN6i-NT-ACR-BIL"
     ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | HR & PAYROLL | - PAYROLL  ENTRIES  - |   | TABLE OF CONTENTS |   | PAYROLL ENTRIES | 1.        Personnel  Master | 2.        Direct  Employee  Entry | 3.        Change Employee  Info | 4.        Rate Master Definition | 5.        Attendance  Entry | 6.        Post Default  Attendance | 7.        Attendance  Post Interface | 8.        Payroll  Transaction | 9.        Supplementary  Entries | 10.     Payroll Processing | 11.     Closing/Canceling  Process | 12.     Change  Employee  Status | 13.     Leave Master | 14.     Leave Transaction | 15.     Leave Posting to Payroll |  |  | ===== PAGE 2 ===== |  | 16.     Bonus Extraction  from Pay | 17.     Bonus Master / Supplementary  Entry | 18.     Bonus Processing | 19.     Closing  Bonus | 20.     Loan Master | 21.     Loan Return Entry | 22.     AR to Payroll  Transfer | 23.     Number Deduction  Updation | 24._Full_And_Final_Settlement |   |   | PAYROLL ENTRIES | Payroll Entries is a sub-module under HR & Payroll Module. Payroll Entries is used by Users to create Personnel Master, direct  | employee entry, change employee info, create rate master definition, attendance entries, leave master, payroll processing etc. |   |  |  | ===== PAGE 3 ===== |  |   |   | 1.     Personnel  Master |   | This option enables you to assign the employee number to a candidate who has been recruited and update information about the  | candidate to the employee master database.  This option considers only those deta"
+    "sample": " |  | ===== PAGE 1 ===== |  |   | ACCOUNTS RECEIVABLES | - BILLINGS - |   | TABLE  OF CONTENTS | BILLINGS | 1.        Monthly Invoice Statement | 2.        Print Invoice/Reminder | 3.        Print Receipt | 4.        Balance Confirmation  AR |   | BILLINGS | This menu consists of various functions with which you can view the statements, invoices, receipts etc that are generated  | for the transactions and balances in the Accounts Receivables module of the Property. |   | On the main screen, click Accounts Receivables and select Billings, you can view the following screen: |   |  |  | ===== PAGE 2 ===== |  |   |   | 1.     Monthly Invoice  Statement | In th | is option, you can generate a customized monthly invoice statement for all company masters including travel agent, credit  | card companies, tour operators etc, on pre-printed or plain stationery as on a given date. To print an invoice statement it is  | mandatory to define the print program ID in the ‘Pgm ID for Print Forms’ option under System Setup module without which  | the statement will not be printed. |   | Click Monthly Invoice Statement under Billings to view the following screen. |   |   | 1.       Enter the range of companies in the From and To Company fields. Press F1 key to view a list of all companies defined  | in the Company Master. | 2.       Enter the month and year in the As on MMYY field up to which the Invoice statement has to be printed. | 3.       Enter any remarks or greetings in the Spl. Instruct"
   },
   {
-    "file": "FN6i-NT-HRP-REP.pdf",
-    "path": "6i Manuals/HR & Payroll/FN6i-NT-HRP-REP.pdf",
-    "module": "HR & Payroll",
-    "size_kb": 9179,
-    "pages": 133,
+    "file": "FN6i-NT-ACR-CRT.pdf",
+    "path": "6i Manuals/Accounts Receivales/FN6i-NT-ACR-CRT.pdf",
+    "module": "Accounts Receivales",
+    "size_kb": 431,
+    "pages": 8,
     "pdf_title": "",
     "has_extractable_text": true,
-    "images": 264,
+    "images": 28,
     "toc_count": 2,
     "toc_titles": [
       "Topics",
-      "FN6i-NT-HRP-REP"
+      "FN6i-NT-ACR-CRT"
     ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   |   | HR & PAYROLL | - REPORTS  - |   | TABLE OF CONTENTS | REPORTS | 1.        Employee  Information | 1.1.        Employee  Lookup | 1.2.        Employee  Personal  Info. | 1.3.        Designation  and Salary  List | 1.4.        Birthday/Anniversary  (EMP) | 1.5.        Signature  List | 1.6.        Service  / Retirement  / DOJ | 1.7.        Passport  / Visa /Work  Permit | 1.8.        Blood  Grp/Staff/Place  Lst | 1.9.        Prob/Conf/Increment | 2.        Payroll  Reports | 2.1.        Salary Abstract | 2.2.        Salary Abstract  Details | 2.3.        Dept.  Payroll  Summary | 2.4.        Pay Roll Summary | 2.5.        Statements | 2.6.        Earnings  Reconciliation | 2.7.        Consolidate  Salary |  |  | ===== PAGE 2 ===== |  | 2.8.        E/D Statement | 2.9.        E/D Statement  – Month Range | 2.10.     Earning Deduction  Summary | 3.        Disbursement  Statement | 4.        Group Abstract – Dept/ Cost | 5.        Supplementary  Check List | 6.        Attendance | 6.1.        Attendance  Check List | 6.2.        Attendance  Month Range | 6.3.        Attendance  Code List | 6.4.        Attendance  Detailed  List | 6.5.        Attendance  Worksheet | 7.        Transaction  Check List | 8.        Transaction  Worksheet | 9.        Leave Transaction  List | 10.     Leave Ledger  Report | 11.     Payslip Printing | 12.     Statutory Reports | 12.1.     Statutory  Report | 12.2.     EPF/ESI/PT  Summary | 12.3.     Gratuity  Report |"
+    "sample": " |  | ===== PAGE 1 ===== |  |   | ACCOUNTS RECEIVABLES | - CREDIT TRACE - |   | TABLE  OF CONTENTS | Credit  Trace | 1.        Debtors Follow-Up |   | Credit Trace |   | This menu consists of functions that are involved in the follow-up process of credit transactions. | On the main screen, click Accounts Receivables  |  and select Credit Trace, you can view the following screen: |   |   | 1.     Debtors  Follow-Up |   | In this option, you can record the follow-ups made with the debtors against outstanding amount of the folios for a specified  | projection period. You can also view the Company details and the transactions made by company. |   | Click Debtors Follow-Up under Operations to view the following screen. |  |  | ===== PAGE 2 ===== |  |   |   | 1.       Enter the Company Name and click  |  to display information related to the entered company.  | Alternatively, you can click  |  without entering the company name to display all the company names. | 2.       Click  |  at Show Advanced Search to customize your search options. You can prioritize your search based on the  | options available as shown in the below screen. |   |   | 3.       Enter the desired option and click  |  to view the transactions made by the company as shown in the  | below screen. By default, the Transactions screen is displayed. |   |  |  | ===== PAGE 3 ===== |  |   | 4.       Click  |  to print the transactions displayed in the above screen. |   | You can enter the follow-up details in the Follow"
   },
   {
-    "file": "FN6i-NT-HRP-RQP.pdf",
-    "path": "6i Manuals/HR & Payroll/FN6i-NT-HRP-RQP.pdf",
-    "module": "HR & Payroll",
-    "size_kb": 2205,
-    "pages": 31,
+    "file": "FN6i-NT-ACR-OPR.pdf",
+    "path": "6i Manuals/Accounts Receivales/FN6i-NT-ACR-OPR.pdf",
+    "module": "Accounts Receivales",
+    "size_kb": 1419,
+    "pages": 21,
     "pdf_title": "",
     "has_extractable_text": true,
-    "images": 69,
+    "images": 66,
     "toc_count": 2,
     "toc_titles": [
       "Topics",
-      "FN6i-NT-HRP-RQP"
+      "FN6i-NT-ACR-OPR"
     ],
-    "sample": " |  | ===== PAGE 1 ===== |  | HR & PAYROLL | - REQUIREMENT  PROCESS- |   | TABLE  OF CONTENTS |   |   | 1_Job_Requirements | 2_Application_Details | 3_Application_Status | 4_HOD_Status | 5_Interview_Date | 6_Interview_Status | 7_Offer_Letter | 8_Offer_Letter_Status |   |   | REQUIREMENT PROCESS | Requirement Process - Requirement Process is a sub-module under HR & Payroll Module. It has sub menu items which  | are explained in detail in this document. |   | Requirement Process is used by Users to process job requirements, applications, HOD status, Interviews and Offer Letters. |   |  |  | ===== PAGE 2 ===== |  |   |   | 1.     Job Requirements |   | This option enables you to define the job requirements and the description, for a particular department. The requisition  | description, the status of the job i.e., if it is closed or opened or in pending status is selected here. |   | The HOD (Head of department) of each department sends a request to the human resource department, whenever they  | need a resource to be hired. The request would include the details of number of the people required, Job description,  | Property code, the date on which the request was made, if the requirement is permanent, temporary or contract position,  | and a description of skills that the candidates must possess. |   | Double-click Job Requirements under Requirement Process to view the following screen: |   |  |  | ===== PAGE 3 ===== |  |   | 1.       Click  | . | 2.       In the Job Code field "
+    "sample": " |  | ===== PAGE 1 ===== |  |   | ACCOUNTS RECEIVABLES | - OPERATIONS - |   | TABLE  OF CONTENTS | OPERATIONS | 1.        Transaction  Entry (AR) | 2.        Match Bills - Receipts | 3.        Travel Agent  Commissions | 4.        Credit Card Consolidation | 5.        Outstanding  Update | 6.___Receipts_Untagging | 7._____Statement_of_Accounts | 8._____Rollback_Statement_of_A_C |   | OPERATIONS | This menu consists of various functions that are involved in the daily operations of the Accounts Receivables module of  | the Property. | On the main screen, click Accounts Receivables  |  and select Operations, you can view the following screen: |  |  | ===== PAGE 2 ===== |  |   |   | 1.     Transaction  Entry (AR) | In this option, you can manually record account wise details of debit bills, payment receipts and adjustment transactions  | and posting of above transactions can be done to Financial Management module depending on its interlinking options.  | You can also view and partially amend debit transactions that are auto posted (bills settled on credit) from the Front Desk,  | Point of Sale, Banquets & Conferencing & Membership modules. |   | Click Transaction Entry (AR) under Operations to view the following screen. |   |   | Column/  | Fields | Description | Company | Enter or select the company code for which you want to record the  |  |  | ===== PAGE 3 ===== |  | transactions. | Doc # | This field displays the auto generated transaction reference number,  | which can be re"
   },
   {
-    "file": "FN6i-NT-HRP-SET.pdf",
-    "path": "6i Manuals/HR & Payroll/FN6i-NT-HRP-SET.pdf",
-    "module": "HR & Payroll",
-    "size_kb": 4070,
+    "file": "FN6i-NT-ACR-RPL.pdf",
+    "path": "6i Manuals/Accounts Receivales/FN6i-NT-ACR-RPL.pdf",
+    "module": "Accounts Receivales",
+    "size_kb": 1735,
+    "pages": 33,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 92,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-ACR-RPL"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   | ACCOUNTS RECEIVABLES | - REPORTS & LOOKUPS - |   | TABLE  OF CONTENTS |  Reports & Lookups | 1.       Opening  Balance  List (ACR) | 2.       Transaction  List | 3.       Balance by A/C Type | 4.       Ledger  Balance | 5.       Folio  Outstanding | 6.       Aging Summary | 7.       A/C Balance Detail | 8.       Credit Card Register | 9.       SOA Print | 10.     Payment  Follow-up  Report | 11.     Transaction  Audit | 12.     Commission  Report | 13.     12123 | 14.     Receipt Register  (ACR) | 15.     Cheque Deposit Statement | 16.     Monthly  Summary  Report | 17.     A/C Balance Query | 18.     Outstanding  Snapshots | 19.     Receipts  Display | 20.     Browse Transactions |  |  | ===== PAGE 2 ===== |  | 21.     Debtor  Outstanding  Report. | 22.     Daily Receipt Register  by Invoice | 23.     IDS Report Designer |   |  Reports & Lookups |   | Reports & Lookupsis a sub-module under Accounts Receivables Module. It has sub menu items, which are explained in  | detail in this document. | On the main screen, click Accounts Receivables  |  and select Reports & Lookups; you can view the following  | screen. |   |   |   | 1.     Opening Balance List (ACR) | In this report, you can view the list of Credit and Debit Opening Balance of each Company such as Companies, Credit Card,  | Travel Agent, etc… as entered in the AR Opening Balance option. |   | Double-click Opening Balance List (ACR) to view the following screen. |   |  |  | ===== PAGE "
+  },
+  {
+    "file": "FN6i-NT-ACR-SET.pdf",
+    "path": "6i Manuals/Accounts Receivales/FN6i-NT-ACR-SET.pdf",
+    "module": "Accounts Receivales",
+    "size_kb": 1109,
+    "pages": 19,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 85,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-ACR-SET"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   |   | ACCOUNTS RECEIVABLE | - SETUP - |   | TABLE  OF CONTENTS |   | SETUP | 1.        AR Start Date. | 2.        AR Opening Balance | 3.        Specify  Aging. | 4.        AR User Access | 5.        Company  Profile | 6.        User Defined Print Forms | 7.        Purge ACR Audit  Table | 8.        Print Form Designer |   | Identifying  Standards |   | The following are some of the standards that are commonly displayed in all the screens: |   | Click | To | Enter new information. | Change/update existing information. | Remove or erase the existing information. This button  | works conditionally. | View/browse existing information. | View the preceding details. This is enabled only after you  | click Browse. | View the subsequent details. This is enabled only after  | you click Browse. |  |  | ===== PAGE 2 ===== |  | Save new or modified information. | Access other menu options namely Command Window,  | Internode  | Communication,  | Calculator,  | Calendar,  | Scratch Pad, and Yellow Pages. | Exit from the screen. |   |   | SETUP |   | The Setup menu item of the Accounts Receivables module explains the various settings that are necessary for the  | Accounts Receivables module to work efficiently and in connection with other modules. | On the main screen, click Accounts Receivables  |  and select Setup; you can view the following screen. |   |   | 1.     AR Start Date |   | In this option, you can set the date from which the Accounts Receivable"
+  },
+  {
+    "file": "FN6i-NT-BNQ-BIL.pdf",
+    "path": "6i Manuals/Banquets/FN6i-NT-BNQ-BIL.pdf",
+    "module": "Banquets",
+    "size_kb": 5225,
+    "pages": 66,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 134,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-BNQ-BIL"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  | BANQUETS | - BILLING  - | Table of Contents |   | 1._Open_Shift | 2._Open_Outlets | 3._Banquet_Bill | 4.___Banquet_Settlement | 5.__Close_Shift_: | 6._Close_Outlet | 7._Reprint_Invoice_Bill | 8._Pending_Invoice___Bill | 9._Deposit | 10.___Refund___Retention_Charges | 11._Requirement_Entry | 12.__Pre_Costing_Chef_Eng | 13.___Auto_Indent |   | BILLING |   | Billing is a sub-module under Banquets Module. Billing is used in Banquets to Make the Requirement Entry, Deposit Entry, refund retention  | charges entry, Print & settle the Bills. Etc. |   |  |  | ===== PAGE 2 ===== |  |   | 1. Open Shift |   | A shift is a particular period in a day when you can carry out operations. The Cashier operating at the outlet must open a | shift before starting any transaction. The Supervisor provides rights to the user to open a shift, using the System Setup | module. |   | Note :  The same person cannot operate 2 shifts at a time. To open a shift, User should be provided access to this option | using Setup User Access under System Setup. |   | Double–click Open Shift under Billing to view the following screen: |   |   | 1. Select the Restaurant/Outlet to operate from the pre-defined dropdown list. |  |  | ===== PAGE 3 ===== |  |   | 2. Select the shift that is applicable. |   | 3. The date and time will be displayed. So, it is considered that the user starts his duties from that time. | 4. Click   | .  The shift is selected for operations. |   | 5. Click   | to vi"
+  },
+  {
+    "file": "FN6i-NT-BNQ-BOK.pdf",
+    "path": "6i Manuals/Banquets/FN6i-NT-BNQ-BOK.pdf",
+    "module": "Banquets",
+    "size_kb": 3589,
+    "pages": 41,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 89,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-BNQ-BOK"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   |   | BANQUETS |   | - BOOKING  - |   | TABLE OF CONTENTS | BOOKINGS | 1.     Scan and Search Engine | Make | Amend Booking | Cancel Booking | Browse  Booking | Copy Booking | 2.     No Show Cancellation | 3.     Block / Release  Rooms |   | BOOKINGS | “Bookings”is a sub-module under Banquets Module. It has sub menu options which are explained in detail in this document. |   | In Banquets “Bookings” is used for booking a function room, amending a function room, cancelling and “Block\\Release” of the  | function room(s). |   |  |  | ===== PAGE 2 ===== |  |   |   | 1.     Scan and Search Engine |   | This option is to search for bookings using the search criteria. You can also make, amend, cancel, browse and copy bookings of function  | halls. | Double–click Scan and Search Engine under Bookings to view the following screen: |   |  |  | ===== PAGE 3 ===== |  |   |  Search |   | The Search option is used to retrieve bookings that are equal to current date or future date bookings. You can search for a booking after  | selecting the property and entering any of the selection criteria like Guest Name, Reference Name, Res#, Contact name, Company Name,  | Userid, Function date/Reservation date. |   |  |  | ===== PAGE 4 ===== |  |   | 1.      Select the Property. (You can select the property if there are more than one properties defined, else the default property name will  | be displayed). | 2.      Enter the search criteria in any of the search fields."
+  },
+  {
+    "file": "FN6i-NT-BNQ-CFG.pdf",
+    "path": "6i Manuals/Banquets/FN6i-NT-BNQ-CFG.pdf",
+    "module": "Banquets",
+    "size_kb": 3287,
+    "pages": 38,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 78,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-BNQ-CFG"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   |   | BANQUETS |   | - CONFIGURE  - |   | TABLE OF CONTENTS | CONFIGURE | 1.     Associated  Room | 2.     Function  Room Features | 3.     Function  Room Setup  Style | 4.     Cancellation  Policy | 5.     Function  Room | 6.     Event Type Definition | 7.     Item Classification  and Description | 8.     Menu Master | 9.     Setup Menu Card | 10.       Tag Sub Venues | 11.       Banquet  Staff | 12.       Service  Managers |   | CONFIGURE | Configure is a sub-module under Banquets Module. Configure is used in  Banquets to create Associated rooms, Function  | room features, Seating styles, Cancellation policy, Function rooms, Event types, Item classifications and Setup Menu and  |  |  | ===== PAGE 2 ===== |  | Package Menu Card. |   |   |   | 1.     Associated  Room |   | This option is to create associated rooms that can be linked to the main function rooms and the same can be blocked when  | the main function room is blocked or released. The Associated rooms that are defined in this menu option will be displayed  | in the Function Room menu option. |   | Double–click Associated Room under Configure to view the following screen: |   |  |  | ===== PAGE 3 ===== |  |   | Note: Fields with blue color background are mandatory. |   | 1.       Select the Property for which you want to add an associated room for the function room booked. (If there is only one  | property defined, that property name will appear by default). | 2.       Select the Appli"
+  },
+  {
+    "file": "FN6i-NT-BNQ-LUK.pdf",
+    "path": "6i Manuals/Banquets/FN6i-NT-BNQ-LUK.pdf",
+    "module": "Banquets",
+    "size_kb": 1256,
+    "pages": 12,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 20,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-BNQ-LUK"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   | BANQUETS | - LOOKUPS  - |   | TABLE OF CONTENTS | LOOKUPS | 1.         Function  Room Availability | 2.         Availability  Chart |   |   | LOOKUPS | Lookups is a sub-module under Banquets Module.  It has sub menu options which are explained in detail in this document. |   | Lookups is used in Banquets to get instant access to information relating to the function room availability, transaction details like payments and  | deposits, booking details, etc. |   |  |  | ===== PAGE 2 ===== |  |   |   | 1.     Function Room Availability |   | This option is to view the availability of the Function rooms for a given date range of maximum three days.  The color legends show the different  | booking statuses.  The user can view the start and end time until when the function room is booked. |   | You can also view if any function rooms are blocked for management or maintenance purposes.  Such blocked rooms will be highlighted with an  | asterisk (*). | ·         If a function room is blocked for management purposes, then it will be highlighted in Red color. | ·         If it is blocked for maintenance purposes then it will be highlighted in Green color.   | ·         The Hourly based status of the function rooms for the specified date also appears below the function room status details. | ·         |  - indicates Room is restricted for booking for that time range. Rest of the hours is available for booking. | ·         Maximum date range can be viewed"
+  },
+  {
+    "file": "FN6i-NT-BNQ-SET.pdf",
+    "path": "6i Manuals/Banquets/FN6i-NT-BNQ-SET.pdf",
+    "module": "Banquets",
+    "size_kb": 7024,
+    "pages": 98,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 229,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-BNQ-SET"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   |   |   |   |   | BANQUETS |   | - SETUP - |   |   | TABLE  OF CONTENTS | SETUP | 1.         Link Outlet - Sessions | 2.         Link Outlet-Order  Types | 3.         Link Outlet Currencies | 4.         Country-State-City  Master | Country Master | State Master | City Master | 5.         Property Information | 6.         Banquet  Block Reasons | 7.         Floor | 8.         Item Type | 9.         Banquet  Menu Groups | 10.       Setup Event Calendar |  |  | ===== PAGE 2 ===== |  | 11.       Reservation  Status | 12.       Equipment  Master | Category  Master | Sub-Category  Master | Equipment  Master | 13.       Supplier Master | 14.       Event  Question  Definition | 15.       Event  Template  Definition | 16.       Print Forms | 17.       User Defined Print Forms | 18.       Corporate  Rate Master | 19.       Corporate  Rate Tagging | 20._BNQ_User_Access |   |   | Identifying  Standards | The following are some of the standards that are commonly displayed in all the screens: | Click | To | Enter new information. | Change/update existing information. | Remove or erase the existing information. This button  | works only conditionally. | View/browse existing information. | View the preceding details. This is enabled only after you  | click Browse. | View the subsequent details. This is enabled only after  | you click Browse. | Save new or modified information. |  |  | ===== PAGE 3 ===== |  | Access other menu options namely Command Window,  | "
+  },
+  {
+    "file": "FN6i-NT-MEM-MMN.pdf",
+    "path": "6i Manuals/Membership/FN6i-NT-MEM-MMN.pdf",
+    "module": "Membership",
+    "size_kb": 1156,
+    "pages": 13,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 28,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-MEM-MMN"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   | MEMBERSHIP |   | - MEMBER MAINTENANCE - |   |   | TABLE  OF CONTENTS |   | Member_Maintenance | 1._Membership_Address_Change | 2._Renewal_Entry | 3._Members_Blacklist_Revoke | 4._Members_Termination | 5._Members_Resignation | 6._Members_Deceased | 7._Category_Transfer |   |   | Member Maintenance |   | The Member Maintenance sub module of the Membership module enables the user to manage certain operations related  | to the Member accounts such as Member Address Change, Blacklist/Revoke, Terminate, Resignation, etc. that are necessary  | for the Membership module to work efficiently and in connection with other modules. | On the main screen, click Membership  |  and select Member Maintenance; the user can view the following screen. |   |  |  | ===== PAGE 2 ===== |  |   | 1.     Membership  Address  Change |   | In this option, the user can change the address of the Members on request.   The user can change the Residential, Work  | Place and Abroad address as required and tag any one address as the mailing address of the Member. |   | Click Membership Address Change under Member Maintenance to view the following screen. |   |  |  | ===== PAGE 3 ===== |  |   | 1.    Enter the member number or press F1 to select from the list. The Category, Name of the Member and address details are  | displayed as shown in the above screen. | 2.    Make appropriate changes in the relevant fields. | 3.      Select the Address Type from the list to change the appr"
+  },
+  {
+    "file": "FN6i-NT-MEM-MPF.pdf",
+    "path": "6i Manuals/Membership/FN6i-NT-MEM-MPF.pdf",
+    "module": "Membership",
+    "size_kb": 2145,
+    "pages": 30,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 87,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-MEM-MPF"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   | MEMBERSHIP |   | - MEMBER PROFILES- |   |   | TABLE  OF CONTENTS |   | 1._Corporate_Applications | 2._Membership_Application | 3._Application_Screening | 4._Assign_Interview_Dates | 5._Interview_Details | 6._Transfer_Corporate_Application | 7._Transfer_Membership_Application | 8._Corporate_Master | 9._Membership_Master | 10._Affiliated_Club_Master |   |   | Member Profiles |   | The Member Profiles sub module of the Membership module explains the various operations from including a new  | Member to the Member termination and that are necessary for the Membership module to work efficiently and in  | connection with other modules. | On the main screen, click Membership  |  and select Member Profiles; you can view the following screen. |   |  |  | ===== PAGE 2 ===== |  |   | 1.     Corporate  Applications | In this option, the user can enter the details related to the Companies. Corporate companies are usually one of the biggest  | customers for a Club; therefore, a club is bound to receive many applications from the corporate for membership to the club  | facilities. | Click Corporate Applications under Member Profiles to view the following screen. |   |  |  | ===== PAGE 3 ===== |  | To add a new Corporate  Application | 1.    Select the Member Category from the list and then click on  | . | 2.       Click |  to enter the Organization details in the tabs, General, Address and References. By default, the General  | tab is displayed. |   | Column"
+  },
+  {
+    "file": "FN6i-NT-MEM-MTR.pdf",
+    "path": "6i Manuals/Membership/FN6i-NT-MEM-MTR.pdf",
+    "module": "Membership",
+    "size_kb": 1324,
+    "pages": 18,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 50,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-MEM-MTR"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   | MEMBERSHIP |   | - MEMBER TRANSACTIONS - |   |   | TABLE  OF CONTENTS |   | Member_Transactions | 1.      Membership  Receipt  Entry | 2.        Revenue/Facility  Entry | 3.        Guest Visit Entry | 4.        Service  Bill Entry | 5.        Register  Complaints | 6.        Attend Complaints | 7.        Event Definition | 8.        Process Subscription | 9.        Process Facility  Charges | 10.     Post Subscription  to AR | 11.     Membership  Tax Posting | 12.     Cover Charges Posting | 13.     Posting  Late Charges |   | Member  Transactions |   |  |  | ===== PAGE 2 ===== |  | The Member Transactions sub module of the Membership module explains the various transactions made by member at  | the Property and entering the receipt, revenue, service bill details etc that are necessary for the Membership module to  | work efficiently and in connection with other modules. | On the main screen, click Membership  |  and select Member Transactions; you can view the following screen. |   |   | 1.     Membership Receipt Entry |   | In this option, the user can issue receipt to the guest for payment received when the guest uses the facilities in the hotel. |   | Click Membership Receipt Entry under Member Transactions to view the following screen. |   |  |  | ===== PAGE 3 ===== |  |   | ‚To add a Receipt  Entry | 1.       Click | . | Column/ Fields | Description | Membership/Corporate/Application/ | Member | Select the appropriate option for which  "
+  },
+  {
+    "file": "FN6i-NT-MEM-RPL.pdf",
+    "path": "6i Manuals/Membership/FN6i-NT-MEM-RPL.pdf",
+    "module": "Membership",
+    "size_kb": 3355,
+    "pages": 56,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 153,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-MEM-RPL"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   | MEMBERSHIP | - REPORTS  & LOOKUPS- |   |   | TABLE  OF CONTENTS |   | REPORTS AND LOOKUPS | 1.       Corporate  Members  List | 2.       Pending  Applications | 3.       Screening  Details  Report | 4.       Birthday/Anniversary  (MEM) | 5.       Mailing  Labels  (MEM) | 6.       Visit Details | 7._Member_Visit_Details | 8._Member_Expiry_List | 9._Age_Report | 10._Complaint_Register | 11._Membership_Details | 12._Renewal_Report | 13._Status_Report | 14._Reprint_Non_Member_Receipt | 15._Membership_Released |  |  | ===== PAGE 2 ===== |  | 16._Blacklisted_Members | 17._Subscription_Cancellation | 18._Membership_Summary_List | 19._Corporate_Information | 20._Member_Information | 21._Pending_Complaints | 22._Birthday_List__Member_ | 23._Membership_Summary | 24._Settlement_Summary__MEM_ | 25._Bill_Details | 26._Members_List__Charges_ | 27._Transaction_Check_List_-_MEM | 28._Receipt_Register__MEM_ | 29._Credit_Card_Register__MEM_ | 30._Closing_Balance | 31._Due_Report | 32._Charges | 33._Control_Report | 34._Closing_Balance_Details | 35._Membership_Control_Report | 36._Members_Register | 37._Settlement_Query | 38._Spending_Pattern |   |   | REPORTS AND LOOKUPS |   | Reports & Lookups - Reports & Lookups is a sub-module under Membership Module. It has sub menu items which are  | explained in detail in this document. |   | Reports & Lookups under Membership Module is used by users to generate various reports relating to corporate  |  |  | ===== PAGE 3"
+  },
+  {
+    "file": "FN6i-NT-MEM-SET.pdf",
+    "path": "6i Manuals/Membership/FN6i-NT-MEM-SET.pdf",
+    "module": "Membership",
+    "size_kb": 1300,
+    "pages": 16,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 53,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-MEM-SET"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   |   | MEMBERSHIP |   | - SETUP - |   | TABLE OF CONTENTS |   | Setup | 1.        Member  Categories | 2.        Screening  Details | 3.        Service  Rate Master | 4.        Membership  Revenue  Codes | 5.        Membership  Structure | 6.        Complaints  Categories | 7.        System  Attributes | 8.        Facility Fixed Rates | 9.        Membership  Facility  Codes | 10._Cover_Charges | 11._Late_Charge_Fee_Definition | 12._Member_User_Defined_Field |   | Identifying  Standards | The following are some of the standards that are commonly displayed in all the screens: |  |  | ===== PAGE 2 ===== |  | Click | To | Enter new information. | Change/update existing information. | Remove or erase the existing information. This button works  | conditionally. | View/browse existing information. | View the preceding details. This is enabled only after you  | click Browse. | View the subsequent details. This is enabled only after you  | click Browse. | Save new or modified information. | Access other menu options namely Command Window,  | Internode Communication, Calculator, Calendar, Scratch  | Pad, and Yellow Pages. | Exit from the screen. |   | Setup |   | The Setup menu item of the Membership module explains the various settings that are necessary for the Membership  | module to work efficiently and in connection with other modules. | On the main screen, click Membership  |  and select Setup; you can view the following screen. |   |  |  | ===== P"
+  },
+  {
+    "file": "FN6i-NT-SLM-LUK.pdf",
+    "path": "6i Manuals/Sales & Marketing/FN6i-NT-SLM-LUK.pdf",
+    "module": "Sales & Marketing",
+    "size_kb": 607,
+    "pages": 10,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 29,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-SLM-LUK"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  | SALES & MARKETING | - LOOKUPS - |   |   | Table  of Contents |  Lookups | 1.      Browse  Company | 2.      View Rate Structures | 3.      Company  Rates - Datewise | 4.      Browse  Hotel Profile | 5.      Company  Package  Rates | 6.      Company  Rates (Query) |   |   |  Lookups |   | Lookups is a sub-module under Sales & Marketing Module. It has sub menu items, which are explained in detail in  | this document. | On the main screen, click Sales & Marketing  |  and select Lookups; you can view the following screen. |  |  | ===== PAGE 2 ===== |  |   |   | 1.     Browse  Company | In this lookup, the user can browse company contact details based on selective criteria. The Companies listed can vary  | depending upon the search criteria such as Watch List, Holding Company, Sales Executive etc… | Double-click Browse Company to view the following screen. | 1.       Select the criteria based on which you want to list the Company contact details. Some of the options have sub- | selection criteria based on which you can narrow down your selection. |  |  | ===== PAGE 3 ===== |  | For Example: Consider you want to display the Company contact details for a range of Credit Limits. You can enter the  | range of Credit Limit and a list of Companies is displayed whose credit limit lies between the range specified. | Double-click on Credit Limit to view the following screen. |   |   | Enter the range of Credit Limit and click | . | 2.       Click to display th"
+  },
+  {
+    "file": "FN6i-NT-SLM-PRF.pdf",
+    "path": "6i Manuals/Sales & Marketing/FN6i-NT-SLM-PRF.pdf",
+    "module": "Sales & Marketing",
+    "size_kb": 1852,
     "pages": 42,
     "pdf_title": "",
     "has_extractable_text": true,
-    "images": 135,
+    "images": 154,
     "toc_count": 2,
     "toc_titles": [
       "Topics",
-      "FN6i-NT-HRP-SET"
+      "FN6i-NT-SLM-PRF"
     ],
-    "sample": " |  | ===== PAGE 1 ===== |  |   | HR & PAYROLL |   | - SETUP - |    | TABLE  OF CONTENTS |   | SETUP | 1.      Bank Definition | 2.      Branch  Code  Definition | 3.      Language Definition | 4.      Grade  Definition | 5.      ED Code Definition | 6.      Attendance  Code Definition .. | 7.      Property  Attendance  Definition | 8.      Category  Code Definition | 9.      Define Starting  Period | 10.       ED Calculation  Definition .. | 11.       HOD Definition | 12.       Statutory  Deduction  Defn. | 13.       Define  Salary Template | 14.       Bonus  Period Definition | 15.       Leave  Group  Parameter | 16.       Leave  Details Parameter | 17.       Costing  Group Definition | 18.       Denomination  Definition | 19.       Staff Budget Definition | 20.       User Defined Report Definition | 21.       User Defined Print Forms |   | Identifying  Standards | The following are some of the standards that are commonly displayed in all the screens: |   | Click | To | Enter new information. | Change/update existing information. | Remove or erase the existing information. This button  | works only conditionally. | View/browse existing information. |  |  | ===== PAGE 2 ===== |  | View the preceding details. This is enabled only after you  | click Browse. | View the subsequent details. This is enabled only after  | you click Browse. | Save new or modified information. | Access other menu options namely Command Window,  | Internode Communication, Calculator, Calendar,  | Scra"
+    "sample": " |  | ===== PAGE 1 ===== |  | SALES & MARKETING | - PROFILES - |   | TABLE  OF CONTENTS | Chapter 1  Profiles | 1.     Sales Office | 2.     Sales Executives | 3.     Collection  Executives | 4.     Bookers Master | 5.     Revenue  Discount  Master | 6.     Hotel Amenities | 7.     Company  Profile | 8.     Update Company  Profile | 9.     Link Rates to Company | 10.   Retention  Policy | 11.   Cancellation  Policy | 12.   Agent Allocation | 13.   Agent Forecast | 14.   Agent Release Dates | 15.   Sales Call Types | 16.   Map Users/Sales  Exec |  |  | ===== PAGE 2 ===== |  | 17.   Hotel Profile |   Profiles | The Profiles menu of the Sales & Marketing module explains the various profile settings that are necessary for the  | Sales & Marketing module to work efficiently and in connection with other modules. | On the main screen, click Sales & Marketing  |  and select Profiles; you can view the following screen. |   |   |   | 1.     Sales Office | In this option, you can define the various sales offices of the property located at different places. These sales offices  | operate on behalf of the property in various operations. | Click Sales Office under Profiles to view the following screen. |  |  | ===== PAGE 3 ===== |  | For more information, refer Sales Office under Front Office Setup. |   |   | 2.     Sales Executives | In this option, you can define the sales executives for the property who works in the Sales & Marketing department of  | the Property. Each Sales Executive d"
+  },
+  {
+    "file": "FN6i-NT-SLM-REP.pdf",
+    "path": "6i Manuals/Sales & Marketing/FN6i-NT-SLM-REP.pdf",
+    "module": "Sales & Marketing",
+    "size_kb": 1259,
+    "pages": 22,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 57,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-SLM-REP"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  | SALES & MARKETING | - REPORTS - |   | Table  of Contents |  Reports | 1.     Business  Lost Report | 2.     Market Share  Analysis | 3.     Sales Call Report | 4.     Follow-up/Schedule  Report | 5.     Birthday/Anniversary  List | 6.     Watch List Companies | 7.     Sales Performance  (Budget) | 8.     Allocation  List | 9.     Forecast  List | 10.   Company  List | 11.   Company  Labels | 12.   Company  Letters | 13.   E-Mail  ID List | 14.   Company  Productivity | 15.   Company  Contribution  Date wise | 16.   Company  Contribution |  |  | ===== PAGE 2 ===== |  | 17.   Company  Sales | 18.   Company  Prod. Variance  Report | 19.   Sales Performance  Report |  Reports |   | Reports is a sub-module under Sales & Marketing Module. It has sub menu items, which are explained in detail in this  | document. | On the main screen, click Sales & Marketing  |  and select Reports; you can view the following screen. |   |   | 1.     Business Lost Report | In this report, you can view the list of all lost businesses from Potential and Registered Companies. The Business lost  | report displays details of companies, whose business the Hotel has lost to another Hotel. The report can be processed  | for a specified date range. Details can be viewed Sales Executive Wise, or Reason Wise. The information reflected here is  | recorded using the Business Lost Entry option. | Double-click Business Lost Report to view the following screen. |  |  | ===== PAGE 3 ====="
+  },
+  {
+    "file": "FN6i-NT-SLM-SLT.pdf",
+    "path": "6i Manuals/Sales & Marketing/FN6i-NT-SLM-SLT.pdf",
+    "module": "Sales & Marketing",
+    "size_kb": 1414,
+    "pages": 29,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 100,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-SLM-SLT"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  | SALES & MARKETING | - SALES TRACKING - |   |   | TABLE  OF CONTENTS |  Sales Tracking | 1.     Daily Occupancy  Entry | 2.     F & B Promotion  Entry | 3.     Company  Budgets | 4.     Prospect  Entry | 5.     Sales Manager  Tool | 6.     Daily Sales Call | 7.     Entertainment/Gift  Entry | 8.     Business  Loss Entry | 9.     Executive  Planner | 10.   Transfer  Prospects |   Sales Tracking |   | The Sales Tracking menu of the Sales & Marketing module explains the various entries made to track the Sales  | operation in the Property. | On the main screen, click Sales & Marketing  |  and select Sales Tracking; you can view the following screen. |   |  |  | ===== PAGE 2 ===== |  |   | 1.     Daily Occupancy  Entry | In this option, the user can record the backdated room occupancy information for all Properties (same or different  | Groups) before IDS PMS went on live with the Property. this helps in generating MIS reports for entire Financial Year. | Click Daily Occupancy Entry under Sales Tracking to view the following screen. | To enter Daily Occupancy details |  |  | ===== PAGE 3 ===== |  | 1.       Click  | . | 2.       Enter the date for which you want to record the information. | 3.       Enter the Property name for which you want to enter the room occupancy statistics. Double-click  |  or press F1  | to view and select existing Properties. | 4.       Enter the total number of rooms available in the Property. | 5.       Enter the percentage"
+  },
+  {
+    "file": "FN6i-NT-MGT-DNT.pdf",
+    "path": "6i Manuals/Materials Management/FN6i-NT-MGT-DNT.pdf",
+    "module": "Materials Management",
+    "size_kb": 6190,
+    "pages": 75,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 188,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-MGT-DNT"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   | MATERIALS MANAGEMENT | - DAILY ENTRIES - |   | TABLE  OF CONTENTS | Daily_Entries | 1.        Purchase  Requisition | 2.        Indent Entries | 3.        Purchase  Order | 4.        Standing  Purchase  Order | 5.        Service Work Order | 6.        Transactions | 7.        Quotation  Analysis | 8.        Re-Order  Process | 9.        Inter Store  Requisition | 10.     Inter Store Transfer | 11.     Sub Store Transfer | 12.     Cost Center Transaction | 13.     Physical  Stock  Entry | 14.     Stock  Variance Updation | 15.     Process  Store Ledger |  |  | ===== PAGE 2 ===== |  |   | Daily Entries | The Daily Entries menu item of the Materials Management module explains the various functions that are necessary for the operations of  | Materials Management module to work efficiently and in connection with other modules. | On the main screen, click Materials Management  |  and select Daily Entries; you can view the following screen. |   |   | 1.     Purchase Requisition |   | In this option, the user can enter Items required by various Departments (Cost Centers). The requisitions are forwarded to the Purchase  | Department for purchase of Items as per requirements mentioned in the requisition.  The requisitions recorded here are used for placing orders  | with Vendors during the entry of Purchase Orders. |   | Click Purchase Requisition under Daily Entries to view the following screen. |   |  |  | ===== PAGE 3 ===== |  |   | All the requisit"
+  },
+  {
+    "file": "FN6i-NT-MGT-LUK.pdf",
+    "path": "6i Manuals/Materials Management/FN6i-NT-MGT-LUK.pdf",
+    "module": "Materials Management",
+    "size_kb": 3403,
+    "pages": 38,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 90,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-MGT-LUK"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   | MATERIALS MANAGEMENT | - LOOKUPS - |   | TABLE OF CONTENTS | Lookups | 1.       Requisition  Status | 2.       Indent  Status | 3.       Indent  Status  by Item | 4.       Authorization  Details | 5.       PO Status | 6.       PO Status by Vendor | 7.       Cancelled & Closed  PO | 8.       Pending  PO | 9.       SPO Status | 10.    SWO (Service  Work Order) Status | 11.    Receipt/Issue  by Group | 12.    Store Balance  by Date | 13.    Item Stock  Status | 14.    Item Stock  Balance | 15.    Item Balance  by Date | 16.    Consumption  Detail | 17.    Group Cons Month  Range | 18.    Item Stock  by CC | 19.    Vendor Selection | 20.    Spending Pattern |  |  | ===== PAGE 2 ===== |  |   | Lookups |   | Lookups is a sub-module under Materials Management Module. It has sub menu items, which are explained in detail in this  | document. | On the main screen, click Materials Management  |  and select Lookups; you can view the following screen. |   |   |   | 1.     Requisition  Status |   | In this lookup, the user can generate a report to view the status of Purchase Requisitions. You can view the month and date range  | wise and also item wise and Purchase Requisition wise. |   | Double-click Requisition Status to view the following screen. |   |  |  | ===== PAGE 3 ===== |  |   | 1.       Select an option Date range/Month range. | 2.       Enter the date range or month range respectively. | 3.       Select an option Item wise/Requisition wise. | 4"
+  },
+  {
+    "file": "FN6i-NT-MGT-REP.pdf",
+    "path": "6i Manuals/Materials Management/FN6i-NT-MGT-REP.pdf",
+    "module": "Materials Management",
+    "size_kb": 6962,
+    "pages": 112,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 268,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-MGT-REP"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   |   | MATERIALS MANAGEMENT |   | - REPORTS - |   | TABLE  OF CONTENTS | Chapter 1 Reports | 1.     Inventory  Item List | 2.     Requisition  Status | 3.     PO Status Report | 4.     Transaction  & Receipt | 4.1      Transaction  Checklist | 4.2      Receipt  Register | 4.3      Capital  Goods  Receipt | 4.4      Receipt/Issue  by Group | 4.5      Receipt/Issue  Consolidate | 4.6      Consolidate  Receipt  Value | 4.7      Supplier Receipt  Register | 4.8      Opening  Balance  List | 5.     Consumption | 5.1      Cost Center Consumption | 5.2      Cost Center Consumption  Summary | 5.3      Group  Consumption  Month Range | 5.4      Group  Consumption  Month Range – R2 |  |  | ===== PAGE 2 ===== |  | 6._Item___Vendor_List | 6_1_Inventory_Item_List | 6_2_Item_List_by_Vendor | 6_3_Vendor_List | 6_4_Contract_List | 6.     Closing Stock by Type | 7.     One Line Store Balance | 8.     Store Balance  by Date | 9.     Item Details | 9.1      Item Stock Details | 9.2      Item Stock Levels | 9.3      Ledger  by Item | 9.4      Item Expiry List | 10.  Supplier  Bill | 11.  Always  Better  Control (ABC) Analysis | 12.  Fast, Slow and Non Moving  (FSN) Analysis | 13.  Slow Moving  Items | 14.  Non Moving  Items | 15.  Print | 15.1    Print Purchase  Requisition | 15.2    Print Indent | 15.3    Print Purchase  Order | 15.4    Print Standing  Purchase  Order (PO) | 15.5    Print Service  Work Order | 15.6    Print Goods  Receipt  (GRN) | 15.7    Print Tr"
+  },
+  {
+    "file": "FN6i-NT-MGT-SET.pdf",
+    "path": "6i Manuals/Materials Management/FN6i-NT-MGT-SET.pdf",
+    "module": "Materials Management",
+    "size_kb": 4985,
+    "pages": 68,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 163,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-MGT-SET"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   |   | MATERIALS MANAGEMENT | - SETUP - |   | TABLE OF CONTENTS | Chapter  1 Setup | 1.        Stores Creation | 2.        Item Group Creation | 3.        Item Locations | 4.        Stores Start  Date | 5.        Inventory  Master | 6.        Opening  Balance | 7.        Vendor Rating. | 8.        Terms of Payment | 9.        Vendor Master. | 10.     Item  Master by Vendor | 11.     Vendor  Contract  Info | 12.     Indent  Templates | 13.     Sub Cost Centre | 14.     Variance Cost Centers | 15.     Link Cost Centers  to Dept | 16.     Tax Exemptions | 17.     Item  Taxes | 18.     Define FSN (Fast, Slow & Non Moving) |  |  | ===== PAGE 2 ===== |  | 19.     Define Component | 20.     Item  Conversion  Split | 21.     Item  Conversions  Add | 22.     Budget Entry. | 23.     Foot Notes | 24.     Access Rights. | 25.     Email Access  Rights | 26.     Indent  Purging | 27.     Purge PO/SPO .. | 28.     User  Defined  Print Forms |   | Identifying  Standards | The following are some of the standards that are commonly displayed in all the screens: | Click | To | Enter new information. | Change/update existing information. | Remove or erase the existing information. This button works  | conditionally. | View/browse existing information. | View the preceding details. This is enabled only after you click  | Browse. | View the subsequent details. This is enabled only after you  | click Browse. | Save new or modified information. | Access other menu optio"
+  },
+  {
+    "file": "FN6i-NT-FAS-LUK.pdf",
+    "path": "6i Manuals/Financial Management/FN6i-NT-FAS-LUK.pdf",
+    "module": "Financial Management",
+    "size_kb": 1721,
+    "pages": 28,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 56,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-FAS-LUK"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  | FINANCIAL  MANAGEMENT |   | -LOOKUPS- |   | TABLE OF CONTENTS |   | LOOKUPS | 1.         Ledger  Balance | 2.         Day Book  (Q) | 3.         Trial Balance | 4.         Profit and Loss | 5.         Balance Sheet | 6.         Payable  Outstanding | 7.         Chart of Accounts  List | 8.         Cash Flow Query | 9.      Transaction  Search |    |   | LOOKUPS |   | Lookups is a sub-module under Financial Management Module. It has sub menu items which are explained in detail in this  | document. |  |  | ===== PAGE 2 ===== |  | Lookups is used by Financial Management to get instant access to information relating to Ledger Balances, Day Books, Trial  | Balance, P & L Accounts, Balance Sheet, Chart of Accounts, Cash flow, Ratio Analysis and Transaction Search. |   | 1.     Ledger Balance | The Ledger Balance option is used to query the Account Balances and transaction details for any selected Account. The balances can  | also be queried based on cost center and department only for income and expenses account. | However, for assets & liabilities account codes, no department & cost center identification is required. If account codes have sub  | ledgers, the same can be selected using the SL Code field & relevant details can be populated on screen. | Double–click Ledger Balance under Lookups to view the following screen: | 1.       Press F3 to view the list of financial years and select the Financial Year for which you want to view the ledger balances"
+  },
+  {
+    "file": "FN6i-NT-FAS-MST.pdf",
+    "path": "6i Manuals/Financial Management/FN6i-NT-FAS-MST.pdf",
+    "module": "Financial Management",
+    "size_kb": 2326,
+    "pages": 33,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 60,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-FAS-MST"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   |   | FINANCIAL  MANAGEMENT | -    MASTERS  - |   | TABLE  OF CONTENTS | MASTERS | 1.         Financial  Account  Master | 2.         Statistics  Master | 3.         Statistics  Budget  Master | 4.___Cheque_Book_Master |   | MASTERS | Masters is used by Financial Management to create Financial Account Master, Statistics Master and Statistics Budget  | Master. |  |  | ===== PAGE 2 ===== |  |   | 1.     Financial  Account  Master | This is a master of all accounts in the Property. In this option you can view all the main heads, sub heads, and the  | account heads under each sub heads. You also have the option to add or modify the Main/Sub/Account heads. | Double–click Financial Account Master under Masters to view the following screen: |  |  | ===== PAGE 3 ===== |  | On the main screen under the Property name you can click on the +sign to view the sub options under each account  | head. |  |  | ===== PAGE 4 ===== |  | When you click on any of the options, the details of the account appear on the right side of the screen as shown below: |  |  | ===== PAGE 5 ===== |  | Under the details section, you can double-click on the Main Head or Sub Head name. | The following screen appears where you can directly create new main/sub heads. | You also have the option to create new Chart of Accounts or modify existing chart of accounts. Double-click on any of  | the account heads to view the Chart of Accounts screen and add new / modify existing Chart of Accou"
+  },
+  {
+    "file": "FN6i-NT-FAS-REP.pdf",
+    "path": "6i Manuals/Financial Management/FN6i-NT-FAS-REP.pdf",
+    "module": "Financial Management",
+    "size_kb": 4304,
+    "pages": 64,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 96,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-FAS-REP"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  | FINANCIAL  MANAGEMENT | - REPORTS  - |   | TABLE OF CONTENTS |   | REPORTS | 1.      Chart of Accounts  List | 2.      Transaction  Checklist | 3.      Ledger  Opening  Balance | 4.      Day Book | Day Book | Day Book (Format  2) | Cash/Bank  Book | 5.      Ledger  Balance | Ledger Balance | Ledger Balance Format  2 | 6.      General  Ledger | 7.      Profit and Loss | Profit and Loss Statement | PL Report by CC/Department |  |  | ===== PAGE 2 ===== |  | 8.      Balance  Sheet Statement | 9.      Trial Balance | Trial Balance | Trial Balance  Format 2 | Trial Balance  (3.3) | Trial Balance | 10.   Creditors  Outstanding | 11.   Purchase  Tax Register | 12.   Purchase  Register | 13.   Expense  Register | 14.   Balance  Confirmation | 15.   Debit Note Print | 16.   Contract  Debit Note List | 17.   Detail Register | 18.   Pending Receipts  for PJV | 19.   Unlinked  Account Codes | 20.   Linked  Account  Codes | 21.   Auto Posted Check List | 22.   FA Budget  List | 23.   Bank Reconciliation | 24.   Advice  / Cheque  Print | 25.   Voucher Print | TDS_Details_Report |  |  | ===== PAGE 3 ===== |  | Invoice  / Payment  Check | Advance Paid Report | 26.   Print Form 16A | 27.   Print Form 26 J | 28.   Print Form 27 | 29.   Print Form 26A | 30.   Print Form 26C | 31.   Print Form 26K | 32.   PDC Check List | 33.   Audit Trial Report | 34.   User Reports | Bank Payment Report | IDS Crystal Report  Designer | Advice / Cheque iDesigner |   | REPORTS | Repo"
+  },
+  {
+    "file": "FN6i-NT-FAS-SET.pdf",
+    "path": "6i Manuals/Financial Management/FN6i-NT-FAS-SET.pdf",
+    "module": "Financial Management",
+    "size_kb": 2627,
+    "pages": 48,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 103,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-FAS-SET"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   | FINANCIAL  MANAGEMENT |   | - SETUP - |   | TABLE  OF CONTENTS |   | SETUP | 1.          Main Heads | 2.          Sub Heads | 3.          Transaction  Types | 4.          Transaction  Voucher  Link | 5.          Transaction  Type Rights | 6.          FO to Finance  Link | 7.          POS to Finance  Link | 8.          MM to Finance  Link | 9.          Payroll to FAS Link | 10.       Membership  to FAS Link | 11.       Link AR to Finance | 12.       TDS Nature of Payment | 13.       TDS Tax Link | 14.       TDS Defaults |  |  | ===== PAGE 2 ===== |  | 15.       Print Forms | 16.       User Defined Print Forms | 17.       Create User Reports | 18.       Financial  Period | 19.       Budget Types | 20.       Pre Defined Narration | 21.       Trial Balance  Print Order. | 22.       Link CC to Department | 23.       Link Exmpt Tax to Finance. | 24.       Vendor  Tax Split | 25.       Retained  Earning Account | 26.       Specify  Aging | 27.       Print Form Designer |   | Identifying  Standards | The following are some of the standards that are commonly displayed in all the screens: |   | Click | To | Enter new information. | Change/update existing information. | Remove or erase the existing information. This button  | works conditionally. | View/browse existing information. | View the preceding details. This is enabled only after you  | click Browse. | View the subsequent details. This is enabled only after  | you click Browse. | Save new or mod"
+  },
+  {
+    "file": "FN6i-NT-FAS-TRN.pdf",
+    "path": "6i Manuals/Financial Management/FN6i-NT-FAS-TRN.pdf",
+    "module": "Financial Management",
+    "size_kb": 3558,
+    "pages": 45,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 85,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-FAS-TRN"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  | FINANCIAL  MANAGEMENT | -    TRANSACTIONS  - |   |   | Table Of Contents |   |   | 1_FA_Transactions |   | 2_Statistics_Transaction |   | 3_Bank_Reconciliation |   | 4_Budget |   | 5_Interactive_Payment |   | 6_TDS_Tagging |   | 7_Cancel_Cheque |   | 8_Open_Financial_Year |   | 9_Voucher_Authorization |   |   |   | Identifying  Standards |   | The following are some of the standards that are commonly displayed in all the screens: |   | Click | To | Enter new information. | Change/update existing information. | Remove or erase the existing information. This button  | works conditionally. | View/browse existing information. |  |  | ===== PAGE 2 ===== |  | View the preceding details. This is enabled only after you  | click Browse. | View the subsequent details. This is enabled only after  | you click Browse. | Save new or modified information. | Access other menu options namely Command Window,  | Internode  | Communication,  | Calculator,  | Calendar,  | Scratch Pad, and Yellow Pages. | Exit from the screen. |   |   | TRANSACTIONS |   | Transactions is used by Financial Management to create FA Transactions, Bank Reconciliation entries, budget, TDS  | tagging, cancel cheques, etc. |   |   |   | 1.     FA Transactions |   | The Transactions option is primarily used for recording day-to-day financial transactions in multi currency for reflection in  | the General Ledger. |   |  |  | ===== PAGE 3 ===== |  | FA Transactions will cover the below-mentioned"
+  },
+  {
+    "file": "FN6i-NT-FNB-COP.pdf",
+    "path": "6i Manuals/Food & Beverage Costing/FN6i-NT-FNB-COP.pdf",
+    "module": "Food & Beverage Costing",
+    "size_kb": 1672,
+    "pages": 19,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 51,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-FNB-COP"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   |   | FOOD & BEVERAGE  COSTING |   | - COSTING  OPERATIONS  - |   |   | TABLE OF CONTENTS | COSTING  OPERATIONS | 1.         Costing Extraction | 2.         Kitchen  Stock | 3.         Kitchen  Opening Stock | 4.         Manual Sales Entry | 5.         Manual Consumption  Entry | 6.         Inter Kitchen  Transfers | 7.         Open/ Modifiers  Items | 8.         Stock Balance Transfer | 9.         Auto Indent Creation |    | Identifying  Standards | The following are some of the standards that are commonly displayed in all the screens: |   | Click | To | Enter new information. | Change/update existing information. |  |  | ===== PAGE 2 ===== |  | Remove or erase the existing information. This button  | works only conditionally. | View/browse existing information. | View the preceding details. This is enabled only after you  | click Browse. | View the subsequent details. This is enabled only after  | you click Browse. | Save new or modified information. | Access other menu options namely Command Window,  | Internode Communication, Calculator, Calendar,  | Scratch Pad, and Yellow Pages. | Exit from the screen. |   |   | COSTING OPERATIONS |   | Costing Operations is used by F & B Costing to create Kitchen stock, sales entries, consumption entries, inter kitchen transfers, link open or  | modifier items, stock balance transfers etc. |   |  |  | ===== PAGE 3 ===== |  |   | 1.     Costing Extraction |   | Costing Extraction will extract the data fro"
+  },
+  {
+    "file": "FN6i-NT-FNB-LUK.pdf",
+    "path": "6i Manuals/Food & Beverage Costing/FN6i-NT-FNB-LUK.pdf",
+    "module": "Food & Beverage Costing",
+    "size_kb": 1331,
+    "pages": 15,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 31,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-FNB-LUK"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  | FOOD & BEVERAGE  COSTING | -LOOKUPS- |   |   | TABLE  OF CONTENTS | LOOKUPS | 1.         Item Recipe Details | 2.         Recipe  Details | 3.         Non – Chargeable  Query | 4.         Recipe  – Ingredient  Details | 5.         Stock Query | 6.         Standard  Vs. Actual (Q) | 7.         Profitability  Analysis |    |   | LOOKUPS |   | Lookups is a sub-module under Food & Beverage Costing Module. It has sub menu items which are explained in detail in this  | document. |   | Lookups is used by Food & Beverage Costing to get instant access to information relating to Item Recipe details, NC Query, Stock  | Query, Profitability Analysis, etc. |   |  |  | ===== PAGE 2 ===== |  |   |   | 1.     Item Recipe Details |   | This option is used to view Item wise sales details in terms of quantity & value along with the cost details only for items to which recipes  | have been specified.  The details are reflected after the Sales/ Cost Extraction is processed. |   | Double–click Item Recipe Details under Lookups to view the following screen: |   |  |  | ===== PAGE 3 ===== |  |   | 1.       Select an Outlet from the given Outlet list. | 2.       Select the Cost Type. | 3.       Enter the date range in the FROM date and TO date fields. | 4.       Enter the item range in the FROM item and TO item fields to get the Item Recipe Details report. | 5.       Click  | . The following screen appears: |   |   | 6.       Press F3 to view Recipe details. Double-click"
+  },
+  {
+    "file": "FN6i-NT-FNB-REP.pdf",
+    "path": "6i Manuals/Food & Beverage Costing/FN6i-NT-FNB-REP.pdf",
+    "module": "Food & Beverage Costing",
+    "size_kb": 1770,
+    "pages": 28,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 68,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-FNB-REP"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  | FOOD & BEVERAGE  COSTING | - REPORTS  - |   | TABLE  OF CONTENTS |   | REPORTS | 1.       Recipe Checklist | 2.       Kitchen Stock Checklist | 3.       Sales Analysis | 4.       Kitchen Stock Statement | 5.       Stock Sheet | 6.       Missing Recipe List | 7.       Physical  Stock Variance | 8.       Inter Transfer Checklist | 9.       Cost  Report | 10.    Standard  vs. Actual  (R) | 11.     Open Item/Modifier  (R) | 12.      Print Buffet Information | 13.__Manual_Sales_Cons_Report.   |   | REPORTS |   | Reports - Reports is a sub-module under F&B Costing Module. It has sub menu items which are explained in detail in this  | document. |   | Reports under F&B Costing Module is used by Users to generate various reports relating to recipe checklist, kitchen stock  | checklist, sales analysis, missing recipe checklist, cost report, etc. |   |  |  | ===== PAGE 2 ===== |  |   | 1.     Recipe Checklist |   | This report is used to generate a specified range of all recipes and sub recipes list that are entered using menu items with  | similar names and also based on the restaurants (POS Outlets). |   | Double-click Recipe Checklist under Reports to view the following screen: |   |  |  | ===== PAGE 3 ===== |  |   | 1.       Select one of the two options for which you want to generate the report -  Recipe or Sub Recipe. | 2.       Select the Restaurant from the dropdown list. | 3.      Enter the range of Recipe # in the FROM and TO fields to generate th"
+  },
+  {
+    "file": "FN6i-NT-FNB-SET.pdf",
+    "path": "6i Manuals/Food & Beverage Costing/FN6i-NT-FNB-SET.pdf",
+    "module": "Food & Beverage Costing",
+    "size_kb": 1107,
+    "pages": 14,
+    "pdf_title": "",
+    "has_extractable_text": true,
+    "images": 45,
+    "toc_count": 2,
+    "toc_titles": [
+      "Topics",
+      "FN6i-NT-FNB-SET"
+    ],
+    "sample": " |  | ===== PAGE 1 ===== |  |   |   | FOOD & BEVERAGE  COSTING |   | - SETUP - |   | TABLE  OF CONTENTS |   | SETUP | 1.          Costing Start Date | 2.          Costing Link | 3.          Sales/Cost  Budgets | 4.          Recipe/Sub  Recipe Master |   | Identifying  Standards | The following are some of the standards that are commonly displayed in all the screens: |   | Click | To | Enter new information. | Change/update existing information. | Remove or erase the existing information. This button  | works only conditionally. | View/browse existing information. | View the preceding details. This is enabled only after you  | click Browse. |  |  | ===== PAGE 2 ===== |  | View the subsequent details. This is enabled only after  | you click Browse. | Save new or modified information. | Access other menu options namely Command Window,  | Internode Communication, Calculator, Calendar,  | Scratch Pad, and Yellow Pages. | Exit from the screen. |   |   | SETUP |   | The Setup menu item of the F&B Costing module explains the various settings that are necessary for the F&B Costing  | module to work efficiently and in connection with other modules. |   | On the main screen, click F&B Costing  |  and select Setup; you can view the following screen. |   |   |   |  |  | ===== PAGE 3 ===== |  | 1.     Costing Start Date |   | The Costing Start Date is a mandatory parameter, which is used to enter the date for activating the food and beverage- | costing module. |   | Based on the date speci"
   }
 ]
