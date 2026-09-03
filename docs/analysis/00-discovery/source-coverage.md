@@ -27,8 +27,8 @@
 | text-extracted | **65 / 65 (100%)** ✅ |
 | toc-analyzed | **65 / 65 (100%)** ✅ |
 | field-extracted (جداول الحقول آلياً) | **13 ملف إعدادات — 2,099 حقلاً** ✅ |
-| read (قراءة عميقة) | **35/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + BNQ 5 + **HRP 4 (كاملة)** (نهاية الجلسة 8) |
-| analyzed | **8 وحدات / 151 ملف وثائق** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + **HRP 19**) |
+| read (قراءة عميقة) | **38/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + BNQ 5 + HRP 4 + **Care 3 (كاملة)** (نهاية الجلسة 9) |
+| analyzed | **9 وحدات / 170 ملف وثائق** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 + **Care 19**) |
 | cross-referenced | 0 / 65 |
 | verified | 0 / 65 |
 
@@ -75,9 +75,9 @@
 | 31 | Financial Management | FN6i-NT-FAS-TRN.pdf | 45 | ✓ | ✓ | ✓ | **✓ كامل (9 أقسام + FO/POS/PJV posting)** | **✓ → modules/financial-accounting/** | – | – |
 | 32 | Financial Management | FN6i-NT-FAS-MST.pdf | 33 | ✓ | ✓ | ✓ | **✓ كامل (COA + Vendor + ChequeBook)** | **✓ → modules/financial-accounting/** | – | – |
 | 33 | Financial Management | FN6i-NT-FAS-LUK.pdf | 28 | ✓ | ✓ | ✓ | **✓ كامل (9 استعلامات)** | **✓ → modules/financial-accounting/** | – | – |
-| 34 | Care | FORTUNE CARE v6 - OPERATIONS.pdf | 80 | ✓ | ✓ | ✓ | – | – | – | – |
-| 35 | Care | FORTUNE CARE v6 - REPORTS & LOOKUPS - VER 10 AUGUST.pdf | 73 | ✓ | ✓ | ✓ | – | – | – | – |
-| 36 | Care | FORTUNE CARE v6 - SETUP - VER 10 AUGUST.pdf | 34 | ✓ | ✓ | ✓ | – | – | – | – |
+| 34 | Care | FORTUNE CARE v6 - OPERATIONS.pdf | 80 | ✓ | ✓ | ✓ | **✓ كامل (6 وظائف — الروستر D&D + Login/Logout بعهدة موبايل + Manual Entry بمحرك SMS ثنائي الاتجاه `1 S`/`1 C` مع 5 رسائل خطأ حرفية + Group SMS + Agent Console + Supervisor Lookup بأربع عمليات)** | **✓ → modules/care/** | – | – |
+| 35 | Care | FORTUNE CARE v6 - REPORTS & LOOKUPS - VER 10 AUGUST.pdf | 73 | ✓ | ✓ | ✓ | **✓ كامل (20 تقريراً — 7 Charts + 3 Drilldown رباعي المستويات حتى سجل بـ CI/CO من PMS + IVR Code في Task List + SMS Queued كملخص إداري)** | **✓ → modules/care/** | – | – |
+| 36 | Care | FORTUNE CARE v6 - SETUP - VER 10 AUGUST.pdf | 34 | ✓ | ✓ | ✓ | **✓ كامل (6 أقسام — User Creation بـ PMS فقط! + Define Rights نمط SYS + Org Structure شجرة بـ Reporting تصعيدي + Task Definition بمهلات 4 مستويات + Multi Task عبر الأقسام + Restrict Reports)** | **✓ → modules/care/** | – | – |
 | 37 | Membership | FN6i-NT-MEM-RPL.pdf | 56 | ✓ | ✓ | ✓ | – | – | – | – |
 | 38 | Membership | FN6i-NT-MEM-MPF.pdf | 30 | ✓ | ✓ | ✓ | – | – | – | – |
 | 39 | Membership | FN6i-NT-MEM-MTR.pdf | 18 | ✓ | ✓ | ✓ | – | – | – | – |

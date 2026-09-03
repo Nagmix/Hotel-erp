@@ -24,8 +24,8 @@
 |---|---|---|---|
 | **Phase 0** | Discovery — فهرسة وجرد وخريطة | ✅ **مكتملة** | الوثائق الخمس في `docs/analysis/00-discovery/` + `extracted-text/` + `inventory.json` |
 | **Phase 1** | Domain Model | ✅ **الإصدار التأسيسي مكتمل** (يُوسَّع في كل مرحلة) | `docs/domain/` (8 وثائق) — انظر أدناه |
-| Phase 2 | Module Inventory التفصيلي | ◐ **بدأت — FO + FAS + ACR + POS + SYS + MGT + BNQ + HRP محللة** | `docs/modules/{front-office, financial-accounting, accounts-receivable, point-of-sale, system-setup, materials-management, banquets, hrp-payroll}` |
-| Phase 3 | Detailed Module Analysis | ◐ **8/17: FO (19) + FAS (18) + ACR (19) + POS (19) + SYS (19) + MGT (19) + BNQ (19) + HRP (19) = 151 ملف وثائق** | نفس المسارات |
+| Phase 2 | Module Inventory التفصيلي | ◐ **بدأت — FO + FAS + ACR + POS + SYS + MGT + BNQ + HRP + Care محللة** | `docs/modules/{front-office, financial-accounting, accounts-receivable, point-of-sale, system-setup, materials-management, banquets, hrp-payroll, care}` |
+| Phase 3 | Detailed Module Analysis | ◐ **9/17: FO (19) + FAS (18) + ACR (19) + POS (19) + SYS (19) + MGT (19) + BNQ (19) + HRP (19) + Care (19) = 170 ملف وثائق** | نفس المسارات |
 | Phase 4 | Screens & UX | ⬜ لم تبدأ | `docs/screens/specifications/*` |
 | Phase 5 | Workflows | ⬜ لم تبدأ | `docs/workflows/*` |
 | Phase 6 | Accounting | ⬜ لم تبدأ | `docs/accounting/*` |
@@ -340,7 +340,35 @@
 |---|---|---|
 | ملفات مفهرسة | 65/65 | 65/65 ✅ |
 | نصوص مستخرجة | 65/65 | 65/65 ✅ |
-| ملفات قرأت قراءة عميقة | **35/65** (FO 9 + FAS 4 + ACR 5 + POS 4 + SYS-SSP + MGT 3 + BNQ 5 + **HRP 4 كاملة**) | 65/65 |
-| وحدات محللة وظيفياً | **8/17** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 = 151 ملف وثائق) | 17 |
+| ملفات قرأت قراءة عميقة | **38/65** (FO 9 + FAS 4 + ACR 5 + POS 4 + SYS-SSP + MGT 3 + BNQ 5 + HRP 4 + **Care 3 كاملة**) | 65/65 |
+| وحدات محللة وظيفياً | **9/17** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 + Care 19 = 170 ملف وثائق) | 17 |
 | Knowledge Graph (علاقات موثقة) | 6 روابط ترحيل + 16 تكامل FO (I1-I16) | يوسَّع في Phase 3/6 |
 | Unknowns مسجلة | انظر `docs/analysis/unknowns.md` | صفر حرج قبل التنفيذ |
+
+---
+
+### الجلسة 9 — 2026-09-03 — وحدة Care (Fortune Care v6) كاملة + دفع HRP
+
+**ما تم:**
+
+0. **دفع HRP إلى GitHub** بعد استلام بيانات الاعتماد: `fd5b014..1a5796b` (كانت الوحدة منجزة محلياً كاملاً والفشل كان في الدفع فقط).
+1. **الوحدة 9/17 — Care كاملة (19 ملفاً):**
+   - قراءة عميقة كاملة للملفات الثلاثة: **CARE-SET (34 ص/6 أقسام) + CARE-OPR (80 ص/6 وظائف) + CARE-REP (73 ص/20 تقريراً) = 187 ص كاملة**.
+   - إنشاء `docs/modules/care/` (00-18): **32 شاشة (≈44 عنصراً شاشياً) + 20 تقريراً** · WF-CA-01..16 · BR-CA-01..18 · V-CA-01..23 · I-CA-01..14 · E-CA-01..18 · 17 كياناً (50+ حقلاً) · 16 معاملة · Seed Mapping (قرارات F-CA-1..10 — 4 أصول مخصصة فقط!) · 7+5 فجوات · 10 مجموعات قبول (42 معياراً) + Smoke Test 24 خطوة.
+2. تحديث: unknowns (**UNK-010 RESOLVED نهائياً** + جديد UNK-041..044) + source-coverage (38/65 — 9 وحدات/170 ملف وثائق) + هذا الملف + فهرس docs/README.md (9/17).
+
+**اكتشافات جوهرية موثقة (Care):**
+
+- **UNK-010 RESOLVED نهائياً:** Care لا يقرأ HRP إطلاقاً — مستخدمون/أقسام/تصنيفات/ورديات/مواقع/غرف/ضيوف/L&F كلها من **PMS** (7 قنوات واردة — أعلى اعتماد أحادي في المشروع)؛ الموظفون يُنشؤون محلياً خفيفين (اتصال+صورة+تصعيد) — مخزنان مستقلان؛ قرار F-CA-2: توحيد Employee في إعادة البناء.
+- **محرك SMS ثنائي الاتجاه فريد في المشروع:** تخصيص آلي للحاضر بصيغة حرفية `<1> Complaint #: 1 Room #: OR0707 Task.. Est. Time: 10 mins Priority: High Esc Level: 0` + أوامر ردّية **`1 S` (بدء) / `1 C` (إغلاق)** + 5 رسائل خطأ موثقة نصاً + إشعار إغلاق المشرف `CLOSED BY: JOHN REASON: ISSUE RESOLVED` — المنفذ الحقلي يعمل **بلا شاشة إطلاقاً** (الهاتف فقط).
+- **14 حالة تشغيلية** (Queued→Delivered→WIP→AwaitingFeedback→Closed + Cancelled/Stopped/Unassigned + Esc 0-4) — أغنى آلة حالة في المشروع.
+- **زر Thank You يبدأ المؤقت** (وليس الحفظ)؛ التصعيد التسلسلي بـ timeout دقائقي لكل مستوى عبر سلسلة Reporting (مثال: Room boy→Supervisor→Manager→FOM→GM→MD).
+- **عهدة الموبايل بين الورديات:** رقم الموظف يستقبل المهام ويُعاد تعيينه لموظف الوردية التالية (Login/Logout باسترداد checkbox).
+- **فجوات نوعية:** لا فوترة رغم Charges/Approximate Cost (GAP-CA-D01)؛ لا تغذية Attendance من الروستر (GAP-CA-P1)؛ IVR صندوق أسود (D04)؛ لا مفاتيح INI إطلاقاً (D03 — الوحدة الوحيدة)؛ Break بلا تفصيل (D07).
+- **أعلى كفاءة بذرة Frappe في المشروع:** Issue/Employee/Checkin/Notification تغطي معظم الوحدة — أصول مخصصة: SMS Reply Processor + لوحة الروستر D&D + محرك التصعيد الدقيقي (~2-3 أسابيع فقط).
+- **عائلة التجميد تكتمل (الخامسة):** روستر Care (ماضٍ محمي) بعد FO يومي/MGT شهري/FAS سنوي/HRP رواتب.
+
+**نقطة الاستئناف القادمة (الجلسة 10):**
+1. **الوحدة التالية: MEM (العضويات — 5 ملفات/133 ص: RPL 56 + MPF 30 + MTR 18 + SET 16 + MMN 13)** — دورة عضوية كاملة (طلب→فحص→موافقة→تجديد→إلغاء) بفوترة وترحيل إلى AR (تكمل حلقة الإيراد).
+2. بعدها **SLM (المبيعات) أو TEL (الهاتف)** حسب الطاقة.
+3. التقارير المؤجلة (REP) للوحدات محللة تبقى للمرحلة 7.

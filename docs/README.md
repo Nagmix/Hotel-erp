@@ -45,7 +45,9 @@
 
 **8. HR & Payroll (مكتملة — 19 ملفاً):** [`modules/hrp-payroll/`](modules/hrp-payroll/) — ابدأ بـ [`00-overview.md`](modules/hrp-payroll/00-overview.md) · ⭐ **محرك الأجور المعادلاتي (قرار F-HR-1):** [`01-master-data.md`](modules/hrp-payroll/01-master-data.md) (ED Calculation: 6 أنماط × 3 حساب × 4 مصادر × **شرائح 4 أنواع بأمثلة رقمية 500/350/400** + Priority/Partial/CarryForward) + [`16-erpnext-mapping.md`](modules/hrp-payroll/16-erpnext-mapping.md) (أربعة أصول مخصصة فقط) · ⭐ **جسر AR→Payroll (الحلقة الرابعة المغلقة):** [`12-integrations.md`](modules/hrp-payroll/12-integrations.md) (I-HR-01 — يوسع Knowledge Graph بعلاقة S10) · قواعد الخصم القطعية: [`05-business-rules.md`](modules/hrp-payroll/05-business-rules.md) (BR-HR-06/07 — أرباح 1500/خصم 1700: Yes=كامل! No=صفر!) · التقارير: [`08-reports.md`](modules/hrp-payroll/08-reports.md) (68 تقريراً/19 مجموعة — 15 نموذجاً هندياً رسمياً + Payroll Audit بقيم old/new)
 
-**التالي بالترتيب:** `care/` (يحسم UNK-010 بقية نصفه) ← `membership/` ← `sales-marketing/` ← ... (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
+**9. Care (مكتملة — 19 ملفاً):** [`modules/care/`](modules/care/) — ابدأ بـ [`00-overview.md`](modules/care/00-overview.md) · ⭐ **UNK-010 محسوم نهائياً (مخزنان مستقلان + 7 قنوات PMS):** [`12-integrations.md`](modules/care/12-integrations.md) (I-CA-01..06 — Care وحدة ساتلية PMS-centric بلا أي جسر إلى HRP!) · ⭐ **محرك SMS ثنائي الاتجاه الفريد (`1 S`/`1 C` + 5 رسائل خطأ حرفية + 14 حالة):** [`04-workflows.md`](modules/care/04-workflows.md) (WF-CA-04/05 — المنفذ الحقلي بلا شاشة!) + [`13-exceptions.md`](modules/care/13-exceptions.md) (جدول الأخطاء↔ردود النظام) · الهيكل والتصعيد: [`01-master-data.md`](modules/care/01-master-data.md) (سلسلة Reporting: Room boy→…→MD بمهلات دقائق) · أعلى كفاءة بذرة Frappe: [`16-erpnext-mapping.md`](modules/care/16-erpnext-mapping.md) (F-CA-1..10 — 4 أصول مخصصة فقط ~2-3 أسابيع)
+
+**التالي بالترتيب:** `membership/` (5 ملفات/133 ص — فوترة وترحيل إلى AR) ← `sales-marketing/` ← ... (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
 
 ### العمليات (Workflows) — Phase 5
 `workflows/module-workflows/` + `workflows/end-to-end/`
