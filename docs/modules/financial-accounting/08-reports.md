@@ -1,6 +1,6 @@
 # 08 — التقارير (Reports) — وحدة FAS
 
-> **FAS-REP (~858 سطراً مستخرجاً) مؤجل للقراءة العميقة في Phase 7.** هذا الملف يجرد التقارير الموثقة في LUK/SET/TRN فقط.
+> **FAS-REP مكتمل الآن (Phase 7/الجلسة 18 — خاتمة الحزمة 65/65)** ووُثّق في **[`docs/reports/financial-accounting/`](../../reports/financial-accounting/)** — هذا الملف يحتفظ بجرد LUK/SET/TRN فقط.
 
 ---
 
@@ -35,6 +35,23 @@
 | Room Statistics | من Statistics Master (Rooms Available/Sold S/D/T/Guests/Beds) + Statistics Transaction | FAS-MST §2 |
 | Payable/Receivable Aging | من Specify Aging (راجع AR Setup) | FAS-SET §26 |
 
-## 4. المعلق
+## 4. FAS-REP (مكتمل — Phase 7/الجلسة 18)
 
-`[PENDING DEEP READ]` FAS-REP: كتالوج التقارير الرسمي الكامل — Phase 7 (`docs/reports/`).
+قُرئ كاملاً (64 ص/858 سطر — 48 بند TOC = 46 تقريراً + **شبحان ختاميان**) ووُثّق في **[`docs/reports/financial-accounting/`](../../reports/financial-accounting/)** (12 ملفاً 00→11).
+
+**أهم ما أضافته قراءة REP لهذه الوثيقة:**
+
+| الإضافة | الشاهد | التفصيل |
+|---|---|---|
+| **طبقة النزاهة التكاملية** — Unlinked/Linked/Auto-Posted | 19/20/21 | `reports/financial-accounting/06` — أسماء معاملات الربط المسربة (Link FOM/POS/Exmp Tax to Finance · Vendor Tax Split) + أنواع الترحيل FOM/ACR/INV — **يغلق البعد التشغيلي لعائلة جسور F من جهة المستهلك** |
+| **Print Forms بFAS نفسها ×3** (Balance Confirmation · Advice/Cheque · Voucher Print بنمط تسجيل ضد Transaction Codes) | 14/24/25 | القسم 2 أعلاه (Create User Reports §17) يتصل الآن بأخواته الأربع |
+| **TDS جناح كامل** (16A بNew/Reprint + أرباع ×4 + Email-بOutlook/Broadgun + Height 11/12 + 26J/27/26A/26C/26K) | 26-31 | `reports/financial-accounting/08` — يُكمل TDS Tagging/TRN §6 أعلاه |
+| **Trial Balance ×4** (بXOR 0/132 · Sub group/Dept/CC تسلسل) | §9 | يوسّع LUK-TB (أعلاه) بوضعيات الإخراج |
+| Day Book Format 2 = Contra (بمثال A008000/SBI حرفياً) | §4 | أغنى مثال مصرفي في الحزمة |
+| **Invoice/Payment Check يُكمل Three-Way Match** (مع MGT-10 Supplier Bill) | تحت §25 | `reports/financial-accounting/09` §5 |
+| Voucher Print ببرامج لكل Transaction Code + طابعة افتراضية محطية | §25 | نمط Print Forms الثاني (مقابل قائمة MGT) |
+| شبحا الختام: **IDS Crystal (متكرر مع FO!) + iDesigner** | TOC تحت §34 | UNK-096 — يوصل عائلة TOC-template لأقوى دليل |
+
+## 5. المعلق — **لا شيء (خاتمة الحزمة)**
+
+65/65 ملفاً مقروءاً عميقاً — لا ملفات معلقة بعد الآن. المرحلة التالية: Phase 8+ (المراجعة الشاملة).

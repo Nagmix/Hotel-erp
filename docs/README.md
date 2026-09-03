@@ -106,9 +106,49 @@
 - ⭐ **[مصفوفة قواعد التواريخ](reports/point-of-sale/10-date-validation-matrix.md)** — ~20 قاعدة: **POS ماضوية شبه كاملة** (مستقبلي واحد!) + نوافذ 7/30 + عتبات منافذ 7/8 + مقارنة مع مصفوفة FO
 - **[التحويل والفجوات](reports/point-of-sale/11-erpnext-mapping-gaps.md)** — F-PR-1..15 (~7-9 أصول/5-6 أسابيع) + GAP-PR-D01..D07/P01..P05 + UNK-083..088 + C-POS-01..03 + AC-PR-01..15 + Smoke 20 خطوة
 
-**التالي (ختام المرحلة 7):** MGT-REP (112 ص) → FAS-REP (64 ص) — آخر ملفين → **65/65** → ثم المراجعة الشاملة (Phase 8+)
+**التالي (ختام المرحلة 7):** ~~MGT-REP (112 ص) → FAS-REP (64 ص)~~ — **✅ منجز بالجلسة 18 — 65/65 والحزمة مغلقة** → ثم المراجعة الشاملة (Phase 8+)
 
-**التالي بالترتيب:** المرحلة 7 (تقارير REP المؤجلة) ← المراجعة الشاملة (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
+### Materials Management Reports (مكتمل — 12 ملفاً — الجلسة 18)
+
+**[`reports/materials-management/`](reports/materials-management/)** — المصدر: MGT-REP (112 ص/1,745 سطر — 55 ورقة/~53 فريداً) — **MGT ثالث وحدة كاملة المصادر 4/4**:
+
+- **[نظرة عامة + مفارقة الترقيم](reports/materials-management/00-overview.md)** — القسم 6 مرقّم مرتين (C-MR-01) + أبرز 12 اكتشافاً + جسور الوحدات
+- ⭐ **[محرك التقارير](reports/materials-management/01-report-engine-infrastructure.md)** — **قانون Print Forms عبر FAS** (طباعة PO/SPO/GRN بـPgm.ID في FAS-SET §15 — برامج لكل عميل بثلاثية الورق!) + **صفر قنوات إلكترونية** (شذوذ عن FO/POS) + فعل Load
+- **[قوائم الأصناف/الموردين/العقود](reports/materials-management/02-item-vendor-contract-master-reports.md)** — Vendor List بخمسة مناظر×ثلاث تفاصيل + **Black List** + Item Expiry بإنذار N-أيام
+- **[تقارير دورة المشتريات](reports/materials-management/03-procurement-reports.md)** — حالة DPR/PO (عدم تناظر Cancelled!) + **Supplier Bill بـverify** (نواة Three-Way Match) + Comparative للعطاءات
+- ⭐ **[عائلة طباعة المستندات](reports/materials-management/04-document-print-family.md)** — 7 مستندات + **GRN نسخة → Finance للدفع** + Indent بتنسيقين وAuthorization choice
+- **[المعاملات والاستلام §4](reports/materials-management/05-transaction-receipt-reports.md)** — أكبر عائلة (8) بـ**Adaptive UI** + Store Break + ثلاثية Complimentary + **Capital Goods Receipt** (جسر FXD)
+- **[أرصدة المخزون](reports/materials-management/06-stock-balance-reports.md)** — **رصيد ثلاثي الحيازة** (مخزن/فرعي/CC) + Re-Order **بـCurrent Date فقط** + Load
+- **[الاستهلاك والموازنات](reports/materials-management/07-consumption-budget-reports.md)** — ثلاثية Consolidated/CC/Department + **R2 أول لاحقة إصدار** (UNK-089) + Budget بثنائية Purchase/Consumption
+- ⭐ **[تحليلات المخزون](reports/materials-management/08-inventory-analytics.md)** — **ABC (Pareto) بعتبتي A/B من المستخدم** + FSN بمعامل داخل الشاشة (double-click Days) + **Efficiency/Yield FROM/TO** — ثلاثية المنهجيات الكلاسيكية
+- **[الجرد المادي والتدقيق والضرائب](reports/materials-management/09-physical-stock-audit-tax-reports.md)** — **Variance ببوابة بيانات** (تواريخ الجرد فقط!) + **Audit Trial بالمحذوفات** + VAT بـassessment year وPJV-Wise
+- ⭐ **[مصفوفة قواعد التواريخ](reports/materials-management/10-date-validation-matrix.md)** — **ثلاث بوابات جديدة**: current-only ×2 · **data-gated** · Date XOR Month كـ9 تقارير
+- **[التحويل والفجوات](reports/materials-management/11-erpnext-mapping-gaps.md)** — F-MR-1..16 (~4-6 أصول/3-4 أسابيع — **أنسب وحدات المرحلة للتحويل**: ABC/FSN/Stock Ledger/Reconciliation native) + GAP + UNK-089..095 + C-MR-01..03 + AC ×15 + Smoke 20
+
+### Financial Management Reports (مكتمل — 12 ملفاً — الجلسة 18 — **خاتمة الحزمة 65/65**)
+
+**[`reports/financial-accounting/`](reports/financial-accounting/)** — المصدر: FAS-REP (64 ص/858 سطر — 46 تقريراً + **شبحان ختاميان**) — **FAS رابع وحدة كاملة المصادر 5/5 — آخر ملف في الحزمة**:
+
+- **[نظرة عامة](reports/financial-accounting/00-overview.md)** — 48 بنداً + القوانين الخمسة الكبرى + **شبحا الختام (IDS Crystal متكرر مع FO! + iDesigner)**
+- ⭐ **[محرك التقارير](reports/financial-accounting/01-report-engine-infrastructure.md)** — **5 قنوات إخراج** (Print/Email/Spool بملف/Excel/132) + **مسار Email بـOutlook+Broadgun PDF** + Print Forms بنمطي تسجيل + Tag/Load ×4
+- **[دليل الحسابات واليوميات](reports/financial-accounting/02-chart-ledger-daybooks.md)** — اليوميات ×3 + **مثال A008000/SBI Frankfurt/USD الحرفي** (Contra) + كشف المحذوفات من TC
+- **[الأرصدة والدفاتر](reports/financial-accounting/03-ledger-balance-gl.md)** — GL بأربعة مناظير + Detail Register **بمؤشر تكيّفي** وعتبة مبلغ
+- **[القوائم المالية](reports/financial-accounting/04-financial-statements.md)** — **PL بأربع فترات (Month/YTD/PrevYear/Total)** + **TB ×4 بـXOR 0×132 أول اقتران إجباري** + past-only ×4 + شجرة CoA (Sub group/Sub Head)
+- **[سجلات الدائنين والمشتريات](reports/financial-accounting/05-creditors-purchase-registers.md)** — Ageing الدائنين + Expense بعتبة Above + **قصة Contract Debit كاملة بـwaive amount**
+- ⭐⭐ **[طبقة النزاهة التكاملية](reports/financial-accounting/06-integration-link-reports.md)** — **أهم 4 تقارير في المرحلة 7**: Unlinked/Linked Account Codes + Auto Posted — **أسماء معاملات الربط الأربعة المسربة + أنواع الترحيل FOM/ACR/INV (بلا HRP! — UNK-098 يلامس UNK-010 الأصل)** + PJV (Regular/Service)
+- **[المصرفية والشيكات](reports/financial-accounting/07-banking-cheques-pdc.md)** — Bank Rec (Realized/Unrealized برصيد كشف يدوي) + Advice/Cheque بـ**Normal/Repeat وTagAll** + PDC Rec/Pay + طابعة افتراضية محطية
+- ⭐ **[جناح TDS الهندي](reports/financial-accounting/08-tds-statutory-forms.md)** — **16A بأرباع ×4 + New/Reprint + Height 11/12 IN + 26J=ملحق 16A للعوائد + Challan** — أضخم كتلة امتثال في الحزمة
+- **[التدقيق والتقارير المخصصة](reports/financial-accounting/09-audit-user-reports.md)** — Audit بـ**Txn Date XOR Updated Date** + User Reports بمصفوفة قيم ست (**(-ve) بين قوسين · Lakh/Million**) + Excel + Invoice/Payment يُكمل **Three-Way Match**
+- ⭐ **[مصفوفة قواعد التواريخ](reports/financial-accounting/10-date-validation-matrix.md)** — **past-only ×4 حرفية** + قيود FY/Month-bound + مفاتيح استرجاع غير تاريخية (Challan/Certificate/أرباع)
+- **[التحويل والفجوات](reports/financial-accounting/11-erpnext-mapping-gaps.md)** — F-FA-1..16 (~5-7 أصول/3-4 أسابيع — قوائم/دفاتر/TB/AP-ageing/Bank-Rec/TDS **native**) + قرار معماري D12 (من «احفظ ثم نبّه» إلى «اربط ثم احفظ») + UNK-096..102 + C-FA-01..03 + AC ×15 + Smoke 20
+
+---
+
+## 🎯 خاتمة المشروع القرائي — 65/65 (الجلسة 18 — 2026-09-04)
+
+> **كل ملفات الحزمة الـ65 مقروءة عميقاً**: 17/17 وحدة (306 ملف وثائق في `modules/`) + 4 وحدات REP كاملة (48 ملفاً في `reports/` — FO ~135 · POS ~57 · MGT ~53 · FAS 46 = ~291 تقريراً) = **354 ملفاً** · **102 مجهول** (UNK-001..102) · **12 تناقضاً** (C-FB-01 · C-FO-01/02 · C-POS-01..03 · C-MR-01..03 · C-FA-01..03).
+> **أكبر خلاصات المرحلة 7:** هوية سوق هندية مكتملة (PAN/TDS ×7/C-Form/RLM/assessment/Lakhs) · طبقة النزاهة التكاملية (FAS) كجواب نظامي لسؤال الجسور · Print Forms = كود لكل عميل (تفسير غياب المطبوعات) · عائلات عابرة مؤكدة (80/132 باتجاهين · Format-2/R2 · Tag-YES · أشباح IDS ×2 · محذوفات ×4) · **~291 تقريراً بلا صلاحية واحدة**.
+> **التالي (المرحلة 8+):** المراجعة الشاملة + cross-referencing + Knowledge Graph النهائي + جدول المرادفات + قرارات D المجمعة (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف).
 
 ### العمليات (Workflows) — Phase 5
 `workflows/module-workflows/` + `workflows/end-to-end/`

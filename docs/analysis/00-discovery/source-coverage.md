@@ -27,8 +27,8 @@
 | text-extracted | **65 / 65 (100%)** ✅ |
 | toc-analyzed | **65 / 65 (100%)** ✅ |
 | field-extracted (جداول الحقول آلياً) | **13 ملف إعدادات — 2,099 حقلاً** ✅ |
-| read (قراءة عميقة) | **63/65** — FO 11 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + BNQ 5 + HRP 4 + Care 3 + MEM 5 + SLM 4 + TEL 4 + MNT 3 + FNB 4 + FXD 1 + GTP 1 (نهاية الجلسة 17 — **FO وPOS وحدتان كاملتا المصادر 11/11 + 4/4** + TS الجذري — المتبقي MGT-REP وFAS-REP فقط) |
-| analyzed | **17/17 وحدة / 306 ملف وثائق + Phase 7: reports/front-office 12 + reports/point-of-sale 12 = 24 ملفاً** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 + Care 19 + MEM 19 + SLM 19 + TEL 19 + MNT 19 + FNB 19 + FXD 19 + GTP 19 + **reports/FO 12 + reports/POS 12**) |
+| read (قراءة عميقة) | **65/65 (100%) ✅ — إغلاق كامل بالجلسة 18** — FO 11 + FAS 5 + ACR 5 + POS 4 + SYS 1 + MGT 4 + BNQ 5 + HRP 4 + Care 3 + MEM 5 + SLM 4 + TEL 4 + MNT 3 + FNB 4 + FXD 1 + GTP 1 + TS 1 (**أربع وحدات كاملة المصادر: FO 11/11 · POS 4/4 · MGT 4/4 · FAS 5/5** + TS الجذري) |
+| analyzed | **17/17 وحدة / 306 ملف وثائق + Phase 7: reports/front-office 12 + reports/point-of-sale 12 + reports/materials-management 12 + reports/financial-accounting 12 = 48 ملفاً** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 + Care 19 + MEM 19 + SLM 19 + TEL 19 + MNT 19 + FNB 19 + FXD 19 + GTP 19 + **reports ×4 وحدات = 48**) |
 | cross-referenced | 0 / 65 |
 | verified | 0 / 65 |
 
@@ -57,7 +57,7 @@
 | 13 | Point of Sale | FN6i-NT-POS-REP.pdf | 158 | ✓ | ✓ | ✓ | **✓ كامل (Phase 7/الجلسة 17: 59 بنداً/~57 فريداً — مصفوفة POS Report Options أول Config-per-Report + INI 137/335 + Menu Engineering STAR/PUZZLE/PLOW HORSE/DOG 15 عموداً + DS 8×11 + Bill Audit old→new mode+amount + KOT Books + 80/132 معكوس الدلالة + Happy Hours المستقبلي الوحيد + KDS §24 شبح)** | **✓ → reports/point-of-sale/ (12 ملفاً)** | – | – |
 | 14 | Point of Sale | FN6i-NT-POS-GST.pdf | 56 | ✓ | ✓ | ✓ | **✓ كامل (12 وظيفة Guest History + الولاء)** | **✓ → modules/point-of-sale/** | – | – |
 | 15 | Point of Sale | FN6i-NT-POS-LUK.pdf | 14 | ✓ | ✓ | ✓ | **✓ كامل (7 استعلامات + صيغة Average Per Check)** | **✓ → modules/point-of-sale/** | – | – |
-| 16 | Materials Management | FN6i-NT-MGT-REP.pdf | 112 | ✓ | ✓ | ✓ | – (مؤجل Phase 7) | – | – | – |
+| 16 | Materials Management | FN6i-NT-MGT-REP.pdf | 112 | ✓ | ✓ | ✓ | **✓ كامل (24 رقماً بقسم 6 مزدوج + 39 فرعياً = 55 ورقة/~53 فريداً — Print Forms عبر FAS + ABC/FSN/Efficiency + بوابات زمنية ثلاث جديدة + R2)** | **✓ → reports/materials-management/** | – | – |
 | 17 | Materials Management | FN6i-NT-MGT-DNT.pdf | 75 | ✓ | ✓ | ✓ | **✓ كامل (15 وظيفة Daily Entries — الإصدار/المرتجعات/الجرد/الإقفال الشهري)** | **✓ → modules/materials-management/** | – | – |
 | 18 | Materials Management | FN6i-NT-MGT-SET.pdf | 68 | ✓ | ✓ | ✓ | **✓ كامل (28 قسماً — المخازن/الأصناف/Master المورد بـ 7 عائلات)** | **✓ → modules/materials-management/** | – | – |
 | 19 | Materials Management | FN6i-NT-MGT-LUK.pdf | 38 | ✓ | ✓ | ✓ | **✓ كامل (20 استعلاماً + Drill-down ثلاثي)** | **✓ → modules/materials-management/ (09)** | – | – |
@@ -70,7 +70,7 @@
 | 26 | HR & Payroll | FN6i-NT-HRP-PNT.pdf | 47 | ✓ | ✓ | ✓ | **✓ كامل (24 وظيفة — دورة الرواتب + AR→Payroll Transfer + F&F)** | **✓ → modules/hrp-payroll/** | – | – |
 | 27 | HR & Payroll | FN6i-NT-HRP-SET.pdf | 42 | ✓ | ✓ | ✓ | **✓ كامل (21 قسماً — محرك ED + الشرائح الأربع + الإجرائية الهندية + Payroll User Rights)** | **✓ → modules/hrp-payroll/** | – | – |
 | 28 | HR & Payroll | FN6i-NT-HRP-RQP.pdf | 31 | ✓ | ✓ | ✓ | **✓ كامل (8 وظائف — دورة التوظيف الكاملة)** | **✓ → modules/hrp-payroll/** | – | – |
-| 29 | Financial Management | FN6i-NT-FAS-REP.pdf | 64 | ✓ | ✓ | ✓ | – (مؤجل Phase 7) | – | – | – |
+| 29 | Financial Management | FN6i-NT-FAS-REP.pdf | 64 | ✓ | ✓ | ✓ | **✓ كامل (48 بند TOC = 46 تقريراً + شبحان — طبقة النزاهة التكاملية + TDS ×7 + TB ×4 + 5 قنوات إخراج)** | **✓ → reports/financial-accounting/** | – | – |
 | 30 | Financial Management | FN6i-NT-FAS-SET.pdf | 48 | ✓ | ✓ | ✓ | **✓ كامل (27 قسماً — الروابط الست)** | **✓ → modules/financial-accounting/** | – | – |
 | 31 | Financial Management | FN6i-NT-FAS-TRN.pdf | 45 | ✓ | ✓ | ✓ | **✓ كامل (9 أقسام + FO/POS/PJV posting)** | **✓ → modules/financial-accounting/** | – | – |
 | 32 | Financial Management | FN6i-NT-FAS-MST.pdf | 33 | ✓ | ✓ | ✓ | **✓ كامل (COA + Vendor + ChequeBook)** | **✓ → modules/financial-accounting/** | – | – |

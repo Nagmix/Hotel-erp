@@ -644,3 +644,36 @@
 1. **MGT-REP (112 ص)** ثم **FAS-REP (64 ص)** — آخر ملفين غير مقروءين → إغلاق 65/65 كاملاً + إغلاق Phase 7.
 2. بعدها: **المراجعة الشاملة + cross-referencing + Knowledge Graph النهائي** (Phase 8+): توحيد العائلات العابرة (UNK-058/038/084 المصفوفات · جسور F · عائلة 80/132 الاتجاهين · INI الكاملة 63/137/335/368/475/511 · عائلة الأشباح SMS/Crystal/KDS · معجم التسويات الكامل Staff/others/City Ledger) + قرارات D المجمعة.
 3. مرجع الاستئناف: هذا الملف + `docs/README.md` + `unknowns.md` (88 مجهولاً) + `docs/reports/point-of-sale/00-overview.md`.
+
+---
+
+### الجلسة 18 — 2026-09-04 — Phase 7 (3-4/4 — الختام): MGT-REP + FAS-REP كاملان → **65/65 والحزمة مغلقة**
+
+**ما تم:**
+
+1. **التحقق من حالة المستودع:** HEAD عند 99555b9 (مدفوع — الجلسة 17) — الشجرة نظيفة — الهوية مضبوطة (Nagmix / nooraldeen.ahmed@nagmix.net) — المتبقي وفق نقطة الاستئناف: MGT-REP ثم FAS-REP. (ملاحظة: ملخص المحادثة المتقادم كان يشير إلى HRP — تجاهل صحيح مزدوج: HRP مقروءة منذ جلسة قديمة والـ17/17 مغلقة منذ الجلسة 15.)
+2. **قراءة عميقة كاملة: MGT-REP (112 ص/1,745 سطر):** 24 رقماً (القسم 6 **مزدوج**! — C-MR-01) + 39 فرعياً = 55 ورقة/~53 فريداً (§1≡6.1 حرفياً — C-MR-02 · VAT≡Tax وصفاً — C-MR-03).
+3. **إنشاء `docs/reports/materials-management/` (12 ملفاً 00→11):** overview + محرك (Print-Forms-عبر-FAS + صفر قنوات!) + 8 عائلات (ماستر/مشتريات/طباعة مستندات/معاملات-استلام/أرصدة/استهلاك-موازنات/تحليلات ABC-FSN-Efficiency/جرد-تدقيق-ضرائب) + مصفوفة تواريخ (بوابات ثلاث جديدة) + Mapping F-MR-1..16 (~4-6 أصول/3-4 أسابيع — أنسب وحدات المرحلة) + GAP-MR-D01..D07/P01..P05 + AC ×15 + Smoke 20.
+4. **قراءة عميقة كاملة: FAS-REP (64 ص/858 سطر):** 48 بند TOC = 46 تقريراً + **شبحان ختاميان** (IDS Crystal متكرر مع FO + iDesigner — UNK-096).
+5. **إنشاء `docs/reports/financial-accounting/` (12 ملفاً 00→11):** overview + محرك (5 قنوات + Tag/Load ×4 + Outlook/Broadgun) + 9 عائلات (CoA-يوميات/دفاتر/قوائم مالية TB×4/دائنين-سجلات/**طبقة النزاهة التكاملية**/مصرفية-شيكات/TDS ×7/تدقيق-User-Reports) + مصفوفة تواريخ (past-only ×4) + Mapping F-FA-1..16 (~5-7 أصول/3-4 أسابيع) + GAP-FA-D01..D07/P01..P05 + AC ×15 + Smoke 20.
+6. **تحديث التتبع:** unknowns (**UNK-089..102 — الإجمالي النهائي 102**) + contradictions (**C-MR-01..03 + C-FA-01..03 — الإجمالي 12**) + source-coverage (**65/65 (100%) — أربع وحدات كاملة المصادر FO/POS/MGT/FAS**) + هذا الملف + docs/README.md + إحالتا modules 08-reports (MGT+FAS).
+
+**اكتشافات جوهرية موثقة:**
+
+- **قانون Print Forms عبر FAS (MGT):** طباعة PO/SPO/GRN معلقة بPgm.ID في FAS-SET §15 — "customized programs... **for each client**... pre-printed or plain continuous or **cut** stationery" — **تفسير غياب كل تخطيطات المطبوعات في 65 ملفاً** (طبقة كود لكل تثبيت) + GRN نسخة→Finance للدفع (15.6) — 6 تقارير Print-Forms عبر وحدتين بنمطي تسجيل.
+- **ABC/FSN/Efficiency (MGT):** Pareto بعتبتي A/B من المستخدم + FSN بمعامل **يُعرَّف داخل شاشة التقرير** (double-click Days) + Yield FROM/TO بvariance وefficiency% — ثلاثية المنهجيات الكلاسيكية موثقة حرفياً.
+- **بوابات زمنية جديدة (MGT):** current-only ×2 (Opening Balance=الشهر الجاري · Re-Order=تاريخ النظام) + **data-gated** (Physical Stock Variance = تواريخ الجرد المدخلة فقط!) + R2 أول لاحقة إصدار.
+- **طبقة النزاهة التكاملية (FAS — أهم اكتشاف Phase 7):** Unlinked/Linked Account Codes + Auto Posted Check List — **أسماء معاملات الربط الأربعة المسربة** (Link FOM/POS/Exmp Tax to Finance · Vendor Tax Split) + أنواع الترحيل **FOM/ACR/INV** — **بلا HRP ولا FXD** (UNK-098 يلامس UNK-010 الأصل!) — الجواب النظامي لسؤال "كيف يضمن FN6i عدم ضياع الإيراد بين الوحدات؟".
+- **جناح TDS (FAS):** 16A بأرباع ×4 (Ack+cheque/DD لكل ربع) + New/Reprint + Email بمسار **Outlook+Broadgun PDF+default printer** + Height 11/12 IN + 26J=**ملحق 16A للعوائد** + Challan 27/26A — أضخم كتلة امتثال هندي.
+- **Trial Balance ×4** بXOR أول (Zero XOR 132) وpast-only ×4 · **PL بأربع فترات** (Month/YTD/PrevYear/Total) · مثال **A008000/SBI Frankfurt/USD** المصرفي الحرفي · قصة Contract Debit كاملة (فرق سعر العقد يُحمَّل على مورده + **waive amount**).
+- **قنوات الإخراج الخمس (FAS):** Print/Email/**Spool بملف مسمى**/**Excel**/132 — أوسع من FO/POS — وMGT تؤكد شذوذها (صفر إلكتروني).
+- **حديقة أسماء الجسور (C-FA-01):** POS-to-Finance/FOS-to-FA/FOM — ثلاثة اصطلاحات لجسر واحد.
+- **مفارقة صلاحيات ختامية:** ~291 تقريراً عبر 4 وحدات REP **بلا صلاحية واحدة** (12/17).
+
+**🎯 خاتمة المشروع القرائي: 65/65 ملفاً · 17/17 وحدة · 354 ملف وثائق (306 وحدات + 48 تقارير) · 102 مجهول · 12 تناقضاً.**
+
+**نقطة الاستئناف القادمة (الجلسة 19+ — Phase 8): المراجعة الشاملة والمعرفة المجمعة:**
+
+1. **Knowledge Graph النهائي + cross-referencing:** توحيد العائلات العابرة الموثقة الآن بالكامل: جسور F الموحدة (من FAS-19/20/21 كمرجع مصدر) · عائلة 80/132 (اتجاهان متعاكسان FO×POS + XOR في FAS) · عائلة الأشباح (SMS/Crystal×2/KDS/iDesigner) · عائلة Format-2/R2 (MGT R2 + FAS F2×3) · Tag-YES (MNT/MGT/FAS) · Print Forms (6 تقارير) · عائلة المحذوفات (MGT-23 · FAS-2/2(2)/33) · معجم التسويات/الرموز الموحد (ADQ/ADC/ADV/POT/Staff/others/City Ledger) · مصفوفة INI الكاملة (63/137/335/368/475/511).
+2. **قرارات D المجمعة** (كل GAP-D عبر 17 وحدة في مصفوفة قرار واحدة) + **جدول مرادفات** (C-FA-01) + خريطة UNK النهائية (102) بأولويات إغلاق.
+3. مرجع الاستئناف: هذا الملف + `docs/README.md` + `unknowns.md` (102) + `contradictions.md` (12) + `docs/reports/financial-accounting/00-overview.md`.
