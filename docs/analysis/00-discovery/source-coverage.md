@@ -27,8 +27,8 @@
 | text-extracted | **65 / 65 (100%)** ✅ |
 | toc-analyzed | **65 / 65 (100%)** ✅ |
 | field-extracted (جداول الحقول آلياً) | **13 ملف إعدادات — 2,099 حقلاً** ✅ |
-| read (قراءة عميقة) | **31/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + **BNQ 5 (كاملة)** (نهاية الجلسة 7) |
-| analyzed | **31 ملفاً** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + **BNQ 19 = 132 ملف وثائق → 7 وحدات modules**) |
+| read (قراءة عميقة) | **35/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + BNQ 5 + **HRP 4 (كاملة)** (نهاية الجلسة 8) |
+| analyzed | **8 وحدات / 151 ملف وثائق** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + **HRP 19**) |
 | cross-referenced | 0 / 65 |
 | verified | 0 / 65 |
 
@@ -66,10 +66,10 @@
 | 22 | Banquets | FN6i-NT-BNQ-BOK.pdf | 41 | ✓ | ✓ | ✓ | **✓ كامل (Bookings: Make بـ 7 أقسام + Across-Dates + Cancel/No-Show + Block)** | **✓ → modules/banquets/** | – | – |
 | 23 | Banquets | FN6i-NT-BNQ-CFG.pdf | 38 | ✓ | ✓ | ✓ | **✓ كامل (12 قسماً — Function Room 6 تبويبات + Menu Cards + Sub Venues)** | **✓ → modules/banquets/** | – | – |
 | 24 | Banquets | FN6i-NT-BNQ-LUK.pdf | 12 | ✓ | ✓ | ✓ | **✓ كامل (استعلامان — Availability Chart بألوان الحالة + INI 408)** | **✓ → modules/banquets/ (09)** | – | – |
-| 25 | HR & Payroll | FN6i-NT-HRP-REP.pdf | 133 | ✓ | ✓ | ✓ | – | – | – | – |
-| 26 | HR & Payroll | FN6i-NT-HRP-PNT.pdf | 47 | ✓ | ✓ | ✓ | – | – | – | – |
-| 27 | HR & Payroll | FN6i-NT-HRP-SET.pdf | 42 | ✓ | ✓ | ✓ | – | – | – | – |
-| 28 | HR & Payroll | FN6i-NT-HRP-RQP.pdf | 31 | ✓ | ✓ | ✓ | – | – | – | – |
+| 25 | HR & Payroll | FN6i-NT-HRP-REP.pdf | 133 | ✓ | ✓ | ✓ | **✓ كامل (19 مجموعة/68 تقريراً — أضخم REP بعد FO؛ Payroll Audit بقيم old/new)** | **✓ → modules/hrp-payroll/** | – | – |
+| 26 | HR & Payroll | FN6i-NT-HRP-PNT.pdf | 47 | ✓ | ✓ | ✓ | **✓ كامل (24 وظيفة — دورة الرواتب + AR→Payroll Transfer + F&F)** | **✓ → modules/hrp-payroll/** | – | – |
+| 27 | HR & Payroll | FN6i-NT-HRP-SET.pdf | 42 | ✓ | ✓ | ✓ | **✓ كامل (21 قسماً — محرك ED + الشرائح الأربع + الإجرائية الهندية + Payroll User Rights)** | **✓ → modules/hrp-payroll/** | – | – |
+| 28 | HR & Payroll | FN6i-NT-HRP-RQP.pdf | 31 | ✓ | ✓ | ✓ | **✓ كامل (8 وظائف — دورة التوظيف الكاملة)** | **✓ → modules/hrp-payroll/** | – | – |
 | 29 | Financial Management | FN6i-NT-FAS-REP.pdf | 64 | ✓ | ✓ | ✓ | – (مؤجل Phase 7) | – | – | – |
 | 30 | Financial Management | FN6i-NT-FAS-SET.pdf | 48 | ✓ | ✓ | ✓ | **✓ كامل (27 قسماً — الروابط الست)** | **✓ → modules/financial-accounting/** | – | – |
 | 31 | Financial Management | FN6i-NT-FAS-TRN.pdf | 45 | ✓ | ✓ | ✓ | **✓ كامل (9 أقسام + FO/POS/PJV posting)** | **✓ → modules/financial-accounting/** | – | – |

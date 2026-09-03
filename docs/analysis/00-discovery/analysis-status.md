@@ -24,8 +24,8 @@
 |---|---|---|---|
 | **Phase 0** | Discovery — فهرسة وجرد وخريطة | ✅ **مكتملة** | الوثائق الخمس في `docs/analysis/00-discovery/` + `extracted-text/` + `inventory.json` |
 | **Phase 1** | Domain Model | ✅ **الإصدار التأسيسي مكتمل** (يُوسَّع في كل مرحلة) | `docs/domain/` (8 وثائق) — انظر أدناه |
-| Phase 2 | Module Inventory التفصيلي | ◐ **بدأت — FO + FAS + ACR + POS + SYS + MGT + BNQ محللة** | `docs/modules/{front-office, financial-accounting, accounts-receivable, point-of-sale, system-setup, materials-management, banquets}` |
-| Phase 3 | Detailed Module Analysis | ◐ **7/17: FO (19) + FAS (18) + ACR (19) + POS (19) + SYS (19) + MGT (19) + BNQ (19) = 132 ملف وثائق** | نفس المسارات |
+| Phase 2 | Module Inventory التفصيلي | ◐ **بدأت — FO + FAS + ACR + POS + SYS + MGT + BNQ + HRP محللة** | `docs/modules/{front-office, financial-accounting, accounts-receivable, point-of-sale, system-setup, materials-management, banquets, hrp-payroll}` |
+| Phase 3 | Detailed Module Analysis | ◐ **8/17: FO (19) + FAS (18) + ACR (19) + POS (19) + SYS (19) + MGT (19) + BNQ (19) + HRP (19) = 151 ملف وثائق** | نفس المسارات |
 | Phase 4 | Screens & UX | ⬜ لم تبدأ | `docs/screens/specifications/*` |
 | Phase 5 | Workflows | ⬜ لم تبدأ | `docs/workflows/*` |
 | Phase 6 | Accounting | ⬜ لم تبدأ | `docs/accounting/*` |
@@ -305,13 +305,42 @@
 
 ---
 
+
+### الجلسة 8 — 2026-09-03 — وحدة HR & Payroll (HRP) كاملة
+
+**ما تم:**
+
+1. **الوحدة 8/17 — HR & Payroll كاملة (19 ملفاً):**
+   - قراءة عميقة كاملة للملفات الأربعة: **HRP-SET (42 ص/21 قسماً) + HRP-PNT (47 ص/24 وظيفة) + HRP-RQP (31 ص/8 وظائف) + HRP-REP (133 ص/19 مجموعة/68 تقريراً) = 253 ص كاملة**.
+   - إنشاء `docs/modules/hrp-payroll/` (00-18): **79 شاشة تشغيلية + 68 تقريراً** · WF-HR-01..17 · BR-HR-01..18 · V-HR-01..30 · I-HR-01..16 · E-HR-01..30 · 50 كياناً · 18 حدثاً مالياً · 10 أحداث آلية · Seed Mapping (قرارات F-HR-1..12) · 11+12 فجوة · 10 مجموعات معايير قبول (46 معياراً) + Smoke Test 28 خطوة.
+2. تحديث: unknowns (**UNK-010 Partially — النصف الداخلي محسوم: RQP يغذي Personnel Master آلياً** + جديد UNK-035..040) + source-coverage (35/65) + هذا الملف + فهرس docs/README.md (8/17).
+
+**اكتشافات جوهرية موثقة (HRP):**
+- **AR→Payroll Transfer موثق بالنص (PNT §22):** "the amount has to be charged to the payroll, then it goes to the accounts receivable... transferred to the Payroll" — **جسر عكسي جديد يرسم الحلقة الرابعة المغلقة** (POS/BNQ/FO Staff → AR → HRP → Net Pay) — تحديث Knowledge Graph بعلاقة S10 مطلوب.
+- **محرك ED المعادلاتي الأغنى في المشروع:** 6 أنماط ED (منها Temporary وسيط لا يطبع + Number Deduction بمرجع رقمي) × 3 أنواع حساب × 4 مصادر (منها **Accept = إدخال وقت المعالجة**) × **شرائح 4 أنواع بأمثلة رقمية كاملة** (Normal 500 / Cumulative 350 / Step Over 400 / Eligibility عتبة ESI 6500) × تراكم ثلاثي (Month/Cumulative/**Cumulative C/O بنقطة تهيئة**) + **Priority/Partial/Carry Forward** (أرباح 1500 وخصم 1700: Yes=1700 كاملة! / No=صفر!) + **Take Home %** صمام أمان فئوي + Special Program (PYINDSP هندي مغلق) — **قرار F-HR-1: محرك أجور مخصص فوق Salary Structure**.
+- **الرصيد الإجرائي الهندي كامل:** PF (FPF/VPF/EDLI+Admin) + ESI + PT + LWF بأربعة تعريفات منفصلة + **15 نموذجاً رسمياً قابلاً للطباعة** (PF: 3A/5/6A/9/10/12A/Challan/Reconciliation/EDLI + ESI: 3/5/7/Challan/ESIC-Recon) + PF Challan بثلاث قنوات دفع (Cash/Cheque/Draft بتفاصيل).
+- **INI 220 (0=مفعل!)** — عائلة INI المعكوسة: 56/74/220.
+- **Payroll Audit بقيم old/new** (REP §19) — أول نمط versioning موثق في الحزمة.
+- **واجهة الحضور flat file** `PYATYYMM.DAT` (EMP7/DATE8/CODE3/DAYS5,2) — **[Applicable to Fortune Enterprise Only]** فجوة إصدارية ثالثة + عقد بائع ("two weeks in advance" كتابياً).
+- **فئات النقد (Denomination)** + Statements بخمس قنوات صرف (All/Cash/Bank/Drafts/Transfers) + Branch Folio (حسابات بنكية للموظفين).
+- **قفل أصل القرض** + Loan Return للتعديلات + F&F (Indemnity اختياري + Final/Vacation print).
+- **Bonus الرباعي** (Ext/Ext Exg/Left/Left Exg مع cutoff 7500) + **Recalculate Professional Tax**.
+- **إقفال حبيبي** فئة+قسم/CC/درجة — عائلة التجميد الرابعة (FO يومي/FAS سنوي/MGT شهري/HRP فئوي-حبيبي).
+- **توافق Frappe HRMS ممتاز** في: التوظيف (Job Opening/Applicant/Offer) + الإجازات + Attendance + Salary Slip + **Employee Loan** + **Full and Final** + Staffing Plan — أربع أصول مخصصة فقط: المحرك (شرائح/تراكم/أولويات) + Statutory Layer جغرافية + AR-hook + كسر النقد.
+
+**نقطة الاستئناف القادمة (الجلسة 9):**
+1. **الوحدة التالية: Care (3 ملفات/187 ص: OPR 80 + REP 73 + SET 34)** — تكمل UNK-010 (جسر Care↔HRP Personnel Master).
+2. بعده **Membership (5 ملفات/133 ص)** — يحسم الجانب الثاني من رابط الترحيل السادس (Membership→Finance).
+3. ثم **SLM/Sales & Marketing (4 ملفات/103 ص)**.
+4. التقارير (REP) للوحدات محللة مؤجلة للمرحلة 7 (HRP-REP استثناء نُفذ لأنه 133/253 من الوحدة).
+
 ## مؤشرات الجودة الحالية
 
 | المؤشر | القيمة | الهدف |
 |---|---|---|
 | ملفات مفهرسة | 65/65 | 65/65 ✅ |
 | نصوص مستخرجة | 65/65 | 65/65 ✅ |
-| ملفات قرأت قراءة عميقة | **31/65** (FO 9 + FAS 4 + ACR 5 + POS 4 + SYS-SSP + MGT 3 + **BNQ 5 كاملة**) | 65/65 |
-| وحدات محللة وظيفياً | **7/17** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 = 132 ملف وثائق) | 17 |
+| ملفات قرأت قراءة عميقة | **35/65** (FO 9 + FAS 4 + ACR 5 + POS 4 + SYS-SSP + MGT 3 + BNQ 5 + **HRP 4 كاملة**) | 65/65 |
+| وحدات محللة وظيفياً | **8/17** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 = 151 ملف وثائق) | 17 |
 | Knowledge Graph (علاقات موثقة) | 6 روابط ترحيل + 16 تكامل FO (I1-I16) | يوسَّع في Phase 3/6 |
 | Unknowns مسجلة | انظر `docs/analysis/unknowns.md` | صفر حرج قبل التنفيذ |

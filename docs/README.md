@@ -27,7 +27,7 @@
 - [أدوار المستخدمين الفندقيين](domain/hotel-roles.md)
 - **[القاموس الموحد للمصطلحات (عربي/EN)](domain/terminology.md)** ⭐
 
-### الوحدات (Modules) — Phase 2/3 (7/17 محللة)
+### الوحدات (Modules) — Phase 2/3 (8/17 محللة)
 
 **1. Front Office (مكتملة — 19 ملفاً):** [`modules/front-office/`](modules/front-office/) — ابدأ بـ [`00-overview.md`](modules/front-office/00-overview.md) · ⭐ النواة المحاسبية: [`11-accounting-impact.md`](modules/front-office/11-accounting-impact.md) · الجرد: [`03-screens.md`](modules/front-office/03-screens.md) (193 شاشة) · القواعد: [`05-business-rules.md`](modules/front-office/05-business-rules.md) (BR-FO-01..16)
 
@@ -43,7 +43,9 @@
 
 **7. Banquets (مكتملة — 19 ملفاً):** [`modules/banquets/`](modules/banquets/) — ابدأ بـ [`00-overview.md`](modules/banquets/00-overview.md) · ⭐ **حسم UNK-011 كاملاً — سلسلة Auto Indent:** [`12-integrations.md`](modules/banquets/12-integrations.md) §2.2 (Requirement→Pre Costing→Auto Indent→MGT) + [`04-workflows.md`](modules/banquets/04-workflows.md) (WF-BQ-08..10) · ⭐ **الوحدة الهجينة FO×POS (قرار F-BQ-1):** [`16-erpnext-mapping.md`](modules/banquets/16-erpnext-mapping.md) (BNQ فوق محرك POS) · دورة الحجز والودائع: [`05-business-rules.md`](modules/banquets/05-business-rules.md) (BR-BQ-01..16 — Across-Dates + قفل الودائع + ليست مبيعات) · لوحة العمليات: [`09-lookups.md`](modules/banquets/09-lookups.md) (Availability Chart — أعلى مكون ترجمة Frontend)
 
-**التالي بالترتيب:** `hr-payroll/` (HRP — يحسم UNK-010 + يوثق رابط Payroll→Finance) ← `care/` ← `membership/` ← ... (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
+**8. HR & Payroll (مكتملة — 19 ملفاً):** [`modules/hrp-payroll/`](modules/hrp-payroll/) — ابدأ بـ [`00-overview.md`](modules/hrp-payroll/00-overview.md) · ⭐ **محرك الأجور المعادلاتي (قرار F-HR-1):** [`01-master-data.md`](modules/hrp-payroll/01-master-data.md) (ED Calculation: 6 أنماط × 3 حساب × 4 مصادر × **شرائح 4 أنواع بأمثلة رقمية 500/350/400** + Priority/Partial/CarryForward) + [`16-erpnext-mapping.md`](modules/hrp-payroll/16-erpnext-mapping.md) (أربعة أصول مخصصة فقط) · ⭐ **جسر AR→Payroll (الحلقة الرابعة المغلقة):** [`12-integrations.md`](modules/hrp-payroll/12-integrations.md) (I-HR-01 — يوسع Knowledge Graph بعلاقة S10) · قواعد الخصم القطعية: [`05-business-rules.md`](modules/hrp-payroll/05-business-rules.md) (BR-HR-06/07 — أرباح 1500/خصم 1700: Yes=كامل! No=صفر!) · التقارير: [`08-reports.md`](modules/hrp-payroll/08-reports.md) (68 تقريراً/19 مجموعة — 15 نموذجاً هندياً رسمياً + Payroll Audit بقيم old/new)
+
+**التالي بالترتيب:** `care/` (يحسم UNK-010 بقية نصفه) ← `membership/` ← `sales-marketing/` ← ... (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
 
 ### العمليات (Workflows) — Phase 5
 `workflows/module-workflows/` + `workflows/end-to-end/`
