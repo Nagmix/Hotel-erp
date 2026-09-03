@@ -138,3 +138,14 @@
 | UNK-048 | دلالة «Membership Released» — تحرير الرقم للاستخدام بعد إنهاء؟ أم تقرير حالات فقط؟ | إدارة أرقام العضوية المُعاد تدويرها | RPL §15 (الحقول فقط) | Unknown | منخفض | [INFERENCE] أرجح: العضويات المحررة (المنتهية) بأرقامها وتواريخها — يقرر تنفيذياً عند نموذج الأرقام |
 
 **ملخص الجلسة 10:** MEM قُرئت كاملة (5 ملفات/133 ص) بلا حسم لأي مجهول سابق جديد، لكن عائلة AR تتعزز: جسر MEMC001 (UNK قديم لا) — التفاعلات: FO (ضرائب/تاريخ) + AR (5 مسارات) + سلبية POS/BNQ. مفاتيح INI: **لا شيء** (الوحدة الثانية بعد CARE بلا مفاتيح — System Attributes 13 سمة داخلياً).
+
+## المجهولات المكتشفة في الجلسة 11 (من SLM)
+
+| ID | السؤال | لماذا يهم | المصادر المفحوصة | الحالة | الأثر | المسار |
+|---|---|---|---|---|---|---|
+| UNK-049 | ما مصدر "comparative room sales entry" التي يستند إليها تقرير Market Share Analysis؟ لا شاشة إدخال لبيانات الفنادق المنافسة في أي من ملفات SLM الأربعة (ولا في FO المقروء) | تقرير حصة سوقية بلا مصدر بيانات = وظيفة غير قابلة للتنفيذ كما وُصفت | SLM-REP §2 + SLM-SLT §1 + SLM-PRF §17 (Hotel Profile يعرّف فنادق مقارنة!) + FO المقروء | Unknown | **عالٍ** | [INFERENCE] الأرجح Daily Occupancy Entry لأكواد فنادق منافسة معرفة في Hotel Profile — يقرر تصميمياً (GAP-SM-D01) قبل تنفيذ التقرير |
+| UNK-050 | هل تُرحّل مبالغ Entertainment/Gift Entry لقيود مصروف في GL (FAS) أم تبقى سجلاً إحصائياً؟ النص: "Expenses incurred for entertainment or gifts need to be accounted by the Sales Executives" — accounted غير معرفة | مسار مصروف تسويقي معلق بين وحدتين | SLM-SLT §7 + FAS المقروء (لا ذكر لاستقبال من SLM) | Unknown | متوسط | [NOT DOCUMENTED — GAP-SM-P2] قرار AC-R-3 عند التنفيذ (Expense Claim-lite اختياري) |
+| UNK-051 | نقطة تفعيل القفل الائتماني: النص يجمع "settlement of the Front Desk, Point of Sale or Banquet bill **or manual posting** of the bill is not allowed" — هل المنع عند توليد الفاتورة الائتمانية أم عند التسوية فقط؟ | تحديد مكان القفل في مسار الفوترة الموحد | SLM-PRF §7 | Unknown | **عالٍ** | [NOT DOCUMENTED] قرار D-SM-2: نقطة فحص موحدة Customer Credit Gate تستدعيها الوحدات الأربع (F-SM-4) |
+| UNK-052 | دلالة "Conferencing" في قائمة مستهلكي Company Profile ("...Banquets, **Conferencing** and Membership") — وحدة مستقلة غير موجودة في أي TOC أم مرادف لـBNQ؟ | قد تكشف وحدة/دليلاً مفقوداً من الحزمة | SLM-PRF ص9 + جرد 65 ملفاً (لا دليل Conferencing مستقل) | Unknown | منخفض | [INFERENCE] مرادف BNQ (Banquets & Conferencing شائعة) — يوثق كملاحظة ويغلق عند تأكيد BNQ النهائي |
+
+**ملخص الجلسة 11:** SLM قُرئت كاملة (4 ملفات/103 ص). لا حسم لمجهولات سابقة، لكن: (1) **UNK-038 تتسع** — Sales/Collection Executives ماستر ثالث للموظفين في FO Setup بلا جسر HRP؛ (2) **رابط كيان العميل المشترك اكتمل توثيقه** (الرابط الجوهري السادس بمعنى الكيان): Company Profile تحت SLM يغذي 7 وحدات نصاً؛ (3) مفاتيح INI تراكمية: **31+** (+239 و+41 المقلوب). لا مفاتيح INI في REP/LUK.

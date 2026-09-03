@@ -24,8 +24,8 @@
 |---|---|---|---|
 | **Phase 0** | Discovery — فهرسة وجرد وخريطة | ✅ **مكتملة** | الوثائق الخمس في `docs/analysis/00-discovery/` + `extracted-text/` + `inventory.json` |
 | **Phase 1** | Domain Model | ✅ **الإصدار التأسيسي مكتمل** (يُوسَّع في كل مرحلة) | `docs/domain/` (8 وثائق) — انظر أدناه |
-| Phase 2 | Module Inventory التفصيلي | ◐ **بدأت — FO + FAS + ACR + POS + SYS + MGT + BNQ + HRP + Care محللة** | `docs/modules/{front-office, financial-accounting, accounts-receivable, point-of-sale, system-setup, materials-management, banquets, hrp-payroll, care}` |
-| Phase 3 | Detailed Module Analysis | ◐ **9/17: FO (19) + FAS (18) + ACR (19) + POS (19) + SYS (19) + MGT (19) + BNQ (19) + HRP (19) + Care (19) = 170 ملف وثائق** | نفس المسارات |
+| Phase 2 | Module Inventory التفصيلي | ◐ **بدأت — FO + FAS + ACR + POS + SYS + MGT + BNQ + HRP + Care + MEM + SLM محللة** | `docs/modules/{front-office, financial-accounting, accounts-receivable, point-of-sale, system-setup, materials-management, banquets, hrp-payroll, care, membership, sales-marketing}` |
+| Phase 3 | Detailed Module Analysis | ◐ **11/17: FO (19) + FAS (18) + ACR (19) + POS (19) + SYS (19) + MGT (19) + BNQ (19) + HRP (19) + Care (19) + MEM (19) + SLM (19) = 208 ملف وثائق** | نفس المسارات |
 | Phase 4 | Screens & UX | ⬜ لم تبدأ | `docs/screens/specifications/*` |
 | Phase 5 | Workflows | ⬜ لم تبدأ | `docs/workflows/*` |
 | Phase 6 | Accounting | ⬜ لم تبدأ | `docs/accounting/*` |
@@ -403,3 +403,36 @@
 1. **الوحدة التالية: SLM (المبيعات والتسويق — 4 ملفات/103 ص: PRF 42 + SLT 29 + REP 22 + QTS؟)** — تحقق من inventory.json للأسماء الدقيقة.
 2. بعدها **TEL (الهاتف — 4 ملفات)** أو **GATE (بوابات) أو MNT (صيانة)** حسب الطاقة.
 3. التقارير المؤجلة (REP) للوحدات محللة تبقى للمرحلة 7 (MEM-RPL استثناء نُفذ لأنه 56/133 من الوحدة).
+
+---
+
+### الجلسة 11 — 2026-09-03 — وحدة Sales & Marketing (SLM) كاملة
+
+**ما تم:**
+
+1. **الوحدة 11/17 — Sales & Marketing كاملة (19 ملفاً):**
+   - قراءة عميقة كاملة للملفات الأربعة: **SLM-SLT (29 ص/10 وظائف) + SLM-PRF (42 ص/17 وظيفة) + SLM-REP (22 ص/19 تقريراً) + SLM-LUK (10 ص/6 استعلامات) = 103 ص كاملة**.
+   - إنشاء `docs/modules/sales-marketing/` (00-18): **~60 شاشة/نافذة (24 SLT + 15 PRF + 19 REP + 6 LUK)** · WF-SM-01..14 · BR-SM-01..34 · V-SM-01..28 · I (تكاملات 8 عائلات) · E-SM-01..20 · T-SM-01..16 · محاسبة (صفر-قيود! أثر مفوض عبر الحدود) · Data Model (~160 حقلاً/كياناً مركزياً) · UX · Mapping (F-SM-1..8) · 7+5 فجوات · 10 مجموعات قبول (46 معياراً) + Smoke Test 26 خطوة.
+2. تحديث: unknowns (جديد **UNK-049..052**) + source-coverage (**47/65 — 11 وحدة/208 ملف وثائق**) + هذا الملف + فهرس docs/README.md (11/17).
+
+**اكتشافات جوهرية موثقة (SLM):**
+
+- **مركز الائتمان في غير وحدة الائتمان:** Company Profile (تحت SLM!) يحمل شروط AR المالية كاملة (Bypass Invoice/Allow Credit/Credit Days/Invoice Currency/Interest %/Credit Limit/Commission %/Collection Executive/Billing Address) — والقفل الائتماني **ثلاثي الوحدات + يدوي**: "settlement of the Front Desk, Point of Sale or Banquet bill or manual posting of the bill is not allowed" — أقوى قاعدة مالية عابرة للوحدات في المشروع (UNK-051 لنقطة التفعيل).
+- **دورة Prospect→CGR بمستودعين وجسر تخرّج:** Prospects (بماستر غني: CEO/holding/**competitors**/turnover/Frequent Travelers) منفصلة عن Company Master — والتحويل وظيفة مخصصة بتوليد كود آلي **TTT+حرف أول+مسلسل لكل (نوع،حرف)** (أمثلة: COM/TAG/AIR) — تطابق حرفي لدورة **Lead→Customer** في ERPNext (أفضل موائمة في المشروع: 8 أصول فقط، قلبها منصة-جاهز).
+- **مفتاحا INI جديدان + سمة FO:** **INI #239** (تعميم Executive Planner لكل المستخدمين) و**INI #41 = '0' لتفعيل** تحقق cutoff في الحجوزات (عائلة مقلوبة — انضمام لـ56/74/220؛ تراكمي 31+) + **Module Attribute #8 for Reservations** (Week Access↔Day Access) يوثق وظيفة سمة FO جديدة (بعد 16).
+- **Sales Manager Tool — أول CRM 360°:** 10 عروض (General Info للقراءة فقط/Sales Activity/Entertainment/Negotiated Rates/Amenities/Reservations مع Cancelled+No-Show+Past/In-house/Revenue برؤوس إيراد/**Receivables بتاريخ قطع=Accounting date**/Guest Visits) + **Hotel Position** (يومي→ساعي→غد→تفصيلي→سنوي مع Over Booking).
+- **ثلاثية الوكلاء:** Allocation (Over-book% + أيام تأكيد + Week/Day Access) + Forecast (شبه مؤكد، "should match allocation") + Release Dates (cutoff متعددة → reservation **prompt Inside/Outside**) — مفهوم allotment فندقي صرف بلا مقابل ERPNext (F-SM-3 الأصل المخصص الوحيد الكبير).
+- **Revenue Discount Master menu-type wise:** FOOD/LIQUOR/SOFTDRINKS/TOBACCO/OTHERS — خصم لكل رأس إيراد + تفريع menu لـF&B — يُنفذ في POS/FO عند "generation of Bills" — ترجمة Pricing Rules حرفية.
+- **قناة تسويق بريدية كاملة:** Company Letters عبر **Microsoft Outlook** (CEO→بريد الشركة، غيره→جهات الاتصال، مرفقات+Subject) + Labels 2/3 أعمدة + E-Mail ID List + Birthday/Anniversary (Company/Prospect × Contact/Frequent Travelers × MM/YY) — تُعاد بـEmail Template+Newsletter (F-SM-5).
+- **Hotel Profile بالمحتوى التنافسي:** فنادق مقارنة (لم Market Share) + Outlets (Dress Code/Smoking/Chef!) + Banquets + VIP + **Picnic Spots** + صور BMP-only + معلومات عامة (حرارة/مسافات/أجرة) — **ويُستدعى من شاشة الحجز** (LUK §4: "browsed from Room Booking screen") — بيانات بيع حية.
+- **صلاحيات صفر موثقة:** لا قسم User Rights في أي ملف من الأربعة — الوحدة الوحيدة بعد 48 ملفاً (GAP-SM-D04) → تصميم P-SM-1..5.
+- **صفر قيود GL:** كل الأثر المحاسبي مفوَّض (شروط ائتمان/خصومات/سياسات تحصيلها FO/AR) — SLM "مصممة قرارات" تنفذها الوحدات عند الحدود (UNK-050 لمسار Entertainment/Gift).
+- **Market Share Analysis بلا مصدر إدخال موثق:** "based on the comparative room sales entry" — شاشة غير موجودة → UNK-049 (أعلى أثر) + [INFERENCE] Daily Occupancy لفنادق Hotel Profile.
+- **أثر توثيقي خام:** "BELOW SCREENSHOTS ARE REQUIRED" في LUK ص9 (GAP-SM-D05) + "Conferencing" في قائمة مستهلكي Profile بلا وحدة → UNK-052.
+- **UNK-038 تتسع:** Sales/Collection Executives = ثالث مخزن موظفين (FO Setup — لا HRP) بعد HRP-employee وCare-PMS-employee.
+
+**نقطة الاستئناف القادمة (الجلسة 12):**
+
+1. **الوحدة التالية: TEL (الهاتف — 4 ملفات/83 ص: SET 32 + LUK 21 + REP 20 + CAC 10)** — محاسبة المكالمات + ترحيل الإيراد لفوليو النزيل (حلقة تكامل FO-مالية).
+2. بعدها: MNT (3/81) ثم FNB (4/76) ثم FXD+GTP (2/38) — لإغلاق الـ17.
+3. التقارير المؤجلة (REP) للوحدات محللة تبقى للمرحلة 7.

@@ -27,7 +27,7 @@
 | text-extracted | **65 / 65 (100%)** ✅ |
 | toc-analyzed | **65 / 65 (100%)** ✅ |
 | field-extracted (جداول الحقول آلياً) | **13 ملف إعدادات — 2,099 حقلاً** ✅ |
-| read (قراءة عميقة) | **43/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + BNQ 5 + HRP 4 + Care 3 + **MEM 5 (كاملة)** (نهاية الجلسة 10) |
+| read (قراءة عميقة) | **47/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + BNQ 5 + HRP 4 + Care 3 + MEM 5 + **SLM 4 (كاملة)** (نهاية الجلسة 11) |
 | analyzed | **10 وحدات / 189 ملف وثائق** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 + Care 19 + **MEM 19**) |
 | cross-referenced | 0 / 65 |
 | verified | 0 / 65 |
@@ -84,10 +84,10 @@
 | 40 | Membership | FN6i-NT-MEM-SET.pdf | 16 | ✓ | ✓ | ✓ | **✓ كامل (12 قسماً + 13 سمة)** | **✓ → modules/membership/** | – | – |
 | 41 | Membership | FN6i-NT-MEM-MMN.pdf | 13 | ✓ | ✓ | ✓ | **✓ كامل (7 وظائف — عائلة الإنهاء)** | **✓ → modules/membership/** | – | – |
 | 42 | System Setup | FN6i-NT-SYS-SSP.pdf | 110 | ✓ | ✓ | ✓ | **✓ كامل (3 فصول + 19 قسماً + §19 Group Nationality غير المفهرسة)** | **✓ → modules/system-setup/** | – | – |
-| 43 | Sales & Marketing | FN6i-NT-SLM-PRF.pdf | 42 | ✓ | ✓ | ✓ | – | – | – | – |
-| 44 | Sales & Marketing | FN6i-NT-SLM-SLT.pdf | 29 | ✓ | ✓ | ✓ | – | – | – | – |
-| 45 | Sales & Marketing | FN6i-NT-SLM-REP.pdf | 22 | ✓ | ✓ | ✓ | – | – | – | – |
-| 46 | Sales & Marketing | FN6i-NT-SLM-LUK.pdf | 10 | ✓ | ✓ | ✓ | – | – | – | – |
+| 43 | Sales & Marketing | FN6i-NT-SLM-PRF.pdf | 42 | ✓ | ✓ | ✓ | **✓ كامل (17 وظيفة — Company Profile مركز AR + Hotel Profile)** | **✓ → modules/sales-marketing/** | – | – |
+| 44 | Sales & Marketing | FN6i-NT-SLM-SLT.pdf | 29 | ✓ | ✓ | ✓ | **✓ كامل (10 وظائف — دورة Prospect→CGR + Planner)** | **✓ → modules/sales-marketing/** | – | – |
+| 45 | Sales & Marketing | FN6i-NT-SLM-REP.pdf | 22 | ✓ | ✓ | ✓ | **✓ كامل (19 تقريراً — Letters/Labels/Market Share)** | **✓ → modules/sales-marketing/** | – | – |
+| 46 | Sales & Marketing | FN6i-NT-SLM-LUK.pdf | 10 | ✓ | ✓ | ✓ | **✓ كامل (6 استعلامات — Browse من شاشة الحجز!)** | **✓ → modules/sales-marketing/** | – | – |
 | 47 | Accounts Receivales | FN6i-NT-ACR-RPL.pdf | 33 | ✓ | ✓ | ✓ | **✓ كامل (23 وظيفة + فجوة «12123 PENDING» موثقة)** | **✓ → modules/accounts-receivable/** | – | – |
 | 48 | Accounts Receivales | FN6i-NT-ACR-OPR.pdf | 21 | ✓ | ✓ | ✓ | **✓ كامل (8 أقسام — SOA/Rollback/Match/Untagging)** | **✓ → modules/accounts-receivable/** | – | – |
 | 49 | Accounts Receivales | FN6i-NT-ACR-SET.pdf | 19 | ✓ | ✓ | ✓ | **✓ كامل (8 أقسام — Company Profile المشترك)** | **✓ → modules/accounts-receivable/** | – | – |
