@@ -27,8 +27,8 @@
 | text-extracted | **65 / 65 (100%)** ✅ |
 | toc-analyzed | **65 / 65 (100%)** ✅ |
 | field-extracted (جداول الحقول آلياً) | **13 ملف إعدادات — 2,099 حقلاً** ✅ |
-| read (قراءة عميقة) | **51/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + BNQ 5 + HRP 4 + Care 3 + MEM 5 + SLM 4 + **TEL 4 (كاملة)** (نهاية الجلسة 12) |
-| analyzed | **12 وحدة / 227 ملف وثائق** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 + Care 19 + MEM 19 + SLM 19 + **TEL 19**) |
+| read (قراءة عميقة) | **54/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + BNQ 5 + HRP 4 + Care 3 + MEM 5 + SLM 4 + TEL 4 + **MNT 3 (كاملة)** (نهاية الجلسة 13) |
+| analyzed | **13 وحدة / 246 ملف وثائق** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 + Care 19 + MEM 19 + SLM 19 + TEL 19 + **MNT 19**) |
 | cross-referenced | 0 / 65 |
 | verified | 0 / 65 |
 
@@ -97,9 +97,9 @@
 | 53 | Telephones | FN6i-NT-TEL-LUK.pdf | 21 | ✓ | ✓ | ✓ | **✓ كامل (9 استعلامات — Guest Information لوحة العامل + In-House مفوَّضة لFO + Yellow Pages + View Transfers/Extensions بأثر User+Authorizer)** | **✓ → modules/telephone/** | – | – | – |
 | 54 | Telephones | FN6i-NT-TEL-REP.pdf | 20 | ✓ | ✓ | ✓ | **✓ كامل (8 تقارير — P&T/Guest + Page Skip + Master List ثلاثي الأنماط + Unbilled)** | **✓ → modules/telephone/** | – | – | – |
 | 55 | Telephones | FN6i-NT-TEL-CAC.pdf | 10 | ✓ | ✓ | ✓ | **✓ كامل (4 وظائف — 4 حالات خطأ + إعادة ترحيل Select-YES + مصفوفة تحويل + كلمة مرور بالإقامة)** | **✓ → modules/telephone/** | – | – | – |
-| 56 | Maintenance | FN6i-NT-MNT-RPL.pdf | 29 | ✓ | ✓ | ✓ | – | – | – | – |
-| 57 | Maintenance | FN6i-NT-MNT-OPR.pdf | 28 | ✓ | ✓ | ✓ | – | – | – | – |
-| 58 | Maintenance | FN6i-NT-MNT-SET.pdf | 24 | ✓ | ✓ | ✓ | – | – | – | – |
+| 56 | Maintenance | FN6i-NT-MNT-RPL.pdf | 29 | ✓ | ✓ | ✓ | **✓ كامل (15 تقريراً/استعلاماً — Complaint Status Q معدِّل + Print Engine + Parameter Listing إلى Excel)** | **✓ → modules/maintenance/** | – | – |
+| 57 | Maintenance | FN6i-NT-MNT-OPR.pdf | 28 | ✓ | ✓ | ✓ | **✓ كامل (8 وظائف — Register/Action Taken بثلاث مسارات + 999999999999 + Job Order Generation بالألوان + PM بـLag)** | **✓ → modules/maintenance/** | – | – |
+| 58 | Maintenance | FN6i-NT-MNT-SET.pdf | 24 | ✓ | ✓ | ✓ | **✓ كامل (12 قسماً — 7 ماسترات نمطية + موظفو هندسة خامس مخزن + أولويات ملونة + جسرا MGT + UDPF)** | **✓ → modules/maintenance/** | – | – |
 | 59 | F&B Costing | FN6i-NT-FNB-REP.pdf | 28 | ✓ | ✓ | ✓ | – | – | – | – |
 | 60 | F&B Costing | FN6i-NT-FNB-COP.pdf | 19 | ✓ | ✓ | ✓ | – | – | – | – |
 | 61 | F&B Costing | FN6i-NT-FNB-LUK.pdf | 15 | ✓ | ✓ | ✓ | – | – | – | – |

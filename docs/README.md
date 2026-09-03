@@ -27,7 +27,7 @@
 - [أدوار المستخدمين الفندقيين](domain/hotel-roles.md)
 - **[القاموس الموحد للمصطلحات (عربي/EN)](domain/terminology.md)** ⭐
 
-### الوحدات (Modules) — Phase 2/3 (12/17 محللة)
+### الوحدات (Modules) — Phase 2/3 (13/17 محللة)
 
 **1. Front Office (مكتملة — 19 ملفاً):** [`modules/front-office/`](modules/front-office/) — ابدأ بـ [`00-overview.md`](modules/front-office/00-overview.md) · ⭐ النواة المحاسبية: [`11-accounting-impact.md`](modules/front-office/11-accounting-impact.md) · الجرد: [`03-screens.md`](modules/front-office/03-screens.md) (193 شاشة) · القواعد: [`05-business-rules.md`](modules/front-office/05-business-rules.md) (BR-FO-01..16)
 
@@ -53,7 +53,9 @@
 
 **12. Telephone Management (مكتملة — 19 ملفاً):** [`modules/telephone/`](modules/telephone/) — ابدأ بـ [`00-overview.md`](modules/telephone/00-overview.md) · ⭐ **بوابة العتاد المزدوجة الفريدة (EPABX Serial + أقفال Onity):** [`12-integrations.md`](modules/telephone/12-integrations.md) (I-TE-01..13 — نمط «حفظ خلفي → برنامج وسيط → جهاز» المعياري لكل تكاملات العتاد + 2-Way التحكم العكسي بالهواتف/المنبهات/حالة الغرفة!) · ⭐ **محرك التسعير النبضي الكامل (النص الوحيد بأرقام حرفية قابلة للاختبار):** [`05-business-rules.md`](modules/telephone/05-business-rules.md) (BR-TE-01..24 — 60c×100/150/200% + 0% الممنوعة لSTD/IDD + الشراكات الست بأغلى تعرفة) + [`13-exceptions.md`](modules/telephone/13-exceptions.md) (**سباق تسجيل الوصول الجماعي** الموثق: مفاتيح بلا PMS! + 4 حالات خطأ + ازدواج Transfer/Extension) · خلود الشرائح الزمنية: [`01-master-data.md`](modules/telephone/01-master-data.md) (لا تعديل — أحدث Applicable From يفوز، مثال 2011/2012) · وحدة تحكم العامل: [`09-lookups.md`](modules/telephone/09-lookups.md) (Guest Information بأزرار التعليمات/الشكاوى/الرسائل/الموقع + Tag-YES + زر SL# الإداري) · إعادة الترحيل المالي: [`10-transactions.md`](modules/telephone/10-transactions.md) (T-TE-06 Select→YES) · SMS الشبح: [`17-gap-analysis.md`](modules/telephone/17-gap-analysis.md) (GAP-TE-D01 + UNK-054)
 
-**التالي بالترتيب:** `maintenance/` (MNT — 3 ملفات/81 ص) ← `food-beverage-costing/` (FNB) ← `fixed-assets/` (FXD+GTP) ← ... (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
+**13. Maintenance (مكتملة — 19 ملفاً):** [`modules/maintenance/`](modules/maintenance/) — ابدأ بـ [`00-overview.md`](modules/maintenance/00-overview.md) · ⭐ **اللون أداة سير عمل + جهاز الإسناد المشرفي (NO→YES × أولوية × موظف/مزوّد):** [`04-workflows.md`](modules/maintenance/04-workflows.md) (WF-MN-01..13 — دورات الشكوى/الوقائية/القراءات/الورديات تتقاطع عند Job Order Generation) + [`05-business-rules.md`](modules/maintenance/05-business-rules.md) (BR-MN-01..22 — بوابتا ENG#1/#2 + Must-Complete-By ≤ Lag) · ⭐ **شرِكة الهروب الأطول (صنف مفتوح 999999999999 — 12 تسعة!):** [`13-exceptions.md`](modules/maintenance/13-exceptions.md) (بلا أثر مخزني + خمود الماسترات + استعلام يُحرّر) · ⭐ **أفضل تواءم تشغيلي (يضاهي SLM/Care):** [`16-erpnext-mapping.md`](modules/maintenance/16-erpnext-mapping.md) (F-MN-1..12 — Issue + Asset Maintenance + **Asset Repair بحل P3 جذرياً عبر Stock Entry!** + Shift Assignment — ~6 أصول/3-4 أسابيع) · ⭐ **صفر قيود GL بنمط «الجزيرة المعزولة» (بلا تفويض حتى):** [`11-accounting-impact.md`](modules/maintenance/11-accounting-impact.md) · جسر MGT الاستعاري (مخازن/مراكز/أصناف): [`12-integrations.md`](modules/maintenance/12-integrations.md) (I-MN-01..12 — مخزن الموظفين **الخامس** + Parameter Listing العابر للوحدات إلى Excel!) · الاستعلام المعدِّل: [`09-lookups.md`](modules/maintenance/09-lookups.md) (Complaint Status Q + Job Order Help رباعي المعايير) · الفجوات: [`17-gap-analysis.md`](modules/maintenance/17-gap-analysis.md) (**P3 استهلاك بلا خصم مخزني — الأخطر** + P1..P5 كلها تُغلق بأصول Frappe مجانية تقريباً)
+
+**التالي بالترتيب:** `food-beverage-costing/` (FNB — 4 ملفات/76 ص) ← `fixed-assets/` (FXD 25 + GTP 13) ← ... (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
 
 ### العمليات (Workflows) — Phase 5
 `workflows/module-workflows/` + `workflows/end-to-end/`

@@ -470,3 +470,35 @@
 1. **الوحدة التالية: MNT (الصيانة — 3 ملفات/81 ص: RPL 29 + OPR 28 + SET 24)** — `extracted-text/Maintenance/` — ثم FNB (4/76) ثم FXD+GTP (2/38) لإغلاق الـ17.
 2. التقارير المؤجلة (REP) للوحدات محللة تبقى للمرحلة 7.
 3. بعد الـ17: المراجعة الشاملة + cross-referencing + Knowledge Graph النهائي (Phase 8+).
+
+---
+
+### الجلسة 13 — 2026-09-03 — وحدة Maintenance Management (MNT) كاملة
+
+**ما تم:**
+
+1. **الوحدة 13/17 — Maintenance Management كاملة (19 ملفاً):**
+   - قراءة عميقة كاملة للملفات الثلاثة: **MNT-SET (24 ص/12 قسماً) + MNT-OPR (28 ص/8 وظائف) + MNT-RPL (29 ص/15 تقريراً/استعلاماً) = 81 ص كاملة**.
+   - إنشاء `docs/modules/maintenance/` (00-18): **~35 شاشة (12 SET بمصمم UDPF + 8 OPR بـ5 شاشات فرعية + 15 RPL)** · WF-MN-01..13 · BR-MN-01..22 · V-MN-01..24 · I-MN-01..12 · صفر قيود GL (جزيرة معزولة) · Data Model (20 كياناً/~110 حقلاً) · UX (Grid-First + لون أداة حالة) · Mapping (F-MN-1..12 — **~6 أصول/~3-4 أسابيع — من أفضل التواءمات: Issue + Asset Maintenance + Asset Repair بحل P3 جذرياً**) · GAP-MN-D01..D07 + P01..P05 · 10 مجموعات قبول (46 معياراً) + Smoke Test 24 خطوة.
+2. تحديث: unknowns (جديد **UNK-058..062**) + source-coverage (**54/65 — 13 وحدة/246 ملف وثائق**) + هذا الملف + فهرس docs/README.md (13/17).
+
+**اكتشافات جوهرية موثقة (MNT):**
+
+- **اللون أداة سير عمل:** "Each priority can have a particular color" + "the record will be **highlighted in the color** that was set for the priority level" عند إسناد الأولويات — أول لوحة أولويات بصرية في المشروع (Kanban قبل Kanban) — تنقل بوضعها الأصيل إلى Kanban حقيقي (F-MN-2/7).
+- **عائلة ENG Module Attributes جديدة (الخامسة):** سمتان فقط ظهرتا — #1 (طباعة Job Request عند تسجيل شكوى) و#2 (طباعة Job Order عند التوليد) — بواباتا الورق الوحيدتان + UNK-061 (حجم العائلة الحقيقي).
+- **شرِكة الهروب الأطول في المشروع:** الصنف المفتوح **999999999999 (12 تسعة!)** — "item name has to be entered manually. This information will not affect Inventory stores" — تتفوق على 9999999999 (TEL) — نفس الفلسفة بفلسفة أطول.
+- **مخزن الموظفين المحلي الخامس (UNK-038):** Define Employees (رقمي 7) مع ورديات "only to those employees defined in the Define Employees option **in this module**" — HRP كاملة موجودة والفنيون يُدارون جزيرة خامسة! (يُغلق بقرار D-MN-2: Employee موحد في Frappe).
+- **محرك الوقائية الثنائي الأنيق:** PM Master (Service Type + **Rhythm بالأيام** + Lag + AMC آلي) → PM Entry (**تواريخ منتشرة آلياً** + "Must Complete By ≤ Lag days" — قيد الصرامة الوحيد) → Job Order Generation — أفعل جسد PM موثق في المشروع، وينطبق حرفياً على Asset Maintenance.
+- **P3 الاستهلاك المخزني بلا خصم (أخطر فجوة عملية):** Repair Details تأخذ صنف Inventory + كمية **بلا أي إذن صرف/حركة MGT موثقة** — والنص الصريح الوحيد هو **نفي** الأثر للأصناف المفتوحة! تُحل جذرياً بـAsset Repair → Stock Entry (F-MN-6 — ERPNext يفعلها أصلاً).
+- **استعلام يُحرِّر (ثاني بعد TEL):** Complaint Status (Q) — "You can **change the status**... **enter the action taken**... **select the priority level**" من داخل تقرير! بلا صلاحية موثقة (خامسة بلا User Rights — GAP-MN-D01).
+- **تصدير Excel عابر للوحدات يسكن MNT:** Parameter Listing — "all the parameters defined by the user in **various modules**... in the form of MS-Excel reports" — أداة تدقيق تكوين شاملة الغ domicile (نطاقها UNK-062) تُستبدل بتقارير Frappe الأصلية.
+- **مصمم الطباعة UDPF بعقليية مطبعية كاملة:** "The sum of Header rows, Footer rows, body rows must be equal to the total length of the stationery (**6 rows = 1 Inch**)" + Print From/To (قص النص) + **Last Page** (UserId في الصفحة الأخيرة فقط) + Match Samples + Lock Controls (Ctrl+arrows) — يُستبدل كلياً بـPrint Format Builder (F-MN-11).
+- **جسر MGT الاستعاري الثلاثي:** مخازن + مراكز تكلفة + أصناف — "Select from the list of all stores defined in the **Inventory module**... Store code Definition option under the Customize sub module of the Material Management module" (I-MN-01..03) — وارد فقط بلا أي إصدار (P3) — وحد أدنى 1 إلزامي لكل من المخازن والمراكز.
+- **من أفضل تواءمات المشروع:** نواة الوحدة = أصول معيارية ناضجة — Issue (شكاوى) + Issue Priority + Asset/Asset Category/Asset Location (معدات!) + Asset Maintenance/Maintenance Visit (وقائية) + **Asset Repair** (استهلاك Stock Entry!) + Shift Assignment (ورديات) — أصول مخصصة: Job Order Console + امتدادات المعدات + قراءات بإنذار + بوابات طباعة + تقارير + شبكة روزنامة = **~6 أصول/3-4 أسابيع**.
+- **غائبون:** لا جسر HRP · لا جسر FAS (قيمة المعدة بلا أصل — D05) · لا GL إطلاقاً (نمط جزيرة) · لا إشعارات/SLA (P1) · لا تنبيه AMC (P2) · لا تقرير تكرار (P4) · لا إنذار قراءات Min/Max (P5) — أربع فجوات P تُغلق كلها بأصول Frappe المجانية تقريباً.
+
+**نقطة الاستئناف القادمة (الجلسة 14):**
+
+1. **الوحدة التالية: FNB (تكاليف الطعام والشراب — 4 ملفات/76 ص: SET 14 + COP 19 + LUK 15 + REP 28)** — `extracted-text/Food_&_Beverage_Costing/` — ثم FXD (25) + GTP (13) لإغلاق الـ17.
+2. التقارير المؤجلة (REP) للوحدات محللة تبقى للمرحلة 7.
+3. بعد الـ17: المراجعة الشاملة + cross-referencing + Knowledge Graph النهائي (Phase 8+).
