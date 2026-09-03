@@ -580,3 +580,36 @@
 1. **المرحلة 7: التقارير المؤجلة (REP)** — FOM-REP (120 ص) · MGT-REP (112 ص) · FAS-REP (64 ص) · POS-REP (158 ص) + متبقيات إن وجدت.
 2. **المراجعة الشاملة + cross-referencing + Knowledge Graph النهائي** (Phase 8+): توحيد العائلات العابرة (UNK-058/038 النهائي · جسور F · خريطة ألوان) + قرارات D المجمعة.
 3. مرجع الاستئناف: هذا الملف + `docs/README.md` §الاكتمال + `unknowns.md` (77 مجهولاً).
+
+---
+
+### الجلسة 16 — 2026-09-04 — 🚀 بدء المرحلة 7 (Phase 7): Front Office Reports + SMS
+
+**ما تم:**
+
+1. **التحقق من حالة المستودع:** البعيد على GitHub **محدث فعلياً حتى 17a260a** (دفعة الجلسة 15 نجحت — ref التتبع المحلي فقط كان متأخراً بعد مسح snapshot) — تم `fetch` للمزامنة والتأكد من عدم توفر أي تغييرات معلقة. التحقق الأمني: **لا أثر للتوكن في أي محتوى مُلتزم** (git grep على جميع الـcommits) ✓.
+2. **قراءة عميقة كاملة: FOM-REP (120 ص / 4,507 سطر)** — أضخم ملف تقارير: ~135 تقريراً مرقماً + 28 فرعياً (Security 23.1-23.7 · Audit 31.1-31.8 · Room Status 46.1-46.3 · Forecast 65.2-65.4 · Departure 68.1-68.4 · Laundry 113.1-113.3) + 5 بنود غير مرقمة + فجوات ترقيم (19/34/53/62).
+3. **قراءة عميقة كاملة: FOM-SMS (14 ص)** — Mobile Master (Code 4/Name 30/Mobile 15 فريدة) + 8 خدمات SMS بمحتوى الرسائل حرفياً + Department Checkout Alert.
+4. **إنشاء `docs/reports/front-office/` (12 ملفاً 00→11):** overview · محرك التقارير والبنية التحتية (قناة رباعية + Program IDs + INI 63 + PMSPOL.INI) · 7 عائلات موضوعية (حجوزات/أمن وإمتثال/إشغال وتدقيق/أسعار وتوقعات/مالية/دعم تشغيلي/MIS) · مصفوفة قواعد التواريخ (~25 قاعدة) · SMS · Mapping F-FOR-1..14 + GAP-FOR-D01..D07/P01..P05 + AC عينة (10) + Smoke 18 خطوة.
+5. **تحديث التتبع:** unknowns (**UNK-078..082 — الإجمالي 82**) + contradictions (**C-FO-01 + C-FO-02 — الإجمالي 3**) + source-coverage (**62/65 — FO 11/11 أول وحدة كاملة المصادر**) + هذا الملف + docs/README.md.
+
+**اكتشافات جوهرية موثقة:**
+
+- **قناة الإخراج الرباعية الموحدة**: Display/Spool/Print/Export عبر Option dropdown لـ~135 تقريراً — أول توحيد قسري بهذا الحجم في المشروع.
+- **بنية تحتية ملفية ثالثة**: PMSPOL.INI → POL.SPC (تخصيص نموذج الشرطة في dll folder) بعد FIMSHTBL — طبقة التقارير file-driven جزئياً.
+- **INI Switch No. 63** = أول مفتاح playlist (Program IDs بفواصل — مثال FOMRR15) — عائلة INI تتوسع إلى 4 وحدات.
+- **"This mandatory report"** — Occupancy Statistics التقرير الوحيد الموصوف بالإلزامية في الحزمة كلها.
+- **صيغة حرفية**: "Room Balance = Previous Opening Balance + Current Tariff Charge + Luxury Tax".
+- **مصفوفة تواريخ ~25 قاعدة** (future-only/past-only/month-boundary×15/10-30-31 أيام) + **XOR 80/132 المعكوس** في Night Report (132 بلا خيار YTD!).
+- **معجم أنماط الدفع**: ADQ/ADC/ADV/POT + صيغ إدخال مختصرة (DDMMYY/MMYY في HK Consumption).
+- **مجموعة Audit ×8 بأثر المستخدم المخوّل** (Room Transfer: "along with the user's name who has authorized it").
+- **Watch List بذاكرة unmarking** ("marked or later unmarked") — مراقبة بسجل تدقيق لا Boolean.
+- **SMS**: 8 خدمات بمحتوى حرفي + **Checkouts قبل ساعة** من وقت المغادرة + **Hotel Statistics مرة يومياً** (Occ/RmRev/FBRev/Non-FB/TelRev/BnqRev/Coll) + **بوابة غير موثقة** (UNK-082).
+- **"Fortune Next Enterprise 2.0"** في FOM-SMS مقابل 6i — تسريب إصدار تاريخي (C-FO-02) + ازدواج تحريري في 23.1 (C-FO-01).
+- **الفجوة الحاكمة**: 135 تقريراً **بلا صلاحية واحدة** (GAP-FOR-D01 — أشد امتداد لعائلة الصلاحيات الصفرية 9/17).
+
+**نقطة الاستئناف القادمة (الجلسة 17 — تكملة المرحلة 7):**
+
+1. **POS-REP (158 ص — أضخف ملف متبقٍ في المشروع كله)** ثم **MGT-REP (112 ص)** ثم **FAS-REP (64 ص)** → `docs/reports/{point-of-sale, materials-management, financial-accounting}/` بنفس نمط الجلسة 16 (12 ملفاً).
+2. بعدها: **المراجعة الشاملة + cross-referencing + Knowledge Graph النهائي** (Phase 8+): توحيد العائلات العابرة (UNK-058/038 · جسور F · خريطة ألوان · عائلة 80/132 · عتبات التوقع 10/15/30/31) + قرارات D المجمعة + جدول الرموز الموحد (AP/BB/EP/MAP/Adt/Chd/LTX/ADQ/ADC/ADV/POT).
+3. مرجع الاستئناف: هذا الملف + `docs/README.md` + `unknowns.md` (82 مجهولاً) + `docs/reports/front-office/00-overview.md`.

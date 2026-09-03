@@ -68,6 +68,29 @@
 > **كل الوحدات موثقة الآن**: 1.FO · 2.FAS · 3.ACR · 4.POS (+TSC داخلها) · 5.SYS · 6.MGT · 7.BNQ · 8.HRP · 9.Care · 10.MEM · 11.SLM · 12.TEL · 13.MNT · 14.FNB · 15.FXD · 16.GTP = **306 ملفات وثائق** في `docs/modules/` + عائلات عابرة (UNK-001..077 · 16 جسر F-link · تناقض C-FB-01).
 > **التالي (المرحلة 7+):** التقارير المؤجلة (FOM-REP 120 ص · MGT-REP 112 ص · FAS-REP 64 ص · POS-REP 158 ص...) ← ثم المراجعة الشاملة + cross-referencing + Knowledge Graph النهائي (Phase 8+).
 
+---
+
+## 🚀 المرحلة 7 — طبقة التقارير (Phase 7 Reports) — بدأت الجلسة 16
+
+### Front Office Reports + SMS (مكتمل — 12 ملفاً — الجلسة 16)
+
+**[`reports/front-office/`](reports/front-office/)** — المصادر: FOM-REP (120 ص — أضخم ملف تقارير: ~135 تقريراً + 28 فرعياً) + FOM-SMS (14 ص) — **FO أول وحدة كاملة المصادر 11/11**:
+
+- **[نظرة عامة + إحصاء الكتالوج](reports/front-office/00-overview.md)** — العائلات الـ9 + الجسور + أبرز 10 اكتشافات
+- ⭐ **[محرك التقارير والبنية التحتية](reports/front-office/01-report-engine-infrastructure.md)** — قناة الإخراج الرباعية الموحدة (Display/Spool/Print/Export) + Program IDs (FOMRR15) + **INI Switch 63** (أول مفتاح playlist) + **PMSPOL.INI→POL.SPC** (ثالث بنية ملفية مسربة) + بوابات الإعداد العابرة (SYS+FO Setup) + أنماط التفاعل الثمانية
+- **[الحجوزات والوصول](reports/front-office/02-reservation-arrival-reports.md)** (§1-23) — Cut Off/No Show revenue/Turn Away + future-only الحرفية
+- ⭐ **[الأمن والامتثال النظامي](reports/front-office/03-security-statutory-reports.md)** — خريطة الامتثال الهندية: الشرطة (Police/C-Form/Watch List بذاكرة unmarking) + **RBI (RLM)** + IT + Tax FO×POS + Scanty Baggage
+- **[الإشغال والتدقيق](reports/front-office/04-occupancy-inhouse-audit.md)** (§24-50) — **مجموعة Audit ×8** (old/new + المستخدم المخوّل) + Reopen Folio + Dummy/Feature/CGR
+- **[الأسعار والتوقعات والمغادرة](reports/front-office/05-rates-plans-forecast-departures.md)** (§51-71) — **Hurdle Rate موثقة** + "This mandatory report" + تبعية ترحيل التعرفة + رموز AP/BB/EP/MAP
+- **[المالية ودفاتر القيود](reports/front-office/06-financial-ledger-reports.md)** (§72-106) — **صيغة Room Balance الحرفية** + معجم ADQ/ADC/ADV/POT + Cashier بالورديات + **XOR 80/132 المعكوس** + Budget بسعر صرف قابل للتحرير
+- **[الدعم التشغيلي](reports/front-office/07-operations-support.md)** (§107-114) — Sequence Print + مطابقة FO↔HK + HK Consumption (12 معياراً) + Lost & Found 7 زوايا
+- **[MIS والتحليل](reports/front-office/08-mis-analytics.md)** (§115-135) — الأبعاد الأربعة + Lakhs + **Materialized/Forecast** + ETL دفعي (Manager Report Creation بذاكرة)
+- ⭐ **[مصفوفة قواعد التواريخ](reports/front-office/09-date-validation-matrix.md)** — **~25 قاعدة حرفية** (future/past/month-boundary×15/نوافذ 10-30-31) + مراجع الزمن الثلاثة (accounting/current/server)
+- **[تنبيهات SMS](reports/front-office/10-sms-alerts.md)** — 8 خدمات بمحتوى الرسائل حرفياً + **Checkout قبل ساعة** + Department Checkout Alert + **"Fortune Next Enterprise 2.0"** (C-FO-02)
+- **[التحويل والفجوات](reports/front-office/11-erpnext-mapping-gaps.md)** — F-FOR-1..14 (~8-10 أصول/5-7 أسابيع) + GAP-FOR-D01..D07/P01..P05 + UNK-078..082 + AC + Smoke 18 خطوة
+
+**التالي (تكملة المرحلة 7):** POS-REP (158 ص) → MGT-REP (112 ص) → FAS-REP (64 ص) بنفس النمط → ثم المراجعة الشاملة (Phase 8+)
+
 **التالي بالترتيب:** المرحلة 7 (تقارير REP المؤجلة) ← المراجعة الشاملة (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
 
 ### العمليات (Workflows) — Phase 5

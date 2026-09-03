@@ -1,7 +1,31 @@
 # سجل التناقضات (Contradiction Register)
 
 > عند اكتشاف تعارض بين وثيقتين: سُجِّل (المصدر أ، المصدر ب، التعارض، التفسير المحتمل، القرار الموصى به).
-> **الحالي: تناقض واحد مسجل (C-FB-01 — من الجلسة 14/وحدة FNB).**
+> **الحالي: 3 تناقضات مسجلة (C-FB-01 · C-FO-01 · C-FO-02 — الثلاثة الأخيرة من الجلسة 16/Phase 7).**
+
+---
+
+## C-FO-01: Guest Photo Reg. Card موثق مرتين بنطاقين مختلفين (داخل FOM-REP)
+
+| البند | التفصيل |
+|---|---|
+| المصدر أ | FOM-REP §23.1 تحت Security (ص22-23): "print the registration card **for inhouse guests** with the Guest's photo" |
+| المصدر ب | FOM-REP نفس البند 23.1 بعد "under Registrations" (ص23-24): "print the registration card **for inhouse guests as well as expected arrival's** with photograph" |
+| التعارض | النطاق الأول: المقيمون فقط · الثاني: المقيمون **+ الوصول المتوقع** — والوصف الثاني أوسع وأغنى ("as an agreement... with unique registration number") |
+| التفسير المحتمل | إعادة تحرير متأخرة للبند أُدرجت دون حذف الأولى (نمط ازدواج تحريري شائع في دليل REP الطويل) |
+| القرار الموصى به | **يُعتمد النطاق الأوسع** (inhouse + expected arrival — الخياران موثقان في شاشة الثانية: "Choose either Inhouse or Expected Arrival option")؛ الإصدار الأول يُحفظ كاقتباس تاريخي |
+| المصدر التكميلي | docs/reports/front-office/03-security-statutory-reports.md §1 |
+
+## C-FO-02: تسمية المنتج "Fortune Next Enterprise 2.0" مقابل "FortuneNext 6i" (FOM-SMS vs الحزمة)
+
+| البند | التفصيل |
+|---|---|
+| المصدر أ | FOM-SMS §1 Mobile Master (ص2): "SMS to be sent by **Fortune Next Enterprise 2.0** for events such as..." |
+| المصدر ب | كل عناوين الحزمة الـ65: "FN6i-" prefix + غلاف "FORTUNE NEXT 6i" |
+| التعارض | إصداران مختلفان للمنتج نفسه في نفس الحزمة (2.0 vs 6i) |
+| التفسير المحتمل | وحدة SMS كُتبت/كُتب دليلها في حقبة "Enterprise 2.0" ثم حُزمت مع 6i دون تحديث — **بقايا تحريرية تكشف أقدمية الوحدة النصية** |
+| القرار الموصى به | يُعتمد 6i كهوية الحزمة المرجعية؛ يُسجل "Enterprise 2.0" كأثر جيولوجي توثيقي (يستعمل في تحليل النشأة لا في المواصفة) |
+| المصدر التكميلي | docs/reports/front-office/10-sms-alerts.md §رأس |
 
 ---
 

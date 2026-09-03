@@ -27,8 +27,8 @@
 | text-extracted | **65 / 65 (100%)** ✅ |
 | toc-analyzed | **65 / 65 (100%)** ✅ |
 | field-extracted (جداول الحقول آلياً) | **13 ملف إعدادات — 2,099 حقلاً** ✅ |
-| read (قراءة عميقة) | **60/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + BNQ 5 + HRP 4 + Care 3 + MEM 5 + SLM 4 + TEL 4 + MNT 3 + FNB 4 + FXD 1 + **GTP 1 (كاملة)** (نهاية الجلسة 15 — **اكتمال الـ17/17 وحدة**: TSC=POS) |
-| analyzed | **17/17 وحدة / 265 ملف وثائق — مكتملة!** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 + Care 19 + MEM 19 + SLM 19 + TEL 19 + MNT 19 + FNB 19 + FXD 19 + GTP 19 = **306 ملفات وثائق** + TSC ضمن POS) |
+| read (قراءة عميقة) | **62/65** — FO 11 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + BNQ 5 + HRP 4 + Care 3 + MEM 5 + SLM 4 + TEL 4 + MNT 3 + FNB 4 + FXD 1 + GTP 1 (نهاية الجلسة 16 — **FO أول وحدة كاملة المصادر 11/11** + بدء Phase 7) |
+| analyzed | **17/17 وحدة / 306 ملف وثائق + Phase 7 بدأت: reports/front-office 12 ملفاً** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 + Care 19 + MEM 19 + SLM 19 + TEL 19 + MNT 19 + FNB 19 + FXD 19 + GTP 19 + **reports/FO 12**) |
 | cross-referenced | 0 / 65 |
 | verified | 0 / 65 |
 
@@ -43,14 +43,14 @@
 | # | الوحدة | الملف | الصفحات | indexed | text | toc | deep-read | analyzed | x-ref | verified |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | Front Office | FN6i-NT-FOM-SET.pdf | 145 | ✓ | ✓ | ✓ | **✓ كامل (67 قسماً + مصفوفة التعديل 48 Note)** | **✓ → modules/front-office/** | – | – |
-| 2 | Front Office | FN6i-NT-FOM-REP.pdf | 120 | ✓ | ✓ | ✓ | – (مؤجل Phase 7) | – | – | – |
+| 2 | Front Office | FN6i-NT-FOM-REP.pdf | 120 | ✓ | ✓ | ✓ | **✓ كامل (Phase 7/الجلسة 16: ~135 تقريراً + 28 فرعياً — محرك إخراج رباعي + INI 63 + PMSPOL.INI→POL.SPC + "This mandatory report" + صيغة Room Balance + مصفوفة تواريخ ~25 قاعدة + Audit ×8)** | **✓ → reports/front-office/ (12 ملفاً)** | – | – |
 | 3 | Front Office | FN6i-NT-FOM-REG.pdf | 105 | ✓ | ✓ | ✓ | **✓ كامل (28 وظيفة، ص1-105)** | **✓ → modules/front-office/** | – | – |
 | 4 | Front Office | FN6i-NT-FOM-CAS.pdf | 95 | ✓ | ✓ | ✓ | **✓ كامل (20 وظيفة، ص1-95)** | **✓ → modules/front-office/** | – | – |
 | 5 | Front Office | FN6i-NT-FOM-LUK.pdf | 51 | ✓ | ✓ | ✓ | **✓ كامل (22 وظيفة)** | **✓ → modules/front-office/ (09)** | – | – |
 | 6 | Front Office | FN6i-NT-FOM-GST.pdf | 57 | ✓ | ✓ | ✓ | **✓ كامل (17 وظيفة + الولاء)** | **✓ → modules/front-office/ (04/05)** | – | – |
 | 7 | Front Office | FN6i-NT-FOM-HSK.pdf | 59 | ✓ | ✓ | ✓ | **✓ كامل (18 وظيفة + دورة الغسيل)** | **✓ → modules/front-office/ (04/05)** | – | – |
 | 8 | Front Office | FN6i-NT-FOM-RES.pdf | 68 | ✓ | ✓ | ✓ | **✓ كامل (7 وظائف رئيسية، ص1-68)** | **✓ → modules/front-office/** | – | – |
-| 9 | Front Office | FN6i-NT-FOM-SMS.pdf | 14 | ✓ | ✓ | ✓ | – | – | – | – |
+| 9 | Front Office | FN6i-NT-FOM-SMS.pdf | 14 | ✓ | ✓ | ✓ | **✓ كامل (الجلسة 16: Mobile Master + 8 خدمات SMS بمحتوى حرفي + Department Checkout Alert + "Fortune Next Enterprise 2.0" — C-FO-02)** | **✓ → reports/front-office/ (10)** | – | – |
 | 10 | Front Office | FN6i-NT-FOM-CRG.pdf | 19 | ✓ | ✓ | ✓ | **✓ كامل (Concierge — 5 وظائف)** | **✓ → modules/front-office/ (04)** | – | – |
 | 11 | Front Office | FN6i-NT-FOM-DEP.pdf | 14 | ✓ | ✓ | ✓ | **✓ كامل** | **✓ → modules/front-office/** | – | – |
 | 12 | Point of Sale | FN6i-NT-POS-SET.pdf | 122 | ✓ | ✓ | ✓ | **✓ كامل (42 قسماً + فجوة §42 Taxcode Mapping فارغة)** | **✓ → modules/point-of-sale/** | – | – |
