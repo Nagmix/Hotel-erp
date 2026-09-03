@@ -29,8 +29,8 @@
 | field-extracted (جداول الحقول آلياً) | **13 ملف إعدادات — 2,099 حقلاً** ✅ |
 | read (قراءة عميقة) | **65/65 (100%) ✅ — إغلاق كامل بالجلسة 18** — FO 11 + FAS 5 + ACR 5 + POS 4 + SYS 1 + MGT 4 + BNQ 5 + HRP 4 + Care 3 + MEM 5 + SLM 4 + TEL 4 + MNT 3 + FNB 4 + FXD 1 + GTP 1 + TS 1 (**أربع وحدات كاملة المصادر: FO 11/11 · POS 4/4 · MGT 4/4 · FAS 5/5** + TS الجذري) |
 | analyzed | **17/17 وحدة / 306 ملف وثائق + Phase 7: reports/front-office 12 + reports/point-of-sale 12 + reports/materials-management 12 + reports/financial-accounting 12 = 48 ملفاً** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 + Care 19 + MEM 19 + SLM 19 + TEL 19 + MNT 19 + FNB 19 + FXD 19 + GTP 19 + **reports ×4 وحدات = 48**) |
-| cross-referenced | 0 / 65 |
-| verified | 0 / 65 |
+| cross-referenced | **65 / 65 (Phase 8 — الجلسة 19)** ✅ — التجميع الموحد في `analysis/01-synthesis/` (Knowledge Graph + 20 عائلة عابرة + مصفوفة القرارات + المرادفات + خريطة إغلاق المجهولات) |
+| verified | 0 / 65 — فحص الجودة النهائي (Quality Gate) عند التنفيذ |
 
 > ✅ **النتيجة المهمة:** جميع الملفات الـ 65 نصوصها قابلة للاستخراج آلياً — لا يوجد أي ملف يتطلب OCR. عدد الصور المضمنة ~7,763 (لققطات شاشة) متاحة للتحليل البصري عند الحاجة عبر PyMuPDF.
 
