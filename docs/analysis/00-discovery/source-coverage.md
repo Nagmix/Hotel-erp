@@ -27,8 +27,8 @@
 | text-extracted | **65 / 65 (100%)** ✅ |
 | toc-analyzed | **65 / 65 (100%)** ✅ |
 | field-extracted (جداول الحقول آلياً) | **13 ملف إعدادات — 2,099 حقلاً** ✅ |
-| read (قراءة عميقة) | **47/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + BNQ 5 + HRP 4 + Care 3 + MEM 5 + **SLM 4 (كاملة)** (نهاية الجلسة 11) |
-| analyzed | **10 وحدات / 189 ملف وثائق** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 + Care 19 + **MEM 19**) |
+| read (قراءة عميقة) | **51/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + BNQ 5 + HRP 4 + Care 3 + MEM 5 + SLM 4 + **TEL 4 (كاملة)** (نهاية الجلسة 12) |
+| analyzed | **12 وحدة / 227 ملف وثائق** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 + Care 19 + MEM 19 + SLM 19 + **TEL 19**) |
 | cross-referenced | 0 / 65 |
 | verified | 0 / 65 |
 
@@ -93,10 +93,10 @@
 | 49 | Accounts Receivales | FN6i-NT-ACR-SET.pdf | 19 | ✓ | ✓ | ✓ | **✓ كامل (8 أقسام — Company Profile المشترك)** | **✓ → modules/accounts-receivable/** | – | – |
 | 50 | Accounts Receivales | FN6i-NT-ACR-BIL.pdf | 8 | ✓ | ✓ | ✓ | **✓ كامل (4 أقسام الفوترة)** | **✓ → modules/accounts-receivable/** | – | – |
 | 51 | Accounts Receivales | FN6i-NT-ACR-CRT.pdf | 8 | ✓ | ✓ | ✓ | **✓ كامل (Debtors Follow-Up + تنقيب 4 مستويات)** | **✓ → modules/accounts-receivable/** | – | – |
-| 52 | Telephones | FN6i-NT-TEL-SET.pdf | 32 | ✓ | ✓ | ✓ | – | – | – | – |
-| 53 | Telephones | FN6i-NT-TEL-LUK.pdf | 21 | ✓ | ✓ | ✓ | – | – | – | – |
-| 54 | Telephones | FN6i-NT-TEL-REP.pdf | 20 | ✓ | ✓ | ✓ | – | – | – | – |
-| 55 | Telephones | FN6i-NT-TEL-CAC.pdf | 10 | ✓ | ✓ | ✓ | – | – | – | – |
+| 52 | Telephones | FN6i-NT-TEL-SET.pdf | 32 | ✓ | ✓ | ✓ | **✓ كامل (10 أقسام — الامتدادات بنسب×4 + شرائح نبضية خالدة ثنائية P&T/فندق×عادي/عيد + شراكات 6 + واجهة Onity!)** | **✓ → modules/telephone/** | – | – | – |
+| 53 | Telephones | FN6i-NT-TEL-LUK.pdf | 21 | ✓ | ✓ | ✓ | **✓ كامل (9 استعلامات — Guest Information لوحة العامل + In-House مفوَّضة لFO + Yellow Pages + View Transfers/Extensions بأثر User+Authorizer)** | **✓ → modules/telephone/** | – | – | – |
+| 54 | Telephones | FN6i-NT-TEL-REP.pdf | 20 | ✓ | ✓ | ✓ | **✓ كامل (8 تقارير — P&T/Guest + Page Skip + Master List ثلاثي الأنماط + Unbilled)** | **✓ → modules/telephone/** | – | – | – |
+| 55 | Telephones | FN6i-NT-TEL-CAC.pdf | 10 | ✓ | ✓ | ✓ | **✓ كامل (4 وظائف — 4 حالات خطأ + إعادة ترحيل Select-YES + مصفوفة تحويل + كلمة مرور بالإقامة)** | **✓ → modules/telephone/** | – | – | – |
 | 56 | Maintenance | FN6i-NT-MNT-RPL.pdf | 29 | ✓ | ✓ | ✓ | – | – | – | – |
 | 57 | Maintenance | FN6i-NT-MNT-OPR.pdf | 28 | ✓ | ✓ | ✓ | – | – | – | – |
 | 58 | Maintenance | FN6i-NT-MNT-SET.pdf | 24 | ✓ | ✓ | ✓ | – | – | – | – |

@@ -27,7 +27,7 @@
 - [أدوار المستخدمين الفندقيين](domain/hotel-roles.md)
 - **[القاموس الموحد للمصطلحات (عربي/EN)](domain/terminology.md)** ⭐
 
-### الوحدات (Modules) — Phase 2/3 (11/17 محللة)
+### الوحدات (Modules) — Phase 2/3 (12/17 محللة)
 
 **1. Front Office (مكتملة — 19 ملفاً):** [`modules/front-office/`](modules/front-office/) — ابدأ بـ [`00-overview.md`](modules/front-office/00-overview.md) · ⭐ النواة المحاسبية: [`11-accounting-impact.md`](modules/front-office/11-accounting-impact.md) · الجرد: [`03-screens.md`](modules/front-office/03-screens.md) (193 شاشة) · القواعد: [`05-business-rules.md`](modules/front-office/05-business-rules.md) (BR-FO-01..16)
 
@@ -51,7 +51,9 @@
 
 **11. Sales & Marketing (مكتملة — 19 ملفاً):** [`modules/sales-marketing/`](modules/sales-marketing/) — ابدأ بـ [`00-overview.md`](modules/sales-marketing/00-overview.md) · ⭐ **مركز الائتمان داخل وحدة تسويقية (القفل الثلاثي FO/POS/BNQ+يدوي):** [`05-business-rules.md`](modules/sales-marketing/05-business-rules.md) (BR-SM-01 + `11-accounting-impact.md` — صفر قيود GL: كل الأثر مفوَّض عبر الحدود!) · ⭐ **دورة Prospect→CGR بتوليد كود آلي TTT+حرف+مسلسل:** [`04-workflows.md`](modules/sales-marketing/04-workflows.md) (WF-SM-01 — تطابق Lead→Customer الحرفي) + [`12-integrations.md`](modules/sales-marketing/12-integrations.md) (جسر Company Profile لسبع وحدات نصاً + INI جديدان 239/41-المقلوب + Module Attribute #8) · **أول CRM 360°:** [`03-screens.md`](modules/sales-marketing/03-screens.md) (Sales Manager Tool بعشرة عروض + Hotel Position) · **الصلاحيات الصفرية (GAP-SM-D04):** [`07-permissions.md`](modules/sales-marketing/07-permissions.md) (P-SM-1..5) · **أفضل موائمة ERPNext في المشروع:** [`16-erpnext-mapping.md`](modules/sales-marketing/16-erpnext-mapping.md) (F-SM-1..8 — 8 أصول فقط، قلب CRM منصة-جاهز)
 
-**التالي بالترتيب:** `sales-marketing/` (SLM — 4 ملفات/103 ص) ← `telephones/` (TEL) ← ... (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
+**12. Telephone Management (مكتملة — 19 ملفاً):** [`modules/telephone/`](modules/telephone/) — ابدأ بـ [`00-overview.md`](modules/telephone/00-overview.md) · ⭐ **بوابة العتاد المزدوجة الفريدة (EPABX Serial + أقفال Onity):** [`12-integrations.md`](modules/telephone/12-integrations.md) (I-TE-01..13 — نمط «حفظ خلفي → برنامج وسيط → جهاز» المعياري لكل تكاملات العتاد + 2-Way التحكم العكسي بالهواتف/المنبهات/حالة الغرفة!) · ⭐ **محرك التسعير النبضي الكامل (النص الوحيد بأرقام حرفية قابلة للاختبار):** [`05-business-rules.md`](modules/telephone/05-business-rules.md) (BR-TE-01..24 — 60c×100/150/200% + 0% الممنوعة لSTD/IDD + الشراكات الست بأغلى تعرفة) + [`13-exceptions.md`](modules/telephone/13-exceptions.md) (**سباق تسجيل الوصول الجماعي** الموثق: مفاتيح بلا PMS! + 4 حالات خطأ + ازدواج Transfer/Extension) · خلود الشرائح الزمنية: [`01-master-data.md`](modules/telephone/01-master-data.md) (لا تعديل — أحدث Applicable From يفوز، مثال 2011/2012) · وحدة تحكم العامل: [`09-lookups.md`](modules/telephone/09-lookups.md) (Guest Information بأزرار التعليمات/الشكاوى/الرسائل/الموقع + Tag-YES + زر SL# الإداري) · إعادة الترحيل المالي: [`10-transactions.md`](modules/telephone/10-transactions.md) (T-TE-06 Select→YES) · SMS الشبح: [`17-gap-analysis.md`](modules/telephone/17-gap-analysis.md) (GAP-TE-D01 + UNK-054)
+
+**التالي بالترتيب:** `maintenance/` (MNT — 3 ملفات/81 ص) ← `food-beverage-costing/` (FNB) ← `fixed-assets/` (FXD+GTP) ← ... (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
 
 ### العمليات (Workflows) — Phase 5
 `workflows/module-workflows/` + `workflows/end-to-end/`

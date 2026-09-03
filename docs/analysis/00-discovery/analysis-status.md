@@ -436,3 +436,37 @@
 1. **الوحدة التالية: TEL (الهاتف — 4 ملفات/83 ص: SET 32 + LUK 21 + REP 20 + CAC 10)** — محاسبة المكالمات + ترحيل الإيراد لفوليو النزيل (حلقة تكامل FO-مالية).
 2. بعدها: MNT (3/81) ثم FNB (4/76) ثم FXD+GTP (2/38) — لإغلاق الـ17.
 3. التقارير المؤجلة (REP) للوحدات محللة تبقى للمرحلة 7.
+
+---
+
+### الجلسة 12 — 2026-09-03 — وحدة Telephone Management (TEL) كاملة
+
+**ما تم:**
+
+1. **الوحدة 12/17 — Telephone Management كاملة (19 ملفاً):**
+   - قراءة عميقة كاملة للملفات الأربعة: **TEL-SET (32 ص/10 أقسام) + TEL-REP (20 ص/8 تقارير) + TEL-LUK (21 ص/9 استعلامات) + TEL-CAC (10 ص/4 وظائف) = 83 ص كاملة**.
+   - إنشاء `docs/modules/telephone/` (00-18): **~40 شاشة/نافذة (17 SET ببطاقات Onity الخمس + 6 CAC + 9 REP + 12 LUK)** · WF-TE-01..14 · BR-TE-01..24 · V-TE-01..26 · I-TE-01..13 (عتاد مزدوج!) · T-TE-01..14 + 10 أحداث آلية · محاسبة (فوليو بكود إيراد لكل نوع × توحيد لكل نوع + P&T بلا قيد) · Data Model (16 كياناً/~120 حقلاً) · UX (وحدة تحكم العامل + أزمة تسمية Transfer/Extension) · Mapping (F-TE-1..10 — ~7 أصول/~4.5 أسابيع) · GAP-TE-D01..D07 + P01..P05 · 10 مجموعات قبول (47 معياراً) + Smoke Test 24 خطوة.
+2. تحديث: unknowns (جديد **UNK-053..057**) + source-coverage (**51/65 — 12 وحدة/227 ملف وثائق**) + هذا الملف + فهرس docs/README.md (12/17).
+
+**اكتشافات جوهرية موثقة (TEL):**
+
+- **بوابة العتاد المزدوجة الفريدة:** القناة الوحيدة في المشروع بتكاملين عتاديين موثقين — **EPABX** ("data transfer between EPABX and the Serial Port" + Conversion Program ≤7 محارف + **Battery Reverse Signal** للمكالمات الناضجة + **2-Way Communication** بالتحكم العكسي: "activate / de-activate the phones, voice mails, wake-up calls and room status") و**أقفال Onity** (واجهة كروت كاملة داخل TEL!: New/Copy/**Single Open**/Check Out تعطيل/Read — بآلية "saved in the backend, read by the door lock interface program and send to the device") — **نمط معماري معياري لكل تكاملات العتاد** عند إعادة البناء (F-TE-8/9).
+- **محرك التسعير النبضي الأغنى توثيقاً رقمياً:** شرائح زمنية بـ4 أزواج أسعار (P&T×Hotel × Regular×Holidays بSeconds/Rate لكل) + **نسبة الحساب بأرقام حرفية** (60c: 100%=60c، 150%=90c، 200%=120c، **0%=uncharged ممنوعة لSTD/IDD**) + Min/Max ي overwrite الشريحة + تقريب رباعي (Higher/Nearer/Lower/None) + حدود دنيا للمكالمات الأخرى (Toll Free/Calling Card/AT&T) — أرقام الدليل = حالات اختبار جاهزة (F-TE-2).
+- **الشراكات الست الدفاعية:** LCA + 9999999999 (بلد) + الثلاث (منطقة: LCA/LCA محلي · 9999999999×2 بأعلى IDD · فارغ/9999999999 بأعلى STD) — "غير المعرف يُسعَّر بأغلى تعرفة" — **حماية إيراد مدمجة بالماستر** (BR-TE-11).
+- **سباق تسجيل الوصول الجماعي موثق:** Room vacant error — "The keys were given to the guest and the guest checked-in... but the same check-in **is not recorded in the PMS**" — توثيق مبكر نادر لrace condition (فيزيائي vs منطقي) + 4 حالات خطأ (امتداد غير معرف/مدة قصيرة/Bad records بمحرف دخيل 01/@2/99) + إصلاح يدوي **Select→YES = إعادة ترحيل للفوليو** (T-TE-06 — الفعل المالي اليدوي الوحيد).
+- **خلود الشرائح الزمنية:** "You cannot Modify or Delete... Add a new record with the same slab code but with a **new applicable from date**... latest wins" (مثال 2011/2012) — **عائلة الإصدار الزمني الرابعة** (HRP-Rate/MEM-Service/BNQ-Corporate) — بنية موحدة تتكرر عبر الوحدات.
+- **أدق تحكم توحيد في المشروع:** Consolidate Postings **Yes/No لكل نوع مكالمة على حدة** (بند يومي لكل نوع أو بند لكل مكالمة) + Revenue Code مستقل لكل نوع — يفوق POS/BNQ دقةً (يقاربه فقط MEM بثلاثية withhold/withdraw/overwrite).
+- **مصفوفة تحويل المكالمات الحرفية:** مسموح Department→Room/Shop/Department؛ ممنوع Room→Department/Shop→Department/**Room→Room/Shop→Shop** — "should always be a department" — قاعدة اتجاه صريحة نادرة التوثيق كجدول.
+- **وحدة تحكم عامل السنترال:** Guest Information (تعليمات/شكاوى/رسائل/موقع النزيل) بنمط **Tag→YES = أُبلّغ/وُجد → إخفاء من Guest Page Messages** (قائمة اتصالات نزلاء كلاسيكية) + **زر SL# الإداري الوحيد** (SysAdmin لحل تعارض SL# — طبيعته مجهولة UNK-053).
+- **أزمة تسمية داخل وحدة واحدة:** Transfer = تحويل مكالمات (CAC/REP) أم تحويل غرف (LUK)! وExtension = امتداد هاتفي أم **تمديد إقامة** (View Transfers/Extensions يعرض المغادرة القديمة/الجديدة + **User + Authorizer** — أثر تدقيقي مزدوج)!
+- **SMS الشبح (ثاني مقدمة-بلا-جسم):** مقدمة CAC تذكر "record and save standard SMSs... like checkins, anniversaries" — لا جسم في TOC الأربعة (GAP-TE-D01 + UNK-054) بعد Membership Tax Posting (فهرس-بلا-جسم).
+- **رابعة بلا INI:** CARE/MEM/SLM/**TEL** + إحالة Module Attributes وحيدة (عرض المدة ثوانٍ/دقائق — فصل SUPERVISOR في SYS) — يتعمق نمط الجيل الأحدث (سمات داخلية بدل INI).
+- **In-House Statistics مفوَّضة لـFO حرفياً:** "refer CHAPTER – LOOKUPS of MODULE – FRONT OFFICE" — أنقى تفويض موثق بعد BNQ=POS.
+- **صلاحيات استنتاجية فقط:** لا قسم User Rights (رابعة) + أخطرها: إعادة الترحيل فعل مالي بلا ضابط + الشراكات بلا قفل تعديل (GAP-TE-D03).
+- **غائبون:** لا جسر HRP (عائلة UNK-038) · لا Wake-up/Voice Mail كوظائف (قدرة 2-Way فقط — GAP-TE-D06) · لا خريطة GL (عائلة الفجوة العامة — D02).
+
+**نقطة الاستئناف القادمة (الجلسة 13):**
+
+1. **الوحدة التالية: MNT (الصيانة — 3 ملفات/81 ص: RPL 29 + OPR 28 + SET 24)** — `extracted-text/Maintenance/` — ثم FNB (4/76) ثم FXD+GTP (2/38) لإغلاق الـ17.
+2. التقارير المؤجلة (REP) للوحدات محللة تبقى للمرحلة 7.
+3. بعد الـ17: المراجعة الشاملة + cross-referencing + Knowledge Graph النهائي (Phase 8+).
