@@ -27,8 +27,8 @@
 | text-extracted | **65 / 65 (100%)** ✅ |
 | toc-analyzed | **65 / 65 (100%)** ✅ |
 | field-extracted (جداول الحقول آلياً) | **13 ملف إعدادات — 2,099 حقلاً** ✅ |
-| read (قراءة عميقة) | **58/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + BNQ 5 + HRP 4 + Care 3 + MEM 5 + SLM 4 + TEL 4 + MNT 3 + **FNB 4 (كاملة)** (نهاية الجلسة 14) |
-| analyzed | **14 وحدة / 265 ملف وثائق** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 + Care 19 + MEM 19 + SLM 19 + TEL 19 + MNT 19 + **FNB 19**) |
+| read (قراءة عميقة) | **59/65** — FO 9 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + BNQ 5 + HRP 4 + Care 3 + MEM 5 + SLM 4 + TEL 4 + MNT 3 + FNB 4 + **FXD 1 (كاملة)** (منتصف الجلسة 15) |
+| analyzed | **15 وحدة / 265 ملف وثائق** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 + Care 19 + MEM 19 + SLM 19 + TEL 19 + MNT 19 + FNB 19 + **FXD 19**) |
 | cross-referenced | 0 / 65 |
 | verified | 0 / 65 |
 
@@ -105,7 +105,7 @@
 | 61 | F&B Costing | FN6i-NT-FNB-LUK.pdf | 15 | ✓ | ✓ | ✓ | **✓ كامل (7 استعلامات — Profitability بـXOR منهجي وLink Help وNo-Drill-Down معلنة + NC Query ثلاثي المحاور + Consolidate للمكونات)** | **✓ → modules/food-beverage-costing/** | – | – |
 | 62 | F&B Costing | FN6i-NT-FNB-SET.pdf | 14 | ✓ | ✓ | ✓ | **✓ كامل (4 أقسام — Costing Start Date أحادي الاتجاه + Costing Link ثلاثي بـSales Tag + ميزانيات انتشار جلسة السنة + Recipe/Sub Recipe بـ6 تابات)** | **✓ → modules/food-beverage-costing/** | – | – |
 | 63 | (root) | Touch_Screen_Manual.pdf | 46 | ✓ | ✓ | ✓ | **✓ كامل (عمليات POS الفعلية: Shift/Outlet/KOT/Check/Split/Settlement/NC/Close)** | **✓ → modules/point-of-sale/** | – | – |
-| 64 | Fixed Assets | FN6i-NT-FAS-FXD.pdf | 25 | ✓ | ✓ | ✓ | – | – | – | – |
+| 64 | Fixed Assets | FN6i-NT-FAS-FXD.pdf | 25 | ✓ | ✓ | ✓ | **✓ كامل (19 وظيفة: بوابة أحادية property-wise + هرمية 5 ماسترات + ربط GL رباعي BS×2/PL×2 + كود آلي 12=5+3+4 من FIMSHTBL + SLM/WDV بـINI#475 وحساب بمنهجين وترحيل SLM شهرياً بنهاية الشهر + أزرق=غير مربوط + Gain/Loss وتعطيل التساوي + بطاقة "لاحقاً")** | **✓ → modules/fixed-assets/** | – | – | – |
 | 65 | Gate Passes | FN6i-NT-FAS-GTP.pdf | 13 | ✓ | ✓ | ✓ | – | – | – | – |
 
 ---
