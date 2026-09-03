@@ -27,9 +27,21 @@
 | R-POS-17 | مخرجات الطباعة التشغيلية: **KOT · Check/Provisional · NC Bill · Token/Counter** | POS-SET §1 + TS | بنماذج User Defined |
 | R-POS-18 | معاينة المصمم + **Match Samples** (مطابقة القوالب) | POS-SET §23 | |
 
-## 2. POS-REP (مؤجل) — الفهرس المكتشف
+## 2. POS-REP (مكتمل — Phase 7/الجلسة 17)
 
-يُقرأ في المرحلة 7 كاملاً (158 صفحة — أكبر ملف تقارير في الحزمة بعد FOM-REP). مواضعه المتوقعة من فهارس الوحدات الأخرى: مبيعات المنافذ · KOT/Bills · Cashier/Shift · Settlements · Void/Comp · Menu Sales · Tax · DSR · Guest History.
+قُرئ كاملاً (158 ص / 3,898 سطر — 59 بنداً/~57 فريداً) ووُثّق في **[`docs/reports/point-of-sale/`](../../reports/point-of-sale/)** (12 ملفاً 00→11 — نظرة عامة · محرك POS Report Options · 7 عائلات · مصفوفة تواريخ · Mapping F-PR-1..15 + GAP + AC + Smoke 20).
+
+**أهم ما أضافته قراءة REP لهذه الوثيقة (تُستكمل بها القرارات أدناه):**
+
+| الإضافة | الشاهد | التفصيل |
+|---|---|---|
+| **مصفوفة POS Report Options** — Config-per-Report | ~20 موضعاً في REP | `reports/point-of-sale/01` §1 — Void/Comp لكل تقرير (وليس فقط تحذير SET §18) |
+| **DSR Session Group شرط عمل** DS Report | "has to be defined for this option to work" | `reports/point-of-sale/01` §6 — يربط R-POS-08 بشرطه الإعدادي |
+| **INI 137** (عتبة PAN) + **INI 335** (F&B Factor) | §9 + §22 | أهداف نقابية للـParameter List (R-POS-09) |
+| User Defined Sales Report = R-POS-07 بمولده | §1.16 | Sales Report Definition من SET §16 — الاتصال موثق الآن |
+| عائلة التسويات: Staff/others + City Ledger معرّفاً | §3/§1.9/§16.4 | `reports/point-of-sale/03` §4 |
+| KOT/Bill Audit بـold→new كامل | §17.2/§17.5 | يوسّع قرار KOT Audit (أدناه) إلى إعادة التسوية نفسها |
+| KDS §24 شبح | TOC + ص157-158 | UNK-083 — أول ذكر KDS في الحزمة |
 
 ## 3. محرك التقارير (IDS Report Engine)
 

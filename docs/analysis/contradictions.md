@@ -41,3 +41,15 @@
 | المصدر التكميلي | docs/modules/food-beverage-costing/13-exceptions.md (الحالة #26) + 17-gap-analysis.md (GAP-FB-D03) |
 
 
+
+---
+
+## الجلسة 17 — POS-REP (تناقضات 3 جديدة — الإجمالي 6)
+
+| ID | الوصف | المصدر | القرار |
+|---|---|---|---|
+| **C-POS-01** | **Discount Register موثق مرتين بمعايير مختلفة**: §6.1 (ص96-98: نطاق ≤ Accounting + Settlement Mode) و§12 (ص103-105: Discount% + Session + By Bill/Date + Summary By Reason/Cashier/Mode) — نفس الاسم، جسمان مختلفان. **مضاعَف**: كتلة §6 كلها (ص96-103) واقعة فيزيائياً بعد §11 (ص88-95) خلافاً لترتيب TOC (دليل إدراج/إعادة ترتيب لاحقة) | POS-REP §6.1/§12 + ترتيب الصفحات | يُعتمد §12 (الأغنى) مع دمج مرشح Settlement Mode من §6.1 — UNK-087 يسجل الغموض |
+| **C-POS-02** | ملاحظة SETUP في **Discount Summary (6.2)** تُحيل إلى **"Sales By Item"**: "select the Void and Complimentary options corresponding to **Sales By Item**" — خطأ نسخ/لصق من 1.1 (الصواب المنطقي: Discount Summary) | POS-REP §6.2 ص99 | تصحيح تحريري — الإحالة الصحيحة = Discount Summary |
+| **C-POS-03** | **Menu List (18)**: الخطوة "3. Select one of the Selection options: Code List, Rate List or Other List." **مكررة حرفياً مرتين متتاليتين** (ص144) | POS-REP §18 ص144 | خطأ تحريري خام (سطر منسوخ) — يُحذف التكرار |
+
+> ملاحظة تحت مستوى التناقض (تُوثق في `reports/point-of-sale/02` §3): DS Report — جدول الحقول يسمي العمود **BREAKFAST** بينما الخلاصة تكتب **"Morning"** (انحراف تسمية). وتُلاحَظ صياغة §11.3 "within **any** month" مقابل "within the **same** month" في 11.1/11.2 (غموض نطاق — UNK-088).

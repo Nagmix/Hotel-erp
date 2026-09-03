@@ -89,7 +89,24 @@
 - **[تنبيهات SMS](reports/front-office/10-sms-alerts.md)** — 8 خدمات بمحتوى الرسائل حرفياً + **Checkout قبل ساعة** + Department Checkout Alert + **"Fortune Next Enterprise 2.0"** (C-FO-02)
 - **[التحويل والفجوات](reports/front-office/11-erpnext-mapping-gaps.md)** — F-FOR-1..14 (~8-10 أصول/5-7 أسابيع) + GAP-FOR-D01..D07/P01..P05 + UNK-078..082 + AC + Smoke 18 خطوة
 
-**التالي (تكملة المرحلة 7):** POS-REP (158 ص) → MGT-REP (112 ص) → FAS-REP (64 ص) بنفس النمط → ثم المراجعة الشاملة (Phase 8+)
+### Point of Sale Reports (مكتمل — 12 ملفاً — الجلسة 17)
+
+**[`reports/point-of-sale/`](reports/point-of-sale/)** — المصدر: POS-REP (158 ص / 3,898 سطر — أضخم ملف REP متبقٍّ: 59 بنداً/~57 فريداً) — **POS ثاني وحدة كاملة المصادر 4/4**:
+
+- **[نظرة عامة + مفارقة الترتيب الفيزيائي](reports/point-of-sale/00-overview.md)** — 24 قسماً + 42 فرعياً + جسور الوحدات + أبرز 12 اكتشافاً + §6 واقعة فيزيائياً بعد §11
+- ⭐ **[محرك التقارير والبنية التحتية](reports/point-of-sale/01-report-engine-infrastructure.md)** — **مصفوفة POS Report Options (أول Config-per-Report في المشروع)** + Invariant Void/Comp ×25 تكراراً + قنوات الإخراج + **Port ID** (خامسة خاصة بPOS) + بوابات الإعداد (DSR Session Group/INI 137/335)
+- **[تقارير المبيعات](reports/point-of-sale/02-sales-reports.md)** (§1.1-1.16) — **DS Report 8×11 بAmount+%** + عمود التنبؤ العامي "Where are we headed with this average?" + علامات (V)/(C) + تعريف Credit الحرفي
+- **[التسوية والتحصيل](reports/point-of-sale/03-settlement-collection-reports.md)** (§2-5) — **Cancelled bills تعرض أرقام البديلة** + **Closed Shifts only** + نطاق أرقام فواتير الوردية + معجم أنماط التسوية الكامل (Staff/others/City Ledger)
+- **[الخصومات وNC والتوصيل](reports/point-of-sale/04-discount-nc-delivery-reports.md)** (§6/11/7/12) — **Discount Register المزدوج (C-POS-01)** + سلسلة الخصم الرباعية + مسؤول السماح + عتبة 7 منافذ→132 + Customer Id مولد آلياً
+- ⭐ **[الضرائب والامتثال الهندي](reports/point-of-sale/05-tax-statutory-reports.md)** (§16+§9) — **Pivot أعمدة من نسب الضرائب** + تعريف **City Ledger** الحرفي + **PAN بSwitch 137** ("applicable only for Indian Government") + ثلاثية Non-Taxable/Exemption/Breakup
+- **[تدقيق KOT والفواتير](reports/point-of-sale/06-audit-reports.md)** (§17) — **Bill Audit بزوج mode+amount قديم→جديد** (أكمل old/new) + KOT Audit بسبب الحذف + **KOT Books الورقية** + عبور الشهور للتدقيق فقط
+- **[قوائم الماستر](reports/point-of-sale/07-menu-master-lists.md)** (§18-21) — Rate List بطاقة صنف كاملة (NC%!) + **Happy Hours المستقبلي الوحيد** + TS Modifier ماستر مستقل
+- ⭐ **[التحليل وMenu Engineering](reports/point-of-sale/08-analytics-menu-engineering.md)** (§22/23) — **مصفوفة STAR/PUZZLE/PLOW HORSE/DOG بـ15 عموداً وصيغ حرفية** (نموذج Kasavana-Smith كاملاً — أعمق منهجية في المشروع) + INI 335 + Cover Analysis بسلوك **80/132 المعكوس عن FO**
+- **[الولاء وإعادة الطباعة وKDS](reports/point-of-sale/09-loyalty-pan-reprint-kds.md)** (§8/10/24) — وضع Month&Year للمنسية + Help ديناميكي + **KDS §24 شبح ختامي** (UNK-083)
+- ⭐ **[مصفوفة قواعد التواريخ](reports/point-of-sale/10-date-validation-matrix.md)** — ~20 قاعدة: **POS ماضوية شبه كاملة** (مستقبلي واحد!) + نوافذ 7/30 + عتبات منافذ 7/8 + مقارنة مع مصفوفة FO
+- **[التحويل والفجوات](reports/point-of-sale/11-erpnext-mapping-gaps.md)** — F-PR-1..15 (~7-9 أصول/5-6 أسابيع) + GAP-PR-D01..D07/P01..P05 + UNK-083..088 + C-POS-01..03 + AC-PR-01..15 + Smoke 20 خطوة
+
+**التالي (ختام المرحلة 7):** MGT-REP (112 ص) → FAS-REP (64 ص) — آخر ملفين → **65/65** → ثم المراجعة الشاملة (Phase 8+)
 
 **التالي بالترتيب:** المرحلة 7 (تقارير REP المؤجلة) ← المراجعة الشاملة (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
 

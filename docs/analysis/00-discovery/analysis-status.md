@@ -613,3 +613,34 @@
 1. **POS-REP (158 ص — أضخف ملف متبقٍ في المشروع كله)** ثم **MGT-REP (112 ص)** ثم **FAS-REP (64 ص)** → `docs/reports/{point-of-sale, materials-management, financial-accounting}/` بنفس نمط الجلسة 16 (12 ملفاً).
 2. بعدها: **المراجعة الشاملة + cross-referencing + Knowledge Graph النهائي** (Phase 8+): توحيد العائلات العابرة (UNK-058/038 · جسور F · خريطة ألوان · عائلة 80/132 · عتبات التوقع 10/15/30/31) + قرارات D المجمعة + جدول الرموز الموحد (AP/BB/EP/MAP/Adt/Chd/LTX/ADQ/ADC/ADV/POT).
 3. مرجع الاستئناف: هذا الملف + `docs/README.md` + `unknowns.md` (82 مجهولاً) + `docs/reports/front-office/00-overview.md`.
+
+---
+
+### الجلسة 17 — 2026-09-04 — Phase 7 (2/3): تقارير Point of Sale كاملة
+
+**ما تم:**
+
+1. **التحقق من حالة المستودع:** HEAD عند 7e113e6 (مدفوع — دفعة الجلسة 16 نجحت) — الشجرة نظيفة — ضبط الهوية (Nagmix / nooraldeen.ahmed@nagmix.net) — التالي وفق نقطة الاستئناف: POS-REP.
+   (ملاحظة: ملخص المحادثة المتقادم كان يشير إلى HRP — تجاهل صحيح: HRP مكتملة منذ الجلسة القديمة والـ17/17 مغلقة منذ الجلسة 15.)
+2. **قراءة عميقة كاملة: POS-REP (158 ص / 3,898 سطر — أضخم ملف REP متبقٍّ):** 24 قسماً + 42 فرعياً = 59 بنداً (~57 فريداً بعد Discount Register المزدوج + KDS الشبح) — عائلات: المبيعات 16 · تسويات 3 · تحصيل 6 · خصومات 3+1 · توصيل 3 · ولاء 1 · PAN 1 · إعادة طباعة 1 · NC 4 · شعبية/زمن 3 · ضرائب 5 · تدقيق 5 · قوائم ماستر 4 · Menu Engineering 1 · Cover 1 · KDS 0 (شبح).
+3. **إنشاء `docs/reports/point-of-sale/` (12 ملفاً 00→11):** overview + محرك (POS Report Options + قنوات + Port ID) + عائلات (مبيعات/تسوية تحصيل/خصم NC توصيل/ضرائب PAN/تدقيق KOT-Bill/قوائم ماستر/تحليل Menu Engineering) + مصفوفة تواريخ (~20 قاعدة) + Mapping F-PR-1..15 (~7-9 أصول/5-6 أسابيع) + GAP-PR-D01..D07/P01..P05 + AC-PR-01..15 + Smoke 20 خطوة.
+4. **تحديث التتبع:** unknowns (**UNK-083..088 — الإجمالي 88**) + contradictions (**C-POS-01..03 — الإجمالي 6**) + source-coverage (**63/65 — POS 4/4: ثاني وحدة كاملة المصادر مع FO**) + هذا الملف + docs/README.md + modules/point-of-sale/08-reports.md (إحالة).
+
+**اكتشافات جوهرية موثقة:**
+
+- **مصفوفة POS Report Options** — أول **Config-per-Report** في المشروع: Void/Complimentary يُضبط لكل تقرير من SETUP، والثابت الحرفي "details will appear... NOT be included in the grand total" يتكرر ~25 مرة (أعلى تكرار قاعدة واحدة في الحزمة).
+- **مفتاحا INI من ملف تقارير واحد**: 137 (عتبة PAN — "applicable only for Indian Government") + 335 (F&B Factor % يعرض في شاشة التقرير) — عائلة INI: 63/368/475/511 → +137/335.
+- **F&B Menu Engineering (22)**: 15 عموداً بصيغ حرفية كاملة + مصفوفة 2×2 **STAR/PUZZLE/PLOW HORSE/DOG** + Profit Factor — نموذج Kasavana-Smith كاملاً — أعمق منهجية تحليلية في المشروع (تقرير يقرر: حذف/تسعير/ترويج).
+- **DS Report (1.6)**: 8 أعمدة × 11 مقياساً بAmount+% + عمود تنبؤ عامي "Where are we headed with this average?" = (MTD÷أيام الشهر)×المنقضي.
+- **Bill Audit (17.5)**: إعادة التسوية بزوج **mode+amount قديم→جديد** (أكمل old/new في الحزمة) · إعادة الطباعة بتاريخ ووقت · Cancelled bills تعرض أرقام البديلة (2) · Closed Shifts only (5.2).
+- **80/132 معكوس الدلالة عن FO**: POS تضيف (132=مبالغ/نوع خامس+Total) · FO تحذف (132 بلا YTD) — عائلة متقلبة الاتجاه.
+- **Happy Hours List (19)**: التقرير المستقبلي الوحيد في مصفوفة POS كلها ("From can be greater than system date").
+- **تعريفات حرفية**: City Ledger ("bills debited to his Company" — جسر AR) · Credit ("other than Cash, Void, Complimentary and NC") · (V)/(C) markers مثل 974(V).
+- **KOT Books Usage (17.1)**: دفتر ورقي كأصل (issued to/date/used-unused-void) يقابله **KDS §24 شبح** (عنوان بلا جسم يغلق الملف — UNK-083) — الانتقال الورقي→الرقمي المبتور.
+- **فجوة حاكمة**: ~57 تقريراً بلا صلاحية (GAP-PR-D01 — 10/17) · عائلة same-month ~25 تقريراً · Discount Register مزدوج (C-POS-01).
+
+**نقطة الاستئناف القادمة (الجلسة 18 — ختام Phase 7):**
+
+1. **MGT-REP (112 ص)** ثم **FAS-REP (64 ص)** — آخر ملفين غير مقروءين → إغلاق 65/65 كاملاً + إغلاق Phase 7.
+2. بعدها: **المراجعة الشاملة + cross-referencing + Knowledge Graph النهائي** (Phase 8+): توحيد العائلات العابرة (UNK-058/038/084 المصفوفات · جسور F · عائلة 80/132 الاتجاهين · INI الكاملة 63/137/335/368/475/511 · عائلة الأشباح SMS/Crystal/KDS · معجم التسويات الكامل Staff/others/City Ledger) + قرارات D المجمعة.
+3. مرجع الاستئناف: هذا الملف + `docs/README.md` + `unknowns.md` (88 مجهولاً) + `docs/reports/point-of-sale/00-overview.md`.

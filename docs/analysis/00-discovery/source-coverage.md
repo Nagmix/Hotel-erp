@@ -27,8 +27,8 @@
 | text-extracted | **65 / 65 (100%)** ✅ |
 | toc-analyzed | **65 / 65 (100%)** ✅ |
 | field-extracted (جداول الحقول آلياً) | **13 ملف إعدادات — 2,099 حقلاً** ✅ |
-| read (قراءة عميقة) | **62/65** — FO 11 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + BNQ 5 + HRP 4 + Care 3 + MEM 5 + SLM 4 + TEL 4 + MNT 3 + FNB 4 + FXD 1 + GTP 1 (نهاية الجلسة 16 — **FO أول وحدة كاملة المصادر 11/11** + بدء Phase 7) |
-| analyzed | **17/17 وحدة / 306 ملف وثائق + Phase 7 بدأت: reports/front-office 12 ملفاً** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 + Care 19 + MEM 19 + SLM 19 + TEL 19 + MNT 19 + FNB 19 + FXD 19 + GTP 19 + **reports/FO 12**) |
+| read (قراءة عميقة) | **63/65** — FO 11 + FAS 4 + ACR 5 + POS 4 + SYS 1 + MGT 3 + BNQ 5 + HRP 4 + Care 3 + MEM 5 + SLM 4 + TEL 4 + MNT 3 + FNB 4 + FXD 1 + GTP 1 (نهاية الجلسة 17 — **FO وPOS وحدتان كاملتا المصادر 11/11 + 4/4** + TS الجذري — المتبقي MGT-REP وFAS-REP فقط) |
+| analyzed | **17/17 وحدة / 306 ملف وثائق + Phase 7: reports/front-office 12 + reports/point-of-sale 12 = 24 ملفاً** (FO 19 + FAS 18 + ACR 19 + POS 19 + SYS 19 + MGT 19 + BNQ 19 + HRP 19 + Care 19 + MEM 19 + SLM 19 + TEL 19 + MNT 19 + FNB 19 + FXD 19 + GTP 19 + **reports/FO 12 + reports/POS 12**) |
 | cross-referenced | 0 / 65 |
 | verified | 0 / 65 |
 
@@ -54,7 +54,7 @@
 | 10 | Front Office | FN6i-NT-FOM-CRG.pdf | 19 | ✓ | ✓ | ✓ | **✓ كامل (Concierge — 5 وظائف)** | **✓ → modules/front-office/ (04)** | – | – |
 | 11 | Front Office | FN6i-NT-FOM-DEP.pdf | 14 | ✓ | ✓ | ✓ | **✓ كامل** | **✓ → modules/front-office/** | – | – |
 | 12 | Point of Sale | FN6i-NT-POS-SET.pdf | 122 | ✓ | ✓ | ✓ | **✓ كامل (42 قسماً + فجوة §42 Taxcode Mapping فارغة)** | **✓ → modules/point-of-sale/** | – | – |
-| 13 | Point of Sale | FN6i-NT-POS-REP.pdf | 158 | ✓ | ✓ | ✓ | – | – | – | – |
+| 13 | Point of Sale | FN6i-NT-POS-REP.pdf | 158 | ✓ | ✓ | ✓ | **✓ كامل (Phase 7/الجلسة 17: 59 بنداً/~57 فريداً — مصفوفة POS Report Options أول Config-per-Report + INI 137/335 + Menu Engineering STAR/PUZZLE/PLOW HORSE/DOG 15 عموداً + DS 8×11 + Bill Audit old→new mode+amount + KOT Books + 80/132 معكوس الدلالة + Happy Hours المستقبلي الوحيد + KDS §24 شبح)** | **✓ → reports/point-of-sale/ (12 ملفاً)** | – | – |
 | 14 | Point of Sale | FN6i-NT-POS-GST.pdf | 56 | ✓ | ✓ | ✓ | **✓ كامل (12 وظيفة Guest History + الولاء)** | **✓ → modules/point-of-sale/** | – | – |
 | 15 | Point of Sale | FN6i-NT-POS-LUK.pdf | 14 | ✓ | ✓ | ✓ | **✓ كامل (7 استعلامات + صيغة Average Per Check)** | **✓ → modules/point-of-sale/** | – | – |
 | 16 | Materials Management | FN6i-NT-MGT-REP.pdf | 112 | ✓ | ✓ | ✓ | – (مؤجل Phase 7) | – | – | – |
