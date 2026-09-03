@@ -27,7 +27,7 @@
 - [أدوار المستخدمين الفندقيين](domain/hotel-roles.md)
 - **[القاموس الموحد للمصطلحات (عربي/EN)](domain/terminology.md)** ⭐
 
-### الوحدات (Modules) — Phase 2/3 (8/17 محللة)
+### الوحدات (Modules) — Phase 2/3 (10/17 محللة)
 
 **1. Front Office (مكتملة — 19 ملفاً):** [`modules/front-office/`](modules/front-office/) — ابدأ بـ [`00-overview.md`](modules/front-office/00-overview.md) · ⭐ النواة المحاسبية: [`11-accounting-impact.md`](modules/front-office/11-accounting-impact.md) · الجرد: [`03-screens.md`](modules/front-office/03-screens.md) (193 شاشة) · القواعد: [`05-business-rules.md`](modules/front-office/05-business-rules.md) (BR-FO-01..16)
 
@@ -47,7 +47,9 @@
 
 **9. Care (مكتملة — 19 ملفاً):** [`modules/care/`](modules/care/) — ابدأ بـ [`00-overview.md`](modules/care/00-overview.md) · ⭐ **UNK-010 محسوم نهائياً (مخزنان مستقلان + 7 قنوات PMS):** [`12-integrations.md`](modules/care/12-integrations.md) (I-CA-01..06 — Care وحدة ساتلية PMS-centric بلا أي جسر إلى HRP!) · ⭐ **محرك SMS ثنائي الاتجاه الفريد (`1 S`/`1 C` + 5 رسائل خطأ حرفية + 14 حالة):** [`04-workflows.md`](modules/care/04-workflows.md) (WF-CA-04/05 — المنفذ الحقلي بلا شاشة!) + [`13-exceptions.md`](modules/care/13-exceptions.md) (جدول الأخطاء↔ردود النظام) · الهيكل والتصعيد: [`01-master-data.md`](modules/care/01-master-data.md) (سلسلة Reporting: Room boy→…→MD بمهلات دقائق) · أعلى كفاءة بذرة Frappe: [`16-erpnext-mapping.md`](modules/care/16-erpnext-mapping.md) (F-CA-1..10 — 4 أصول مخصصة فقط ~2-3 أسابيع)
 
-**التالي بالترتيب:** `membership/` (5 ملفات/133 ص — فوترة وترحيل إلى AR) ← `sales-marketing/` ← ... (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
+**10. Membership (مكتملة — 19 ملفاً):** [`modules/membership/`](modules/membership/) — ابدأ بـ [`00-overview.md`](modules/membership/00-overview.md) · ⭐ **جسر MEMC001 (أول إنشاء كيان AR تلقائي) + 5 محركات ترحيل:** [`12-integrations.md`](modules/membership/12-integrations.md) (I-ME-01/02 — شركة ACR من حرف اسم العائلة بلا رجعة! + Subscription/Facility/Cover/Late الانتقائي بثلاثية withhold/withdraw/overwrite) · ⭐ **دورة الانضمام الرباعية + الإنهاء المتتالي:** [`04-workflows.md`](modules/membership/04-workflows.md) (WF-ME-02..07 — طلب→فحص→مقابلة→تحويل/خلافة الوفاة بنمط None) + [`05-business-rules.md`](modules/membership/05-business-rules.md) (BR-ME-08 — التتالي الهابط الحرفي ×4) · المثال الرقمي لرسوم التأخير (يناير→ديسمبر) والفوترة الثلاثية الشرائح: [`11-accounting-impact.md`](modules/membership/11-accounting-impact.md) · **أول فجوة فهرس-بلا-جسم (Tax Posting):** [`17-gap-analysis.md`](modules/membership/17-gap-analysis.md) (GAP-ME-D01/UNK-045) · التقارير كمساحة عمل (حفر 3 مستويات + بريد): [`09-lookups.md`](modules/membership/09-lookups.md)
+
+**التالي بالترتيب:** `sales-marketing/` (SLM — 4 ملفات/103 ص) ← `telephones/` (TEL) ← ... (راجع `analysis/00-discovery/analysis-status.md` §نقطة الاستئناف)
 
 ### العمليات (Workflows) — Phase 5
 `workflows/module-workflows/` + `workflows/end-to-end/`
